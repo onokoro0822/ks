@@ -42,6 +42,42 @@ python src/main.py --config config.yaml
 - mode
 - purpose
 
+PFLOW/People Flow Projectの実データを使う場合は、JoRAS等の正規手続きで取得したCSVを `data/input/` に置き、`config.yaml` の `input_csv` をそのファイルに変更してください。
+
+ヘッダー付きCSVの場合:
+
+```yaml
+csv:
+  encoding: utf-8
+  has_header: true
+columns:
+  person_id: person_id
+  time: time
+  lon: lon
+  lat: lat
+  mode: mode
+  purpose: purpose
+```
+
+ヘッダーなしCSVの場合は、0始まりの列番号で指定できます。実際の列順は取得したデータ仕様書に合わせて調整してください。
+
+```yaml
+generate_sample_if_missing: false
+input_csv: data/input/your_pflow_data.csv
+csv:
+  encoding: utf-8
+  has_header: false
+columns:
+  person_id: 0
+  mode: 1
+  purpose: 2
+  time: 3
+  lon: 4
+  lat: 5
+```
+
+PFLOWのWebAPIは、時空間内挿・最近傍道路点・経路探索などの補助処理に使えます。このプロトタイプ本体は、まず取得済みCSVをシナリオ加工・可視化用データへ変換する構成です。
+
 ## 主な出力
 
 `data/output/` に以下を出力します。

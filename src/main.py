@@ -36,7 +36,7 @@ def run(config_path: Path) -> None:
         print(f"Input CSV not found. Generating sample data: {input_csv}")
         generate_sample_data(config, input_csv)
 
-    df = load_csv(input_csv, config["columns"], config["time"].get("format"))
+    df = load_csv(input_csv, config)
     df = sort_by_person_time(df)
     gdf = make_geodataframe(df)
     gdf = filter_area(gdf, config["area"], config["coordinates"].get("projected_crs", "EPSG:6677"))

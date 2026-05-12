@@ -16,21 +16,31 @@ def resolve_path(project_root: Path, path_text: str) -> Path:
     return path if path.is_absolute() else project_root / path
 
 
-def load_csv(path: Path, columns: dict[str, str], time_format: str | None = None) -> pd.DataFrame:
-    """Load a person-flow CSV and rename configured columns to standard names."""
+def load_csv(path: Path, config: dict[str, Any]) -> pd.DataFrame:
+    """Load a person-flow CSV and normalize configured columns to standard names."""
     if not path.exists():
         raise FileNotFoundError(f"Input CSV not found: {path}")
 
-    df = pd.read_csv(path)
-    missing_source = [source for source in columns.values() if source not in df.columns]
-    if missing_source:
-        raise ValueError(f"Missing required source columns in input CSV: {missing_source}")
+    csv_config = config.get("csv", {})
+    read_kwargs = {
+        "encoding": csv_config.get("encoding", "utf-8"),
+    }
+    if not csv_config.get("has_header", True):
+        read_kwargs["header"] = None
 
-    rename_map = {source: standard for standard, source in columns.items()}
-    df = df.rename(columns=rename_map)
+    df = pd.read_csv(path, **read_kwargs)
+    columns = config["columns"]
+
+    normalized = pd.DataFrame()
+    for standard in STANDARD_COLUMNS:
+        if standard not in columns:
+            raise ValueError(f"Missing column mapping for: {standard}")
+        normalized[standard] = _get_mapped_series(df, columns[standard], standard)
+
+    df = normalized
     validate_columns(df)
 
-    df["time"] = pd.to_datetime(df["time"], format=time_format, errors="coerce")
+    df["time"] = pd.to_datetime(df["time"], format=config["time"].get("format"), errors="coerce")
     if df["time"].isna().any():
         bad_count = int(df["time"].isna().sum())
         raise ValueError(f"Failed to parse {bad_count} time values. Check config time.format.")
@@ -41,6 +51,24 @@ def load_csv(path: Path, columns: dict[str, str], time_format: str | None = None
         raise ValueError("lon/lat contain non-numeric or missing values.")
 
     return df[STANDARD_COLUMNS].copy()
+
+
+def _get_mapped_series(df: pd.DataFrame, source: str | int, standard: str) -> pd.Series:
+    """Return a source column by name or zero-based index."""
+    if isinstance(source, int):
+        if source >= len(df.columns) or source < 0:
+            raise ValueError(f"Column index for {standard} is out of range: {source}")
+        return df.iloc[:, source]
+
+    if isinstance(source, str) and source.isdigit() and source not in df.columns:
+        index = int(source)
+        if index >= len(df.columns):
+            raise ValueError(f"Column index for {standard} is out of range: {index}")
+        return df.iloc[:, index]
+
+    if source not in df.columns:
+        raise ValueError(f"Missing source column for {standard}: {source}")
+    return df[source]
 
 
 def validate_columns(df: pd.DataFrame) -> None:
