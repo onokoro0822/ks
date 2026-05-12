@@ -1,0 +1,78 @@
+# Input/output paths are relative to this project directory unless absolute.
+input_csv: data/input/sample_pflow.csv
+output_dir: data/output
+generate_sample_if_missing: true
+random_seed: 42
+
+columns:
+  person_id: person_id
+  time: time
+  lon: lon
+  lat: lat
+  mode: mode
+  purpose: purpose
+
+time:
+  format: null
+  output_format: "%Y-%m-%d %H:%M:%S"
+
+area:
+  # Either "bbox" or "center_radius".
+  type: bbox
+  bbox:
+    min_lon: 139.925
+    min_lat: 35.885
+    max_lon: 139.955
+    max_lat: 35.910
+  center_radius:
+    center_lon: 139.9356
+    center_lat: 35.8934
+    radius_m: 1800
+
+coordinates:
+  # Kashiwanoha-campus Station area. Local x/y are meters from this origin.
+  origin_lon: 139.9507
+  origin_lat: 35.8935
+  projected_crs: EPSG:6677
+
+pois:
+  station:
+    lon: 139.9507
+    lat: 35.8935
+    radius_m: 180
+  campus:
+    lon: 139.9365
+    lat: 35.9005
+    radius_m: 250
+  campus_entrance:
+    lon: 139.9380
+    lat: 35.8996
+    radius_m: 220
+  new_poi:
+    lon: 139.9390
+    lat: 35.8988
+    radius_m: 180
+
+sample:
+  n_persons: 120
+  points_per_person: 8
+  start_time: "2026-05-11 08:00:00"
+  interval_minutes: 5
+
+scenarios:
+  rain:
+    walk_to_bus_ratio: 0.35
+    walk_delay_minutes: 3
+    dwell_duplicate_ratio: 0.40
+    dwell_duplicate_count: 2
+  shuttle:
+    eligible_ratio: 0.45
+    time_reduction_minutes: 4
+    arrival_boost_ratio: 0.25
+  poi:
+    visit_ratio: 0.30
+    dwell_minutes: 4
+    dwell_interval_minutes: 1
+
+metrics:
+  time_bin: 1h
