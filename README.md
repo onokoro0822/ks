@@ -51,6 +51,7 @@ python src/webmap.py --input data/output/simulation/all_scenarios_points.csv --o
 ```
 
 `web_map.html` をブラウザで開くと、OpenStreetMap上でシナリオ切り替え、時間スライダー、再生ができます。
+人物ごとの前後点を線形補間して表示するため、観測点の時刻がそろっていなくても簡易的な移動アニメーションとして確認できます。
 
 ## 入力CSV
 

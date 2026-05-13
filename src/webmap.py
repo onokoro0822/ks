@@ -34,19 +34,27 @@ def load_points(csv_path: Path) -> pd.DataFrame:
 
 
 def build_payload(df: pd.DataFrame) -> dict:
-    """Convert dataframe rows into compact JSON for the browser."""
-    time_values = sorted(df["time"].dt.strftime("%Y-%m-%d %H:%M:%S").unique().tolist())
-    records = []
-    for _, row in df.iterrows():
-        records.append(
+    """Convert dataframe rows into compact trajectory JSON for the browser."""
+    time_values = pd.date_range(df["time"].min().floor("min"), df["time"].max().ceil("min"), freq="1min")
+    people = []
+    for (scenario, person_id), group in df.sort_values("time").groupby(["scenario", "person_id"]):
+        points = []
+        for _, row in group.iterrows():
+            points.append(
+                {
+                    "t": int(row["time"].timestamp() * 1000),
+                    "time": row["time"].strftime("%Y-%m-%d %H:%M:%S"),
+                    "lon": float(row["lon"]),
+                    "lat": float(row["lat"]),
+                    "mode": str(row["mode"]),
+                    "purpose": str(row["purpose"]),
+                }
+            )
+        people.append(
             {
-                "scenario": str(row["scenario"]),
-                "person_id": str(row["person_id"]),
-                "time": row["time"].strftime("%Y-%m-%d %H:%M:%S"),
-                "lon": float(row["lon"]),
-                "lat": float(row["lat"]),
-                "mode": str(row["mode"]),
-                "purpose": str(row["purpose"]),
+                "scenario": str(scenario),
+                "person_id": str(person_id),
+                "points": points,
             }
         )
 
@@ -56,8 +64,9 @@ def build_payload(df: pd.DataFrame) -> dict:
             "lon": float(df["lon"].mean()),
         },
         "scenarios": sorted(df["scenario"].unique().tolist()),
-        "times": time_values,
-        "records": records,
+        "times": [time.strftime("%Y-%m-%d %H:%M:%S") for time in time_values],
+        "timeMs": [int(time.timestamp() * 1000) for time in time_values],
+        "people": people,
         "modeColors": MODE_COLORS,
     }
 
@@ -208,15 +217,58 @@ def write_html(payload: dict, output_path: Path) -> None:
       return payload.modeColors[mode] || "#616161";
     }}
 
+    function interpolatePerson(person, currentMs) {{
+      const points = person.points;
+      if (points.length === 0 || currentMs < points[0].t || currentMs > points[points.length - 1].t) {{
+        return null;
+      }}
+
+      for (let i = 0; i < points.length - 1; i++) {{
+        const a = points[i];
+        const b = points[i + 1];
+        if (currentMs >= a.t && currentMs <= b.t) {{
+          const duration = b.t - a.t;
+          const ratio = duration <= 0 ? 0 : (currentMs - a.t) / duration;
+          return {{
+            person_id: person.person_id,
+            time: new Date(currentMs).toLocaleString("ja-JP"),
+            lon: a.lon + (b.lon - a.lon) * ratio,
+            lat: a.lat + (b.lat - a.lat) * ratio,
+            mode: a.mode,
+            purpose: a.purpose
+          }};
+        }}
+      }}
+
+      const last = points[points.length - 1];
+      return {{
+        person_id: person.person_id,
+        time: last.time,
+        lon: last.lon,
+        lat: last.lat,
+        mode: last.mode,
+        purpose: last.purpose
+      }};
+    }}
+
     function render() {{
       const scenario = scenarioSelect.value;
-      const time = payload.times[Number(timeSlider.value)];
+      const sliderIndex = Number(timeSlider.value);
+      const time = payload.times[sliderIndex];
+      const currentMs = payload.timeMs[sliderIndex];
       timeLabel.textContent = time || "";
       layer.clearLayers();
 
-      const activeRecords = payload.records.filter((record) => (
-        record.scenario === scenario && record.time === time
-      ));
+      const activeRecords = [];
+      for (const person of payload.people) {{
+        if (person.scenario !== scenario) {{
+          continue;
+        }}
+        const position = interpolatePerson(person, currentMs);
+        if (position !== null) {{
+          activeRecords.push(position);
+        }}
+      }}
 
       for (const record of activeRecords) {{
         const marker = L.circleMarker([record.lat, record.lon], {{
@@ -235,7 +287,7 @@ def write_html(payload: dict, output_path: Path) -> None:
         marker.addTo(layer);
       }}
 
-      countLabel.textContent = `${{scenario}} / visible points: ${{activeRecords.length}}`;
+      countLabel.textContent = `${{scenario}} / active people: ${{activeRecords.length}}`;
     }}
 
     function stop() {{
