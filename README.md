@@ -44,6 +44,14 @@ python src/visualize.py --input data/output/simulation/all_scenarios_points.csv 
 - `scenario_points_grid.png`
 - `scenario_hourly_counts.png`
 
+柏の地図上で点群を確認するWeb地図HTMLも作成できます。
+
+```bash
+python src/webmap.py --input data/output/simulation/all_scenarios_points.csv --output data/output/simulation/web_map.html
+```
+
+`web_map.html` をブラウザで開くと、OpenStreetMap上でシナリオ切り替え、時間スライダー、再生ができます。
+
 ## 入力CSV
 
 最低限、以下に対応する列が必要です。実データの列名が異なる場合は `config.yaml` の `columns` を変更してください。
@@ -106,6 +114,7 @@ PFLOWのWebAPIは、時空間内挿・最近傍道路点・経路探索などの
 - `simulation/all_scenarios_trajectories.json`
 - `simulation/scenario_points_grid.png`
 - `simulation/scenario_hourly_counts.png`
+- `simulation/web_map.html`
 
 最終CSVには以下の列を含みます。
 
