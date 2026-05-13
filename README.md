@@ -31,6 +31,19 @@ python src/main.py --config config.yaml
 
 `generate_sample_if_missing: true` の場合、`input_csv` が存在しなければサンプルCSVを自動生成します。
 
+## 可視化
+
+出力済みの `all_scenarios_points.csv` から、シナリオ比較用のPNGを作成できます。
+
+```bash
+python src/visualize.py --input data/output/all_scenarios_points.csv --output-dir data/output
+```
+
+以下の画像が出力されます。
+
+- `scenario_points_grid.png`
+- `scenario_hourly_counts.png`
+
 ## 入力CSV
 
 最低限、以下に対応する列が必要です。実データの列名が異なる場合は `config.yaml` の `columns` を変更してください。
