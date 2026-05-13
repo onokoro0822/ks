@@ -36,7 +36,7 @@ python src/main.py --config config.yaml
 出力済みの `all_scenarios_points.csv` から、シナリオ比較用のPNGを作成できます。
 
 ```bash
-python src/visualize.py --input data/output/all_scenarios_points.csv --output-dir data/output
+python src/visualize.py --input data/output/simulation/all_scenarios_points.csv --output-dir data/output/simulation
 ```
 
 以下の画像が出力されます。
@@ -95,15 +95,17 @@ PFLOWのWebAPIは、時空間内挿・最近傍道路点・経路探索などの
 
 `data/output/` に以下を出力します。
 
-- `baseline_points.csv`
-- `rain_points.csv`
-- `shuttle_points.csv`
-- `poi_points.csv`
-- `all_scenarios_points.csv`
-- `*_trajectories.json`
-- `all_scenarios_trajectories.json`
-- `*_points.geojson`
-- `*_metrics_*.csv`
+- `scenarios/baseline/points.csv`
+- `scenarios/baseline/points.geojson`
+- `scenarios/baseline/trajectories.json`
+- `scenarios/baseline/metrics_*.csv`
+- `scenarios/rain/`
+- `scenarios/shuttle/`
+- `scenarios/poi/`
+- `simulation/all_scenarios_points.csv`
+- `simulation/all_scenarios_trajectories.json`
+- `simulation/scenario_points_grid.png`
+- `simulation/scenario_hourly_counts.png`
 
 最終CSVには以下の列を含みます。
 

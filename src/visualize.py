@@ -123,8 +123,12 @@ def run(input_csv: Path, output_dir: Path) -> None:
 def parse_args() -> argparse.Namespace:
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description="Visualize exported person-flow scenario CSV files.")
-    parser.add_argument("--input", default="data/output/all_scenarios_points.csv", help="Path to exported points CSV")
-    parser.add_argument("--output-dir", default="data/output", help="Directory for PNG outputs")
+    parser.add_argument(
+        "--input",
+        default="data/output/simulation/all_scenarios_points.csv",
+        help="Path to exported points CSV",
+    )
+    parser.add_argument("--output-dir", default="data/output/simulation", help="Directory for PNG outputs")
     return parser.parse_args()
 
 

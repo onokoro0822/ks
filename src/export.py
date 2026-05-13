@@ -13,6 +13,16 @@ from coordinates import add_local_xy
 UE_COLUMNS = ["scenario", "person_id", "time", "lon", "lat", "x", "y", "mode", "purpose"]
 
 
+def scenario_output_dir(output_dir: Path, scenario_name: str) -> Path:
+    """Return the output directory for a single scenario."""
+    return output_dir / "scenarios" / scenario_name
+
+
+def simulation_output_dir(output_dir: Path) -> Path:
+    """Return the output directory for combined simulation results."""
+    return output_dir / "simulation"
+
+
 def prepare_for_export(gdf: gpd.GeoDataFrame, config: dict[str, Any]) -> pd.DataFrame:
     """Prepare a scenario dataframe with local x/y columns for Unreal Engine."""
     coord = config["coordinates"]
@@ -29,25 +39,30 @@ def prepare_for_export(gdf: gpd.GeoDataFrame, config: dict[str, Any]) -> pd.Data
 
 def export_scenario(gdf: gpd.GeoDataFrame, scenario_name: str, output_dir: Path, config: dict[str, Any]) -> pd.DataFrame:
     """Export one scenario as CSV, GeoJSON, and trajectory JSON."""
-    output_dir.mkdir(parents=True, exist_ok=True)
+    scenario_dir = scenario_output_dir(output_dir, scenario_name)
+    scenario_dir.mkdir(parents=True, exist_ok=True)
     csv_df = prepare_for_export(gdf, config)
-    csv_df.to_csv(output_dir / f"{scenario_name}_points.csv", index=False)
-    export_trajectory_json(csv_df, output_dir / f"{scenario_name}_trajectories.json")
-    gdf.to_file(output_dir / f"{scenario_name}_points.geojson", driver="GeoJSON")
+    csv_df.to_csv(scenario_dir / "points.csv", index=False)
+    export_trajectory_json(csv_df, scenario_dir / "trajectories.json")
+    gdf.to_file(scenario_dir / "points.geojson", driver="GeoJSON")
     return csv_df
 
 
 def export_metrics(metrics: dict[str, pd.DataFrame], scenario_name: str, output_dir: Path) -> None:
     """Export metric tables for one scenario."""
+    scenario_dir = scenario_output_dir(output_dir, scenario_name)
+    scenario_dir.mkdir(parents=True, exist_ok=True)
     for metric_name, table in metrics.items():
-        table.to_csv(output_dir / f"{scenario_name}_metrics_{metric_name}.csv", index=False)
+        table.to_csv(scenario_dir / f"metrics_{metric_name}.csv", index=False)
 
 
 def export_all_scenarios(csv_tables: list[pd.DataFrame], output_dir: Path) -> None:
     """Export combined CSV and trajectory JSON for all scenarios."""
+    simulation_dir = simulation_output_dir(output_dir)
+    simulation_dir.mkdir(parents=True, exist_ok=True)
     combined = pd.concat(csv_tables, ignore_index=True)
-    combined.to_csv(output_dir / "all_scenarios_points.csv", index=False)
-    export_trajectory_json(combined, output_dir / "all_scenarios_trajectories.json")
+    combined.to_csv(simulation_dir / "all_scenarios_points.csv", index=False)
+    export_trajectory_json(combined, simulation_dir / "all_scenarios_trajectories.json")
 
 
 def export_trajectory_json(df: pd.DataFrame, output_path: Path) -> None:
