@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="980" viewBox="0 0 1800 980">
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#172033}
+.title{font-size:36px;font-weight:700}.subtitle{font-size:18px;fill:#526078}
+.axis{font-size:16px;fill:#526078}.value{font-size:17px;font-weight:700}
+.legend{font-size:17px;fill:#334155}
+</style>
+<rect width="1800" height="980" fill="#ffffff"/>
+<text x="55" y="52" class="title">Estimated daily arrivals vary substantially by development program</text>
+<text x="55" y="88" class="subtitle">Six scenarios use the same 54,374 m² comparison area; stacked bars show the contribution of each facility use.</text>
+<rect x="1240" y="112" width="20" height="20" rx="2" fill="#0f766e"/>
+<text x="1269" y="129" class="legend">Commercial</text>
+<rect x="1420" y="112" width="20" height="20" rx="2" fill="#2563eb"/>
+<text x="1449" y="129" class="legend">Office</text>
+<rect x="1600" y="112" width="20" height="20" rx="2" fill="#d97706"/>
+<text x="1629" y="129" class="legend">Hotel</text>
+<line x1="150" y1="810.0" x2="1740" y2="810.0" stroke="#e2e8f0"/>
+<text x="136" y="816.0" text-anchor="end" class="axis">0</text>
+<line x1="150" y1="680.0" x2="1740" y2="680.0" stroke="#e2e8f0"/>
+<text x="136" y="686.0" text-anchor="end" class="axis">5,200</text>
+<line x1="150" y1="550.0" x2="1740" y2="550.0" stroke="#e2e8f0"/>
+<text x="136" y="556.0" text-anchor="end" class="axis">10,400</text>
+<line x1="150" y1="420.0" x2="1740" y2="420.0" stroke="#e2e8f0"/>
+<text x="136" y="426.0" text-anchor="end" class="axis">15,600</text>
+<line x1="150" y1="290.0" x2="1740" y2="290.0" stroke="#e2e8f0"/>
+<text x="136" y="296.0" text-anchor="end" class="axis">20,800</text>
+<line x1="150" y1="160.0" x2="1740" y2="160.0" stroke="#e2e8f0"/>
+<text x="136" y="166.0" text-anchor="end" class="axis">26,000</text>
+<rect x="207.5" y="381.8" width="150.0" height="428.2" fill="#0f766e"/>
+<rect x="207.5" y="324.7" width="150.0" height="57.1" fill="#2563eb"/>
+<rect x="207.5" y="315.9" width="150.0" height="8.8" fill="#d97706"/>
+<text x="282.5" y="303.9" text-anchor="middle" class="value">19,765</text>
+<text x="282.5" y="845.0" text-anchor="middle" class="axis">1. Commercial-centered</text>
+<rect x="472.5" y="770.6" width="150.0" height="39.4" fill="#0f766e"/>
+<rect x="472.5" y="618.3" width="150.0" height="152.2" fill="#2563eb"/>
+<rect x="472.5" y="605.1" width="150.0" height="13.2" fill="#d97706"/>
+<text x="547.5" y="593.1" text-anchor="middle" class="value">8,197</text>
+<text x="547.5" y="845.0" text-anchor="middle" class="axis">2. Office-centered</text>
+<rect x="737.5" y="652.3" width="150.0" height="157.7" fill="#0f766e"/>
+<rect x="737.5" y="604.8" width="150.0" height="47.6" fill="#2563eb"/>
+<rect x="737.5" y="556.1" width="150.0" height="48.6" fill="#d97706"/>
+<text x="812.5" y="544.1" text-anchor="middle" class="value">10,154</text>
+<text x="812.5" y="845.0" text-anchor="middle" class="axis">3. Hotel-centered</text>
+<rect x="1002.5" y="177.9" width="150.0" height="632.1" fill="#0f766e"/>
+<text x="1077.5" y="165.9" text-anchor="middle" class="value">25,284</text>
+<text x="1077.5" y="845.0" text-anchor="middle" class="axis">4. All commercial</text>
+<rect x="1267.5" y="619.7" width="150.0" height="190.3" fill="#2563eb"/>
+<text x="1342.5" y="607.7" text-anchor="middle" class="value">7,612</text>
+<text x="1342.5" y="845.0" text-anchor="middle" class="axis">5. All office</text>
+<rect x="1532.5" y="721.6" width="150.0" height="88.3" fill="#d97706"/>
+<text x="1607.5" y="709.6" text-anchor="middle" class="value">3,534</text>
+<text x="1607.5" y="845.0" text-anchor="middle" class="axis">6. All hotel</text>
+<text x="35" y="485.0" text-anchor="middle" class="axis" transform="rotate(-90 35 485.0)">Estimated arrival trips per day</text>
+<text x="900.0" y="946" text-anchor="middle" class="subtitle">Method: facility-specific person-trip-end rates; arrivals ≈ person-trip ends ÷ 2. Results are not unique visitor counts.</text>
+</svg>

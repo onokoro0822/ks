@@ -10,3 +10,13 @@ data/output/*
 /dist/
 /build/
 *.egg-info/
+
+# Nested Git repositories (managed separately)
+/Pseudo-PFLOW/
+/Pseudo-PFLOW-v3/
+/ppflow_change_automatic/
+/modification/scenario_based_modification/
+
+# Generated outputs and local environments
+/modification/data/output/
+.venv/

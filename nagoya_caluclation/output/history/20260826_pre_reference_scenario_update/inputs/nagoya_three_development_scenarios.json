@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "title": "旧・名鉄百貨店本店跡地（本館＋メンズ館）・開発6案",
+  "area_unit": "m2",
+  "site_scope": {
+    "name": "旧・名鉄百貨店本店跡地全体",
+    "included": [
+      "本館",
+      "メンズ館"
+    ],
+    "excluded": "名古屋駅地区再開発のその他の敷地・施設",
+    "confirmed_by_user": "2026-08-25"
+  },
+  "planning_scale_reference": {
+    "status": "比較用の暫定規模（旧本店の公表売場面積を使用）",
+    "source_date": "2021-06-10",
+    "source_url": "https://www.meitetsu.co.jp/ir/reference/securities/__icsFiles/afieldfile/2021/06/10/yukashoken151.pdf",
+    "former_department_store_sales_area_m2": 54374,
+    "scenario_total_area_m2": 54374,
+    "area_basis": "旧・名鉄百貨店本店の売場面積相当",
+    "note": "54,374㎡は本館＋メンズ館からなる旧本店の売場面積であり、新計画の延床面積・容積対象床面積ではない。用途構成の感度比較用に、各案の用途別延床面積合計を同値へ揃える。"
+  },
+  "allocation_method": {
+    "status": "user_defined_sensitivity_scenarios",
+    "confirmed_by_user": "2026-08-26",
+    "method": "利用者が指定した商業・オフィス・ホテルの用途構成比を、旧本店売場面積相当54,374㎡へ適用する。複合3案は商業中心型60:25:15、オフィス中心型20:60:20、バランス型30:45:25とし、単一用途3案は各用途100%とする。",
+    "percentage_total": 100,
+    "rounding": "用途構成比から1㎡単位へ変換し、床面積の小数部分が大きい用途から残余を配る最大剰余法で、各案の合計を54,374㎡に一致させる。",
+    "note": "用途構成比は比較・感度分析のシナリオ条件であり、確定した再開発計画や需要予測ではない。"
+  },
+  "calculation_conditions": {
+    "status": "comparison_default",
+    "note": "旧本店跡地全体の6案を同一条件で比較するための暫定共通条件。54,374㎡は旧本店売場面積相当であり、新計画の延床面積ではない。用途構成比は利用者指定の比較条件である。商業・オフィスの両用途がある複合案だけ内々交通5%低減を適用し、単一用途案の低減は0とする。",
+    "station_distance_m": 100,
+    "commercial": {
+      "area_type": "b",
+      "area_type_label": "三大都市圏郊外部および地方中枢都市",
+      "day": "平日"
+    },
+    "office": {
+      "location_key": "a",
+      "location_label": "都心部",
+      "building_key": "a",
+      "building_label": "一般事務所ビル",
+      "commercial_floor_ratio_pct": 0
+    },
+    "apply_internal_trip_reduction": true
+  },
+  "distribution_reference": "chukyo_pt_2022_age_gender_distribution_reference.json",
+  "scenarios": [
+    {
+      "id": "commercial_centered",
+      "number": 1,
+      "name": "商業中心型",
+      "name_en": "Commercial-centered",
+      "aim": "低中層を大型商業中心に",
+      "aim_en": "Large-scale commercial use concentrated in the lower and middle floors",
+      "allocation_basis": "利用者指定の用途構成比（商業60%・オフィス25%・ホテル15%）",
+      "allocation_percent": {
+        "commercial": 60,
+        "office": 25,
+        "hotel": 15
+      },
+      "floor_area_m2": {
+        "commercial": 32624,
+        "office": 13594,
+        "hotel": 8156
+      }
+    },
+    {
+      "id": "office_centered",
+      "number": 2,
+      "name": "オフィス中心型",
+      "name_en": "Office-centered",
+      "aim": "低層商業＋高層オフィス",
+      "aim_en": "Commercial use on lower floors with offices on upper floors",
+      "allocation_basis": "利用者指定の用途構成比（商業20%・オフィス60%・ホテル20%）",
+      "allocation_percent": {
+        "commercial": 20,
+        "office": 60,
+        "hotel": 20
+      },
+      "floor_area_m2": {
+        "commercial": 10875,
+        "office": 32624,
+        "hotel": 10875
+      }
+    },
+    {
+      "id": "balanced",
+      "number": 3,
+      "name": "バランス型",
+      "name_en": "Balanced mix",
+      "aim": "商業・業務・宿泊の複合",
+      "aim_en": "Mixed commercial, business, and accommodation uses",
+      "allocation_basis": "利用者指定の用途構成比（商業30%・オフィス45%・ホテル25%）",
+      "allocation_percent": {
+        "commercial": 30,
+        "office": 45,
+        "hotel": 25
+      },
+      "floor_area_m2": {
+        "commercial": 16312,
+        "office": 24468,
+        "hotel": 13594
+      }
+    },
+    {
+      "id": "all_commercial",
+      "number": 4,
+      "name": "全商業型",
+      "name_en": "All commercial",
+      "aim": "感度分析",
+      "aim_en": "Sensitivity analysis",
+      "allocation_basis": "利用者指定の用途構成比（商業100%）",
+      "allocation_percent": {
+        "commercial": 100,
+        "office": 0,
+        "hotel": 0
+      },
+      "floor_area_m2": {
+        "commercial": 54374,
+        "office": 0,
+        "hotel": 0
+      }
+    },
+    {
+      "id": "all_office",
+      "number": 5,
+      "name": "全オフィス型",
+      "name_en": "All office",
+      "aim": "感度分析",
+      "aim_en": "Sensitivity analysis",
+      "allocation_basis": "利用者指定の用途構成比（オフィス100%）",
+      "allocation_percent": {
+        "commercial": 0,
+        "office": 100,
+        "hotel": 0
+      },
+      "floor_area_m2": {
+        "commercial": 0,
+        "office": 54374,
+        "hotel": 0
+      }
+    },
+    {
+      "id": "all_hotel",
+      "number": 6,
+      "name": "全ホテル型",
+      "name_en": "All hotel",
+      "aim": "感度分析",
+      "aim_en": "Sensitivity analysis",
+      "allocation_basis": "利用者指定の用途構成比（ホテル100%）。延床面積原単位による参考値であり、客室数・稼働率による別途校正が必要",
+      "allocation_percent": {
+        "commercial": 0,
+        "office": 0,
+        "hotel": 100
+      },
+      "floor_area_m2": {
+        "commercial": 0,
+        "office": 0,
+        "hotel": 54374
+      }
+    }
+  ]
+}

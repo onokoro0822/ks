@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+
+data/output/*
+!data/output/.gitkeep
+
+/dist/
+/build/
+*.egg-info/

@@ -1,0 +1,6144 @@
+{
+  "schema_version": 1,
+  "title": "旧・名鉄百貨店本店跡地（本館＋メンズ館）・開発6案",
+  "source_scenario_file": "nagoya_three_development_scenarios.json",
+  "distribution_reference": "chukyo_pt_2022_age_gender_distribution_reference.json",
+  "site_scope": {
+    "name": "旧・名鉄百貨店本店跡地全体",
+    "included": [
+      "本館",
+      "メンズ館"
+    ],
+    "excluded": "名古屋駅地区再開発のその他の敷地・施設",
+    "confirmed_by_user": "2026-08-25"
+  },
+  "planning_scale_reference": {
+    "status": "比較用の暫定規模（旧本店の公表売場面積を使用）",
+    "source_date": "2021-06-10",
+    "source_url": "https://www.meitetsu.co.jp/ir/reference/securities/__icsFiles/afieldfile/2021/06/10/yukashoken151.pdf",
+    "former_department_store_sales_area_m2": 54374,
+    "scenario_total_area_m2": 54374,
+    "area_basis": "旧・名鉄百貨店本店の売場面積相当",
+    "note": "54,374㎡は本館＋メンズ館からなる旧本店の売場面積であり、新計画の延床面積・容積対象床面積ではない。用途構成の感度比較用に、各案の用途別延床面積合計を同値へ揃える。"
+  },
+  "allocation_method": {
+    "status": "user_defined_sensitivity_scenarios",
+    "confirmed_by_user": "2026-08-26",
+    "method": "利用者が指定した商業・オフィス・ホテルの用途構成比を、旧本店売場面積相当54,374㎡へ適用する。複合3案は商業中心型60:25:15、オフィス中心型20:60:20、バランス型30:45:25とし、単一用途3案は各用途100%とする。",
+    "percentage_total": 100,
+    "rounding": "用途構成比から1㎡単位へ変換し、床面積の小数部分が大きい用途から残余を配る最大剰余法で、各案の合計を54,374㎡に一致させる。",
+    "note": "用途構成比は比較・感度分析のシナリオ条件であり、確定した再開発計画や需要予測ではない。"
+  },
+  "calculation_conditions": {
+    "status": "comparison_default",
+    "note": "旧本店跡地全体の6案を同一条件で比較するための暫定共通条件。54,374㎡は旧本店売場面積相当であり、新計画の延床面積ではない。用途構成比は利用者指定の比較条件である。商業・オフィスの両用途がある複合案だけ内々交通5%低減を適用し、単一用途案の低減は0とする。",
+    "station_distance_m": 100,
+    "commercial": {
+      "area_type": "b",
+      "area_type_label": "三大都市圏郊外部および地方中枢都市",
+      "day": "平日"
+    },
+    "office": {
+      "location_key": "a",
+      "location_label": "都心部",
+      "building_key": "a",
+      "building_label": "一般事務所ビル",
+      "commercial_floor_ratio_pct": 0
+    },
+    "apply_internal_trip_reduction": true
+  },
+  "note": "各案の合計54,374㎡は旧本店の売場面積相当を比較用床面積として置いた暫定値であり、新計画の延床面積ではない。用途構成比は利用者が指定した比較・感度分析条件であり、確定計画ではない。年齢×性別分布は施設別の未調整人TEを2で割った推定到着人トリップへ適用。内々交通5%低減は商業・オフィスの両用途がある案だけに適用する。調整後合計には用途別・属性別の配分根拠がないため、年齢×性別分布へ適用していない。",
+  "scenarios": [
+    {
+      "id": "commercial_centered",
+      "number": 1,
+      "name": "商業中心型",
+      "name_en": "Commercial-centered",
+      "aim": "低中層を大型商業中心に",
+      "aim_en": "Large-scale commercial use concentrated in the lower and middle floors",
+      "allocation_basis": "利用者指定の用途構成比（商業60%・オフィス25%・ホテル15%）",
+      "allocation_percent": {
+        "commercial": 60,
+        "office": 25,
+        "hotel": 15
+      },
+      "floor_area_m2": {
+        "commercial": 32624,
+        "office": 13594,
+        "hotel": 8156
+      },
+      "facility_results": [
+        {
+          "key": "commercial",
+          "name": "商業施設",
+          "category": "三大都市圏郊外部および地方中枢都市・平日",
+          "area_m2": 32624,
+          "applied_rate": 10500.0,
+          "trip_ends": 34255.2
+        },
+        {
+          "key": "office",
+          "name": "オフィス",
+          "category": "都心部・一般事務所ビル",
+          "area_m2": 13594,
+          "applied_rate": 2800.0,
+          "trip_ends": 3806.3199999999997
+        },
+        {
+          "key": "hotel",
+          "name": "ホテル",
+          "category": "ホテル参考値",
+          "area_m2": 8156,
+          "applied_rate": 1300.0,
+          "trip_ends": 1060.28
+        }
+      ],
+      "total_trip_ends": 39121.799999999996,
+      "internal_trip_reduction": 1903.076,
+      "adjusted_total_trip_ends": 37218.723999999995,
+      "age_gender_distribution": {
+        "basis": "trip_ends_divided_by_two",
+        "unit": "到着人トリップ/日（推定）",
+        "is_unique_people": false,
+        "estimated_arrivals_total": 19561,
+        "genders": [
+          {
+            "key": "male",
+            "name": "男性",
+            "count": 8528
+          },
+          {
+            "key": "female",
+            "name": "女性",
+            "count": 11007
+          },
+          {
+            "key": "other",
+            "name": "その他・不詳",
+            "count": 26
+          }
+        ],
+        "facilities": [
+          {
+            "key": "commercial",
+            "name": "商業施設",
+            "trip_ends": 34255.2,
+            "estimated_arrivals": 17128,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 146,
+                "share": 0.008535974392076824,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 76,
+                    "share": 0.004420986737039789
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 70,
+                    "share": 0.004114987655037035
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 281,
+                "share": 0.016372950881147357,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 131,
+                    "share": 0.007644977065068805
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 148,
+                    "share": 0.008632974101077696
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 2,
+                    "share": 9.4999715000855e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 1344,
+                "share": 0.07846476460570617,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 523,
+                    "share": 0.030544908365274903
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 814,
+                    "share": 0.047527857416427746
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 7,
+                    "share": 0.00039199882400352796
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 1712,
+                "share": 0.09993070020789938,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 697,
+                    "share": 0.04068487794536616
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 1008,
+                    "share": 0.05884882345352964
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 7,
+                    "share": 0.000396998809003573
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 2318,
+                "share": 0.13529059412821762,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 913,
+                    "share": 0.05328284015147954
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 1403,
+                    "share": 0.0819097542707372
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 2,
+                    "share": 9.799970600088199e-05
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 2688,
+                "share": 0.15700752897741307,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 958,
+                    "share": 0.05595983212050364
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 1724,
+                    "share": 0.10067169798490605
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 6,
+                    "share": 0.00037599887200338405
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 3547,
+                "share": 0.20708137875586374,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 1433,
+                    "share": 0.08365374903875288
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 2114,
+                    "share": 0.12339662981011058
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.0999907000279e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 3802,
+                "share": 0.2219563341309976,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 1693,
+                    "share": 0.09881770354688936
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 2109,
+                    "share": 0.12311363065910803
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 2.4999925000225002e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 1290,
+                "share": 0.07535977392067825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 625,
+                    "share": 0.03651389045832863
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 665,
+                    "share": 0.038845883462349615
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "office",
+            "name": "オフィス",
+            "trip_ends": 3806.3199999999997,
+            "estimated_arrivals": 1903,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 0,
+                "share": 0.0,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 17,
+                "share": 0.009189000000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 10,
+                    "share": 0.005394000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 7,
+                    "share": 0.0036930000000000014
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00010200000000000005
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 315,
+                "share": 0.16554800000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 167,
+                    "share": 0.08774500000000003
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 147,
+                    "share": 0.07747900000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.00032400000000000007
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 350,
+                "share": 0.1835750000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 223,
+                    "share": 0.11691000000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 126,
+                    "share": 0.06624000000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.0004250000000000002
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 488,
+                "share": 0.2565930000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 302,
+                    "share": 0.15844700000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 186,
+                    "share": 0.09793300000000003
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00021300000000000008
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 451,
+                "share": 0.2373850000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 273,
+                    "share": 0.14366700000000004
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 178,
+                    "share": 0.09351000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00020800000000000007
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 217,
+                "share": 0.11364500000000005,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 142,
+                    "share": 0.07445500000000002
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 75,
+                    "share": 0.03915700000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.3000000000000016e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 58,
+                "share": 0.030361000000000013,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 39,
+                    "share": 0.02030300000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 19,
+                    "share": 0.010052000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 6.000000000000001e-06
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 7,
+                "share": 0.0037040000000000016,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 5,
+                    "share": 0.002435000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 2,
+                    "share": 0.0012690000000000006
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "hotel",
+            "name": "ホテル",
+            "trip_ends": 1060.28,
+            "estimated_arrivals": 530,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 2,
+                "share": 0.003928996071003929,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 1,
+                    "share": 0.002045997954002046
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 1,
+                    "share": 0.001882998117001883
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 17,
+                "share": 0.0330959669040331,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 9,
+                    "share": 0.017342982657017347
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 8,
+                    "share": 0.015695984304015698
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.699994300005701e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 45,
+                "share": 0.08479991520008481,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 20,
+                    "share": 0.0367949632050368
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 25,
+                    "share": 0.047667952332047674
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000336999663000337
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 76,
+                "share": 0.1418878581121419,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 47,
+                    "share": 0.08771091228908773
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 29,
+                    "share": 0.05397494602505398
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000201999798000202
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 75,
+                "share": 0.14100585899414103,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 46,
+                    "share": 0.08651491348508653
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 29,
+                    "share": 0.05449094550905449
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 119,
+                "share": 0.22454077545922457,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 71,
+                    "share": 0.13345986654013348
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 48,
+                    "share": 0.09081290918709083
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000267999732000268
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 101,
+                "share": 0.18998781001219,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 63,
+                    "share": 0.1194898805101195
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 38,
+                    "share": 0.07049792950207051
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 78,
+                "share": 0.1479248520751479,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 51,
+                    "share": 0.09633590366409633
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 27,
+                    "share": 0.05152894847105153
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.999994000006001e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 17,
+                "share": 0.032827967172032825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 10,
+                    "share": 0.019518980481019518
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 7,
+                    "share": 0.01330898669101331
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "combined_groups": [
+          {
+            "age": "10歳未満",
+            "count": 148,
+            "share": 0.007566075354020756,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 77,
+                "share": 0.003936404069321609
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 71,
+                "share": 0.0036296712846991463
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "10～19歳",
+            "count": 315,
+            "share": 0.01610347119267931,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 150,
+                "share": 0.007668319615561576
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 163,
+                "share": 0.008332907315576914
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 2,
+                "share": 0.00010224426154082102
+              }
+            ]
+          },
+          {
+            "age": "20～29歳",
+            "count": 1704,
+            "share": 0.0871121108327795,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 710,
+                "share": 0.036296712846991465
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 986,
+                "share": 0.05040642093962476
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 8,
+                "share": 0.00040897704616328406
+              }
+            ]
+          },
+          {
+            "age": "30～39歳",
+            "count": 2138,
+            "share": 0.10929911558713767,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 967,
+                "share": 0.04943510045498696
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1163,
+                "share": 0.05945503808598743
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 8,
+                "share": 0.00040897704616328406
+              }
+            ]
+          },
+          {
+            "age": "40～49歳",
+            "count": 2881,
+            "share": 0.1472828587495527,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1261,
+                "share": 0.06446500690148765
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1618,
+                "share": 0.0827156075865242
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 2,
+                "share": 0.00010224426154082102
+              }
+            ]
+          },
+          {
+            "age": "50～59歳",
+            "count": 3258,
+            "share": 0.16655590204999746,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1302,
+                "share": 0.06656101426307448
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1950,
+                "share": 0.0996881550023005
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 6,
+                "share": 0.0003067327846224631
+              }
+            ]
+          },
+          {
+            "age": "60～69歳",
+            "count": 3865,
+            "share": 0.19758703542763661,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1638,
+                "share": 0.08373805020193241
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 2227,
+                "share": 0.1138489852257042
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "70～79歳",
+            "count": 3938,
+            "share": 0.2013189509738766,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1783,
+                "share": 0.09115075916364195
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 2155,
+                "share": 0.11016819181023466
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "80歳以上",
+            "count": 1314,
+            "share": 0.06717447983231942,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 640,
+                "share": 0.03271816369306273
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 674,
+                "share": 0.03445631613925668
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          }
+        ],
+        "reference_file": "chukyo_pt_2022_age_gender_distribution_reference.json",
+        "source": "第6回中京都市圏PT調査・施設別の年齢×性別到着トリップ構成比",
+        "note": "発生集中交通量の半分を到着人トリップの近似とし、施設別の年齢×性別同時構成比で整数配分。ユニーク来訪者数ではない。"
+      },
+      "chart_images": {
+        "age_gender_png": "output/scenario_charts/01_commercial_centered_age_gender_en.png",
+        "age_gender_svg": "output/scenario_charts/01_commercial_centered_age_gender_en.svg",
+        "arrivals_by_use_png": "output/scenario_charts/01_commercial_centered_arrivals_by_use_en.png",
+        "arrivals_by_use_svg": "output/scenario_charts/01_commercial_centered_arrivals_by_use_en.svg"
+      }
+    },
+    {
+      "id": "office_centered",
+      "number": 2,
+      "name": "オフィス中心型",
+      "name_en": "Office-centered",
+      "aim": "低層商業＋高層オフィス",
+      "aim_en": "Commercial use on lower floors with offices on upper floors",
+      "allocation_basis": "利用者指定の用途構成比（商業20%・オフィス60%・ホテル20%）",
+      "allocation_percent": {
+        "commercial": 20,
+        "office": 60,
+        "hotel": 20
+      },
+      "floor_area_m2": {
+        "commercial": 10875,
+        "office": 32624,
+        "hotel": 10875
+      },
+      "facility_results": [
+        {
+          "key": "commercial",
+          "name": "商業施設",
+          "category": "三大都市圏郊外部および地方中枢都市・平日",
+          "area_m2": 10875,
+          "applied_rate": 11600.0,
+          "trip_ends": 12614.999999999998
+        },
+        {
+          "key": "office",
+          "name": "オフィス",
+          "category": "都心部・一般事務所ビル",
+          "area_m2": 32624,
+          "applied_rate": 2800.0,
+          "trip_ends": 9134.72
+        },
+        {
+          "key": "hotel",
+          "name": "ホテル",
+          "category": "ホテル参考値",
+          "area_m2": 10875,
+          "applied_rate": 1300.0,
+          "trip_ends": 1413.7499999999998
+        }
+      ],
+      "total_trip_ends": 23163.469999999998,
+      "internal_trip_reduction": 1087.4859999999999,
+      "adjusted_total_trip_ends": 22075.983999999997,
+      "age_gender_distribution": {
+        "basis": "trip_ends_divided_by_two",
+        "unit": "到着人トリップ/日（推定）",
+        "is_unique_people": false,
+        "estimated_arrivals_total": 11581,
+        "genders": [
+          {
+            "key": "male",
+            "name": "男性",
+            "count": 5804
+          },
+          {
+            "key": "female",
+            "name": "女性",
+            "count": 5763
+          },
+          {
+            "key": "other",
+            "name": "その他・不詳",
+            "count": 14
+          }
+        ],
+        "facilities": [
+          {
+            "key": "commercial",
+            "name": "商業施設",
+            "trip_ends": 12614.999999999998,
+            "estimated_arrivals": 6307,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 54,
+                "share": 0.008535974392076824,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 28,
+                    "share": 0.004420986737039789
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 26,
+                    "share": 0.004114987655037035
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 103,
+                "share": 0.016372950881147357,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 48,
+                    "share": 0.007644977065068805
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 54,
+                    "share": 0.008632974101077696
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 9.4999715000855e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 495,
+                "share": 0.07846476460570617,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 193,
+                    "share": 0.030544908365274903
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 300,
+                    "share": 0.047527857416427746
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 2,
+                    "share": 0.00039199882400352796
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 631,
+                "share": 0.09993070020789938,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 257,
+                    "share": 0.04068487794536616
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 371,
+                    "share": 0.05884882345352964
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 3,
+                    "share": 0.000396998809003573
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 854,
+                "share": 0.13529059412821762,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 336,
+                    "share": 0.05328284015147954
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 517,
+                    "share": 0.0819097542707372
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 9.799970600088199e-05
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 990,
+                "share": 0.15700752897741307,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 353,
+                    "share": 0.05595983212050364
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 635,
+                    "share": 0.10067169798490605
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 2,
+                    "share": 0.00037599887200338405
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 1306,
+                "share": 0.20708137875586374,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 528,
+                    "share": 0.08365374903875288
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 778,
+                    "share": 0.12339662981011058
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.0999907000279e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 1399,
+                "share": 0.2219563341309976,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 623,
+                    "share": 0.09881770354688936
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 776,
+                    "share": 0.12311363065910803
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 2.4999925000225002e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 475,
+                "share": 0.07535977392067825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 230,
+                    "share": 0.03651389045832863
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 245,
+                    "share": 0.038845883462349615
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "office",
+            "name": "オフィス",
+            "trip_ends": 9134.72,
+            "estimated_arrivals": 4567,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 0,
+                "share": 0.0,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 42,
+                "share": 0.009189000000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 25,
+                    "share": 0.005394000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 17,
+                    "share": 0.0036930000000000014
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00010200000000000005
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 756,
+                "share": 0.16554800000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 401,
+                    "share": 0.08774500000000003
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 354,
+                    "share": 0.07747900000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.00032400000000000007
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 838,
+                "share": 0.1835750000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 534,
+                    "share": 0.11691000000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 302,
+                    "share": 0.06624000000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 2,
+                    "share": 0.0004250000000000002
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 1172,
+                "share": 0.2565930000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 724,
+                    "share": 0.15844700000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 447,
+                    "share": 0.09793300000000003
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.00021300000000000008
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 1084,
+                "share": 0.2373850000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 656,
+                    "share": 0.14366700000000004
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 427,
+                    "share": 0.09351000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.00020800000000000007
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 519,
+                "share": 0.11364500000000005,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 340,
+                    "share": 0.07445500000000002
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 179,
+                    "share": 0.03915700000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.3000000000000016e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 139,
+                "share": 0.030361000000000013,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 93,
+                    "share": 0.02030300000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 46,
+                    "share": 0.010052000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 6.000000000000001e-06
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 17,
+                "share": 0.0037040000000000016,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 11,
+                    "share": 0.002435000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 6,
+                    "share": 0.0012690000000000006
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "hotel",
+            "name": "ホテル",
+            "trip_ends": 1413.7499999999998,
+            "estimated_arrivals": 707,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 3,
+                "share": 0.003928996071003929,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 2,
+                    "share": 0.002045997954002046
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 1,
+                    "share": 0.001882998117001883
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 23,
+                "share": 0.0330959669040331,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 12,
+                    "share": 0.017342982657017347
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 11,
+                    "share": 0.015695984304015698
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.699994300005701e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 60,
+                "share": 0.08479991520008481,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 26,
+                    "share": 0.0367949632050368
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 34,
+                    "share": 0.047667952332047674
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000336999663000337
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 100,
+                "share": 0.1418878581121419,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 62,
+                    "share": 0.08771091228908773
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 38,
+                    "share": 0.05397494602505398
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000201999798000202
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 100,
+                "share": 0.14100585899414103,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 61,
+                    "share": 0.08651491348508653
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 39,
+                    "share": 0.05449094550905449
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 158,
+                "share": 0.22454077545922457,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 94,
+                    "share": 0.13345986654013348
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 64,
+                    "share": 0.09081290918709083
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000267999732000268
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 135,
+                "share": 0.18998781001219,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 85,
+                    "share": 0.1194898805101195
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 50,
+                    "share": 0.07049792950207051
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 105,
+                "share": 0.1479248520751479,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 68,
+                    "share": 0.09633590366409633
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 37,
+                    "share": 0.05152894847105153
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.999994000006001e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 23,
+                "share": 0.032827967172032825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 14,
+                    "share": 0.019518980481019518
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 9,
+                    "share": 0.01330898669101331
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "combined_groups": [
+          {
+            "age": "10歳未満",
+            "count": 57,
+            "share": 0.004921854762110353,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 30,
+                "share": 0.0025904498747949226
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 27,
+                "share": 0.0023314048873154304
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "10～19歳",
+            "count": 168,
+            "share": 0.014506519298851567,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 85,
+                "share": 0.007339607978585614
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 82,
+                "share": 0.007080562991106122
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 1,
+                "share": 8.634832915983076e-05
+              }
+            ]
+          },
+          {
+            "age": "20～29歳",
+            "count": 1311,
+            "share": 0.11320265952853813,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 620,
+                "share": 0.05353596407909507
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 688,
+                "share": 0.059407650461963564
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 3,
+                "share": 0.00025904498747949227
+              }
+            ]
+          },
+          {
+            "age": "30～39歳",
+            "count": 1569,
+            "share": 0.13548052845177447,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 853,
+                "share": 0.07365512477333563
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 711,
+                "share": 0.06139366203263967
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 5,
+                "share": 0.00043174164579915376
+              }
+            ]
+          },
+          {
+            "age": "40～49歳",
+            "count": 2126,
+            "share": 0.1835765477938002,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1121,
+                "share": 0.09679647698817027
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1003,
+                "share": 0.08660737414731025
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 2,
+                "share": 0.00017269665831966152
+              }
+            ]
+          },
+          {
+            "age": "50～59歳",
+            "count": 2232,
+            "share": 0.19272947068474225,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1103,
+                "share": 0.09524220706329332
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1126,
+                "share": 0.09722821863396944
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 3,
+                "share": 0.00025904498747949227
+              }
+            ]
+          },
+          {
+            "age": "60～69歳",
+            "count": 1960,
+            "share": 0.1692427251532683,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 953,
+                "share": 0.08228995768931871
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1007,
+                "share": 0.08695276746394957
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "70～79歳",
+            "count": 1643,
+            "share": 0.14187030480960194,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 784,
+                "share": 0.06769709006130731
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 859,
+                "share": 0.07417321474829462
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "80歳以上",
+            "count": 515,
+            "share": 0.04446938951731284,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 255,
+                "share": 0.022018823935756843
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 260,
+                "share": 0.022450565581555997
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          }
+        ],
+        "reference_file": "chukyo_pt_2022_age_gender_distribution_reference.json",
+        "source": "第6回中京都市圏PT調査・施設別の年齢×性別到着トリップ構成比",
+        "note": "発生集中交通量の半分を到着人トリップの近似とし、施設別の年齢×性別同時構成比で整数配分。ユニーク来訪者数ではない。"
+      },
+      "chart_images": {
+        "age_gender_png": "output/scenario_charts/02_office_centered_age_gender_en.png",
+        "age_gender_svg": "output/scenario_charts/02_office_centered_age_gender_en.svg",
+        "arrivals_by_use_png": "output/scenario_charts/02_office_centered_arrivals_by_use_en.png",
+        "arrivals_by_use_svg": "output/scenario_charts/02_office_centered_arrivals_by_use_en.svg"
+      }
+    },
+    {
+      "id": "balanced",
+      "number": 3,
+      "name": "バランス型",
+      "name_en": "Balanced mix",
+      "aim": "商業・業務・宿泊の複合",
+      "aim_en": "Mixed commercial, business, and accommodation uses",
+      "allocation_basis": "利用者指定の用途構成比（商業30%・オフィス45%・ホテル25%）",
+      "allocation_percent": {
+        "commercial": 30,
+        "office": 45,
+        "hotel": 25
+      },
+      "floor_area_m2": {
+        "commercial": 16312,
+        "office": 24468,
+        "hotel": 13594
+      },
+      "facility_results": [
+        {
+          "key": "commercial",
+          "name": "商業施設",
+          "category": "三大都市圏郊外部および地方中枢都市・平日",
+          "area_m2": 16312,
+          "applied_rate": 11500.0,
+          "trip_ends": 18758.8
+        },
+        {
+          "key": "office",
+          "name": "オフィス",
+          "category": "都心部・一般事務所ビル",
+          "area_m2": 24468,
+          "applied_rate": 2800.0,
+          "trip_ends": 6851.04
+        },
+        {
+          "key": "hotel",
+          "name": "ホテル",
+          "category": "ホテル参考値",
+          "area_m2": 13594,
+          "applied_rate": 1300.0,
+          "trip_ends": 1767.22
+        }
+      ],
+      "total_trip_ends": 27377.06,
+      "internal_trip_reduction": 1280.4920000000002,
+      "adjusted_total_trip_ends": 26096.568,
+      "age_gender_distribution": {
+        "basis": "trip_ends_divided_by_two",
+        "unit": "到着人トリップ/日（推定）",
+        "is_unique_people": false,
+        "estimated_arrivals_total": 13689,
+        "genders": [
+          {
+            "key": "male",
+            "name": "男性",
+            "count": 6479
+          },
+          {
+            "key": "female",
+            "name": "女性",
+            "count": 7193
+          },
+          {
+            "key": "other",
+            "name": "その他・不詳",
+            "count": 17
+          }
+        ],
+        "facilities": [
+          {
+            "key": "commercial",
+            "name": "商業施設",
+            "trip_ends": 18758.8,
+            "estimated_arrivals": 9379,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 80,
+                "share": 0.008535974392076824,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 41,
+                    "share": 0.004420986737039789
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 39,
+                    "share": 0.004114987655037035
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 154,
+                "share": 0.016372950881147357,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 72,
+                    "share": 0.007644977065068805
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 81,
+                    "share": 0.008632974101077696
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 9.4999715000855e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 736,
+                "share": 0.07846476460570617,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 286,
+                    "share": 0.030544908365274903
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 446,
+                    "share": 0.047527857416427746
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 4,
+                    "share": 0.00039199882400352796
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 938,
+                "share": 0.09993070020789938,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 382,
+                    "share": 0.04068487794536616
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 552,
+                    "share": 0.05884882345352964
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 4,
+                    "share": 0.000396998809003573
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 1269,
+                "share": 0.13529059412821762,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 500,
+                    "share": 0.05328284015147954
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 768,
+                    "share": 0.0819097542707372
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 9.799970600088199e-05
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 1472,
+                "share": 0.15700752897741307,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 525,
+                    "share": 0.05595983212050364
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 944,
+                    "share": 0.10067169798490605
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 3,
+                    "share": 0.00037599887200338405
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 1942,
+                "share": 0.20708137875586374,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 785,
+                    "share": 0.08365374903875288
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 1157,
+                    "share": 0.12339662981011058
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.0999907000279e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 2082,
+                "share": 0.2219563341309976,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 927,
+                    "share": 0.09881770354688936
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 1155,
+                    "share": 0.12311363065910803
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 2.4999925000225002e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 706,
+                "share": 0.07535977392067825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 342,
+                    "share": 0.03651389045832863
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 364,
+                    "share": 0.038845883462349615
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "office",
+            "name": "オフィス",
+            "trip_ends": 6851.04,
+            "estimated_arrivals": 3426,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 0,
+                "share": 0.0,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 32,
+                "share": 0.009189000000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 19,
+                    "share": 0.005394000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 13,
+                    "share": 0.0036930000000000014
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00010200000000000005
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 567,
+                "share": 0.16554800000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 301,
+                    "share": 0.08774500000000003
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 265,
+                    "share": 0.07747900000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.00032400000000000007
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 629,
+                "share": 0.1835750000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 401,
+                    "share": 0.11691000000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 227,
+                    "share": 0.06624000000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.0004250000000000002
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 880,
+                "share": 0.2565930000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 543,
+                    "share": 0.15844700000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 336,
+                    "share": 0.09793300000000003
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.00021300000000000008
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 813,
+                "share": 0.2373850000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 492,
+                    "share": 0.14366700000000004
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 320,
+                    "share": 0.09351000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.00020800000000000007
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 389,
+                "share": 0.11364500000000005,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 255,
+                    "share": 0.07445500000000002
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 134,
+                    "share": 0.03915700000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.3000000000000016e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 104,
+                "share": 0.030361000000000013,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 70,
+                    "share": 0.02030300000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 34,
+                    "share": 0.010052000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 6.000000000000001e-06
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 12,
+                "share": 0.0037040000000000016,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 8,
+                    "share": 0.002435000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 4,
+                    "share": 0.0012690000000000006
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "hotel",
+            "name": "ホテル",
+            "trip_ends": 1767.22,
+            "estimated_arrivals": 884,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 4,
+                "share": 0.003928996071003929,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 2,
+                    "share": 0.002045997954002046
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 2,
+                    "share": 0.001882998117001883
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 29,
+                "share": 0.0330959669040331,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 15,
+                    "share": 0.017342982657017347
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 14,
+                    "share": 0.015695984304015698
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.699994300005701e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 75,
+                "share": 0.08479991520008481,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 33,
+                    "share": 0.0367949632050368
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 42,
+                    "share": 0.047667952332047674
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000336999663000337
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 126,
+                "share": 0.1418878581121419,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 78,
+                    "share": 0.08771091228908773
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 48,
+                    "share": 0.05397494602505398
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000201999798000202
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 124,
+                "share": 0.14100585899414103,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 76,
+                    "share": 0.08651491348508653
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 48,
+                    "share": 0.05449094550905449
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 198,
+                "share": 0.22454077545922457,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 118,
+                    "share": 0.13345986654013348
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 80,
+                    "share": 0.09081290918709083
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000267999732000268
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 168,
+                "share": 0.18998781001219,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 106,
+                    "share": 0.1194898805101195
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 62,
+                    "share": 0.07049792950207051
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 131,
+                "share": 0.1479248520751479,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 85,
+                    "share": 0.09633590366409633
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 46,
+                    "share": 0.05152894847105153
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.999994000006001e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 29,
+                "share": 0.032827967172032825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 17,
+                    "share": 0.019518980481019518
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 12,
+                    "share": 0.01330898669101331
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "combined_groups": [
+          {
+            "age": "10歳未満",
+            "count": 84,
+            "share": 0.006136313828621521,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 43,
+                "share": 0.0031412082694133978
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 41,
+                "share": 0.0029951055592081235
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "10～19歳",
+            "count": 215,
+            "share": 0.015706041347066987,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 106,
+                "share": 0.007743443640879539
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 108,
+                "share": 0.007889546351084813
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 1,
+                "share": 7.305135510263716e-05
+              }
+            ]
+          },
+          {
+            "age": "20～29歳",
+            "count": 1378,
+            "share": 0.100664767331434,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 620,
+                "share": 0.045291840163635036
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 753,
+                "share": 0.055007670392285775
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 5,
+                "share": 0.0003652567755131858
+              }
+            ]
+          },
+          {
+            "age": "30～39歳",
+            "count": 1693,
+            "share": 0.12367594418876471,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 861,
+                "share": 0.0628972167433706
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 827,
+                "share": 0.060413470669880925
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 5,
+                "share": 0.0003652567755131858
+              }
+            ]
+          },
+          {
+            "age": "40～49歳",
+            "count": 2273,
+            "share": 0.16604573014829424,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1119,
+                "share": 0.08174446635985097
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1152,
+                "share": 0.084155161078238
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 2,
+                "share": 0.00014610271020527432
+              }
+            ]
+          },
+          {
+            "age": "50～59歳",
+            "count": 2483,
+            "share": 0.18138651471984804,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1135,
+                "share": 0.08291328804149317
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1344,
+                "share": 0.09818102125794434
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 4,
+                "share": 0.00029220542041054863
+              }
+            ]
+          },
+          {
+            "age": "60～69歳",
+            "count": 2499,
+            "share": 0.18255533640149024,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1146,
+                "share": 0.08371685294762218
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1353,
+                "share": 0.09883848345386807
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "70～79歳",
+            "count": 2317,
+            "share": 0.1692599897728103,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1082,
+                "share": 0.0790415662210534
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1235,
+                "share": 0.09021842355175688
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "80歳以上",
+            "count": 747,
+            "share": 0.05456936226166995,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 367,
+                "share": 0.026809847322667835
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 380,
+                "share": 0.027759514939002118
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          }
+        ],
+        "reference_file": "chukyo_pt_2022_age_gender_distribution_reference.json",
+        "source": "第6回中京都市圏PT調査・施設別の年齢×性別到着トリップ構成比",
+        "note": "発生集中交通量の半分を到着人トリップの近似とし、施設別の年齢×性別同時構成比で整数配分。ユニーク来訪者数ではない。"
+      },
+      "chart_images": {
+        "age_gender_png": "output/scenario_charts/03_balanced_age_gender_en.png",
+        "age_gender_svg": "output/scenario_charts/03_balanced_age_gender_en.svg",
+        "arrivals_by_use_png": "output/scenario_charts/03_balanced_arrivals_by_use_en.png",
+        "arrivals_by_use_svg": "output/scenario_charts/03_balanced_arrivals_by_use_en.svg"
+      }
+    },
+    {
+      "id": "all_commercial",
+      "number": 4,
+      "name": "全商業型",
+      "name_en": "All commercial",
+      "aim": "感度分析",
+      "aim_en": "Sensitivity analysis",
+      "allocation_basis": "利用者指定の用途構成比（商業100%）",
+      "allocation_percent": {
+        "commercial": 100,
+        "office": 0,
+        "hotel": 0
+      },
+      "floor_area_m2": {
+        "commercial": 54374,
+        "office": 0,
+        "hotel": 0
+      },
+      "facility_results": [
+        {
+          "key": "commercial",
+          "name": "商業施設",
+          "category": "三大都市圏郊外部および地方中枢都市・平日",
+          "area_m2": 54374,
+          "applied_rate": 9300.0,
+          "trip_ends": 50567.82
+        },
+        {
+          "key": "office",
+          "name": "オフィス",
+          "category": "都心部・一般事務所ビル",
+          "area_m2": 0,
+          "applied_rate": 2800.0,
+          "trip_ends": 0.0
+        },
+        {
+          "key": "hotel",
+          "name": "ホテル",
+          "category": "ホテル参考値",
+          "area_m2": 0,
+          "applied_rate": 1300.0,
+          "trip_ends": 0.0
+        }
+      ],
+      "total_trip_ends": 50567.82,
+      "internal_trip_reduction": 0.0,
+      "adjusted_total_trip_ends": 50567.82,
+      "age_gender_distribution": {
+        "basis": "trip_ends_divided_by_two",
+        "unit": "到着人トリップ/日（推定）",
+        "is_unique_people": false,
+        "estimated_arrivals_total": 25284,
+        "genders": [
+          {
+            "key": "male",
+            "name": "男性",
+            "count": 10405
+          },
+          {
+            "key": "female",
+            "name": "女性",
+            "count": 14843
+          },
+          {
+            "key": "other",
+            "name": "その他・不詳",
+            "count": 36
+          }
+        ],
+        "facilities": [
+          {
+            "key": "commercial",
+            "name": "商業施設",
+            "trip_ends": 50567.82,
+            "estimated_arrivals": 25284,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 216,
+                "share": 0.008535974392076824,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 112,
+                    "share": 0.004420986737039789
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 104,
+                    "share": 0.004114987655037035
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 413,
+                "share": 0.016372950881147357,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 193,
+                    "share": 0.007644977065068805
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 218,
+                    "share": 0.008632974101077696
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 2,
+                    "share": 9.4999715000855e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 1984,
+                "share": 0.07846476460570617,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 772,
+                    "share": 0.030544908365274903
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 1202,
+                    "share": 0.047527857416427746
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 10,
+                    "share": 0.00039199882400352796
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 2527,
+                "share": 0.09993070020789938,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 1029,
+                    "share": 0.04068487794536616
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 1488,
+                    "share": 0.05884882345352964
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 10,
+                    "share": 0.000396998809003573
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 3420,
+                "share": 0.13529059412821762,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 1347,
+                    "share": 0.05328284015147954
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 2071,
+                    "share": 0.0819097542707372
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 2,
+                    "share": 9.799970600088199e-05
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 3970,
+                "share": 0.15700752897741307,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 1415,
+                    "share": 0.05595983212050364
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 2545,
+                    "share": 0.10067169798490605
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 10,
+                    "share": 0.00037599887200338405
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 5236,
+                "share": 0.20708137875586374,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 2115,
+                    "share": 0.08365374903875288
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 3120,
+                    "share": 0.12339662981011058
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 3.0999907000279e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 5613,
+                "share": 0.2219563341309976,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 2499,
+                    "share": 0.09881770354688936
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 3113,
+                    "share": 0.12311363065910803
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 2.4999925000225002e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 1905,
+                "share": 0.07535977392067825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 923,
+                    "share": 0.03651389045832863
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 982,
+                    "share": 0.038845883462349615
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "office",
+            "name": "オフィス",
+            "trip_ends": 0.0,
+            "estimated_arrivals": 0,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 0,
+                "share": 0.0,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 0,
+                "share": 0.009189000000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.005394000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0036930000000000014
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00010200000000000005
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 0,
+                "share": 0.16554800000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.08774500000000003
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.07747900000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00032400000000000007
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 0,
+                "share": 0.1835750000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.11691000000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.06624000000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0004250000000000002
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 0,
+                "share": 0.2565930000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.15844700000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.09793300000000003
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00021300000000000008
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 0,
+                "share": 0.2373850000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.14366700000000004
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.09351000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00020800000000000007
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 0,
+                "share": 0.11364500000000005,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.07445500000000002
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.03915700000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.3000000000000016e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 0,
+                "share": 0.030361000000000013,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.02030300000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.010052000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 6.000000000000001e-06
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 0,
+                "share": 0.0037040000000000016,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.002435000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0012690000000000006
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "hotel",
+            "name": "ホテル",
+            "trip_ends": 0.0,
+            "estimated_arrivals": 0,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 0,
+                "share": 0.003928996071003929,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.002045997954002046
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.001882998117001883
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 0,
+                "share": 0.0330959669040331,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.017342982657017347
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.015695984304015698
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.699994300005701e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 0,
+                "share": 0.08479991520008481,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.0367949632050368
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.047667952332047674
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000336999663000337
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 0,
+                "share": 0.1418878581121419,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.08771091228908773
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.05397494602505398
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000201999798000202
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 0,
+                "share": 0.14100585899414103,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.08651491348508653
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.05449094550905449
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 0,
+                "share": 0.22454077545922457,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.13345986654013348
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.09081290918709083
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000267999732000268
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 0,
+                "share": 0.18998781001219,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.1194898805101195
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.07049792950207051
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 0,
+                "share": 0.1479248520751479,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.09633590366409633
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.05152894847105153
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.999994000006001e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 0,
+                "share": 0.032827967172032825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.019518980481019518
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.01330898669101331
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "combined_groups": [
+          {
+            "age": "10歳未満",
+            "count": 216,
+            "share": 0.00854295206454675,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 112,
+                "share": 0.004429678848283499
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 104,
+                "share": 0.004113273216263249
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "10～19歳",
+            "count": 413,
+            "share": 0.016334440753045402,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 193,
+                "share": 0.00763328587248853
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 218,
+                "share": 0.008622053472551811
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 2,
+                "share": 7.910140800506249e-05
+              }
+            ]
+          },
+          {
+            "age": "20～29歳",
+            "count": 1984,
+            "share": 0.078468596741022,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 772,
+                "share": 0.03053314348995412
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1202,
+                "share": 0.04753994621104256
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 10,
+                "share": 0.00039550704002531246
+              }
+            ]
+          },
+          {
+            "age": "30～39歳",
+            "count": 2527,
+            "share": 0.09994462901439645,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1029,
+                "share": 0.040697674418604654
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 1488,
+                "share": 0.05885144755576649
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 10,
+                "share": 0.00039550704002531246
+              }
+            ]
+          },
+          {
+            "age": "40～49歳",
+            "count": 3420,
+            "share": 0.13526340768865686,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1347,
+                "share": 0.05327479829140959
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 2071,
+                "share": 0.08190950798924221
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 2,
+                "share": 7.910140800506249e-05
+              }
+            ]
+          },
+          {
+            "age": "50～59歳",
+            "count": 3970,
+            "share": 0.15701629489004904,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1415,
+                "share": 0.05596424616358171
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 2545,
+                "share": 0.10065654168644202
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 10,
+                "share": 0.00039550704002531246
+              }
+            ]
+          },
+          {
+            "age": "60～69歳",
+            "count": 5236,
+            "share": 0.2070874861572536,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 2115,
+                "share": 0.08364973896535359
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 3120,
+                "share": 0.12339819648789749
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 1,
+                "share": 3.9550704002531244e-05
+              }
+            ]
+          },
+          {
+            "age": "70～79歳",
+            "count": 5613,
+            "share": 0.2219981015662079,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 2499,
+                "share": 0.09883720930232558
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 3113,
+                "share": 0.12312134155987976
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 1,
+                "share": 3.9550704002531244e-05
+              }
+            ]
+          },
+          {
+            "age": "80歳以上",
+            "count": 1905,
+            "share": 0.07534409112482202,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 923,
+                "share": 0.03650529979433634
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 982,
+                "share": 0.038838791330485685
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          }
+        ],
+        "reference_file": "chukyo_pt_2022_age_gender_distribution_reference.json",
+        "source": "第6回中京都市圏PT調査・施設別の年齢×性別到着トリップ構成比",
+        "note": "発生集中交通量の半分を到着人トリップの近似とし、施設別の年齢×性別同時構成比で整数配分。ユニーク来訪者数ではない。"
+      },
+      "chart_images": {
+        "age_gender_png": "output/scenario_charts/04_all_commercial_age_gender_en.png",
+        "age_gender_svg": "output/scenario_charts/04_all_commercial_age_gender_en.svg",
+        "arrivals_by_use_png": "output/scenario_charts/04_all_commercial_arrivals_by_use_en.png",
+        "arrivals_by_use_svg": "output/scenario_charts/04_all_commercial_arrivals_by_use_en.svg"
+      }
+    },
+    {
+      "id": "all_office",
+      "number": 5,
+      "name": "全オフィス型",
+      "name_en": "All office",
+      "aim": "感度分析",
+      "aim_en": "Sensitivity analysis",
+      "allocation_basis": "利用者指定の用途構成比（オフィス100%）",
+      "allocation_percent": {
+        "commercial": 0,
+        "office": 100,
+        "hotel": 0
+      },
+      "floor_area_m2": {
+        "commercial": 0,
+        "office": 54374,
+        "hotel": 0
+      },
+      "facility_results": [
+        {
+          "key": "commercial",
+          "name": "商業施設",
+          "category": "三大都市圏郊外部および地方中枢都市・平日",
+          "area_m2": 0,
+          "applied_rate": 11600.0,
+          "trip_ends": 0.0
+        },
+        {
+          "key": "office",
+          "name": "オフィス",
+          "category": "都心部・一般事務所ビル",
+          "area_m2": 54374,
+          "applied_rate": 2800.0,
+          "trip_ends": 15224.720000000001
+        },
+        {
+          "key": "hotel",
+          "name": "ホテル",
+          "category": "ホテル参考値",
+          "area_m2": 0,
+          "applied_rate": 1300.0,
+          "trip_ends": 0.0
+        }
+      ],
+      "total_trip_ends": 15224.720000000001,
+      "internal_trip_reduction": 0.0,
+      "adjusted_total_trip_ends": 15224.720000000001,
+      "age_gender_distribution": {
+        "basis": "trip_ends_divided_by_two",
+        "unit": "到着人トリップ/日（推定）",
+        "is_unique_people": false,
+        "estimated_arrivals_total": 7612,
+        "genders": [
+          {
+            "key": "male",
+            "name": "男性",
+            "count": 4639
+          },
+          {
+            "key": "female",
+            "name": "女性",
+            "count": 2963
+          },
+          {
+            "key": "other",
+            "name": "その他・不詳",
+            "count": 10
+          }
+        ],
+        "facilities": [
+          {
+            "key": "commercial",
+            "name": "商業施設",
+            "trip_ends": 0.0,
+            "estimated_arrivals": 0,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 0,
+                "share": 0.008535974392076824,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.004420986737039789
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.004114987655037035
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 0,
+                "share": 0.016372950881147357,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.007644977065068805
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.008632974101077696
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 9.4999715000855e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 0,
+                "share": 0.07846476460570617,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.030544908365274903
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.047527857416427746
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00039199882400352796
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 0,
+                "share": 0.09993070020789938,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.04068487794536616
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.05884882345352964
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000396998809003573
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 0,
+                "share": 0.13529059412821762,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.05328284015147954
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0819097542707372
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 9.799970600088199e-05
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 0,
+                "share": 0.15700752897741307,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.05595983212050364
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.10067169798490605
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00037599887200338405
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 0,
+                "share": 0.20708137875586374,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.08365374903875288
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.12339662981011058
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.0999907000279e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 0,
+                "share": 0.2219563341309976,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.09881770354688936
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.12311363065910803
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 2.4999925000225002e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 0,
+                "share": 0.07535977392067825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.03651389045832863
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.038845883462349615
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "office",
+            "name": "オフィス",
+            "trip_ends": 15224.720000000001,
+            "estimated_arrivals": 7612,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 0,
+                "share": 0.0,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 70,
+                "share": 0.009189000000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 41,
+                    "share": 0.005394000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 28,
+                    "share": 0.0036930000000000014
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.00010200000000000005
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 1260,
+                "share": 0.16554800000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 668,
+                    "share": 0.08774500000000003
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 590,
+                    "share": 0.07747900000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 2,
+                    "share": 0.00032400000000000007
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 1397,
+                "share": 0.1835750000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 890,
+                    "share": 0.11691000000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 504,
+                    "share": 0.06624000000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 3,
+                    "share": 0.0004250000000000002
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 1953,
+                "share": 0.2565930000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 1206,
+                    "share": 0.15844700000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 745,
+                    "share": 0.09793300000000003
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 2,
+                    "share": 0.00021300000000000008
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 1808,
+                "share": 0.2373850000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 1094,
+                    "share": 0.14366700000000004
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 712,
+                    "share": 0.09351000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 2,
+                    "share": 0.00020800000000000007
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 865,
+                "share": 0.11364500000000005,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 567,
+                    "share": 0.07445500000000002
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 298,
+                    "share": 0.03915700000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.3000000000000016e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 231,
+                "share": 0.030361000000000013,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 155,
+                    "share": 0.02030300000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 76,
+                    "share": 0.010052000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 6.000000000000001e-06
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 28,
+                "share": 0.0037040000000000016,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 18,
+                    "share": 0.002435000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 10,
+                    "share": 0.0012690000000000006
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "hotel",
+            "name": "ホテル",
+            "trip_ends": 0.0,
+            "estimated_arrivals": 0,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 0,
+                "share": 0.003928996071003929,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.002045997954002046
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.001882998117001883
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 0,
+                "share": 0.0330959669040331,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.017342982657017347
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.015695984304015698
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.699994300005701e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 0,
+                "share": 0.08479991520008481,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.0367949632050368
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.047667952332047674
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000336999663000337
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 0,
+                "share": 0.1418878581121419,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.08771091228908773
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.05397494602505398
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000201999798000202
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 0,
+                "share": 0.14100585899414103,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.08651491348508653
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.05449094550905449
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 0,
+                "share": 0.22454077545922457,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.13345986654013348
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.09081290918709083
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000267999732000268
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 0,
+                "share": 0.18998781001219,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.1194898805101195
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.07049792950207051
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 0,
+                "share": 0.1479248520751479,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.09633590366409633
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.05152894847105153
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.999994000006001e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 0,
+                "share": 0.032827967172032825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.019518980481019518
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.01330898669101331
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "combined_groups": [
+          {
+            "age": "10歳未満",
+            "count": 0,
+            "share": 0.0,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 0,
+                "share": 0.0
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 0,
+                "share": 0.0
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "10～19歳",
+            "count": 70,
+            "share": 0.009196006305832895,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 41,
+                "share": 0.005386232264844981
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 28,
+                "share": 0.0036784025223331584
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 1,
+                "share": 0.00013137151865475564
+              }
+            ]
+          },
+          {
+            "age": "20～29歳",
+            "count": 1260,
+            "share": 0.1655281135049921,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 668,
+                "share": 0.08775617446137678
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 590,
+                "share": 0.07750919600630583
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 2,
+                "share": 0.0002627430373095113
+              }
+            ]
+          },
+          {
+            "age": "30～39歳",
+            "count": 1397,
+            "share": 0.18352601156069365,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 890,
+                "share": 0.11692065160273253
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 504,
+                "share": 0.06621124540199684
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 3,
+                "share": 0.00039411455596426696
+              }
+            ]
+          },
+          {
+            "age": "40～49歳",
+            "count": 1953,
+            "share": 0.2565685759327378,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1206,
+                "share": 0.15843405149763531
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 745,
+                "share": 0.09787178139779296
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 2,
+                "share": 0.0002627430373095113
+              }
+            ]
+          },
+          {
+            "age": "50～59歳",
+            "count": 1808,
+            "share": 0.2375197057277982,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 1094,
+                "share": 0.14372044140830267
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 712,
+                "share": 0.09353652128218602
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 2,
+                "share": 0.0002627430373095113
+              }
+            ]
+          },
+          {
+            "age": "60～69歳",
+            "count": 865,
+            "share": 0.11363636363636363,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 567,
+                "share": 0.07448765107724645
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 298,
+                "share": 0.039148712559117185
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "70～79歳",
+            "count": 231,
+            "share": 0.030346820809248554,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 155,
+                "share": 0.020362585391487126
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 76,
+                "share": 0.009984235417761429
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "80歳以上",
+            "count": 28,
+            "share": 0.0036784025223331584,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 18,
+                "share": 0.002364687335785602
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 10,
+                "share": 0.0013137151865475565
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          }
+        ],
+        "reference_file": "chukyo_pt_2022_age_gender_distribution_reference.json",
+        "source": "第6回中京都市圏PT調査・施設別の年齢×性別到着トリップ構成比",
+        "note": "発生集中交通量の半分を到着人トリップの近似とし、施設別の年齢×性別同時構成比で整数配分。ユニーク来訪者数ではない。"
+      },
+      "chart_images": {
+        "age_gender_png": "output/scenario_charts/05_all_office_age_gender_en.png",
+        "age_gender_svg": "output/scenario_charts/05_all_office_age_gender_en.svg",
+        "arrivals_by_use_png": "output/scenario_charts/05_all_office_arrivals_by_use_en.png",
+        "arrivals_by_use_svg": "output/scenario_charts/05_all_office_arrivals_by_use_en.svg"
+      }
+    },
+    {
+      "id": "all_hotel",
+      "number": 6,
+      "name": "全ホテル型",
+      "name_en": "All hotel",
+      "aim": "感度分析",
+      "aim_en": "Sensitivity analysis",
+      "allocation_basis": "利用者指定の用途構成比（ホテル100%）。延床面積原単位による参考値であり、客室数・稼働率による別途校正が必要",
+      "allocation_percent": {
+        "commercial": 0,
+        "office": 0,
+        "hotel": 100
+      },
+      "floor_area_m2": {
+        "commercial": 0,
+        "office": 0,
+        "hotel": 54374
+      },
+      "facility_results": [
+        {
+          "key": "commercial",
+          "name": "商業施設",
+          "category": "三大都市圏郊外部および地方中枢都市・平日",
+          "area_m2": 0,
+          "applied_rate": 11600.0,
+          "trip_ends": 0.0
+        },
+        {
+          "key": "office",
+          "name": "オフィス",
+          "category": "都心部・一般事務所ビル",
+          "area_m2": 0,
+          "applied_rate": 2800.0,
+          "trip_ends": 0.0
+        },
+        {
+          "key": "hotel",
+          "name": "ホテル",
+          "category": "ホテル参考値",
+          "area_m2": 54374,
+          "applied_rate": 1300.0,
+          "trip_ends": 7068.62
+        }
+      ],
+      "total_trip_ends": 7068.62,
+      "internal_trip_reduction": 0.0,
+      "adjusted_total_trip_ends": 7068.62,
+      "age_gender_distribution": {
+        "basis": "trip_ends_divided_by_two",
+        "unit": "到着人トリップ/日（推定）",
+        "is_unique_people": false,
+        "estimated_arrivals_total": 3534,
+        "genders": [
+          {
+            "key": "male",
+            "name": "男性",
+            "count": 2117
+          },
+          {
+            "key": "female",
+            "name": "女性",
+            "count": 1414
+          },
+          {
+            "key": "other",
+            "name": "その他・不詳",
+            "count": 3
+          }
+        ],
+        "facilities": [
+          {
+            "key": "commercial",
+            "name": "商業施設",
+            "trip_ends": 0.0,
+            "estimated_arrivals": 0,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 0,
+                "share": 0.008535974392076824,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.004420986737039789
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.004114987655037035
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 0,
+                "share": 0.016372950881147357,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.007644977065068805
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.008632974101077696
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 9.4999715000855e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 0,
+                "share": 0.07846476460570617,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.030544908365274903
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.047527857416427746
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00039199882400352796
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 0,
+                "share": 0.09993070020789938,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.04068487794536616
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.05884882345352964
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.000396998809003573
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 0,
+                "share": 0.13529059412821762,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.05328284015147954
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0819097542707372
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 9.799970600088199e-05
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 0,
+                "share": 0.15700752897741307,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.05595983212050364
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.10067169798490605
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00037599887200338405
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 0,
+                "share": 0.20708137875586374,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.08365374903875288
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.12339662981011058
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.0999907000279e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 0,
+                "share": 0.2219563341309976,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.09881770354688936
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.12311363065910803
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 2.4999925000225002e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 0,
+                "share": 0.07535977392067825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.03651389045832863
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.038845883462349615
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "office",
+            "name": "オフィス",
+            "trip_ends": 0.0,
+            "estimated_arrivals": 0,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 0,
+                "share": 0.0,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 0,
+                "share": 0.009189000000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.005394000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0036930000000000014
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00010200000000000005
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 0,
+                "share": 0.16554800000000003,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.08774500000000003
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.07747900000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00032400000000000007
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 0,
+                "share": 0.1835750000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.11691000000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.06624000000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0004250000000000002
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 0,
+                "share": 0.2565930000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.15844700000000006
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.09793300000000003
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00021300000000000008
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 0,
+                "share": 0.2373850000000001,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.14366700000000004
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.09351000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.00020800000000000007
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 0,
+                "share": 0.11364500000000005,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.07445500000000002
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.03915700000000002
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 3.3000000000000016e-05
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 0,
+                "share": 0.030361000000000013,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.02030300000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.010052000000000004
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 6.000000000000001e-06
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 0,
+                "share": 0.0037040000000000016,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 0,
+                    "share": 0.002435000000000001
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 0,
+                    "share": 0.0012690000000000006
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "hotel",
+            "name": "ホテル",
+            "trip_ends": 7068.62,
+            "estimated_arrivals": 3534,
+            "groups": [
+              {
+                "age": "10歳未満",
+                "count": 14,
+                "share": 0.003928996071003929,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 7,
+                    "share": 0.002045997954002046
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 7,
+                    "share": 0.001882998117001883
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "10～19歳",
+                "count": 117,
+                "share": 0.0330959669040331,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 61,
+                    "share": 0.017342982657017347
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 56,
+                    "share": 0.015695984304015698
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.699994300005701e-05
+                  }
+                ]
+              },
+              {
+                "age": "20～29歳",
+                "count": 299,
+                "share": 0.08479991520008481,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 130,
+                    "share": 0.0367949632050368
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 168,
+                    "share": 0.047667952332047674
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.000336999663000337
+                  }
+                ]
+              },
+              {
+                "age": "30～39歳",
+                "count": 502,
+                "share": 0.1418878581121419,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 310,
+                    "share": 0.08771091228908773
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 191,
+                    "share": 0.05397494602505398
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.000201999798000202
+                  }
+                ]
+              },
+              {
+                "age": "40～49歳",
+                "count": 499,
+                "share": 0.14100585899414103,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 306,
+                    "share": 0.08651491348508653
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 193,
+                    "share": 0.05449094550905449
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "50～59歳",
+                "count": 794,
+                "share": 0.22454077545922457,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 472,
+                    "share": 0.13345986654013348
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 321,
+                    "share": 0.09081290918709083
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 1,
+                    "share": 0.000267999732000268
+                  }
+                ]
+              },
+              {
+                "age": "60～69歳",
+                "count": 671,
+                "share": 0.18998781001219,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 422,
+                    "share": 0.1194898805101195
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 249,
+                    "share": 0.07049792950207051
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              },
+              {
+                "age": "70～79歳",
+                "count": 522,
+                "share": 0.1479248520751479,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 340,
+                    "share": 0.09633590366409633
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 182,
+                    "share": 0.05152894847105153
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 5.999994000006001e-05
+                  }
+                ]
+              },
+              {
+                "age": "80歳以上",
+                "count": 116,
+                "share": 0.032827967172032825,
+                "genders": [
+                  {
+                    "key": "male",
+                    "name": "男性",
+                    "count": 69,
+                    "share": 0.019518980481019518
+                  },
+                  {
+                    "key": "female",
+                    "name": "女性",
+                    "count": 47,
+                    "share": 0.01330898669101331
+                  },
+                  {
+                    "key": "other",
+                    "name": "その他・不詳",
+                    "count": 0,
+                    "share": 0.0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "combined_groups": [
+          {
+            "age": "10歳未満",
+            "count": 14,
+            "share": 0.003961516694963215,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 7,
+                "share": 0.0019807583474816073
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 7,
+                "share": 0.0019807583474816073
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "10～19歳",
+            "count": 117,
+            "share": 0.03310696095076401,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 61,
+                "share": 0.01726089417091115
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 56,
+                "share": 0.01584606677985286
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "20～29歳",
+            "count": 299,
+            "share": 0.08460667798528579,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 130,
+                "share": 0.03678551216751556
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 168,
+                "share": 0.04753820033955857
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 1,
+                "share": 0.0002829654782116582
+              }
+            ]
+          },
+          {
+            "age": "30～39歳",
+            "count": 502,
+            "share": 0.1420486700622524,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 310,
+                "share": 0.08771929824561403
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 191,
+                "share": 0.05404640633842671
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 1,
+                "share": 0.0002829654782116582
+              }
+            ]
+          },
+          {
+            "age": "40～49歳",
+            "count": 499,
+            "share": 0.14119977362761743,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 306,
+                "share": 0.0865874363327674
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 193,
+                "share": 0.05461233729485003
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "50～59歳",
+            "count": 794,
+            "share": 0.2246745897000566,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 472,
+                "share": 0.13355970571590267
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 321,
+                "share": 0.09083191850594227
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 1,
+                "share": 0.0002829654782116582
+              }
+            ]
+          },
+          {
+            "age": "60～69歳",
+            "count": 671,
+            "share": 0.18986983588002262,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 422,
+                "share": 0.11941143180531975
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 249,
+                "share": 0.07045840407470289
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "70～79歳",
+            "count": 522,
+            "share": 0.14770797962648557,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 340,
+                "share": 0.09620826259196379
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 182,
+                "share": 0.05149971703452179
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          },
+          {
+            "age": "80歳以上",
+            "count": 116,
+            "share": 0.032823995472552346,
+            "genders": [
+              {
+                "key": "male",
+                "name": "男性",
+                "count": 69,
+                "share": 0.019524617996604415
+              },
+              {
+                "key": "female",
+                "name": "女性",
+                "count": 47,
+                "share": 0.013299377475947935
+              },
+              {
+                "key": "other",
+                "name": "その他・不詳",
+                "count": 0,
+                "share": 0.0
+              }
+            ]
+          }
+        ],
+        "reference_file": "chukyo_pt_2022_age_gender_distribution_reference.json",
+        "source": "第6回中京都市圏PT調査・施設別の年齢×性別到着トリップ構成比",
+        "note": "発生集中交通量の半分を到着人トリップの近似とし、施設別の年齢×性別同時構成比で整数配分。ユニーク来訪者数ではない。"
+      },
+      "chart_images": {
+        "age_gender_png": "output/scenario_charts/06_all_hotel_age_gender_en.png",
+        "age_gender_svg": "output/scenario_charts/06_all_hotel_age_gender_en.svg",
+        "arrivals_by_use_png": "output/scenario_charts/06_all_hotel_arrivals_by_use_en.png",
+        "arrivals_by_use_svg": "output/scenario_charts/06_all_hotel_arrivals_by_use_en.svg"
+      }
+    }
+  ],
+  "chart_images": {
+    "age_gender_composition_en": "output/nagoya_six_scenarios_age_gender_en.png",
+    "arrivals_by_use_en": "output/nagoya_six_scenarios_arrivals_by_use_en.png"
+  },
+  "chart_image": "output/nagoya_six_scenarios_age_gender_en.png",
+  "individual_chart_images": {
+    "commercial_centered": {
+      "age_gender_png": "output/scenario_charts/01_commercial_centered_age_gender_en.png",
+      "age_gender_svg": "output/scenario_charts/01_commercial_centered_age_gender_en.svg",
+      "arrivals_by_use_png": "output/scenario_charts/01_commercial_centered_arrivals_by_use_en.png",
+      "arrivals_by_use_svg": "output/scenario_charts/01_commercial_centered_arrivals_by_use_en.svg"
+    },
+    "office_centered": {
+      "age_gender_png": "output/scenario_charts/02_office_centered_age_gender_en.png",
+      "age_gender_svg": "output/scenario_charts/02_office_centered_age_gender_en.svg",
+      "arrivals_by_use_png": "output/scenario_charts/02_office_centered_arrivals_by_use_en.png",
+      "arrivals_by_use_svg": "output/scenario_charts/02_office_centered_arrivals_by_use_en.svg"
+    },
+    "balanced": {
+      "age_gender_png": "output/scenario_charts/03_balanced_age_gender_en.png",
+      "age_gender_svg": "output/scenario_charts/03_balanced_age_gender_en.svg",
+      "arrivals_by_use_png": "output/scenario_charts/03_balanced_arrivals_by_use_en.png",
+      "arrivals_by_use_svg": "output/scenario_charts/03_balanced_arrivals_by_use_en.svg"
+    },
+    "all_commercial": {
+      "age_gender_png": "output/scenario_charts/04_all_commercial_age_gender_en.png",
+      "age_gender_svg": "output/scenario_charts/04_all_commercial_age_gender_en.svg",
+      "arrivals_by_use_png": "output/scenario_charts/04_all_commercial_arrivals_by_use_en.png",
+      "arrivals_by_use_svg": "output/scenario_charts/04_all_commercial_arrivals_by_use_en.svg"
+    },
+    "all_office": {
+      "age_gender_png": "output/scenario_charts/05_all_office_age_gender_en.png",
+      "age_gender_svg": "output/scenario_charts/05_all_office_age_gender_en.svg",
+      "arrivals_by_use_png": "output/scenario_charts/05_all_office_arrivals_by_use_en.png",
+      "arrivals_by_use_svg": "output/scenario_charts/05_all_office_arrivals_by_use_en.svg"
+    },
+    "all_hotel": {
+      "age_gender_png": "output/scenario_charts/06_all_hotel_age_gender_en.png",
+      "age_gender_svg": "output/scenario_charts/06_all_hotel_age_gender_en.svg",
+      "arrivals_by_use_png": "output/scenario_charts/06_all_hotel_arrivals_by_use_en.png",
+      "arrivals_by_use_svg": "output/scenario_charts/06_all_hotel_arrivals_by_use_en.svg"
+    }
+  }
+}

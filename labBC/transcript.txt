@@ -1,0 +1,3383 @@
+16:21:39 --> 16:21:39
+Xinjie Zhao: So in this system, what we want to do is if we have a dual entity, so all these kind of agents work alongside these dual entity. I mean, what their role is to exactly execute tasks on a specific dual entity
+
+16:21:39 --> 16:21:50
+Xinjie Zhao: So it's more like a goal leader. I mean, they follow the goals. There is no specific agents to control everything. Yeah, every agent is in that place. Yeah
+
+16:21:47 --> 16:21:49
+Artur Hovhannisyan: I see you're not.
+
+16:21:49 --> 16:21:52
+Artur Hovhannisyan: You are not providing, let's say.
+
+16:21:52 --> 16:21:58
+Artur Hovhannisyan: Read them for the agent to policy made. So you kind of make their tasks so.
+
+16:21:58 --> 16:22:02
+Artur Hovhannisyan: So focused, so concrete.
+
+16:22:02 --> 16:22:06
+Artur Hovhannisyan: So that is kind of limiting hallucination, right?
+
+16:22:08 --> 16:22:09
+Artur Hovhannisyan: Yeah.
+
+16:22:06 --> 16:22:22
+Xinjie Zhao: Yeah, that's part of the situation because hallucination is also some kind of necessity for them to design some planning scenarios, because, for example, this is a very specific task. We want to enlarge this greenfield area, right?
+
+16:22:15 --> 16:22:16
+Artur Hovhannisyan: Right.
+
+16:22:22 --> 16:22:31
+Xinjie Zhao: But without hallucination, I mean, with hallucination, the Agentic systems can design different kind of shapes
+
+16:22:22 --> 16:22:31
+Xinjie Zhao: For example, I want to enlarge this green field like 1.5 times than the original size, right? So with hallucination, the
+
+16:22:47 --> 16:23:03
+Xinjie Zhao: Then it's no different from traditional computational methods. So that's the case. We still need some hallucinations, but in the creative planning tasks. But in the executive things, then we only need them to follow the rules and understand our needs.
+
+16:22:53 --> 16:22:54
+Artur Hovhannisyan: I see. Exactly.
+
+16:23:04 --> 16:23:07
+Artur Hovhannisyan: Yeah, I see. I see kind of your.
+
+16:23:07 --> 16:23:17
+Artur Hovhannisyan: Uh, so we need to kind of find the best, like, um, alliance of the hallucination, because hallucination by itself is something like creating creativity for the agent.
+
+16:23:17 --> 16:23:19
+Xinjie Zhao: Yeah, yeah, yeah, I see.
+
+16:23:17 --> 16:23:25
+Artur Hovhannisyan: So you need find like the best. Yeah. Allowance. Yeah, thank you very much. And the second question, that's very brief.
+
+16:23:21 --> 16:23:23
+Xinjie Zhao: Yeah, yeah, yeah. Yeah, thank you.
+
+16:23:24 --> 16:23:25
+Xinjie Zhao: Yeah, yeah, yeah.
+
+16:23:25 --> 16:23:31
+Artur Hovhannisyan: would like to get answer, because for every agent, you say, like, you need to have a context, right?
+
+16:23:31 --> 16:23:36
+Artur Hovhannisyan: memory that the agent can remember, like the previous tasks, and follow them.
+
+16:23:35 --> 16:23:38
+Xinjie Zhao: Yeah, yeah, yeah. Yeah, yeah, yeah.
+
+16:23:37 --> 16:23:42
+Artur Hovhannisyan: So if you deal with the urban data, especially like the big data for the.
+
+16:23:42 --> 16:23:48
+Artur Hovhannisyan: Like entire city, how, for example, you deal with this context, because context is very limited.
+
+16:23:43 --> 16:23:45
+Xinjie Zhao: Yeah, yeah.
+
+16:23:48 --> 16:23:50
+Artur Hovhannisyan: And the agent will just.
+
+16:23:50 --> 16:23:53
+Artur Hovhannisyan: Forget what they were doing previously to follow.
+
+16:23:53 --> 16:23:58
+Artur Hovhannisyan: for the complex urban decision making the context might be issue right?
+
+16:23:59 --> 16:24:15
+Xinjie Zhao: Yeah, yeah, yeah. So if you treat the entire city, I mean, the entire database of all these kind of geoentities inside a city case, then it would be a very complex data search engine.
+
+16:24:02 --> 16:24:03
+Artur Hovhannisyan: Okay.
+
+16:24:15 --> 16:24:32
+Xinjie Zhao: uh, problem, but, uh, uh, my, my scenario, this, uh, specific scenario is, like, uh, the, uh, replotting in land adjustment. So, what we need to do is specifically, like, a small block area. So then, the memory problem would be solved, because, uh.
+
+16:24:32 --> 16:24:49
+Xinjie Zhao: We don't have much things to remember. We don't have much executive specific geo entities in this hypergraph. I mean, we can treat such kind of urban scenarios as a hypergraph. I mean, we can treat the geo boundaries.
+
+16:24:49 --> 16:25:09
+Xinjie Zhao: as the edge of a hypergraph, and everything happens inside a draw boundary is the nodes of this hypergraph. Then, I mean, in this mathematical formulation, then everything inside the hypergraph can be searched. We can also use very traditional RAGs, but we don't need to deal with very complex.
+
+16:25:09 --> 16:25:26
+Xinjie Zhao: I mean, we don't need to actually build a very complex, what do you say, vertical engine to search for every related topics. What we need to do is to create knowledge graphs and make full use of the hypergraph structure instead of the traditional structure.
+
+16:25:26 --> 16:25:42
+Xinjie Zhao: graph structure, because the geospace itself is a very, very typical hypergraph mathematical representation. So if we make full use of the powerful hypergraph structure, then we can actually search for everything inside a small block. I mean, a small block is enough.
+
+16:25:42 --> 16:25:55
+Xinjie Zhao: Yeah, so that's… actually, we can't solve the problem. I mean, for me, I can't solve the problem, so I chose a relatively easy-to-solve case. So that's my choice, yeah. Sorry for that. It's too difficult, yeah, yes, yes.
+
+16:25:52 --> 16:25:53
+Artur Hovhannisyan: Yeah, okay.
+
+16:25:53 --> 16:25:54
+Artur Hovhannisyan: Thank you very much.
+
+16:25:55 --> 16:25:57
+Artur Hovhannisyan: Thank you very much for explaining both.
+
+16:25:55 --> 16:25:56
+Xinjie Zhao: Yep.
+
+16:25:57 --> 16:25:58
+Xinjie Zhao: Yeah.
+
+16:26:01 --> 16:26:03
+RUIHANG XIE: Yeah, great question.
+
+16:26:03 --> 16:26:07
+RUIHANG XIE: Is there any other question, even though I would like to ask.
+
+16:26:07 --> 16:26:10
+RUIHANG XIE: Um, actually, since I think…
+
+16:26:10 --> 16:26:13
+RUIHANG XIE: very impressive works. Then I have, like.
+
+16:26:13 --> 16:26:16
+RUIHANG XIE: Two questions. The first question is.
+
+16:26:16 --> 16:26:20
+RUIHANG XIE: What is the specific research problem you will solve?
+
+16:26:20 --> 16:26:24
+RUIHANG XIE: Because you use case study, then…
+
+16:26:23 --> 16:26:25
+Xinjie Zhao: Yeah, yeah, yeah.
+
+16:26:24 --> 16:26:26
+RUIHANG XIE: in the end up.
+
+16:26:26 --> 16:26:32
+RUIHANG XIE: Um, first several slides, I saw you talk a lot about, like.
+
+16:26:32 --> 16:26:37
+RUIHANG XIE: or AOM, and other like open urban planning stuff.
+
+16:26:34 --> 16:26:36
+Xinjie Zhao: Yeah, yeah, yeah.
+
+16:26:37 --> 16:26:40
+RUIHANG XIE: But the problem is, what are the specific gaps?
+
+16:26:40 --> 16:26:41
+RUIHANG XIE: Yes.
+
+16:26:42 --> 16:26:59
+Xinjie Zhao: Yeah, I think that there are some fundamental problems for language models, because one of the fundamental problems is, can language models understand temporal and spatial dynamics? So that's a very, very important question.
+
+16:26:59 --> 16:27:21
+Xinjie Zhao: If you want to use such kind of AI in different kind of scenarios, especially in urban systems, spatial and temporal dimension is something we can't avoid. So when we deal with spatial and temporal scenarios, we want to know whether these kind of language models actually generate some intelligence.
+
+16:27:21 --> 16:27:36
+Xinjie Zhao: I mean, we human beings understand the spatial and temporal dynamics some kind of intuitive, but for Agentic models or language models, they are trained, and what they can do is just predict the next words.
+
+16:27:36 --> 16:27:44
+Xinjie Zhao: Right? So, we don't exactly know whether the cognitive mechanisms inside these kind of statistic models.
+
+16:27:44 --> 16:27:59
+Xinjie Zhao: can actually resemble or to mimic our human brains. So that's a fundamental problem. And what I want to solve is, if we have such kind of powerful tools, such powerful intelligence from language models.
+
+16:27:59 --> 16:28:16
+Xinjie Zhao: Can we control, I mean, make such kind of spatial and temporal understanding from language models under control? Because I also ask some kind of questions like whether we can control the Agentic system because there are some kind of hallucinations, right?
+
+16:28:16 --> 16:28:34
+Xinjie Zhao: So, the hallucinations comes from where, and how we can make it, um, under our control, because we want to make some kind of, like, what to say, uh, we have a specific goal. We want to make these kind of tools usable in urban planning scenarios.
+
+16:28:34 --> 16:28:55
+Xinjie Zhao: But if we can't solve the problem of hallucination, then the local residents, they won't trust such kind of things. Or someone would use AIs to make some fake news about this kind of urban planning details. So if we can make the Agentic systems under control, and we know what exactly happens inside these kind of planning scenarios.
+
+16:28:55 --> 16:29:01
+Xinjie Zhao: which is the specific case for spatial understanding of language models. Then.
+
+16:29:01 --> 16:29:16
+Xinjie Zhao: we can, like, build something upon that. I'm not sure whether I'm clear, because I start from very fundamental limitations of language models. So what I want to do is to control the hallucinations from specific cognitive mechanisms inside languages.
+
+16:29:16 --> 16:29:28
+Xinjie Zhao: And then to design something upon that, and to make all this kind of spatial designing process led by language model agents capable inside real-world cases. Yeah.
+
+16:29:29 --> 16:29:34
+RUIHANG XIE: Okay, I see. Personally, I feel like if you start from fundamental question.
+
+16:29:30 --> 16:29:31
+Xinjie Zhao: Yeah.
+
+16:29:34 --> 16:29:38
+RUIHANG XIE: But this fundamental question can also be answered by other.
+
+16:29:38 --> 16:29:44
+RUIHANG XIE: fields, for example, in my area, like, evacuation, Iraq, actually, so many.
+
+16:29:44 --> 16:29:45
+RUIHANG XIE: research.
+
+16:29:45 --> 16:29:46
+Xinjie Zhao: Yeah, yeah, yeah.
+
+16:29:45 --> 16:29:48
+RUIHANG XIE: researcher. I've used this kind of things.
+
+16:29:46 --> 16:29:47
+Xinjie Zhao: Yeah. Okay.
+
+16:29:48 --> 16:29:50
+RUIHANG XIE: So, I mean, I didn't see…
+
+16:29:51 --> 16:29:56
+RUIHANG XIE: specific gaps in your research. Personally, I feel like you might need.
+
+16:29:56 --> 16:29:57
+RUIHANG XIE: Fine.
+
+16:29:57 --> 16:29:58
+RUIHANG XIE: something that's.
+
+16:29:58 --> 16:30:00
+RUIHANG XIE: can…
+
+16:30:00 --> 16:30:05
+RUIHANG XIE: can convince me that this is the really.
+
+16:30:05 --> 16:30:09
+RUIHANG XIE: necessary or valuable research.
+
+16:30:09 --> 16:30:13
+RUIHANG XIE: then, yeah, but yeah, but that's quite impressive. Then.
+
+16:30:09 --> 16:30:11
+Xinjie Zhao: Yeah, yeah, yeah.
+
+16:30:13 --> 16:30:15
+RUIHANG XIE: The the second question is that.
+
+16:30:16 --> 16:30:20
+RUIHANG XIE: and because you I I checked the slides. I've.
+
+16:30:20 --> 16:30:21
+RUIHANG XIE: I mean…
+
+16:30:20 --> 16:30:22
+Xinjie Zhao: Yep.
+
+16:30:21 --> 16:30:25
+RUIHANG XIE: I feel like you are proposed something like workflow, right?
+
+16:30:26 --> 16:30:28
+RUIHANG XIE: So, I mean, what the…
+
+16:30:28 --> 16:30:36
+RUIHANG XIE: Have you proposed? Would you propose some new knowledge or methods that can really advance this area?
+
+16:30:37 --> 16:30:42
+RUIHANG XIE: or have some social contributions, because I feel like.
+
+16:30:43 --> 16:30:43
+RUIHANG XIE: uh…
+
+16:30:44 --> 16:30:48
+RUIHANG XIE: Yeah, for Phd, maybe we we need to propose some new knowledge. Yes.
+
+16:30:48 --> 16:30:51
+RUIHANG XIE: So what's your opinion about this?
+
+16:30:52 --> 16:31:08
+Xinjie Zhao: Yeah, I think your question is really sharp. And I think that — because I think that maybe I showed too much real-world cases. That's one thing. And also, I discussed about workflows. But in the end, it's an Agentic system.
+
+16:31:08 --> 16:31:25
+Xinjie Zhao: I use the case of workflow because I think it's more like a workflow. Of course, I know how to design a more complex Agentic systems, but just as I said, if you want to translate from natural language to some specific and real-world planning tasks.
+
+16:31:25 --> 16:31:40
+Xinjie Zhao: then there is, of course, a gap. Because, of course, you can transform all these kind of steps into mathematical representations, but whether these kind of mathematical representations really represent our needs, I mean, what exactly.
+
+16:31:40 --> 16:31:55
+Xinjie Zhao: happening in our mind? You don't exactly know. And I think the Agentic system don't exactly know. So what we want to build is that if the Agentic systems can really like to reshape and redesign these areas and follow the needs from human beings.
+
+16:31:56 --> 16:32:13
+Xinjie Zhao: Then that's not answered. I mean, although this kind of language model is capable enough, but they can't have a very specific spatial understanding, just as I mentioned. So this is a gap. How to translate natural language to a specific urban planning execution workflows?
+
+16:32:13 --> 16:32:29
+Xinjie Zhao: an execution of, like, different kind of, like, planning tasks, and to, uh, make everyone inside it, I mean, every participant inside this kind of, like, planning scenario satisfied. And why they are satisfied? I mean, I mean, that's a very, very, very, very interesting question, right? So, because.
+
+16:32:29 --> 16:32:45
+Xinjie Zhao: It's not exactly reshape the dual entities. It's reshape people's interests. So what's happening inside these kind of scenarios and how people would think about it? Because for example, if there are two or three participants, there are two or three stakeholders inside this kind of readjustment.
+
+16:32:45 --> 16:33:00
+Xinjie Zhao: scenarios, how to make some, like, plans that makes everyone satisfied, or if someone is not as satisfied, how the agents can help them to understand why they are not satisfied, and how people would understand agents' plans.
+
+16:33:00 --> 16:33:19
+Xinjie Zhao: So that's, of course, a gap, because I'm not sure, like, what is the exact, like, gap you want to see, but I think that still, the agent system is not something new to the… not something, like, common for the local residents, and how to make such kind of agent systems to.
+
+16:33:19 --> 16:33:31
+Xinjie Zhao: uh, dive into people's life, and how to make full use of them in every scenarios, uh, in the urban life, uh, is what I want to solve. And, uh, um, workflow, of course, it's something always be…
+
+16:33:31 --> 16:33:49
+Xinjie Zhao: criticized because, um, some reviewers from, uh, AI conferences, they saw that an Agentic system have to be some kind of, like, a complex and, um, more chaotic structure. But, actually, um, if we really want to solve some real-world problems.
+
+16:33:49 --> 16:34:05
+Xinjie Zhao: A workflow is the most reliable and fundamental choice. And all this kind of chaotic and agent-leaded system will only end to some chaotic reasons. I'm not sure whether I'm clear, but what we want to do is.
+
+16:34:05 --> 16:34:21
+Xinjie Zhao: Can a workflow be chosen by an agent system? And can we train an agent system to find the workflows by themselves with more fundamental reinforcement learnings, not exactly led by language-based agentic collaboration?
+
+16:34:21 --> 16:34:37
+Xinjie Zhao: Yeah. So what we want to do is, can agents really form an understanding of complex social needs and translate it into a specific and understandable workflow to edit the geoentities? So what's the gap is?
+
+16:34:37 --> 16:34:48
+Xinjie Zhao: how to transform the social needs to the unexecutable Agentic workflow of editing such kind of geo-entities, and how to evaluate whether people.
+
+16:34:48 --> 16:34:52
+Xinjie Zhao: are satisfied with it, and why they are not satisfied.
+
+16:34:52 --> 16:35:02
+Xinjie Zhao: Because that's something we have to link with, yeah. The sense of spatial and the sense of social society… I mean, human society's interests, conflicts. Yeah, that's a problem, yeah.
+
+16:34:53 --> 16:34:54
+RUIHANG XIE: Okay.
+
+16:35:03 --> 16:35:06
+RUIHANG XIE: Okay, I see. Thank you. Thank you for.
+
+16:35:04 --> 16:35:06
+Xinjie Zhao: Yeah, thank you.
+
+16:35:06 --> 16:35:10
+RUIHANG XIE: very substantive answer. Okay, and.
+
+16:35:08 --> 16:35:10
+Xinjie Zhao: Okay. Thank you.
+
+16:35:11 --> 16:35:13
+RUIHANG XIE: Is there any other question?
+
+16:35:13 --> 16:35:15
+RUIHANG XIE: If no, we will.
+
+16:35:16 --> 16:35:18
+RUIHANG XIE: have another presenters.
+
+16:35:18 --> 16:35:24
+RUIHANG XIE: Because we were, uh… Ye Sang and Ximu Zhu Sang…
+
+16:35:24 --> 16:35:26
+RUIHANG XIE: have some, uh…
+
+16:35:26 --> 16:35:32
+RUIHANG XIE: Other things, then we would like to ask, uh, waiting members.
+
+16:35:32 --> 16:35:36
+RUIHANG XIE: Claire, could you please share something? Then.
+
+16:35:36 --> 16:35:37
+RUIHANG XIE: Okay.
+
+16:35:37 --> 16:35:41
+RUIHANG XIE: also turn on your video during the presentation time.
+
+16:35:50 --> 16:35:51
+RUIHANG XIE: They're here.
+
+16:36:04 --> 16:36:06
+RUIHANG XIE: Oh, okay, I.
+
+16:36:07 --> 16:36:08
+RUIHANG XIE: I don't see.
+
+16:36:08 --> 16:36:09
+RUIHANG XIE: Knare.
+
+16:36:09 --> 16:36:10
+RUIHANG XIE: Then.
+
+16:36:10 --> 16:36:12
+RUIHANG XIE: Let's go to…
+
+16:36:12 --> 16:36:13
+RUIHANG XIE: Cheers.
+
+16:36:13 --> 16:36:15
+RUIHANG XIE: Sashwat.
+
+16:36:16 --> 16:36:17
+TRIPATHI SHASHVAT: Okay.
+
+16:36:16 --> 16:36:17
+TRIPATHI SHASHVAT: 哎对。
+
+16:36:20 --> 16:36:20
+TRIPATHI SHASHVAT: Okay.
+
+16:36:20 --> 16:36:20
+TRIPATHI SHASHVAT: 哎。
+
+16:36:24 --> 16:36:25
+TRIPATHI SHASHVAT: 嗯。
+
+16:36:24 --> 16:36:25
+TRIPATHI SHASHVAT: Oh.
+
+16:36:25 --> 16:36:26
+TRIPATHI SHASHVAT: Is my screen visible?
+
+16:36:25 --> 16:36:26
+TRIPATHI SHASHVAT: Is my screen as a week.
+
+16:36:30 --> 16:36:32
+RUIHANG XIE: No, oh yeah.
+
+16:36:32 --> 16:36:33
+RUIHANG XIE: Yeah, I can see your screen.
+
+16:36:33 --> 16:36:34
+TRIPATHI SHASHVAT: Thank you.
+
+16:36:33 --> 16:36:34
+TRIPATHI SHASHVAT: Thank you.
+
+16:36:33 --> 16:36:34
+RUIHANG XIE: Thank you.
+
+16:36:35 --> 16:36:43
+TRIPATHI SHASHVAT: So, hello everybody, good afternoon. I'll be presenting my research project and the progress I've made in the.
+
+16:36:35 --> 16:36:43
+TRIPATHI SHASHVAT: So uh hello, everybody. Good afternoon. I'll be pre presenting my research project. And the progress i've made in the.
+
+16:36:43 --> 16:36:45
+TRIPATHI SHASHVAT: Last few weeks in it.
+
+16:36:43 --> 16:36:45
+TRIPATHI SHASHVAT: Past few weeks in it.
+
+16:36:45 --> 16:36:46
+TRIPATHI SHASHVAT: So…
+
+16:36:45 --> 16:36:46
+TRIPATHI SHASHVAT: So.
+
+16:36:47 --> 16:36:52
+TRIPATHI SHASHVAT: Firstly, a brief introduction about my topic is that the broader objective of this research.
+
+16:36:47 --> 16:36:52
+TRIPATHI SHASHVAT: Firstly, a brief introduction of my topic is that the broader objectives of this research.
+
+16:36:52 --> 16:37:05
+TRIPATHI SHASHVAT: is to develop an AI framework that is capable of providing proactive assistance for safer driving. Earlier phases of the project focused on understanding road conditions, specifically potholes.
+
+16:36:52 --> 16:37:05
+TRIPATHI SHASHVAT: Is to develop an ai framework that is capable of providing proactive assistance for safer driving earlier phases of the project focused on understanding growth conditions uh specifically, port hosts.
+
+16:37:05 --> 16:37:10
+TRIPATHI SHASHVAT: And detecting infrastructure hazards that influence driver behavior.
+
+16:37:10 --> 16:37:18
+TRIPATHI SHASHVAT: However, road safety is determined not only by the environment, but also by the interactions among surrounding vehicles.
+
+16:37:18 --> 16:37:29
+TRIPATHI SHASHVAT: Therefore, the current phase of the research shifts toward modeling these dynamic interactions using a graph-based learning to predict future traffic risk before dangerous situations fully develop.
+
+16:37:30 --> 16:37:37
+TRIPATHI SHASHVAT: So, the research question that I'm answering is that traffic crashes rarely occur instantaneously.
+
+16:37:37 --> 16:37:53
+TRIPATHI SHASHVAT: They are usually preceded by a sequence of interactions in which vehicles gradually move towards a hazardous state. However, most existing traffic monitoring systems primarily recognize dangerous situations only after the conflict.
+
+16:37:53 --> 16:37:59
+TRIPATHI SHASHVAT: And there are very few, uh, systems that can proactively alert the driver even before, uh.
+
+16:38:00 --> 16:38:02
+TRIPATHI SHASHVAT: Conflict or dangerous situation takes place.
+
+16:38:02 --> 16:38:07
+TRIPATHI SHASHVAT: Like you can see in this figure, uh, because of obstruction from this, uh.
+
+16:38:07 --> 16:38:08
+TRIPATHI SHASHVAT: Oh.
+
+16:38:08 --> 16:38:16
+TRIPATHI SHASHVAT: you can say goods carrier vehicle. This car is trying to overtake it, but it is oblivious to the fact that a motorcycle is coming from the opposing end.
+
+16:38:16 --> 16:38:33
+TRIPATHI SHASHVAT: and within 2 seconds the situation can turn really risky where the motorcycle is right in front of that vehicle. So the motivation of this work is to shift from reactive monitoring to proactive prediction. Specifically, we want to investigate whether future collision risk can be inferred directly from.
+
+16:38:33 --> 16:38:36
+TRIPATHI SHASHVAT: Uh, ordinary roadside camera videos.
+
+16:38:36 --> 16:38:43
+TRIPATHI SHASHVAT: And we try to do this by modeling the interactions among surrounding vehicles and the road agents.
+
+16:38:43 --> 16:38:51
+TRIPATHI SHASHVAT: Rather than asking whether the current scene is dangerous, the central question becomes, can we estimate how dangerous the scene will be in a short time in the future?
+
+16:38:52 --> 16:38:57
+TRIPATHI SHASHVAT: And in the previous slide, I showed you about vehicle interaction, but.
+
+16:38:57 --> 16:39:08
+TRIPATHI SHASHVAT: it's not just about the interact neighborhood vehicles, it's also about the road conditions. So, one important example of road condition or road defects is potholes.
+
+16:39:08 --> 16:39:14
+TRIPATHI SHASHVAT: A pothole may appear to be a simple infrastructural problem, but it often triggers sudden evasive maneuvers.
+
+16:39:14 --> 16:39:24
+TRIPATHI SHASHVAT: Especially for motorcycles and three-wheelers that don't, like, they prioritize their balance and comfort more than, like, following a straight lane path.
+
+16:39:24 --> 16:39:29
+TRIPATHI SHASHVAT: So, the question we are interested in this is not simply, can we detect a pothole? We.
+
+16:39:29 --> 16:39:37
+TRIPATHI SHASHVAT: want to see, like, given a pothole ahead, what is the probability that the nearby motorcycle will try to avoid it?
+
+16:39:37 --> 16:39:44
+TRIPATHI SHASHVAT: So, this changes the problem from infrastructure… like, just infrastructure perception to driver behavior prediction as well.
+
+16:39:45 --> 16:39:50
+TRIPATHI SHASHVAT: And the current work presented today focuses on the interaction modeling component of this research.
+
+16:39:50 --> 16:39:51
+TRIPATHI SHASHVAT: Art.
+
+16:39:52 --> 16:39:58
+TRIPATHI SHASHVAT: So, the methodology I have been following in this entire project is simply to.
+
+16:39:58 --> 16:39:59
+TRIPATHI SHASHVAT: First.
+
+16:39:59 --> 16:40:04
+TRIPATHI SHASHVAT: like, the camera records only pixels. We need meaningful, uh.
+
+16:40:04 --> 16:40:09
+TRIPATHI SHASHVAT: information from that video data. So, to predict where, like.
+
+16:40:09 --> 16:40:17
+TRIPATHI SHASHVAT: traffic risk depends on which physical part of the motion. We need to synchronize the video.
+
+16:40:17 --> 16:40:21
+TRIPATHI SHASHVAT: maybe from dashcam or from a CCTV into…
+
+16:40:21 --> 16:40:22
+TRIPATHI SHASHVAT: Up.
+
+16:40:22 --> 16:40:24
+TRIPATHI SHASHVAT: A map of the entire traffic scene.
+
+16:40:24 --> 16:40:29
+TRIPATHI SHASHVAT: And vehicles are detected, like, so, and from the basic traffic… sorry.
+
+16:40:30 --> 16:40:39
+TRIPATHI SHASHVAT: So, from the basic traffic footage, we first perform object detection, and each detected object is tracked in the.
+
+16:40:39 --> 16:40:49
+TRIPATHI SHASHVAT: scene which gives this metric projection of that data, and then we can estimate their trajectory, their position on the pixel coordinate.
+
+16:40:49 --> 16:41:02
+TRIPATHI SHASHVAT: and the relative velocity as compared to the camera. So, if it is a CCTV footage, since the camera is stationary, we can consider the velocity obtained to be the absolute velocity as well, because the, uh…
+
+16:41:02 --> 16:41:12
+TRIPATHI SHASHVAT: anchor point is 0. To simplify the project a bit, I have started with using only CCTV video data at present.
+
+16:41:12 --> 16:41:13
+TRIPATHI SHASHVAT: So…
+
+16:41:14 --> 16:41:17
+TRIPATHI SHASHVAT: The next part is, once we have these, uh…
+
+16:41:17 --> 16:41:19
+TRIPATHI SHASHVAT: Like, the metric projections.
+
+16:41:19 --> 16:41:25
+TRIPATHI SHASHVAT: The next question is how to represent the interactions among multiple traffic participants.
+
+16:41:25 --> 16:41:31
+TRIPATHI SHASHVAT: Predicting collision risk is fundamentally an interaction problem, rather than an individual vehicle problem.
+
+16:41:31 --> 16:41:44
+TRIPATHI SHASHVAT: We therefore model every traffic frame as a spatial graph, as you can see. Like, even though there is a certain POV angle in this footage, we try to replicate into an overhead graph.
+
+16:41:45 --> 16:41:49
+TRIPATHI SHASHVAT: And then we model every traffic frame as a spatial graph.
+
+16:41:49 --> 16:41:51
+TRIPATHI SHASHVAT: Where each vehicle corresponds to a node.
+
+16:41:51 --> 16:42:02
+TRIPATHI SHASHVAT: and which contains its kinematic state, including position, velocity, and then we can calculate acceleration and certain surrogate safety measures, such as time to collision.
+
+16:42:02 --> 16:42:07
+TRIPATHI SHASHVAT: The edges, that is the link between each node, is, uh, the…
+
+16:42:08 --> 16:42:10
+TRIPATHI SHASHVAT: The edges, or the…
+
+16:42:10 --> 16:42:14
+TRIPATHI SHASHVAT: It's the spatial relationship between each vehicle and the relative motion.
+
+16:42:15 --> 16:42:17
+TRIPATHI SHASHVAT: So…
+
+16:42:17 --> 16:42:24
+TRIPATHI SHASHVAT: This graph encoding preserves both the physical state of the individual vehicle and the interaction state of the surrounding traffic scene.
+
+16:42:25 --> 16:42:32
+TRIPATHI SHASHVAT: In the later part of the project, we will also add, uh, if there is a pothole or road defect on this particular, uh.
+
+16:42:32 --> 16:42:38
+TRIPATHI SHASHVAT: You can say path of interest, we'll add how that is also interacting with the scene.
+
+16:42:39 --> 16:42:40
+TRIPATHI SHASHVAT: So…
+
+16:42:40 --> 16:42:46
+TRIPATHI SHASHVAT: Till now, we've seen that while a graph can capture the interaction structure at a particular point.
+
+16:42:46 --> 16:42:51
+TRIPATHI SHASHVAT: It's not just about that point, it is also about how the traffic is evolu.
+
+16:42:51 --> 16:42:58
+TRIPATHI SHASHVAT: It's about the evolution of the traffic which leads up to that particular point where an accident can happen.
+
+16:42:58 --> 16:43:10
+TRIPATHI SHASHVAT: And this visualization can help you understand, like how differently vehicles or agents interact in lane disciplined environments, such as Japan on the left side.
+
+16:43:10 --> 16:43:19
+TRIPATHI SHASHVAT: And in countries like India, where lane discipline is not followed that much, you can see that the interaction among vehicles is not linear. It's like haphazard.
+
+16:43:19 --> 16:43:24
+TRIPATHI SHASHVAT: So, to capture this temporal evolution, we construct an overlapping sequence of.
+
+16:43:24 --> 16:43:38
+TRIPATHI SHASHVAT: 30 consecutive interaction graphs per second. The math is simple, because the video we have is of 30 frames per second. We put each frame as one graph sequence, and then we just put it all together to get these kind of, uh…
+
+16:43:38 --> 16:43:41
+TRIPATHI SHASHVAT: visualizations. So…
+
+16:43:41 --> 16:43:47
+TRIPATHI SHASHVAT: Next, after this part is done, this is where the spatiotemporal, like, the AI part of it comes in.
+
+16:43:47 --> 16:43:52
+TRIPATHI SHASHVAT: The learning problem becomes predicting how the traffic scene will evolve in the future.
+
+16:43:52 --> 16:43:58
+TRIPATHI SHASHVAT: So, the proposed spatiotemporal graph network first learns the interaction structure within each graph.
+
+16:43:58 --> 16:44:08
+TRIPATHI SHASHVAT: using a graph encoder. It then analyzes how these interaction patterns evolve across these consecutive graphs using a temporal encoder.
+
+16:44:08 --> 16:44:16
+TRIPATHI SHASHVAT: So instead of optimizing a single prediction task, we are trying to train the network to use a multitask learning framework.
+
+16:44:16 --> 16:44:22
+TRIPATHI SHASHVAT: Where one prediction head will estimate the future time to collision of… for the coming, uh, scenarios.
+
+16:44:23 --> 16:44:24
+TRIPATHI SHASHVAT: And…
+
+16:44:24 --> 16:44:28
+TRIPATHI SHASHVAT: So, the first, like, the basic result we got out of this approach was that.
+
+16:44:29 --> 16:44:33
+TRIPATHI SHASHVAT: We were getting good values, but it was not close to the real value.
+
+16:44:33 --> 16:44:36
+TRIPATHI SHASHVAT: The detailed evaluation revealed, like.
+
+16:44:36 --> 16:44:40
+TRIPATHI SHASHVAT: Rather than learning the full range of traffic risk.
+
+16:44:40 --> 16:44:45
+TRIPATHI SHASHVAT: the model tended to predict TTC values close to the average of the training distribution.
+
+16:44:45 --> 16:44:58
+TRIPATHI SHASHVAT: As a result, the numerical loss appeared satisfactory, but the model was failing to reliably distinguish highly critical traffic scenes from relatively safe ones. It was, like, clubbing each in one range.
+
+16:44:58 --> 16:45:06
+TRIPATHI SHASHVAT: And I tried this at different, like, uh, looking into the future for different intervals, maybe 0.5 seconds.
+
+16:45:06 --> 16:45:12
+TRIPATHI SHASHVAT: and 1 second and 1.5 seconds, but all the time, I was getting the similar TTC.
+
+16:45:12 --> 16:45:16
+TRIPATHI SHASHVAT: So, then the change which I'm currently working on is…
+
+16:45:17 --> 16:45:27
+TRIPATHI SHASHVAT: like, the observations from the regression model suggested that the predicting… that predicting only future TTC, time to collision, was not sufficient for learning.
+
+16:45:27 --> 16:45:28
+TRIPATHI SHASHVAT: the traffic interactions.
+
+16:45:28 --> 16:45:37
+TRIPATHI SHASHVAT: The traffic safety is influenced by multiple factors, and a single continuous target provides only limited supervisory information.
+
+16:45:37 --> 16:45:42
+TRIPATHI SHASHVAT: To address this, we reformulated the learning problem as a multitask prediction framework.
+
+16:45:42 --> 16:45:48
+TRIPATHI SHASHVAT: Where a shared spatiotemporal encoder extracts a common representation of the evolving traffic scene.
+
+16:45:48 --> 16:45:54
+TRIPATHI SHASHVAT: This representation is then used by two prediction heads, where one estimates the future TTC, as we were doing.
+
+16:45:54 --> 16:45:59
+TRIPATHI SHASHVAT: And the second classifies the futures seen into critical, risky, or safe categories.
+
+16:45:59 --> 16:46:02
+TRIPATHI SHASHVAT: based on the previously learned TTC.
+
+16:46:02 --> 16:46:11
+TRIPATHI SHASHVAT: So, by learning both the objectives simultaneously, the network is encouraged to capture richer interaction patterns and produce more discriminative traffic representations.
+
+16:46:11 --> 16:46:15
+TRIPATHI SHASHVAT: Uh, this code is taking a lot of time to run, so the…
+
+16:46:15 --> 16:46:20
+TRIPATHI SHASHVAT: the initial results I have are on a subset of the dataset which we have.
+
+16:46:20 --> 16:46:25
+TRIPATHI SHASHVAT: But the next part is on, like, getting meaningful results out of it.
+
+16:46:25 --> 16:46:30
+TRIPATHI SHASHVAT: So, the multitask model was trained using the complete dataset, and.
+
+16:46:30 --> 16:46:34
+TRIPATHI SHASHVAT: For just 20 perks, it took 6 days, so…
+
+16:46:34 --> 16:46:37
+TRIPATHI SHASHVAT: Yeah, this is the current result, and…
+
+16:46:37 --> 16:46:48
+TRIPATHI SHASHVAT: After this part is done, I'll integrate road defect and vehicle interaction, and then move to comparing datasets of India and Japan, and then simulate these scenarios. So, thank you.
+
+16:46:53 --> 16:46:54
+RUIHANG XIE: House.
+
+16:46:53 --> 16:46:54
+TRIPATHI SHASHVAT: Thank you.
+
+16:46:54 --> 16:46:55
+RUIHANG XIE: Thank you.
+
+16:46:56 --> 16:46:59
+RUIHANG XIE: Thank you. Is there any question?
+
+16:47:06 --> 16:47:07
+Yoshihide Sekimoto, CSIS, UT: Uh, can I have a question?
+
+16:47:06 --> 16:47:07
+Yoshihide Sekimoto, CSIS, UT: I can. I have a christian.
+
+16:47:07 --> 16:47:09
+RUIHANG XIE: Yeah, yeah. Second was Vincent.
+
+16:47:07 --> 16:47:08
+TRIPATHI SHASHVAT: Sure.
+
+16:47:09 --> 16:47:10
+TRIPATHI SHASHVAT: Doctor Winston said.
+
+16:47:10 --> 16:47:14
+Yoshihide Sekimoto, CSIS, UT: Thank you, thank you very much for your presentation.
+
+16:47:10 --> 16:47:14
+Yoshihide Sekimoto, CSIS, UT: As such. But thank you. Thank you very much for your presentation.
+
+16:47:14 --> 16:47:15
+Yoshihide Sekimoto, CSIS, UT: So, uh, uh…
+
+16:47:14 --> 16:47:15
+Yoshihide Sekimoto, CSIS, UT: 是吧啊。
+
+16:47:16 --> 16:47:18
+Yoshihide Sekimoto, CSIS, UT: Yeah, in your research.
+
+16:47:16 --> 16:47:18
+Yoshihide Sekimoto, CSIS, UT: Yeah, in your research.
+
+16:47:18 --> 16:47:18
+Yoshihide Sekimoto, CSIS, UT: 我们。
+
+16:47:18 --> 16:47:25
+Yoshihide Sekimoto, CSIS, UT: Maybe I expect you to link the road condition data.
+
+16:47:18 --> 16:47:25
+Yoshihide Sekimoto, CSIS, UT: Maybe i expect you to being the road condition data.
+
+16:47:25 --> 16:47:28
+Yoshihide Sekimoto, CSIS, UT: from the RDD, or something like that, and…
+
+16:47:25 --> 16:47:28
+Yoshihide Sekimoto, CSIS, UT: From the rd, or something like that, and.
+
+16:47:28 --> 16:47:30
+Yoshihide Sekimoto, CSIS, UT: The safety…
+
+16:47:28 --> 16:47:30
+Yoshihide Sekimoto, CSIS, UT: The safety.
+
+16:47:30 --> 16:47:32
+Yoshihide Sekimoto, CSIS, UT: prediction, uh…
+
+16:47:30 --> 16:47:32
+Yoshihide Sekimoto, CSIS, UT: Prediction.
+
+16:47:32 --> 16:47:33
+Yoshihide Sekimoto, CSIS, UT: from the…
+
+16:47:32 --> 16:47:33
+Yoshihide Sekimoto, CSIS, UT: 我们之一。
+
+16:47:33 --> 16:47:38
+Yoshihide Sekimoto, CSIS, UT: Traffic accustand data from zooms or something exit right.
+
+16:47:33 --> 16:47:38
+Yoshihide Sekimoto, CSIS, UT: Traffic accident data from the images, or something like that, right?
+
+16:47:38 --> 16:47:47
+Yoshihide Sekimoto, CSIS, UT: But today's presentation you did not mention about the deanca.
+
+16:47:38 --> 16:47:47
+Yoshihide Sekimoto, CSIS, UT: Uh, but, but, uh, at, at today's, uh, presentation, uh, you, you did not mention about the link, linkage to, uh.
+
+16:47:47 --> 16:47:53
+Yoshihide Sekimoto, CSIS, UT: Uh, load damage data from the BDLs, or something like that. But, uh, what, what, what?
+
+16:47:53 --> 16:47:55
+Yoshihide Sekimoto, CSIS, UT: But what is your plan?
+
+16:47:55 --> 16:48:02
+TRIPATHI SHASHVAT: So, uh, so, Sensei, in my initial part of the research here, I was working on the RDD dataset itself.
+
+16:48:02 --> 16:48:08
+TRIPATHI SHASHVAT: And the model I got for training potholes was based on that dataset. However.
+
+16:48:08 --> 16:48:16
+TRIPATHI SHASHVAT: for my part of the research, I need sequential data, where I can see how, like, RDD contains only images of road defects.
+
+16:48:16 --> 16:48:24
+TRIPATHI SHASHVAT: But if I want a video of that dataset, and how a scene is evolving because of a particular pothole.
+
+16:48:24 --> 16:48:46
+TRIPATHI SHASHVAT: That was missing in RDD. However, on the Secchi Labs GitHub page, there was a VOD data that, like, I requested Omata-san, and we finally got access to that data. It has dash cam footage of driving through Japan, so that I'm trying to use. I also spent a lot of time on online resources to find dataset.
+
+16:48:46 --> 16:48:49
+TRIPATHI SHASHVAT: in… from Japan, which had a bird-eye view.
+
+16:48:49 --> 16:48:58
+TRIPATHI SHASHVAT: and road defect in it, but I was, like, unlucky with that, so I tried recording data myself to get something out of it.
+
+16:48:58 --> 16:49:14
+TRIPATHI SHASHVAT: So, like, your point is truly valid, but my limitation was that the roads are so good in Japan that I'm… it's hard to find video dataset which has, uh, traffic flowing and a road defect as well. So, like, I was going to ask the lab if anybody has.
+
+16:49:14 --> 16:49:17
+TRIPATHI SHASHVAT: Access to such dataset, please, uh, guide me to it.
+
+16:49:22 --> 16:49:23
+Yoshihide Sekimoto, CSIS, UT: You mean the…
+
+16:49:24 --> 16:49:31
+Yoshihide Sekimoto, CSIS, UT: Uh, yeah, of course, our past PhD research, conducted by ASH.
+
+16:49:31 --> 16:49:37
+Yoshihide Sekimoto, CSIS, UT: took BOD data, so yeah, you all try to use, right?
+
+16:49:37 --> 16:49:39
+TRIPATHI SHASHVAT: Yes, yes, yes.
+
+16:49:38 --> 16:49:43
+Yoshihide Sekimoto, CSIS, UT: But the Japanese road condition is, uh…
+
+16:49:43 --> 16:49:50
+Yoshihide Sekimoto, CSIS, UT: Not bad, so it's very difficult to extract both.
+
+16:49:50 --> 16:49:53
+Yoshihide Sekimoto, CSIS, UT: Uh, between the road damage and the trophics.
+
+16:49:53 --> 16:49:58
+Yoshihide Sekimoto, CSIS, UT: Accidents or something like that, so, uh, it's much better to ask.
+
+16:49:55 --> 16:49:56
+TRIPATHI SHASHVAT: Sure.
+
+16:49:58 --> 16:50:02
+Yoshihide Sekimoto, CSIS, UT: the Indian person to take a video, or something like that.
+
+16:50:02 --> 16:50:03
+TRIPATHI SHASHVAT: Different.
+
+16:50:14 --> 16:50:15
+Yoshihide Sekimoto, CSIS, UT: I see, I see.
+
+16:50:17 --> 16:50:25
+Yoshihide Sekimoto, CSIS, UT: So, so, finally you, you judged not to use the BOD data in Japan.
+
+16:50:26 --> 16:50:32
+TRIPATHI SHASHVAT: No, I'm currently working on it, and I will be using some sort of data from Japan.
+
+16:50:32 --> 16:50:35
+TRIPATHI SHASHVAT: The VOD data has one, like.
+
+16:50:35 --> 16:50:41
+TRIPATHI SHASHVAT: As of now, I'm focusing on the bird-eye view footage, so because the camera is starting in those conditions.
+
+16:50:41 --> 16:50:56
+TRIPATHI SHASHVAT: The VOD data has a moving camera in it, so that is why I will come to it. I started the pre-processing part of it. I did not include it in today's presentation, because I don't have any meaningful results from that part of my experiment till now.
+
+16:50:56 --> 16:50:57
+Yoshihide Sekimoto, CSIS, UT: Oh.
+
+16:50:58 --> 16:51:01
+Yoshihide Sekimoto, CSIS, UT: I see, I see, I see. Okay, okay, thanks.
+
+16:51:01 --> 16:51:03
+TRIPATHI SHASHVAT: Thank you, Cynthia.
+
+16:51:04 --> 16:51:08
+Deeksha Arya: Oh, thank you, Sikkimado Cincy. So I have something to add to add.
+
+16:51:04 --> 16:51:08
+Deeksha Arya: Okay, thank you sake of sensate. So i have something to add to add.
+
+16:51:09 --> 16:51:10
+Deeksha Arya: Oh.
+
+16:51:09 --> 16:51:10
+Deeksha Arya: 嗯嗯。
+
+16:51:09 --> 16:51:10
+Yoshihide Sekimoto, CSIS, UT: Mm-mm.
+
+16:51:10 --> 16:51:15
+Deeksha Arya: So, uh, since we were unable to relate potholes and, uh.
+
+16:51:10 --> 16:51:15
+Deeksha Arya: So, since we we're unable to relate portals and uh.
+
+16:51:15 --> 16:51:22
+Deeksha Arya: the corresponding movement of vehicle to address that pothole in Japan. So that's why we tried analyzing.
+
+16:51:15 --> 16:51:22
+Deeksha Arya: The corresponding moment of vehicle to address that code hole in japan. So that's why we tried analyzing.
+
+16:51:22 --> 16:51:27
+Deeksha Arya: Ash data, and the data from Gurgley's research, the helicopter data.
+
+16:51:22 --> 16:51:27
+Deeksha Arya: Ash data and the data from gurgly's research, the helicopter data.
+
+16:51:28 --> 16:51:32
+Deeksha Arya: So i think the helicopter data has not been retrieved. Right share.
+
+16:51:28 --> 16:51:32
+Deeksha Arya: So, I think the helicopter data has not been retrieved, right, Shashwat?
+
+16:51:32 --> 16:51:34
+TRIPATHI SHASHVAT: Yes, ma'am, it hasn't been retrieved.
+
+16:51:33 --> 16:51:34
+Deeksha Arya: Yep.
+
+16:51:33 --> 16:51:34
+Deeksha Arya: Yes.
+
+16:51:34 --> 16:51:40
+Deeksha Arya: Yes, so first we are trying with VOD data, and we also tried to shift from, uh.
+
+16:51:34 --> 16:51:40
+Deeksha Arya: Yes, so first we are trying with vod data. And uh, we also try to shift from uh.
+
+16:51:40 --> 16:51:49
+Deeksha Arya: Like, analyzing the effect of potholes to analyzing the effect of lane discipline, because that is also a point of difference between India and Japan.
+
+16:51:50 --> 16:51:52
+Deeksha Arya: So maybe if we can relate.
+
+16:51:52 --> 16:51:58
+Deeksha Arya: Uh, something based on lane discipline, then we can suggest something for potholes also.
+
+16:51:58 --> 16:51:59
+Deeksha Arya: Because…
+
+16:51:59 --> 16:52:04
+Deeksha Arya: Ultimately, the effect is going to have some similarity for both of them.
+
+16:52:04 --> 16:52:08
+Deeksha Arya: So that is the plan currently, but once we have…
+
+16:52:08 --> 16:52:12
+Deeksha Arya: Access to more data, we will be able to, uh…
+
+16:52:12 --> 16:52:14
+Deeksha Arya: tell more clearly.
+
+16:52:17 --> 16:52:19
+Yoshihide Sekimoto, CSIS, UT: Okay, okay, yeah, thank you very much.
+
+16:52:18 --> 16:52:19
+Deeksha Arya: Okay.
+
+16:52:19 --> 16:52:21
+Deeksha Arya: Thank you.
+
+16:52:19 --> 16:52:20
+Yoshihide Sekimoto, CSIS, UT: Mmhm.
+
+16:52:21 --> 16:52:21
+Deeksha Arya: Mmhm.
+
+16:52:24 --> 16:52:26
+RUIHANG XIE: Thank you, Shashpat.
+
+16:52:26 --> 16:52:29
+RUIHANG XIE: Thank you for your presentation, and I would like.
+
+16:52:26 --> 16:52:27
+TRIPATHI SHASHVAT: Thank you.
+
+16:52:29 --> 16:52:30
+RUIHANG XIE: Ask one question.
+
+16:52:30 --> 16:52:31
+TRIPATHI SHASHVAT: Sure.
+
+16:52:30 --> 16:52:38
+RUIHANG XIE: Because actually, your research is quite similar in with my area like, because.
+
+16:52:38 --> 16:52:41
+RUIHANG XIE: We are doing something like predict crowd.
+
+16:52:41 --> 16:52:42
+RUIHANG XIE: a risk.
+
+16:52:43 --> 16:52:45
+RUIHANG XIE: like, in some crowded.
+
+16:52:45 --> 16:52:51
+RUIHANG XIE: the buildings. Mask, how can your model be used in real world? I mean.
+
+16:52:51 --> 16:52:55
+RUIHANG XIE: Why does traffic safety need the prediction?
+
+16:52:55 --> 16:52:56
+RUIHANG XIE: Yes.
+
+16:52:56 --> 16:52:57
+TRIPATHI SHASHVAT: Hello?
+
+16:52:57 --> 16:52:58
+TRIPATHI SHASHVAT: Okay.
+
+16:52:58 --> 16:53:01
+TRIPATHI SHASHVAT: So, like, if I can show you the…
+
+16:53:02 --> 16:53:04
+TRIPATHI SHASHVAT: uh, scenarios where.
+
+16:53:04 --> 16:53:09
+TRIPATHI SHASHVAT: Vehicles, like, in this particular scene you can see.
+
+16:53:09 --> 16:53:09
+TRIPATHI SHASHVAT: that…
+
+16:53:10 --> 16:53:16
+TRIPATHI SHASHVAT: the coming VR… vulnerable road user has… like, this particular motorcycle had no…
+
+16:53:16 --> 16:53:25
+TRIPATHI SHASHVAT: play in how the scene has developed. However, it is at risk. So, if this car, uh, if the black car has a system.
+
+16:53:25 --> 16:53:33
+TRIPATHI SHASHVAT: a sensor equipped that can be connected to the CCTV footage, like the CCTV which is recording data, which is, uh.
+
+16:53:33 --> 16:53:36
+TRIPATHI SHASHVAT: called as the Vehicle to Infrastructure Communication.
+
+16:53:36 --> 16:53:46
+TRIPATHI SHASHVAT: So, like, I'm talking about the ultimate application of these kinds of research. So, if that infrastructure camera.
+
+16:53:46 --> 16:53:49
+TRIPATHI SHASHVAT: can nudge the vehicle ADAS system.
+
+16:53:49 --> 16:53:54
+TRIPATHI SHASHVAT: that there is a threat oncoming. Please, uh, be alerted.
+
+16:53:54 --> 16:53:58
+TRIPATHI SHASHVAT: Then, lives can be saved and accidents can be avoided.
+
+16:53:58 --> 16:53:59
+TRIPATHI SHASHVAT: So…
+
+16:53:59 --> 16:54:02
+TRIPATHI SHASHVAT: Uh, did I, uh, answer your question?
+
+16:54:03 --> 16:54:03
+RUIHANG XIE: Okay.
+
+16:54:05 --> 16:54:07
+RUIHANG XIE: Oh, okay, yes, yes, thank you.
+
+16:54:07 --> 16:54:12
+TRIPATHI SHASHVAT: Okay, thank you for your question. I can explain better in person later as well. Thank you.
+
+16:54:07 --> 16:54:09
+RUIHANG XIE: Thank you very much.
+
+16:54:12 --> 16:54:13
+RUIHANG XIE: Yes.
+
+16:54:13 --> 16:54:15
+RUIHANG XIE: Thank you very much.
+
+16:54:15 --> 16:54:16
+RUIHANG XIE: then…
+
+16:54:17 --> 16:54:20
+RUIHANG XIE: Chaklam, the next presenter gonna be low heat.
+
+16:54:24 --> 16:54:26
+Mohit: Hello.
+
+16:54:25 --> 16:54:26
+RUIHANG XIE: Hello.
+
+16:54:27 --> 16:54:30
+RUIHANG XIE: Can you share your screen? Thank you.
+
+16:54:27 --> 16:54:29
+Mohit: I'm sorry.
+
+16:54:29 --> 16:54:30
+Mohit: Yep.
+
+16:54:41 --> 16:54:43
+Mohit: Uh, is it visible?
+
+16:54:53 --> 16:54:54
+RUIHANG XIE: that I put on.
+
+16:54:57 --> 16:54:58
+Mohit: Um…
+
+16:54:58 --> 16:55:06
+Mohit: Hello, so my project is making a synthetic mobility simulation of IT Delhi's campus.
+
+16:55:06 --> 16:55:21
+Mohit: So the bigger role of this project is to get open source data of any university and try to simulate how people work in that university, like the GPS trajectory.
+
+16:55:21 --> 16:55:28
+Mohit: So because we can't get GPS trajectory of people, it is a privacy concern. So we're trying to use open source data.
+
+16:55:28 --> 16:55:36
+Mohit: So, uh, so it is really simple on paper, like, you get public data, you just process the data.
+
+16:55:36 --> 16:55:42
+Mohit: simulate the location of agents based on timetable and just visualize it using a map.
+
+16:55:42 --> 16:55:51
+Mohit: Uh, but it is not that easy to do, actually. Uh, because… well, it depends also, because…
+
+16:55:51 --> 16:55:56
+Mohit: IIT Delhi is a big campus, like, there are many people.
+
+16:55:56 --> 16:56:01
+Mohit: And there are many departments, and yeah, you can see the numbers here. So…
+
+16:56:01 --> 16:56:15
+Mohit: And the data is also undocumented, like, there's not one big PDF you can find about all the seat metrics, all the timetable, and all the stuff about IIT Delhi, so you have to do the research and then process the data.
+
+16:56:16 --> 16:56:23
+Mohit: So. So like I break data into four parts. First is population data.
+
+16:56:23 --> 16:56:29
+Mohit: It is well documented that how many people are actually doing how many courses in the institute.
+
+16:56:29 --> 16:56:37
+Mohit: So, yeah. Then the residence data is not that well documented. I have made a lot of assumptions here.
+
+16:56:37 --> 16:56:52
+Mohit: Uh, so, yeah, we get it from, like, uh, my hostel, my university's board of hostel management and IIT Delhi's residence website. And commute data is not documented. Uh, I am looking for a source.
+
+16:56:52 --> 16:56:54
+Mohit: But for now…
+
+16:56:54 --> 16:56:58
+Mohit: I'm assuming that everyone is working in the university.
+
+16:56:58 --> 16:57:14
+Mohit: So, yeah, and work and classwork data is mostly well documented, like, for this, uh, for this thing, you just need 4 or 5 PDFs, and it is… you get the almost every data, except the PhD students, because their work is very subjective.
+
+16:57:14 --> 16:57:19
+Mohit: But yeah, but the extraction part of this data is very difficult, because.
+
+16:57:19 --> 16:57:28
+Mohit: These PDFs are very big, so you can't use a LLM normally to extract the whole data. So yeah, it took a lot of time to extract the data.
+
+16:57:29 --> 16:57:34
+Mohit: For residency, uh, I have… I have assumed.
+
+16:57:34 --> 16:57:39
+Mohit: Well, this assumption is not fully a guesswork. Uh, I have, uh, like…
+
+16:57:39 --> 16:57:48
+Mohit: I know, like, each hostel has a capacity of 400 people, so based on that assumption, I have assumed that.
+
+16:57:48 --> 16:57:58
+Mohit: On the calculation that, uh, half of the students are living inside the campus, and half of the students are living outside the campus, like, nearby.
+
+16:57:58 --> 16:58:04
+Mohit: And for students, I have also implemented a dynamic attendance logic, like…
+
+16:58:04 --> 16:58:12
+Mohit: Uh, in our institute, it is a course policy of maintaining a 75% attendance.
+
+16:58:12 --> 16:58:23
+Mohit: But, uh, for example, if you just put 75% attend, uh, 75%, like, randomness, that a person will attend plus 75% of the time.
+
+16:58:23 --> 16:58:33
+Mohit: Uh, it won't make that sense, because if a person reads the lecture hall complex, then the chances of attending the next class would be more… higher.
+
+16:58:33 --> 16:58:42
+Mohit: And if a person missed the first class, the chances of him attending the next class is on the lower side.
+
+16:58:42 --> 16:59:00
+Mohit: So I implemented a logic. If a person misses the first class of the day, the chances of attending the second class is half, like 50%. And if person attended the first class, the chance of attending the next class is 100%.
+
+16:59:00 --> 16:59:13
+Mohit: And similarly for professors, this is a little bit well-documented. 50% of them live in campus, and 50% live in nearby areas like SDM.
+
+16:59:13 --> 16:59:28
+Mohit: And it is a small fun fact that hostels on the campus are named on the mountain ranges of India. Like, we have Aravalli hostel, there's a Aravalli range in India, and there's a Karakoram hostel.
+
+16:59:28 --> 16:59:32
+Mohit: So are these named on Karakoram ranges? So yeah.
+
+16:59:32 --> 16:59:39
+Mohit: Then, coming on processing the data, we have student metrics. Basically, it is…
+
+16:59:39 --> 16:59:54
+Mohit: Uh, the number of people enrolled in all the courses in the university. So, after that, you get an idea that, uh, for every program that is offered in the university, how many people are enrolled in it.
+
+16:59:54 --> 17:00:04
+Mohit: Then we have a course-offered PDF. So from that, you can note that each program for each semester, what courses a person have to do to.
+
+17:00:04 --> 17:00:08
+Mohit: Complete the program or complete the semester.
+
+17:00:08 --> 17:00:13
+Mohit: So, from that, you get what are the courses that a person is doing.
+
+17:00:13 --> 17:00:28
+Mohit: Then we have a one more document room allotment. It is a big 42 page document that maps courses to the time that is that time at which courses are happening and the location of the courses.
+
+17:00:28 --> 17:00:38
+Mohit: And for professors, I don't have any data, so I have assumed that they work from 8am to 5pm with a 1-hour lunch break.
+
+17:00:38 --> 17:00:45
+Mohit: Same, similarly for teaching assistant, administrative staff, and maintenance security staff.
+
+17:00:45 --> 17:00:47
+Mohit: So yeah, and…
+
+17:00:48 --> 17:00:58
+Mohit: Then, uh, after getting this schedule… schedule of every agent in the university, like, the 12,000 agent.
+
+17:00:58 --> 17:01:10
+Mohit: we come to trajectory generation. So, first, uh, I mapped all the important buildings of IIT Delhi, all the hostels, all the buildings, to a GeoJSON file.
+
+17:01:10 --> 17:01:20
+Mohit: Then after that, uh, we just use OSMNX library that fetches the path inside the campus as a graph network.
+
+17:01:20 --> 17:01:31
+Mohit: So, yeah, this is something like that, and the agent will follow this path. But the problem is, this is not accurate, because sometimes in our campus.
+
+17:01:31 --> 17:01:44
+Mohit: Some roads are actually not used because they're closed and not popular. And sometimes some roads are missing also, like some little shortcuts. So yeah, I have to work on this.
+
+17:01:44 --> 17:01:56
+Mohit: And then we gave a random speed from 1 to 1.4 meter per second. So, yeah. And, yeah, we generate the shortest path, and this is a little bit problematic, because.
+
+17:01:56 --> 17:02:00
+Mohit: The simulation feels a lot robotic.
+
+17:02:01 --> 17:02:08
+Mohit: Then we come to visualization. We get this trajectory.csv file. It is a big file.
+
+17:02:08 --> 17:02:18
+Mohit: And then we just visualize it using a mob map. So yeah, and this is like the occupancy of lecture hall complex.
+
+17:02:18 --> 17:02:21
+Mohit: of IT Delhi, according to the days.
+
+17:02:21 --> 17:02:25
+Mohit: And yeah, the more brighter the line is, the…
+
+17:02:25 --> 17:02:31
+Mohit: The more brighter the line, the more that path is used by the agents.
+
+17:02:32 --> 17:02:35
+Mohit: And… for further improvements.
+
+17:02:35 --> 17:02:50
+Mohit: Uh, so the problem with such projects is, like, uh, the execution is easy, but the data gathering part is a lot difficult, because for such a big university with such, uh, with a lot of programs.
+
+17:02:50 --> 17:03:00
+Mohit: you need to go in breadth and as well as depth of data. So, uh, I would… I am still researching for more data, for more accurate…
+
+17:03:00 --> 17:03:08
+Mohit: Accurate simulation. So yeah, so my first step would be to implement like professors like.
+
+17:03:08 --> 17:03:19
+Mohit: Uh, department-wise, because, like, we gave them a fixed schedule. Instead of that, I am thinking of giving them a schedule according to their department, like students.
+
+17:03:19 --> 17:03:30
+Mohit: and getting more real ground truth data. Uh, like, I think so this is in the gray zone, because our project uses public data.
+
+17:03:30 --> 17:03:38
+Mohit: But because I live in university, I have some little bit more data. I'm still confused, should I use them for this project or not?
+
+17:03:38 --> 17:03:49
+Mohit: And, yeah, getting the accurate residency data and modifying the graph network, uh, graph network of paths, because this is very inaccurate. Adding randomness.
+
+17:03:49 --> 17:04:02
+Mohit: And making the simulation engine more flexible for better analytics, because I don't think so… if you want to go into depth of analyzing how everyone works in the university.
+
+17:04:02 --> 17:04:11
+Mohit: Uh, you can't look at just 12,000 people and say, yeah, this is how the things are going. You might maybe want to look in certain…
+
+17:04:11 --> 17:04:18
+Mohit: departments or certain year, how they are working, and yeah, and the documentation part.
+
+17:04:18 --> 17:04:19
+Mohit: So yeah.
+
+17:04:19 --> 17:04:20
+Mohit: Thank you.
+
+17:04:22 --> 17:04:25
+RUIHANG XIE: Thank you, Mukhi. Thank you for your presentation.
+
+17:04:26 --> 17:04:27
+RUIHANG XIE: Then.
+
+17:04:27 --> 17:04:29
+RUIHANG XIE: any question from our.
+
+17:04:30 --> 17:04:30
+RUIHANG XIE: No.
+
+17:04:33 --> 17:04:35
+Yoshihide Sekimoto, CSIS, UT: Oh, can I have a question?
+
+17:04:35 --> 17:04:37
+Mohit: Uh, yes, Henzo.
+
+17:04:36 --> 17:04:37
+Yoshihide Sekimoto, CSIS, UT: Uh, yeah.
+
+17:04:37 --> 17:04:41
+Yoshihide Sekimoto, CSIS, UT: Yeah, Mohit, thank you, thank you so much for your presentation.
+
+17:04:41 --> 17:04:44
+Yoshihide Sekimoto, CSIS, UT: Uh, yeah, in spite of a short, short.
+
+17:04:44 --> 17:04:47
+Yoshihide Sekimoto, CSIS, UT: Short, short period, like, uh, one month or something like that.
+
+17:04:47 --> 17:04:50
+Yoshihide Sekimoto, CSIS, UT: Uh, but, but, uh, you already have a, uh.
+
+17:04:51 --> 17:04:52
+Yoshihide Sekimoto, CSIS, UT: Animation…
+
+17:04:52 --> 17:04:55
+Yoshihide Sekimoto, CSIS, UT: Fires by, uh, mobile map, right?
+
+17:04:55 --> 17:04:57
+Mohit: Yeah.
+
+17:04:55 --> 17:04:58
+Yoshihide Sekimoto, CSIS, UT: So, if possible, could you share the.
+
+17:04:58 --> 17:05:00
+Yoshihide Sekimoto, CSIS, UT: Uh, animations…
+
+17:05:00 --> 17:05:01
+Yoshihide Sekimoto, CSIS, UT: In this…
+
+17:05:01 --> 17:05:02
+Yoshihide Sekimoto, CSIS, UT: Uh, yeah, the…
+
+17:05:01 --> 17:05:04
+Mohit: Uh, in this meeting?
+
+17:05:04 --> 17:05:11
+Mohit: So, wait. And it is a little inaccurate, so don't mind that.
+
+17:05:11 --> 17:05:12
+Yoshihide Sekimoto, CSIS, UT: Mm, yeah.
+
+17:05:13 --> 17:05:14
+Yoshihide Sekimoto, CSIS, UT: I don't mind.
+
+17:05:59 --> 17:06:01
+Mohit: Wait…
+
+17:06:15 --> 17:06:18
+Mohit: So, uh, yes, inside.
+
+17:06:24 --> 17:06:25
+Yoshihide Sekimoto, CSIS, UT: I see, I see.
+
+17:06:26 --> 17:06:27
+Yoshihide Sekimoto, CSIS, UT: No.
+
+17:06:27 --> 17:06:29
+Yoshihide Sekimoto, CSIS, UT: Right side is…
+
+17:06:29 --> 17:06:30
+Yoshihide Sekimoto, CSIS, UT: Iruding.
+
+17:06:30 --> 17:06:32
+Yoshihide Sekimoto, CSIS, UT: On busy campus.
+
+17:06:32 --> 17:06:35
+Yoshihide Sekimoto, CSIS, UT: Ripped body is kind of the…
+
+17:06:35 --> 17:06:38
+Yoshihide Sekimoto, CSIS, UT: Domituri, or something like that.
+
+17:06:37 --> 17:06:54
+Mohit: Wait, let me explain, like, for this, uh, you can see, like, uh, these are, like, lighter, uh, lighter shades, because they're highly populated areas. So, these are actually, like, outskirts of the campus, like, it is an outside place, where.
+
+17:06:54 --> 17:07:07
+Mohit: many students, uh, rent to live, uh, that outside student. Because the rent is, uh, cheap, and it is close to university, many students prefer to live here, especially PhD students and other staff.
+
+17:07:07 --> 17:07:18
+Mohit: And for this, this is, like, I have assumed this to be staff, staff residence, which is true, and this is, like, professor residence, and yeah, wait.
+
+17:07:18 --> 17:07:32
+Mohit: So, this is SDA. Uh, so here, like, professors live. Uh, like, uh, university has some apartments and some affiliations with some brokers, so they give them.
+
+17:07:32 --> 17:07:39
+Mohit: House to professors. So many professors live here and similarly because this area of Delhi is like.
+
+17:07:39 --> 17:07:55
+Mohit: A very expensive place and a very high, very populated place. So we don't have land nearby. So after filling this area, many professors are starting to listen, live in this area. We call this Chhatrapur.
+
+17:07:55 --> 17:08:06
+Mohit: So, it is close to university, and the thing is, many people don't walk from here. They commute using cars, because using cars is very normal in…
+
+17:08:06 --> 17:08:10
+Mohit: In India like like only.
+
+17:08:10 --> 17:08:11
+Mohit: I guess…
+
+17:08:11 --> 17:08:13
+Mohit: I guess, like…
+
+17:08:13 --> 17:08:21
+Mohit: Almost 90% of people use vehicles to come to the university, even if they live nearby.
+
+17:08:21 --> 17:08:24
+Mohit: So, yeah, it is very normal, so…
+
+17:08:21 --> 17:08:22
+Yoshihide Sekimoto, CSIS, UT: I see, I see.
+
+17:08:23 --> 17:08:26
+Yoshihide Sekimoto, CSIS, UT: Where is the classroom?
+
+17:08:24 --> 17:08:25
+Mohit: And then.
+
+17:08:26 --> 17:08:30
+Mohit: Wait, wait, wait. Uh, so, if you…
+
+17:08:29 --> 17:08:30
+Yoshihide Sekimoto, CSIS, UT: Ah, okay, okay, ah.
+
+17:08:30 --> 17:08:31
+Yoshihide Sekimoto, CSIS, UT: Ah, I see, I.
+
+17:08:31 --> 17:08:33
+Mohit: Alright.
+
+17:08:31 --> 17:08:33
+Yoshihide Sekimoto, CSIS, UT: It's just morning, right?
+
+17:08:33 --> 17:08:35
+Mohit: Yeah, yeah, yeah.
+
+17:08:35 --> 17:08:38
+Mohit: So, if, uh…
+
+17:08:43 --> 17:08:57
+Mohit: So, uh, here is with… uh, yeah, it is a little bit jittery, I don't like how it goes, but yeah. So, this is, like, the academic… academic area of the university.
+
+17:08:57 --> 17:09:04
+Mohit: So, this is Lecture Hall Complex, the most important building, because all the… almost all the classes occur here.
+
+17:09:04 --> 17:09:13
+Mohit: And these are, respectively, all the departments. So, uh, wait, wait, let me show you… here, I have a…
+
+17:09:13 --> 17:09:24
+Mohit: Yeah, so can you see this? Uh, so this is Lecture Hall Complex, and this is Central Workshop Academy Complex West, and this is how everything works, and…
+
+17:09:24 --> 17:09:32
+Mohit: These are the blocks, like, these were the old places where lecture used to occur, but now it is used for research and department work.
+
+17:09:34 --> 17:09:36
+Yoshihide Sekimoto, CSIS, UT: I see.
+
+17:09:36 --> 17:09:38
+Yoshihide Sekimoto, CSIS, UT: Could you zoom down?
+
+17:09:40 --> 17:09:43
+Mohit: zoom down like this.
+
+17:09:42 --> 17:09:44
+Yoshihide Sekimoto, CSIS, UT: Uh, no, no, no, zoom down.
+
+17:09:46 --> 17:09:48
+Yoshihide Sekimoto, CSIS, UT: Ah, yeah, yeah, yeah.
+
+17:09:51 --> 17:09:54
+Yoshihide Sekimoto, CSIS, UT: Where is the lecture area?
+
+17:09:55 --> 17:10:05
+Mohit: Uh, this is the lecture area, like, I'm just assuming this to be as point size, but I think I should make it, like…
+
+17:10:05 --> 17:10:17
+Mohit: uh, fill the whole centroid of the building. But for now, I'm assuming it to be point size. But you can see it is, like, white, white, white color, because many people are here.
+
+17:10:09 --> 17:10:10
+Yoshihide Sekimoto, CSIS, UT: Oh…
+
+17:10:12 --> 17:10:13
+Yoshihide Sekimoto, CSIS, UT: I see, I see.
+
+17:10:17 --> 17:10:20
+Mohit: So if you see like this map.
+
+17:10:21 --> 17:10:24
+Mohit: And this is, like, occupancy of…
+
+17:10:25 --> 17:10:36
+Mohit: academic area. Like, you can see, it is, like, 8 AM, and the occupancy started, and it peaks on, like, 5,000 people in blocks and… blocks and…
+
+17:10:36 --> 17:10:39
+Mohit: Uh, let's see, then it goes down.
+
+17:10:38 --> 17:10:39
+Yoshihide Sekimoto, CSIS, UT: And.
+
+17:10:39 --> 17:10:42
+Mohit: Then it peaks again because this is like lunchtime.
+
+17:10:44 --> 17:10:49
+Yoshihide Sekimoto, CSIS, UT: Oh, I see, I see, ah, ok, ok, yeah, pretty good, hmm, I understand.
+
+17:10:49 --> 17:10:50
+Yoshihide Sekimoto, CSIS, UT: Thank you.
+
+17:10:51 --> 17:10:52
+Mohit: Real time sensitive.
+
+17:10:57 --> 17:10:58
+RUIHANG XIE: Thank you, Monique.
+
+17:10:59 --> 17:11:00
+RUIHANG XIE: Oh.
+
+17:11:00 --> 17:11:02
+RUIHANG XIE: Okay, I don't have any questions.
+
+17:11:03 --> 17:11:05
+Deeksha Arya: May I ask why?
+
+17:11:04 --> 17:11:04
+RUIHANG XIE: So.
+
+17:11:05 --> 17:11:06
+RUIHANG XIE: Yeah, yeah, sure.
+
+17:11:06 --> 17:11:07
+Deeksha Arya: Yeah, thank you.
+
+17:11:07 --> 17:11:12
+Deeksha Arya: Uh, so Mohit, I don't have any question, but just a comment for your work.
+
+17:11:12 --> 17:11:16
+Deeksha Arya: Uh, so on the slide of assumptions.
+
+17:11:16 --> 17:11:18
+Deeksha Arya: Uh, can you show it again?
+
+17:11:20 --> 17:11:26
+Mohit: I don't have slides on assumptions, but I have mentioned the assumptions, wait, let me…
+
+17:11:24 --> 17:11:27
+Deeksha Arya: Yeah, where you mentioned it, right?
+
+17:11:27 --> 17:11:31
+Deeksha Arya: About the students, about the staff and security guards.
+
+17:11:38 --> 17:11:39
+Mohit: Yeah, here.
+
+17:11:39 --> 17:11:41
+Deeksha Arya: Yes, yes.
+
+17:11:41 --> 17:11:49
+Deeksha Arya: Uh, so maybe after everything is done, whenever you are writing your paper, or if you have a chance to work on, uh.
+
+17:11:49 --> 17:11:50
+Deeksha Arya: of…
+
+17:11:50 --> 17:11:56
+Deeksha Arya: outliers also. Then, maybe you can add, for example, for security staff.
+
+17:11:56 --> 17:12:01
+Deeksha Arya: We usually have a security 24 hours a day, right?
+
+17:12:01 --> 17:12:03
+Mohit: Yeah, yeah, yeah.
+
+17:12:01 --> 17:12:09
+Deeksha Arya: So maybe after 10 PM shift also, they usually change all the security guards in IITs.
+
+17:12:09 --> 17:12:12
+Deeksha Arya: So, that case should be considered, because.
+
+17:12:09 --> 17:12:11
+Mohit: Yeah, yeah, yeah.
+
+17:12:12 --> 17:12:15
+Deeksha Arya: That will create some kind of movement.
+
+17:12:15 --> 17:12:18
+Deeksha Arya: And similarly for canteen stuff.
+
+17:12:15 --> 17:12:16
+Mohit: Yeah. Okay.
+
+17:12:18 --> 17:12:20
+Mohit: Yeah, yeah.
+
+17:12:18 --> 17:12:22
+Deeksha Arya: Because the canteens are run nighttime.
+
+17:12:22 --> 17:12:23
+Deeksha Arya: Separate contains, right?
+
+17:12:23 --> 17:12:25
+Mohit: Yeah.
+
+17:12:23 --> 17:12:25
+Deeksha Arya: Uh…
+
+17:12:25 --> 17:12:27
+Deeksha Arya: And then for students also.
+
+17:12:27 --> 17:12:33
+Deeksha Arya: There are certain labs, maybe in physics department or in chemistry department.
+
+17:12:33 --> 17:12:39
+Deeksha Arya: Where the experiments are generally conducted overnight.
+
+17:12:33 --> 17:12:35
+Mohit: Yeah.
+
+17:12:39 --> 17:12:45
+Deeksha Arya: So, that will also create some kind of movement that should be listed down.
+
+17:12:45 --> 17:12:47
+Deeksha Arya: And, uh…
+
+17:12:48 --> 17:12:51
+Deeksha Arya: And another aspect is library timing.
+
+17:12:51 --> 17:12:55
+Deeksha Arya: Uh, is there any fixed library timing in IIT daily?
+
+17:12:56 --> 17:13:06
+Mohit: Uh, no, like, uh, library is open almost for 24-7, except for 2 hours of downtime from 3 AM to 5 AM.
+
+17:13:06 --> 17:13:11
+Deeksha Arya: Okay, then those kind of things should be noted down, because, uh…
+
+17:13:11 --> 17:13:18
+Deeksha Arya: For example, in your case, you learned from Shreya's work on your Tokyo and mapped it to IIT Delhi.
+
+17:13:18 --> 17:13:22
+Deeksha Arya: So, in future, if you would like to map it for other IITs.
+
+17:13:18 --> 17:13:19
+Mohit: Yeah.
+
+17:13:22 --> 17:13:29
+Deeksha Arya: So, these may be slight variations. For example, for IIT Root Key, we had a timing where library.
+
+17:13:22 --> 17:13:23
+Mohit: Yes.
+
+17:13:29 --> 17:13:32
+Deeksha Arya: runs till 12 PM.
+
+17:13:32 --> 17:13:33
+Deeksha Arya: Uh, 12 AM.
+
+17:13:33 --> 17:13:37
+Deeksha Arya: In normal days, and during exam days, it is open throughout the night.
+
+17:13:37 --> 17:13:42
+Deeksha Arya: So those cases need to be considered if we want to have a real-time.
+
+17:13:38 --> 17:13:39
+Mohit: Yeah.
+
+17:13:42 --> 17:13:43
+Deeksha Arya: project.
+
+17:13:44 --> 17:13:49
+Deeksha Arya: So it is better to document all those cases and have a complete documentation.
+
+17:13:50 --> 17:13:53
+Mohit: Yes, ma'am, I will look into that.
+
+17:13:51 --> 17:13:52
+Deeksha Arya: Okay.
+
+17:13:53 --> 17:13:55
+Deeksha Arya: Yeah, okay, thank you.
+
+17:13:59 --> 17:14:01
+SHREYA K: Time of it. I have a question.
+
+17:13:59 --> 17:14:01
+SHREYA K: Hi, Mohit, I have a question.
+
+17:14:01 --> 17:14:07
+SHREYA K: So, currently you are mapping the residential zone within the campus, and outside the campus, right?
+
+17:14:01 --> 17:14:07
+SHREYA K: So currently you're mapping the residential zone within the campus or outside the campus right.
+
+17:14:07 --> 17:14:09
+Mohit: Yeah.
+
+17:14:09 --> 17:14:18
+SHREYA K: Okay, so the thing is, um, during the lunchtime, are you incorporating the POIs, like canteens, or hostel messes, or something like that?
+
+17:14:09 --> 17:14:18
+SHREYA K: Okay. So the uh thing is um during the lunchtime. Are you incorporating the pois like campaigns or hostile messes, or something like that?
+
+17:14:19 --> 17:14:21
+Mohit: Uh…
+
+17:14:21 --> 17:14:34
+Mohit: Uh, yeah, this is one of my things I have to look into that, because, like, the people living, like, very far away, like, 7 kilometers away, uh, they are doing lunch in the university.
+
+17:14:30 --> 17:14:30
+SHREYA K: Mmhm.
+
+17:14:30 --> 17:14:30
+SHREYA K: 嗯哼。
+
+17:14:33 --> 17:14:34
+SHREYA K: Campus, right.
+
+17:14:33 --> 17:14:34
+SHREYA K: Campus right.
+
+17:14:34 --> 17:14:45
+Mohit: like, we have a staff canteen, so I'm looking forward to incorporate that, but I just don't want to add it, like, uh, for everyone. I'm… I'm… yeah.
+
+17:14:43 --> 17:14:44
+SHREYA K: Okay.
+
+17:14:43 --> 17:14:44
+SHREYA K: Okay?
+
+17:14:46 --> 17:14:59
+SHREYA K: Yes, what I'm trying to say is because if you directly visualize it into a mob map, people don't understand what places are they moving? Because you are familiar with the it Delhi campus and the places right?
+
+17:14:46 --> 17:14:59
+SHREYA K: Uh yes, what i'm trying to say is um, because if you directly visualize it into a mobile map, people don't understand what places are they moving because you are familiar with the it delay campus and the places right.
+
+17:14:59 --> 17:15:11
+SHREYA K: So before mapping that, can you please generate a QGIS plot? I mean, on QGIS, a very good map so that we can understand the students' stays for the classes in this particular building.
+
+17:15:11 --> 17:15:16
+SHREYA K: The hostel zones are this, the canteen places are those, and the libraries are those, right?
+
+17:15:16 --> 17:15:17
+Mohit: Yeah. Okay.
+
+17:15:16 --> 17:15:24
+SHREYA K: So that can make a good, like, it will be good for understanding to the people who doesn't know about IIT Delhi campus, right?
+
+17:15:24 --> 17:15:25
+Mohit: Yeah. Okay.
+
+17:15:24 --> 17:15:32
+SHREYA K: Also, apart from that, I would like to mention that PhD students and even the master's students take a break. They used to go to library.
+
+17:15:32 --> 17:15:41
+SHREYA K: it's not fixed that they only they only move within the lunchtime hour. They sometimes go around 3 30 half. They come back to the lab and start working again. Right?
+
+17:15:41 --> 17:15:44
+SHREYA K: So those those can be like point of interest they're moving in.
+
+17:15:41 --> 17:15:42
+Mohit: Yeah.
+
+17:15:44 --> 17:15:52
+SHREYA K: So you can add those pois. So in between, apart from lunch break, they are going to maybe canteen in between their work.
+
+17:15:52 --> 17:15:59
+SHREYA K: in canteen or libraries, so you can have one section of POI with those places, particularly.
+
+17:15:59 --> 17:16:05
+SHREYA K: So, before moving to this, you just, uh… I would like to say, you just document it properly.
+
+17:15:59 --> 17:16:01
+Mohit: Yeah. Okay.
+
+17:16:05 --> 17:16:06
+Mohit: Yep.
+
+17:16:05 --> 17:16:12
+SHREYA K: to the students, starting at 8 Am. Going to the class, coming back in the lunch break, whether they used to have a.
+
+17:16:12 --> 17:16:22
+SHREYA K: lunch in Mests, or Canteen, or somewhere outside, nearby to the campus, because the one who is staying out of the campus, they are not going back to their home to have lunch, right?
+
+17:16:21 --> 17:16:23
+Mohit: Yeah, yeah, yeah.
+
+17:16:22 --> 17:16:24
+SHREYA K: They will. They will be having in the campus itself.
+
+17:16:24 --> 17:16:26
+Mohit: Yeah. Okay.
+
+17:16:24 --> 17:16:32
+SHREYA K: So you can just try to plot that as well. And within the, I think, in all the hostels there are messes, right?
+
+17:16:31 --> 17:16:33
+Mohit: Yeah.
+
+17:16:32 --> 17:16:39
+SHREYA K: There are a number of myths in the campus we have, so you can plot those with different points.
+
+17:16:39 --> 17:16:42
+SHREYA K: and show it first.st I I think you should have a proper map.
+
+17:16:42 --> 17:16:48
+Mohit: Yeah, I'm looking forward to doing that. That's the first part of documentation.
+
+17:16:42 --> 17:16:45
+SHREYA K: to understand, make people understand that.
+
+17:16:45 --> 17:16:46
+SHREYA K: Yes, if you…
+
+17:16:46 --> 17:16:47
+SHREYA K: Right.
+
+17:16:48 --> 17:16:57
+SHREYA K: True, true. And if you need any help with those things, let me know. I think you'll get those shapefiles of the campus from Admin Block, maybe?
+
+17:16:57 --> 17:16:58
+SHREYA K: Of your university?
+
+17:16:57 --> 17:16:59
+Mohit: Mmm.
+
+17:16:59 --> 17:17:07
+Mohit: Uh, I'm currently using, uh, Overpass Turbo, but yeah, I will look and look for the official files.
+
+17:17:06 --> 17:17:11
+SHREYA K: Yes, yes, official files. I think administration will give you the shape file if you ask them.
+
+17:17:11 --> 17:17:13
+Mohit: Okay.
+
+17:17:11 --> 17:17:13
+SHREYA K: Uh, they do provide it.
+
+17:17:13 --> 17:17:19
+SHREYA K: So yes, once you get those proper plot of mapping, and then you can plot each and everything very carefully, it will be good.
+
+17:17:19 --> 17:17:20
+SHREYA K: to understand.
+
+17:17:20 --> 17:17:23
+Mohit: Yeah, I'm looking forward for doing that.
+
+17:17:22 --> 17:17:24
+SHREYA K: Okay, let me know if you need any help.
+
+17:17:25 --> 17:17:27
+Mohit: Yeah, okay, so thanks.
+
+17:17:26 --> 17:17:27
+SHREYA K: Thank you.
+
+17:17:45 --> 17:17:47
+Yoshihide Sekimoto, CSIS, UT: Riham Newton. Newton.
+
+17:17:46 --> 17:17:48
+RUIHANG XIE: Oh, sorry! Sorry!
+
+17:17:48 --> 17:17:50
+RUIHANG XIE: Do you have a question?
+
+17:17:51 --> 17:17:54
+RUIHANG XIE: Oh, sorry! Sorry! Then.
+
+17:17:54 --> 17:18:00
+RUIHANG XIE: So if there is no other question, let's go to Yesang. Yes, thank you very much, Mohit.
+
+17:18:00 --> 17:18:01
+Mohit: Welcome.
+
+17:18:00 --> 17:18:01
+RUIHANG XIE: then…
+
+17:18:03 --> 17:18:07
+RUIHANG XIE: Jason, can you share your screen, then start your presentation.
+
+17:18:08 --> 17:18:09
+偉偉 葉: Um, okay.
+
+17:18:08 --> 17:18:09
+偉偉 葉: Um? Okay.
+
+17:18:14 --> 17:18:15
+偉偉 葉: Can you see my screen?
+
+17:18:14 --> 17:18:15
+偉偉 葉: Can you see my screen.
+
+17:18:15 --> 17:18:16
+RUIHANG XIE: Yep, uh…
+
+17:18:21 --> 17:18:22
+RUIHANG XIE: Yes, yeah.
+
+17:18:22 --> 17:18:23
+偉偉 葉: Okay.
+
+17:18:22 --> 17:18:23
+偉偉 葉: Okay?
+
+17:18:23 --> 17:18:24
+RUIHANG XIE: And.
+
+17:18:23 --> 17:18:24
+偉偉 葉: Oh.
+
+17:18:23 --> 17:18:24
+偉偉 葉: 呃。
+
+17:18:26 --> 17:18:28
+偉偉 葉: Okay? Okay?
+
+17:18:26 --> 17:18:28
+偉偉 葉: Okay, can you see the screen?
+
+17:18:29 --> 17:18:31
+RUIHANG XIE: Yeah, but with just the OKR.
+
+17:18:32 --> 17:18:34
+偉偉 葉: Oh, yeah, yeah, uh-huh.
+
+17:18:32 --> 17:18:34
+偉偉 葉: Uh yeah.
+
+17:18:35 --> 17:18:37
+偉偉 葉: I thought it's, uh…
+
+17:18:35 --> 17:18:37
+偉偉 葉: I thought. It's a.
+
+17:18:37 --> 17:18:40
+偉偉 葉: you know, it's a routine to 1st discuss the OKR. And.
+
+17:18:37 --> 17:18:40
+偉偉 葉: You know it's entertain to first discuss the okay and.
+
+17:18:40 --> 17:18:42
+偉偉 葉: then do the presentation.
+
+17:18:40 --> 17:18:42
+偉偉 葉: Then, through the presentation.
+
+17:18:43 --> 17:18:44
+偉偉 葉: Um…
+
+17:18:43 --> 17:18:44
+偉偉 葉: 呃。
+
+17:18:45 --> 17:18:49
+偉偉 葉: So so I'll I'll 1st discuss my okay. And and.
+
+17:18:45 --> 17:18:49
+偉偉 葉: So so i'll i'll first discuss my okay and and.
+
+17:18:49 --> 17:18:51
+偉偉 葉: So.
+
+17:18:49 --> 17:18:51
+偉偉 葉: So um.
+
+17:18:51 --> 17:18:55
+偉偉 葉: So in this year my primary objective is to just to.
+
+17:18:51 --> 17:18:55
+偉偉 葉: So in this year my primary objective is to just to.
+
+17:18:55 --> 17:18:59
+偉偉 葉: follow my previous research on diffusion models. And.
+
+17:18:55 --> 17:18:59
+偉偉 葉: Follow my previous research on defusion, models and.
+
+17:18:59 --> 17:19:01
+偉偉 葉: Um, in this year, I would like to.
+
+17:19:01 --> 17:19:05
+偉偉 葉: Because my previous research is more focused on.
+
+17:19:05 --> 17:19:08
+偉偉 葉: the the methodology and propose.
+
+17:19:08 --> 17:19:11
+偉偉 葉: like state state of the art.
+
+17:19:11 --> 17:19:12
+偉偉 葉: um…
+
+17:19:12 --> 17:19:20
+偉偉 葉: algorithms for for time series. But in this year, in this year I want to focus on some applications.
+
+17:19:20 --> 17:19:22
+偉偉 葉: So.
+
+17:19:22 --> 17:19:24
+偉偉 葉: Important part is to study.
+
+17:19:25 --> 17:19:31
+偉偉 葉: the randomness, randomness in society and economics, and I would elaborate on that later.
+
+17:19:34 --> 17:19:35
+偉偉 葉: Um…
+
+17:19:36 --> 17:19:37
+偉偉 葉: So so.
+
+17:19:38 --> 17:19:39
+偉偉 葉: on…
+
+17:19:39 --> 17:19:43
+偉偉 葉: The first application study is conducted on stocks.
+
+17:19:43 --> 17:19:47
+偉偉 葉: So I would like to 1st explain.
+
+17:19:47 --> 17:19:52
+偉偉 葉: the research connection to our previous research. So.
+
+17:19:52 --> 17:19:53
+偉偉 葉: Um…
+
+17:19:53 --> 17:19:59
+偉偉 葉: my previous research is trying to. Our previous research is trying to solve the.
+
+17:19:59 --> 17:20:01
+偉偉 葉: problem in diffusion models.
+
+17:20:01 --> 17:20:03
+偉偉 葉: Um, after it's…
+
+17:20:03 --> 17:20:10
+偉偉 葉: used in time series, because in computer vision or natural language processing.
+
+17:20:11 --> 17:20:14
+偉偉 葉: when we're using diffusion models.
+
+17:20:14 --> 17:20:19
+偉偉 葉: The distribution is a stationary distribution or you can say that it's a.
+
+17:20:19 --> 17:20:20
+偉偉 葉: um…
+
+17:20:20 --> 17:20:28
+偉偉 葉: fix the distribution. So you can just sample from a Gaussian distribution, a fixed standard Gaussian distribution, and.
+
+17:20:28 --> 17:20:30
+偉偉 葉: do reverse, um…
+
+17:20:30 --> 17:20:34
+偉偉 葉: process, and you can get a complex distribution. But.
+
+17:20:34 --> 17:20:35
+偉偉 葉: Umm.
+
+17:20:35 --> 17:20:37
+偉偉 葉: in time series, since the distribution can.
+
+17:20:37 --> 17:20:39
+偉偉 葉: change a lot.
+
+17:20:39 --> 17:20:45
+偉偉 葉: Um, for example, um, for stock prices, maybe, um, in the past, they may be, like.
+
+17:20:45 --> 17:20:48
+偉偉 葉: 0 to 10, but in the future you may be like.
+
+17:20:48 --> 17:20:54
+偉偉 葉: 10, uh, 10 to 20. So, so the past and future, um, the distribution is actually.
+
+17:20:54 --> 17:20:57
+偉偉 葉: Uh, very different. So…
+
+17:20:57 --> 17:20:59
+偉偉 葉: Uh, we basically just reshape.
+
+17:20:59 --> 17:21:03
+偉偉 葉: the the the diff diffusion models.
+
+17:21:03 --> 17:21:05
+偉偉 葉: from both data and model size.
+
+17:21:07 --> 17:21:08
+偉偉 葉: Um.
+
+17:21:08 --> 17:21:12
+偉偉 葉: and consider the applications. When using.
+
+17:21:12 --> 17:21:16
+偉偉 葉: different generative models.
+
+17:21:16 --> 17:21:21
+偉偉 葉: in society and in and in economics as aspects.
+
+17:21:21 --> 17:21:23
+偉偉 葉: The the the usage of.
+
+17:21:23 --> 17:21:24
+偉偉 葉: the generative models.
+
+17:21:24 --> 17:21:29
+偉偉 葉: It's also very, very different with computer visions.
+
+17:21:29 --> 17:21:32
+偉偉 葉: or like in natural language processing, because.
+
+17:21:32 --> 17:21:36
+偉偉 葉: For example, if we are generate a image.
+
+17:21:36 --> 17:21:37
+偉偉 葉: um…
+
+17:21:37 --> 17:21:41
+偉偉 葉: We won't, we won't care about the possibilities of.
+
+17:21:41 --> 17:21:45
+偉偉 葉: a specific image like we won't care about whether.
+
+17:21:45 --> 17:21:46
+偉偉 葉: Oh.
+
+17:21:46 --> 17:21:51
+偉偉 葉: It's a it's likely it's a dog, or the possibility of.
+
+17:21:51 --> 17:21:53
+偉偉 葉: a cat. But when generating.
+
+17:21:53 --> 17:22:01
+偉偉 葉: a random behavior in society or economics, the possibility or distribution is very important.
+
+17:22:01 --> 17:22:02
+偉偉 葉: Because, um…
+
+17:22:02 --> 17:22:03
+偉偉 葉: Like.
+
+17:22:03 --> 17:22:04
+偉偉 葉: with generating.
+
+17:22:04 --> 17:22:06
+偉偉 葉: trajectories.
+
+17:22:06 --> 17:22:08
+偉偉 葉: like just presented by.
+
+17:22:08 --> 17:22:10
+偉偉 葉: Mo his son.
+
+17:22:11 --> 17:22:12
+偉偉 葉: Um.
+
+17:22:12 --> 17:22:19
+偉偉 葉: we we can actually generate the multiple trajectories, and the model will tell us that.
+
+17:22:19 --> 17:22:25
+偉偉 葉: maybe there are 60% that the person will goes to the lecture room.
+
+17:22:25 --> 17:22:29
+偉偉 葉: and 40% the the person will goes.
+
+17:22:29 --> 17:22:32
+偉偉 葉: we'll cook what goes home. So.
+
+17:22:33 --> 17:22:34
+偉偉 葉: in… in…
+
+17:22:34 --> 17:22:36
+偉偉 葉: that that's very different with.
+
+17:22:36 --> 17:22:37
+偉偉 葉: Oh.
+
+17:22:38 --> 17:22:45
+偉偉 葉: the the diffusion models, applications in previous computer regions or natural language.
+
+17:22:45 --> 17:22:47
+偉偉 葉: Uh, processing, so…
+
+17:22:47 --> 17:22:48
+偉偉 葉: um…
+
+17:22:48 --> 17:22:52
+偉偉 葉: The randomness is everywhere in society and economics, so.
+
+17:22:52 --> 17:22:53
+偉偉 葉: um…
+
+17:22:54 --> 17:23:02
+偉偉 葉: we're thinking that maybe diffusion models can be useful for modeling the uncertainty and simulating the real world.
+
+17:23:03 --> 17:23:05
+偉偉 葉: Um, so I found an…
+
+17:23:05 --> 17:23:08
+偉偉 葉: a application that is drinking the stock.
+
+17:23:08 --> 17:23:10
+偉偉 葉: Oh.
+
+17:23:11 --> 17:23:12
+偉偉 葉: When…
+
+17:23:12 --> 17:23:13
+偉偉 葉: And.
+
+17:23:13 --> 17:23:15
+偉偉 葉: When trading in the market.
+
+17:23:16 --> 17:23:17
+偉偉 葉: In fact, the the.
+
+17:23:17 --> 17:23:21
+偉偉 葉: the invested, the the investors often.
+
+17:23:21 --> 17:23:24
+偉偉 葉: care about the access return.
+
+17:23:24 --> 17:23:25
+偉偉 葉: um…
+
+17:23:25 --> 17:23:26
+偉偉 葉: It's the.
+
+17:23:26 --> 17:23:29
+偉偉 葉: the money you earn over the market.
+
+17:23:29 --> 17:23:31
+偉偉 葉: So.
+
+17:23:32 --> 17:23:36
+偉偉 葉: if we always buy the best. For example, if.
+
+17:23:36 --> 17:23:39
+偉偉 葉: We have 500 stocks in the market.
+
+17:23:39 --> 17:23:41
+偉偉 葉: And we just only need to buy.
+
+17:23:41 --> 17:23:44
+偉偉 葉: The best 100 stocks.
+
+17:23:44 --> 17:23:46
+偉偉 葉: in the market to win the market.
+
+17:23:46 --> 17:23:47
+偉偉 葉: So.
+
+17:23:47 --> 17:23:49
+偉偉 葉: um…
+
+17:23:49 --> 17:23:51
+偉偉 葉: to continuously make.
+
+17:23:51 --> 17:23:54
+偉偉 葉: positive excess return in the market.
+
+17:23:54 --> 17:23:57
+偉偉 葉: We just need to have a good rank.
+
+17:23:57 --> 17:23:58
+偉偉 葉: Of the sock.
+
+17:23:59 --> 17:24:01
+偉偉 葉: of good prediction of the future.
+
+17:24:01 --> 17:24:02
+偉偉 葉: um…
+
+17:24:03 --> 17:24:08
+偉偉 葉: So, for example, we can rank the ranking can be very simple, and.
+
+17:24:08 --> 17:24:12
+偉偉 葉: it can be complex. So, for example, we can just rank the stocks.
+
+17:24:12 --> 17:24:14
+偉偉 葉: by his previous.
+
+17:24:14 --> 17:24:16
+偉偉 葉: Um, annualize the returns.
+
+17:24:17 --> 17:24:19
+偉偉 葉: For example, in the left.
+
+17:24:19 --> 17:24:24
+偉偉 葉: Um, there's an example of ranking all S&P 500 stocks over the.
+
+17:24:24 --> 17:24:26
+偉偉 葉: Past years and.
+
+17:24:26 --> 17:24:31
+偉偉 葉: I'm sure we can use the machine learning or deep learning methods.
+
+17:24:31 --> 17:24:33
+偉偉 葉: um…
+
+17:24:33 --> 17:24:34
+偉偉 葉: So.
+
+17:24:34 --> 17:24:38
+偉偉 葉: often that the input is the stock factors, data and.
+
+17:24:38 --> 17:24:41
+偉偉 葉: We can just use the stock returns.
+
+17:24:41 --> 17:24:43
+偉偉 葉: as the scores.
+
+17:24:43 --> 17:24:46
+偉偉 葉: Uh, by the way, the return is…
+
+17:24:46 --> 17:24:48
+偉偉 葉: whether it's whether the stock.
+
+17:24:48 --> 17:24:50
+偉偉 葉: will earn money or.
+
+17:24:50 --> 17:24:53
+偉偉 葉: it will lose money. It's the.
+
+17:24:53 --> 17:24:56
+偉偉 葉: It's like it's the today's price.
+
+17:24:56 --> 17:24:57
+偉偉 葉: um…
+
+17:24:57 --> 17:24:59
+偉偉 葉: divided by.
+
+17:24:59 --> 17:25:00
+偉偉 葉: yesterday's price.
+
+17:25:00 --> 17:25:01
+偉偉 葉: um…
+
+17:25:03 --> 17:25:07
+偉偉 葉: But you know, in pre previous previous methods.
+
+17:25:07 --> 17:25:10
+偉偉 葉: They often use like the statistics.
+
+17:25:10 --> 17:25:11
+偉偉 葉: of.
+
+17:25:11 --> 17:25:17
+偉偉 葉: the returns, for example, mean and variance for ranking, but they do not consider the whole distributions.
+
+17:25:17 --> 17:25:21
+偉偉 葉: or they do not simulate. They do not simulate.
+
+17:25:21 --> 17:25:23
+偉偉 葉: the behavior of.
+
+17:25:23 --> 17:25:24
+偉偉 葉: Each investors.
+
+17:25:24 --> 17:25:26
+偉偉 葉: Um, to…
+
+17:25:26 --> 17:25:26
+偉偉 葉: Oh.
+
+17:25:27 --> 17:25:28
+偉偉 葉: better ranking.
+
+17:25:28 --> 17:25:29
+偉偉 葉: the stocks.
+
+17:25:29 --> 17:25:31
+偉偉 葉: So the question is, can we predict.
+
+17:25:32 --> 17:25:34
+偉偉 葉: this distribution of.
+
+17:25:34 --> 17:25:36
+偉偉 葉: Stock returns and use them to rank.
+
+17:25:36 --> 17:25:37
+偉偉 葉: The stocks.
+
+17:25:38 --> 17:25:40
+偉偉 葉: Um…
+
+17:25:40 --> 17:25:44
+偉偉 葉: So in the right, there is an example.
+
+17:25:44 --> 17:25:46
+偉偉 葉: of it's like.
+
+17:25:46 --> 17:25:46
+偉偉 葉: um…
+
+17:25:46 --> 17:25:47
+偉偉 葉: Two stocks.
+
+17:25:47 --> 17:25:51
+偉偉 葉: with different distributions. And you can see that it's it's.
+
+17:25:51 --> 17:25:54
+偉偉 葉: the… although they… they're…
+
+17:25:54 --> 17:25:57
+偉偉 葉: They have this. They share the same main.
+
+17:25:57 --> 17:25:59
+偉偉 葉: their expectation.
+
+17:26:00 --> 17:26:03
+偉偉 葉: Their expectations are the same, but.
+
+17:26:03 --> 17:26:04
+偉偉 葉: um…
+
+17:26:04 --> 17:26:06
+偉偉 葉: The distributions can vary.
+
+17:26:06 --> 17:26:13
+偉偉 葉: very differently. The the distributions can be completely different. So.
+
+17:26:13 --> 17:26:15
+偉偉 葉: So obviously.
+
+17:26:15 --> 17:26:16
+偉偉 葉: um…
+
+17:26:16 --> 17:26:20
+偉偉 葉: stock A and stock B, they are different, and.
+
+17:26:20 --> 17:26:21
+偉偉 葉: um…
+
+17:26:21 --> 17:26:25
+偉偉 葉: If we use the traditional view.
+
+17:26:25 --> 17:26:28
+偉偉 葉: that consider only the the expectations. They are the same.
+
+17:26:28 --> 17:26:30
+偉偉 葉: Um, so…
+
+17:26:30 --> 17:26:31
+偉偉 葉: um…
+
+17:26:31 --> 17:26:33
+偉偉 葉: if we regression.
+
+17:26:33 --> 17:26:35
+偉偉 葉: only on the return.
+
+17:26:35 --> 17:26:38
+偉偉 葉: the stock A and stock B will will.
+
+17:26:38 --> 17:26:40
+偉偉 葉: We'll share the same signal, but.
+
+17:26:40 --> 17:26:41
+偉偉 葉: BLA, M.
+
+17:26:42 --> 17:26:45
+偉偉 葉: our target is to consider the whole distribution.
+
+17:26:47 --> 17:26:49
+偉偉 葉: to reflect the different.
+
+17:26:49 --> 17:26:54
+偉偉 葉: matrix to reflect the different behavior of each stocks.
+
+17:26:55 --> 17:26:58
+偉偉 葉: So the methodology is is.
+
+17:26:58 --> 17:26:59
+偉偉 葉: Con.
+
+17:26:59 --> 17:27:01
+偉偉 葉: consists of.
+
+17:27:01 --> 17:27:03
+偉偉 葉: 3 major phases.
+
+17:27:03 --> 17:27:05
+偉偉 葉: So 1st we use the.
+
+17:27:05 --> 17:27:07
+偉偉 葉: Um, stock offer.
+
+17:27:07 --> 17:27:12
+偉偉 葉: stock features stock factors, features to.
+
+17:27:12 --> 17:27:15
+偉偉 葉: train a diffusion model. And.
+
+17:27:15 --> 17:27:17
+偉偉 葉: And then we have…
+
+17:27:17 --> 17:27:22
+偉偉 葉: like many, many, we we can sample from the diffusion models to generate many.
+
+17:27:22 --> 17:27:23
+偉偉 葉: Stock samples.
+
+17:27:23 --> 17:27:25
+偉偉 葉: And we have a sample cloud.
+
+17:27:26 --> 17:27:29
+偉偉 葉: Um, in each trading day. And use this…
+
+17:27:29 --> 17:27:34
+偉偉 葉: use these samples using these simulating samples, we can.
+
+17:27:34 --> 17:27:36
+偉偉 葉: calculate.
+
+17:27:36 --> 17:27:38
+偉偉 葉: some matrix from.
+
+17:27:38 --> 17:27:40
+偉偉 葉: the distribution to describe.
+
+17:27:41 --> 17:27:43
+偉偉 葉: the status of the sock.
+
+17:27:43 --> 17:27:44
+偉偉 葉: um…
+
+17:27:45 --> 17:27:46
+偉偉 葉: And then…
+
+17:27:46 --> 17:27:47
+偉偉 葉: we can construct.
+
+17:27:47 --> 17:27:49
+偉偉 葉: a portfolio from.
+
+17:27:49 --> 17:27:51
+偉偉 葉: the distribution.
+
+17:27:54 --> 17:27:56
+偉偉 葉: So for the training part.
+
+17:27:56 --> 17:27:58
+偉偉 葉: We basically just.
+
+17:27:58 --> 17:27:59
+偉偉 葉: Follow.
+
+17:27:59 --> 17:28:02
+偉偉 葉: You know, our previous research to.
+
+17:28:02 --> 17:28:04
+偉偉 葉: adopt the method.
+
+17:28:04 --> 17:28:08
+偉偉 葉: In time series to stock.
+
+17:28:08 --> 17:28:10
+偉偉 葉: And so we have a.
+
+17:28:10 --> 17:28:14
+偉偉 葉: adaptive endpoint in the diffusion models. And.
+
+17:28:14 --> 17:28:18
+偉偉 葉: We use a a Lstm backbone as the.
+
+17:28:18 --> 17:28:22
+偉偉 葉: noise predictor. And.
+
+17:28:22 --> 17:28:23
+偉偉 葉: we use…
+
+17:28:23 --> 17:28:28
+偉偉 葉: Ddim methods for fast inference, and we generate.
+
+17:28:28 --> 17:28:30
+偉偉 葉: um…
+
+17:28:30 --> 17:28:31
+偉偉 葉: 5,000 samples.
+
+17:28:31 --> 17:28:34
+偉偉 葉: to simulate the stock behavior.
+
+17:28:35 --> 17:28:38
+偉偉 葉: So, um, here's the example of…
+
+17:28:38 --> 17:28:40
+偉偉 葉: generating the.
+
+17:28:42 --> 17:28:43
+偉偉 葉: Oh…
+
+17:28:45 --> 17:28:48
+偉偉 葉: So so so you can see that the the.
+
+17:28:48 --> 17:28:48
+偉偉 葉: Let's talk for.
+
+17:28:49 --> 17:28:53
+偉偉 葉: So the the generated distribution can be very complex.
+
+17:28:54 --> 17:28:57
+偉偉 葉: and the the red line is the.
+
+17:28:57 --> 17:29:02
+偉偉 葉: the the endpoint distribution is is a Gaussian distribution, and.
+
+17:29:02 --> 17:29:08
+偉偉 葉: The generated distribution is the histogram, the blue histogram.
+
+17:29:08 --> 17:29:10
+偉偉 葉: age figure.
+
+17:29:11 --> 17:29:18
+偉偉 葉: and then we can calculate a score because we we need to rank the score and rank rank the stocks right?
+
+17:29:18 --> 17:29:19
+偉偉 葉: So.
+
+17:29:19 --> 17:29:21
+偉偉 葉: We just, uh, output…
+
+17:29:21 --> 17:29:23
+偉偉 葉: a ranking score.
+
+17:29:23 --> 17:29:25
+偉偉 葉: for for ranking the stocks.
+
+17:29:26 --> 17:29:28
+偉偉 葉: So the score is basically.
+
+17:29:28 --> 17:29:29
+偉偉 葉: a.
+
+17:29:29 --> 17:29:31
+偉偉 葉: um…
+
+17:29:31 --> 17:29:33
+偉偉 葉: a value to compare different.
+
+17:29:33 --> 17:29:34
+偉偉 葉: Stocks and.
+
+17:29:34 --> 17:29:37
+偉偉 葉: So the question is.
+
+17:29:37 --> 17:29:43
+偉偉 葉: how can we compare the stocks in different distributions? For example, we can only care about.
+
+17:29:43 --> 17:29:44
+偉偉 葉: the positive side.
+
+17:29:45 --> 17:29:48
+偉偉 葉: or we can only care about the the negative side.
+
+17:29:49 --> 17:29:50
+偉偉 葉: or…
+
+17:29:50 --> 17:29:52
+偉偉 葉: One can care about the whole distribution.
+
+17:29:53 --> 17:29:55
+偉偉 葉: Or we can care about only.
+
+17:29:55 --> 17:29:58
+偉偉 葉: the expectations or the the variance.
+
+17:29:58 --> 17:30:01
+偉偉 葉: So our final solution.
+
+17:30:01 --> 17:30:02
+偉偉 葉: Is.
+
+17:30:02 --> 17:30:05
+偉偉 葉: ensemble is an ensemble of.
+
+17:30:05 --> 17:30:06
+偉偉 葉: 3.
+
+17:30:06 --> 17:30:07
+偉偉 葉: scores.
+
+17:30:07 --> 17:30:10
+偉偉 葉: We we use the expectations.
+
+17:30:10 --> 17:30:11
+偉偉 葉: and.
+
+17:30:11 --> 17:30:13
+偉偉 葉: the positive margin.
+
+17:30:13 --> 17:30:16
+偉偉 葉: That a score that computed.
+
+17:30:17 --> 17:30:20
+偉偉 葉: considering only the positive sides.
+
+17:30:20 --> 17:30:21
+偉偉 葉: and.
+
+17:30:21 --> 17:30:25
+偉偉 葉: a city of dominance. It's a score compared.
+
+17:30:25 --> 17:30:26
+偉偉 葉: the…
+
+17:30:26 --> 17:30:27
+偉偉 葉: um…
+
+17:30:27 --> 17:30:30
+偉偉 葉: cumulative distribution function.
+
+17:30:30 --> 17:30:36
+偉偉 葉: Um, so, so, so the first, the first score is basically the expectation, and the second score is.
+
+17:30:36 --> 17:30:38
+偉偉 葉: Say, um…
+
+17:30:38 --> 17:30:41
+偉偉 葉: how much a score wins over.
+
+17:30:41 --> 17:30:43
+偉偉 葉: all other scores.
+
+17:30:43 --> 17:30:47
+偉偉 葉: how how much a stock wins over all other stocks.
+
+17:30:47 --> 17:30:49
+偉偉 葉: and.
+
+17:30:49 --> 17:30:50
+偉偉 葉: Um, we care only.
+
+17:30:50 --> 17:30:53
+偉偉 葉: We care about only the positive size.
+
+17:30:53 --> 17:30:54
+偉偉 葉: So.
+
+17:30:55 --> 17:30:57
+偉偉 葉: If it if it lose.
+
+17:30:57 --> 17:31:00
+偉偉 葉: lose, lose, lose is a stock, another stock.
+
+17:31:00 --> 17:31:02
+偉偉 葉: we will compute it.
+
+17:31:02 --> 17:31:03
+偉偉 葉: the value as 0.
+
+17:31:03 --> 17:31:08
+偉偉 葉: So we care only about the positive positive size.
+
+17:31:08 --> 17:31:09
+偉偉 葉: And for this.
+
+17:31:09 --> 17:31:12
+偉偉 葉: for the cumulative distribution function.
+
+17:31:12 --> 17:31:13
+偉偉 葉: Well, we…
+
+17:31:13 --> 17:31:15
+偉偉 葉: when considered the whole distribution.
+
+17:31:15 --> 17:31:17
+偉偉 葉: We will compare that.
+
+17:31:17 --> 17:31:19
+偉偉 葉: Um, how much is stock?
+
+17:31:20 --> 17:31:21
+偉偉 葉: Uh, how much stock?
+
+17:31:22 --> 17:31:23
+偉偉 葉: Oh.
+
+17:31:23 --> 17:31:25
+偉偉 葉: You know how much.
+
+17:31:25 --> 17:31:26
+偉偉 葉: uh…
+
+17:31:26 --> 17:31:27
+偉偉 葉: a positive.
+
+17:31:27 --> 17:31:29
+偉偉 葉: How much positive region?
+
+17:31:30 --> 17:31:33
+偉偉 葉: It ha! It has over other stocks.
+
+17:31:35 --> 17:31:37
+偉偉 葉: So.
+
+17:31:37 --> 17:31:38
+偉偉 葉: The third is to cause.
+
+17:31:37 --> 17:31:40
+Yoshihide Sekimoto, CSIS, UT: Time is up. Hurry up.
+
+17:31:40 --> 17:31:41
+RUIHANG XIE: Yes.
+
+17:31:40 --> 17:31:41
+偉偉 葉: Awesome.
+
+17:31:41 --> 17:31:48
+偉偉 葉: Sorry. The the study is just to construct the portfolio using the the distribution.
+
+17:31:48 --> 17:31:53
+偉偉 葉: models. So we basically just generate a weight of different stocks and combine them.
+
+17:31:53 --> 17:31:59
+偉偉 葉: So the data set is is the China Csi, 300.
+
+17:31:59 --> 17:32:08
+偉偉 葉: stocks with 300 stocks, and when training 2,008 from 2,014 and testing.
+
+17:32:08 --> 17:32:11
+偉偉 葉: 2017 to 2020.
+
+17:32:11 --> 17:32:13
+偉偉 葉: and the matrix are.
+
+17:32:13 --> 17:32:18
+偉偉 葉: Just typical metrics in evaluating different stock factors.
+
+17:32:18 --> 17:32:24
+偉偉 葉: It's just basically a correlation between stock returns and the signals.
+
+17:32:25 --> 17:32:33
+偉偉 葉: And for the portfolio matrix, it's annualized returns, information ratio and max drawdown. Max drawdown is like.
+
+17:32:33 --> 17:32:34
+偉偉 葉: Um…
+
+17:32:35 --> 17:32:37
+偉偉 葉: Well, what is the biggest to lose?
+
+17:32:37 --> 17:32:39
+偉偉 葉: In your investments.
+
+17:32:39 --> 17:32:40
+偉偉 葉: Oh.
+
+17:32:42 --> 17:32:46
+偉偉 葉: So this is the results of consider only the the score.
+
+17:32:46 --> 17:32:49
+偉偉 葉: And there's no portfolio design.
+
+17:32:49 --> 17:32:55
+偉偉 葉: So if we care only the the positive size. So the.
+
+17:32:55 --> 17:32:58
+偉偉 葉: annualized return will be high, but it's.
+
+17:32:58 --> 17:33:00
+偉偉 葉: Max drawdown will also be high.
+
+17:33:01 --> 17:33:05
+偉偉 葉: But if we ensemble different scores, and we can achieve.
+
+17:33:05 --> 17:33:06
+偉偉 葉: Oh.
+
+17:33:06 --> 17:33:07
+偉偉 葉: Oh.
+
+17:33:07 --> 17:33:11
+偉偉 葉: one can achieve most sold out on this matrix.
+
+17:33:11 --> 17:33:13
+偉偉 葉: Thank you very much.
+
+17:33:15 --> 17:33:19
+RUIHANG XIE: Thank you. Yes, and very interesting question. Actually, I.
+
+17:33:19 --> 17:33:22
+RUIHANG XIE: I don't know this topic. I feel like you.
+
+17:33:22 --> 17:33:27
+RUIHANG XIE: You can be a new like you. Maybe you can create new deep seek.
+
+17:33:27 --> 17:33:28
+RUIHANG XIE: Okay.
+
+17:33:29 --> 17:33:29
+RUIHANG XIE: yeah.
+
+17:33:29 --> 17:33:32
+RUIHANG XIE: So any question for yes, yes.
+
+17:33:30 --> 17:33:31
+偉偉 葉: Yep.
+
+17:33:38 --> 17:33:40
+Zhuang Haoyu: I have a question.
+
+17:33:41 --> 17:33:42
+Zhuang Haoyu: Yeah, I have a question.
+
+17:33:42 --> 17:33:43
+偉偉 葉: Yeah.
+
+17:33:42 --> 17:33:43
+RUIHANG XIE: Yeah, yes.
+
+17:33:42 --> 17:33:44
+Zhuang Haoyu: Yeah, yeah.
+
+17:33:45 --> 17:33:52
+Zhuang Haoyu: Yeah. Why do you choose the diffusion model for the stock return prediction?
+
+17:33:47 --> 17:33:48
+RUIHANG XIE: What is it?
+
+17:33:49 --> 17:33:50
+RUIHANG XIE: Cool.
+
+17:33:55 --> 17:33:56
+偉偉 葉: Um…
+
+17:33:56 --> 17:34:04
+偉偉 葉: I think there are 2 reasons, and the 1st reason is is closely related to my previous research.
+
+17:34:04 --> 17:34:05
+偉偉 葉: and um…
+
+17:34:06 --> 17:34:07
+偉偉 葉: Um, I have…
+
+17:34:08 --> 17:34:09
+偉偉 葉: um…
+
+17:34:09 --> 17:34:10
+偉偉 葉: We… we have…
+
+17:34:10 --> 17:34:11
+偉偉 葉: I'm.
+
+17:34:11 --> 17:34:14
+偉偉 葉: 2 topics to.
+
+17:34:14 --> 17:34:17
+偉偉 葉: motivations on diffusions and.
+
+17:34:17 --> 17:34:20
+偉偉 葉: Um, you know, in time series.
+
+17:34:20 --> 17:34:21
+偉偉 葉: the the.
+
+17:34:21 --> 17:34:25
+偉偉 葉: the data and model, the data assumption and model training objective.
+
+17:34:25 --> 17:34:26
+偉偉 葉: are different.
+
+17:34:26 --> 17:34:32
+偉偉 葉: for, um, different with previous diffusions. So, the second reason is that.
+
+17:34:33 --> 17:34:34
+偉偉 葉: Oh.
+
+17:34:35 --> 17:34:36
+偉偉 葉: um…
+
+17:34:37 --> 17:34:38
+偉偉 葉: Just…
+
+17:34:38 --> 17:34:39
+偉偉 葉: When ranking stocks.
+
+17:34:39 --> 17:34:40
+偉偉 葉: um…
+
+17:34:40 --> 17:34:43
+偉偉 葉: So so it's actually that.
+
+17:34:43 --> 17:34:44
+偉偉 葉: Oh.
+
+17:34:45 --> 17:34:47
+偉偉 葉: So, when ranking the stocks.
+
+17:34:47 --> 17:34:48
+偉偉 葉: Wing.
+
+17:34:48 --> 17:34:51
+偉偉 葉: you know, in previous financial.
+
+17:34:51 --> 17:34:53
+偉偉 葉: Um, uh, methods.
+
+17:34:53 --> 17:34:55
+偉偉 葉: And they they.
+
+17:34:55 --> 17:34:56
+偉偉 葉: they cannot.
+
+17:34:56 --> 17:34:57
+偉偉 葉: They cannot.
+
+17:34:58 --> 17:34:59
+偉偉 葉: um…
+
+17:34:59 --> 17:35:01
+偉偉 葉: they cannot construct.
+
+17:35:01 --> 17:35:04
+偉偉 葉: They cannot predict, they cannot model.
+
+17:35:04 --> 17:35:07
+偉偉 葉: very complex distributions.
+
+17:35:07 --> 17:35:08
+偉偉 葉: So.
+
+17:35:08 --> 17:35:09
+偉偉 葉: The answer is.
+
+17:35:10 --> 17:35:12
+偉偉 葉: that the future models.
+
+17:35:12 --> 17:35:15
+偉偉 葉: is suitable for model complex distributions.
+
+17:35:16 --> 17:35:17
+偉偉 葉: Um, like…
+
+17:35:17 --> 17:35:18
+偉偉 葉: generating an image.
+
+17:35:18 --> 17:35:21
+偉偉 葉: generating worse like.
+
+17:35:21 --> 17:35:22
+偉偉 葉: GPT.
+
+17:35:22 --> 17:35:23
+偉偉 葉: um…
+
+17:35:23 --> 17:35:24
+偉偉 葉: So.
+
+17:35:24 --> 17:35:26
+偉偉 葉: And you can see that.
+
+17:35:27 --> 17:35:28
+偉偉 葉: distribution.
+
+17:35:29 --> 17:35:31
+偉偉 葉: Um, may have many spikes.
+
+17:35:31 --> 17:35:33
+偉偉 葉: So it's not a.
+
+17:35:33 --> 17:35:37
+偉偉 葉: It's not not a distribution that can.
+
+17:35:37 --> 17:35:40
+偉偉 葉: Be analytic and analytically described.
+
+17:35:41 --> 17:35:43
+偉偉 葉: So, I think that's…
+
+17:35:44 --> 17:35:45
+偉偉 葉: a very.
+
+17:35:45 --> 17:35:50
+偉偉 葉: good advantage of diffusion model because it can be used to generate.
+
+17:35:50 --> 17:35:53
+偉偉 葉: or predict or model very complex distributions.
+
+17:35:55 --> 17:35:57
+Zhuang Haoyu: So…
+
+17:35:57 --> 17:35:58
+Zhuang Haoyu: That's the reason.
+
+17:35:57 --> 17:35:57
+RUIHANG XIE: Definitely.
+
+17:35:58 --> 17:35:59
+RUIHANG XIE: Why?
+
+17:35:58 --> 17:36:05
+Zhuang Haoyu: Why? Why is predicting the returned distribution better than the.
+
+17:35:59 --> 17:36:00
+RUIHANG XIE: bye yet.
+
+17:36:05 --> 17:36:09
+Zhuang Haoyu: predicting only one return value.
+
+17:36:05 --> 17:36:06
+RUIHANG XIE: Oh, it is.
+
+17:36:07 --> 17:36:08
+RUIHANG XIE: Autumn.
+
+17:36:08 --> 17:36:09
+RUIHANG XIE: I didn't.
+
+17:36:11 --> 17:36:12
+偉偉 葉: Um…
+
+17:36:12 --> 17:36:14
+偉偉 葉: Yeah, yeah, yeah.
+
+17:36:14 --> 17:36:18
+Zhuang Haoyu: Okay, thank you. Thank you for your presentation.
+
+17:36:31 --> 17:36:32
+RUIHANG XIE: Any other questions.
+
+17:36:41 --> 17:36:42
+RUIHANG XIE: Okay.
+
+17:36:43 --> 17:36:47
+Santiago GARCIA: Yeah, I have a question. Yeah, go ahead.
+
+17:36:45 --> 17:36:46
+RUIHANG XIE: Yet.
+
+17:36:47 --> 17:36:52
+Santiago GARCIA: Yeah, thank you for your presentation. It's quite interesting.
+
+17:36:52 --> 17:37:02
+Santiago GARCIA: And I would like to ask a little bit… I'm not so familiar with this world, but I've heard that, for example, in algorithmic trading, in a sense, you need to be really fast, right?
+
+17:37:02 --> 17:37:06
+Santiago GARCIA: And that's why the prevalent models are still like.
+
+17:37:06 --> 17:37:11
+Santiago GARCIA: grading boosting machines. And they're not using like much more complex models.
+
+17:37:11 --> 17:37:23
+Santiago GARCIA: So in a sense, I know that diffusion models are fast, but in a sense, are you fast enough yet to be able to compete with more standard methods?
+
+17:37:23 --> 17:37:26
+Santiago GARCIA: You know, based on that advantage that Spit keeps you.
+
+17:37:28 --> 17:37:29
+偉偉 葉: Um…
+
+17:37:31 --> 17:37:33
+偉偉 葉: Um…
+
+17:37:33 --> 17:37:34
+偉偉 葉: We actually.
+
+17:37:34 --> 17:37:35
+偉偉 葉: um…
+
+17:37:36 --> 17:37:40
+偉偉 葉: We we are a you know the back test and the the.
+
+17:37:40 --> 17:37:42
+偉偉 葉: the overall.
+
+17:37:42 --> 17:37:44
+偉偉 葉: model construction is a.
+
+17:37:44 --> 17:37:48
+偉偉 葉: daily frequency trading. So we we trade for.
+
+17:37:48 --> 17:37:49
+偉偉 葉: um…
+
+17:37:49 --> 17:37:52
+偉偉 葉: We we will trade for in each day.
+
+17:37:52 --> 17:37:53
+偉偉 葉: So.
+
+17:37:53 --> 17:37:54
+偉偉 葉: um…
+
+17:37:54 --> 17:37:55
+偉偉 葉: the the.
+
+17:37:56 --> 17:38:01
+偉偉 葉: So, I think the inference speed is not a big issue, because.
+
+17:38:01 --> 17:38:02
+偉偉 葉: um…
+
+17:38:03 --> 17:38:05
+偉偉 葉: If we're doing real trace.
+
+17:38:05 --> 17:38:10
+偉偉 葉: We have a whole day to to influence the the samples.
+
+17:38:10 --> 17:38:11
+偉偉 葉: And, um…
+
+17:38:13 --> 17:38:14
+偉偉 葉: And.
+
+17:38:14 --> 17:38:17
+偉偉 葉: Um, we actually have used…
+
+17:38:17 --> 17:38:19
+偉偉 葉: the Ddim, which is a.
+
+17:38:19 --> 17:38:22
+偉偉 葉: speeding inference method.
+
+17:38:22 --> 17:38:24
+偉偉 葉: For different models and.
+
+17:38:25 --> 17:38:26
+偉偉 葉: Um, it can…
+
+17:38:26 --> 17:38:27
+偉偉 葉: Oh.
+
+17:38:27 --> 17:38:33
+偉偉 葉: our experience, our experience, so that it can accelerate the the inference speed for.
+
+17:38:33 --> 17:38:35
+偉偉 葉: 10 times.
+
+17:38:35 --> 17:38:37
+偉偉 葉: without performance loss.
+
+17:38:38 --> 17:38:39
+偉偉 葉: And, um…
+
+17:38:40 --> 17:38:41
+偉偉 葉: Um, if…
+
+17:38:43 --> 17:38:44
+偉偉 葉: I think…
+
+17:38:44 --> 17:38:45
+偉偉 葉: Um…
+
+17:38:45 --> 17:38:47
+偉偉 葉: If we do like.
+
+17:38:47 --> 17:38:50
+偉偉 葉: Hourly trade or like minutes trade.
+
+17:38:50 --> 17:38:52
+偉偉 葉: That's when.
+
+17:38:52 --> 17:38:56
+偉偉 葉: the the the inference speed is an issue.
+
+17:38:56 --> 17:38:58
+偉偉 葉: But but for.
+
+17:38:58 --> 17:39:00
+偉偉 葉: our currently like.
+
+17:39:00 --> 17:39:04
+偉偉 葉: daily trade. It's not an issue for different models.
+
+17:39:06 --> 17:39:10
+Santiago GARCIA: I see, I see. Thank you so much. Really interesting.
+
+17:39:18 --> 17:39:19
+RUIHANG XIE: Okay.
+
+17:39:19 --> 17:39:21
+RUIHANG XIE: I think that's all for today, then.
+
+17:39:22 --> 17:39:25
+RUIHANG XIE: Is there any questions? Would you like to say something?
+
+17:39:28 --> 17:39:30
+Yoshihide Sekimoto, CSIS, UT: No, no, no, yeah.
+
+17:39:30 --> 17:39:31
+Yoshihide Sekimoto, CSIS, UT: No, thank you.
+
+17:39:31 --> 17:39:34
+RUIHANG XIE: Oh, okay, then…
+
+17:39:34 --> 17:39:36
+RUIHANG XIE: I think we've…
+
+17:39:36 --> 17:39:40
+RUIHANG XIE: cover everything today. Then thank you all for your time.
+
+17:39:40 --> 17:39:42
+RUIHANG XIE: See you next time.
+
+17:39:42 --> 17:39:42
+RUIHANG XIE: Okay.
+
+17:39:42 --> 17:39:43
+RUIHANG XIE: Thank you.
+
+17:39:44 --> 17:39:45
+SHREYA K: Thank you.
+
+17:39:45 --> 17:39:47
+Yoshihide Sekimoto, CSIS, UT: Thank you.
+
+17:39:47 --> 17:39:48
+RUIHANG XIE: Bye-bye.
+
+17:39:48 --> 17:39:49
+Yoshihide Sekimoto, CSIS, UT: Bye.
+
+17:39:49 --> 17:39:50
+Deeksha Arya: Thank you.

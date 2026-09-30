@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#172033}
+.title{font-size:34px;font-weight:700}.subtitle{font-size:18px;fill:#526078}
+.axis{font-size:16px;fill:#526078}.value{font-size:14px;fill:#334155}
+.legend{font-size:17px;fill:#334155}
+</style>
+<rect width="1400" height="900" fill="#ffffff"/>
+<text x="50" y="52" class="title">Age–gender composition — 4. All commercial</text>
+<text x="50" y="88" class="subtitle">Estimated arrivals: 25,284 trips/day; shares use facility-specific profiles from the 2022 Chukyo Person Trip Survey.</text>
+<rect x="850" y="113" width="20" height="20" rx="2" fill="#3b82f6"/>
+<text x="879" y="130" class="legend">Male</text>
+<rect x="1025" y="113" width="20" height="20" rx="2" fill="#f97316"/>
+<text x="1054" y="130" class="legend">Female</text>
+<rect x="1200" y="113" width="20" height="20" rx="2" fill="#64748b"/>
+<text x="1229" y="130" class="legend">Other / unknown</text>
+<line x1="120" y1="735.0" x2="1350" y2="735.0" stroke="#e2e8f0"/>
+<text x="106" y="741.0" text-anchor="end" class="axis">0%</text>
+<line x1="120" y1="625.0" x2="1350" y2="625.0" stroke="#e2e8f0"/>
+<text x="106" y="631.0" text-anchor="end" class="axis">5%</text>
+<line x1="120" y1="515.0" x2="1350" y2="515.0" stroke="#e2e8f0"/>
+<text x="106" y="521.0" text-anchor="end" class="axis">10%</text>
+<line x1="120" y1="405.0" x2="1350" y2="405.0" stroke="#e2e8f0"/>
+<text x="106" y="411.0" text-anchor="end" class="axis">15%</text>
+<line x1="120" y1="295.0" x2="1350" y2="295.0" stroke="#e2e8f0"/>
+<text x="106" y="301.0" text-anchor="end" class="axis">20%</text>
+<line x1="120" y1="185.0" x2="1350" y2="185.0" stroke="#e2e8f0"/>
+<text x="106" y="191.0" text-anchor="end" class="axis">25%</text>
+<rect x="146.0" y="725.3" width="84.7" height="9.7" fill="#3b82f6"/>
+<rect x="146.0" y="716.2" width="84.7" height="9.0" fill="#f97316"/>
+<rect x="146.0" y="716.2" width="84.7" height="0.0" fill="#64748b"/>
+<text x="188.3" y="762.0" text-anchor="middle" class="axis">0–9</text>
+<rect x="282.6" y="718.2" width="84.7" height="16.8" fill="#3b82f6"/>
+<rect x="282.6" y="699.2" width="84.7" height="19.0" fill="#f97316"/>
+<rect x="282.6" y="699.1" width="84.7" height="0.2" fill="#64748b"/>
+<text x="325.0" y="762.0" text-anchor="middle" class="axis">10–19</text>
+<text x="325.0" y="691.1" text-anchor="middle" class="value">1.6%</text>
+<rect x="419.3" y="667.8" width="84.7" height="67.2" fill="#3b82f6"/>
+<rect x="419.3" y="563.2" width="84.7" height="104.6" fill="#f97316"/>
+<rect x="419.3" y="562.4" width="84.7" height="0.9" fill="#64748b"/>
+<text x="461.7" y="762.0" text-anchor="middle" class="axis">20–29</text>
+<text x="461.7" y="554.4" text-anchor="middle" class="value">7.8%</text>
+<rect x="556.0" y="645.5" width="84.7" height="89.5" fill="#3b82f6"/>
+<rect x="556.0" y="516.0" width="84.7" height="129.5" fill="#f97316"/>
+<rect x="556.0" y="515.1" width="84.7" height="0.9" fill="#64748b"/>
+<text x="598.3" y="762.0" text-anchor="middle" class="axis">30–39</text>
+<text x="598.3" y="507.1" text-anchor="middle" class="value">10.0%</text>
+<rect x="692.6" y="617.8" width="84.7" height="117.2" fill="#3b82f6"/>
+<rect x="692.6" y="437.6" width="84.7" height="180.2" fill="#f97316"/>
+<rect x="692.6" y="437.4" width="84.7" height="0.2" fill="#64748b"/>
+<text x="735.0" y="762.0" text-anchor="middle" class="axis">40–49</text>
+<text x="735.0" y="429.4" text-anchor="middle" class="value">13.5%</text>
+<rect x="829.3" y="611.9" width="84.7" height="123.1" fill="#3b82f6"/>
+<rect x="829.3" y="390.4" width="84.7" height="221.4" fill="#f97316"/>
+<rect x="829.3" y="389.6" width="84.7" height="0.9" fill="#64748b"/>
+<text x="871.7" y="762.0" text-anchor="middle" class="axis">50–59</text>
+<text x="871.7" y="381.6" text-anchor="middle" class="value">15.7%</text>
+<rect x="966.0" y="551.0" width="84.7" height="184.0" fill="#3b82f6"/>
+<rect x="966.0" y="279.5" width="84.7" height="271.5" fill="#f97316"/>
+<rect x="966.0" y="279.4" width="84.7" height="0.1" fill="#64748b"/>
+<text x="1008.3" y="762.0" text-anchor="middle" class="axis">60–69</text>
+<text x="1008.3" y="271.4" text-anchor="middle" class="value">20.7%</text>
+<rect x="1102.6" y="517.6" width="84.7" height="217.4" fill="#3b82f6"/>
+<rect x="1102.6" y="246.7" width="84.7" height="270.9" fill="#f97316"/>
+<rect x="1102.6" y="246.6" width="84.7" height="0.1" fill="#64748b"/>
+<text x="1145.0" y="762.0" text-anchor="middle" class="axis">70–79</text>
+<text x="1145.0" y="238.6" text-anchor="middle" class="value">22.2%</text>
+<rect x="1239.3" y="654.7" width="84.7" height="80.3" fill="#3b82f6"/>
+<rect x="1239.3" y="569.2" width="84.7" height="85.4" fill="#f97316"/>
+<rect x="1239.3" y="569.2" width="84.7" height="0.0" fill="#64748b"/>
+<text x="1281.7" y="762.0" text-anchor="middle" class="axis">80+</text>
+<text x="1281.7" y="561.2" text-anchor="middle" class="value">7.5%</text>
+<text x="34" y="460.0" text-anchor="middle" class="axis" transform="rotate(-90 34 460.0)">Share of estimated arrivals</text>
+<text x="700.0" y="865" text-anchor="middle" class="subtitle">Source: chukyo_pt_2022_age_gender_distribution_reference.json. Arrival trips ≈ person-trip ends ÷ 2; values are not unique visitors.</text>
+</svg>

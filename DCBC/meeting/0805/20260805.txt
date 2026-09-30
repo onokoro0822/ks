@@ -1,0 +1,2204 @@
+15:04:02 --> 15:04:16
+JUE MA: chapter of my PhD that integrated my model into the pseudo people flow. So first I officially run the pseudo people float and simulate a one-day activity sequence. And I drafted my plan
+
+15:04:16 --> 15:04:27
+JUE MA: And I made some engineering change for the pseudo people and drafted how I changed the pseudo people flow structure
+
+15:04:27 --> 15:04:43
+JUE MA: And so first result is I run the sequence generation model and I evaluated the current people flows all come with the observed GPS outcome and all the result
+
+15:04:43 --> 15:04:59
+JUE MA: The graph is at the appendix, so I only report it for the key finding. So basically I use the aggregated and the individual level to evaluate the different dimension of the current behavior pattern
+
+15:05:05 --> 15:05:23
+JUE MA: For the distribution of discretionary duration and account and current pseudo people flow discretion duration is very short and also the number of the daily number of discretionary activities is much less than the GPS data
+
+15:05:23 --> 15:05:40
+JUE MA: Like in the simulator, pseudo people flow, the daily average discretionary activity is only 1.22 h. But in reality, from the GPS data, the total day discretionary activity
+
+15:05:40 --> 15:05:55
+JUE MA: Up to 6 a little bit. Could you tell me like which position you are working on in the with the suitable form? And so what kind
+
+15:05:55 --> 15:05:58
+JUE MA: Okay.
+
+15:05:58 --> 15:06:03
+JUE MA: Okay,
+
+15:06:03 --> 15:06:15
+JUE MA: I'm working with the activity generation model. So what I want to achieve is if I change the facility, the activity sequence may be changed
+
+15:06:15 --> 15:06:19
+JUE MA: And in the context of flow, they do not have
+
+15:06:19 --> 15:06:21
+JUE MA: Motrant, right?
+
+15:06:22 --> 15:06:30
+JUE MA: Like, even though Sebastian said it would change the facility. Yes.
+
+15:06:30 --> 15:06:34
+JUE MA: What kind of change the number, the
+
+15:06:36 --> 15:06:42
+JUE MA: What kind of change? Have increased in facilities
+
+15:06:42 --> 15:06:47
+JUE MA: Okay, so what which input file you changed
+
+15:06:47 --> 15:06:50
+JUE MA: Which input file
+
+15:06:50 --> 15:06:53
+JUE MA: First, I will add
+
+15:06:54 --> 15:07:02
+JUE MA: This is how I change the current structure of the document flow. First, I'll add a Python file
+
+15:07:02 --> 15:07:06
+JUE MA: To identify first how to say
+
+15:07:10 --> 15:07:12
+JUE MA: I have
+
+15:07:19 --> 15:07:32
+JUE MA: So I have this kind of panel and the user can put the longitude, latitude of the facility into the map. Okay, so the user can manually add one
+
+15:07:33 --> 15:07:36
+JUE MA: Yes, specificity. Yes
+
+15:07:36 --> 15:07:46
+JUE MA: With only the location and facility type. Yes. Okay. So the county add one or they can add a lot a lot
+
+15:07:49 --> 15:07:51
+JUE MA: Actually
+
+15:07:51 --> 15:07:54
+JUE MA: In my current model
+
+15:07:54 --> 15:08:02
+JUE MA: It can only specify. Do they have increase or decrease, but not one or three or three
+
+15:08:02 --> 15:08:08
+JUE MA: Okay, so what kind of input can you, sir, make in this
+
+15:08:08 --> 15:08:10
+JUE MA: In your setting
+
+15:08:10 --> 15:08:15
+JUE MA: In my but this is the simple simplest one
+
+15:08:16 --> 15:08:19
+JUE MA: So, how can
+
+15:08:21 --> 15:08:25
+JUE MA: So they specify one area
+
+15:08:25 --> 15:08:30
+JUE MA: With the central location and the radiance
+
+15:08:31 --> 15:08:44
+JUE MA: We specify one like circle area. Yes, they specify one circle area. And choose one type of the facility and the
+
+15:08:44 --> 15:08:59
+JUE MA: Like, increase or decrease means decrease the number and increase number. If I keep improving the my model, I can categorize the increase to
+
+15:08:59 --> 15:09:09
+JUE MA: The exact number, but currently the setting is only increasing the decrease. So when people… when user choose increase, what kind of change you make
+
+15:09:09 --> 15:09:24
+JUE MA: When people change, use increase model, the activity sequence, the daily active sequence. I mean, if the user set up one circle area and choose leisure and
+
+15:09:24 --> 15:09:27
+JUE MA: increase what kind of
+
+15:09:27 --> 15:09:30
+JUE MA: What kind of
+
+15:09:30 --> 15:09:36
+JUE MA: input change input at the first Markov chain would be changed.
+
+15:09:36 --> 15:09:41
+JUE MA: Markov chain would be changed. And I
+
+15:09:42 --> 15:09:45
+JUE MA: I made
+
+15:09:45 --> 15:09:50
+JUE MA: set of Markov chain one for the baseline
+
+15:09:54 --> 15:10:04
+JUE MA: So user do not set up how much increase and how much decrease they have. They only have choice of increase and which you already
+
+15:10:04 --> 15:10:07
+JUE MA: You already set… set up
+
+15:10:09 --> 15:10:12
+JUE MA: Depending on the Markov chain
+
+15:10:12 --> 15:10:16
+JUE MA: parameters. Yes. Okay.
+
+15:10:21 --> 15:10:30
+JUE MA: So, first is the Python file. I will add it to the current sudo people flow module, and I will also
+
+15:10:31 --> 15:10:37
+JUE MA: This is my offline training for the sequence generation for the what if scenario
+
+15:10:37 --> 15:10:40
+JUE MA: Like, I want to do the behavior change.
+
+15:10:40 --> 15:10:41
+JUE MA: So
+
+15:10:41 --> 15:10:58
+JUE MA: After the offline training, I will get two sets of CSV. One is the baseline activity sequence, and then it's intervention activity sequence. What's the activity sequence file different from the original activity file
+
+15:10:59 --> 15:11:03
+JUE MA: Yes. So this is another change.
+
+15:11:03 --> 15:11:18
+JUE MA: So, first I add the Python file that is add a module to build intervention Python file. And for the engineering change first, I actually decoupled the current activity generation with destination choice model. Since in current before
+
+15:11:18 --> 15:11:23
+JUE MA: People first call like in every 15 minute step
+
+15:11:23 --> 15:11:29
+JUE MA: When they select the activity, they will immediately select the destination
+
+15:11:30 --> 15:11:34
+JUE MA: So, I want to decouple this part
+
+15:11:36 --> 15:11:40
+JUE MA: And make the activity generation model an independent API.
+
+15:11:40 --> 15:11:46
+JUE MA: So you change the total activity generation
+
+15:11:46 --> 15:11:49
+JUE MA: Java file of the
+
+15:11:49 --> 15:11:51
+JUE MA: to your own algorithm
+
+15:11:54 --> 15:12:06
+JUE MA: I mean that firstly, I want to totally separate the active degeneration model and the destination choice model, and I made the activity generation model an independent Api
+
+15:12:06 --> 15:12:07
+JUE MA: If
+
+15:12:07 --> 15:12:17
+JUE MA: In the future, probably other one, they want to improve the activity generation model. They only need to align with the input and output
+
+15:12:17 --> 15:12:19
+JUE MA: Okay, so
+
+15:12:19 --> 15:12:23
+JUE MA: Originally, Institute of Model, there is
+
+15:12:23 --> 15:12:29
+JUE MA: Java file core is a activity generation. Yes, so you are going to change that file
+
+15:12:29 --> 15:12:39
+JUE MA: Yes, I'm already changed that file. I have two folder. One is activity sequence, and then
+
+15:12:39 --> 15:12:41
+JUE MA: is the destination, so I
+
+15:12:42 --> 15:12:47
+JUE MA: have already separated these two models. So
+
+15:12:51 --> 15:12:54
+JUE MA: Originally, they have
+
+15:12:55 --> 15:13:08
+JUE MA: The algorithm, like, combining them together in one file, you just separate them into different file or you change the algorithm. Currently, I just separate it into different file
+
+15:13:08 --> 15:13:13
+JUE MA: What's the meaning for that?
+
+15:13:21 --> 15:13:23
+JUE MA: How to
+
+15:13:23 --> 15:13:25
+JUE MA: What's the meaning
+
+15:13:29 --> 15:13:38
+JUE MA: Also, so first, my output would be actively sequenced with no destination, the longitude, and
+
+15:13:38 --> 15:13:41
+JUE MA: Yeah, so this actile sequence
+
+15:13:41 --> 15:13:49
+JUE MA: What's the difference between these activity sequence and the original activity file output? Yes.
+
+15:13:52 --> 15:13:56
+JUE MA: So, in my model
+
+15:13:56 --> 15:13:58
+JUE MA: So, please
+
+15:14:03 --> 15:14:04
+JUE MA: Vision Round
+
+15:14:04 --> 15:14:22
+JUE MA: They will generate a folder that activity and it contain the PID start time, duration, latitude and longitude. And I made an additional folder that is actively sequence that PID, start time and duration without the latitude and longitude
+
+15:14:22 --> 15:14:27
+JUE MA: And destination choice model will read my file
+
+15:14:28 --> 15:14:44
+JUE MA: And based on the perfect sorry I forgot the purpose of the activity. And based on the purpose, they will choose the destination. So actually they are 2. For example, to function in one file
+
+15:14:44 --> 15:14:49
+JUE MA: No, and you separate them into two different file or two different
+
+15:14:49 --> 15:14:51
+JUE MA: Like Modu? Yes.
+
+15:14:51 --> 15:14:53
+JUE MA: Why? What's the main
+
+15:14:54 --> 15:14:56
+JUE MA: What's a mini
+
+15:15:04 --> 15:15:06
+JUE MA: What's the meaning
+
+15:15:06 --> 15:15:09
+JUE MA: How to
+
+15:15:10 --> 15:15:17
+JUE MA: While you do this? Because I feel probably in the future, I will not use the Markov chain, right?
+
+15:15:20 --> 15:15:23
+JUE MA: So you will change the first part
+
+15:15:23 --> 15:15:27
+JUE MA: You will change the first part of the algorithm
+
+15:15:27 --> 15:15:36
+JUE MA: You return the activity sequence generation? I mean, I make my model totally separated with the destination choice model, right?
+
+15:15:36 --> 15:15:38
+JUE MA: And
+
+15:15:38 --> 15:15:40
+JUE MA: I think probably
+
+15:15:40 --> 15:15:42
+JUE MA: I need to
+
+15:15:43 --> 15:15:53
+JUE MA: Keep update my model. So if I made my model totally independent with the destination choice, I just need to improve
+
+15:15:53 --> 15:15:55
+JUE MA: My model
+
+15:15:55 --> 15:15:57
+JUE MA: Okay.
+
+15:15:59 --> 15:16:04
+JUE MA: Yeah, I can understand why you do that.
+
+15:16:04 --> 15:16:06
+JUE MA: Okay
+
+15:16:06 --> 15:16:14
+JUE MA: Which the separation of words not necessary, but okay. Then
+
+15:16:14 --> 15:16:26
+JUE MA: If you… it will be easier for yourself to do the model update. Yes. Okay. Yes, that's how I feel about that.
+
+15:16:27 --> 15:16:29
+JUE MA: And
+
+15:16:29 --> 15:16:32
+JUE MA: So another change
+
+15:16:32 --> 15:16:40
+JUE MA: If I add a module, it's what-if sequence generation that offline training and output this one. And
+
+15:16:40 --> 15:16:43
+JUE MA: And also, I checked
+
+15:16:43 --> 15:16:48
+JUE MA: I check current result so the flow simulation result is observed
+
+15:16:48 --> 15:16:51
+JUE MA: GPS data. And
+
+15:16:51 --> 15:17:01
+JUE MA: And the current temporal distribution of the distributional activity lacks flexibility.
+
+15:17:01 --> 15:17:03
+JUE MA: Like
+
+15:17:16 --> 15:17:28
+JUE MA: Like, for the observed GPS data, most of people, they will change their decision activity during the commuting trip. But for the
+
+15:17:28 --> 15:17:30
+JUE MA: simulated one
+
+15:17:31 --> 15:17:33
+JUE MA: Actually
+
+15:17:33 --> 15:17:37
+JUE MA: the duration, the discretion actually is not that
+
+15:17:38 --> 15:17:41
+JUE MA: Flexible with the commuting trip
+
+15:17:41 --> 15:17:48
+JUE MA: How can I read these two figures? Because it seems like the Y is not different
+
+15:17:48 --> 15:17:56
+JUE MA: Probably this graph is much more easier to read to show these conclusion. This is the
+
+15:17:56 --> 15:18:06
+JUE MA: start X start time, y is duration, like for the observed GPS data, you can see that from every start time
+
+15:18:06 --> 15:18:16
+JUE MA: They have very high possibility that people will have discretionary activity less than two hours. But for the
+
+15:18:16 --> 15:18:18
+JUE MA: to the people flow
+
+15:18:19 --> 15:18:26
+JUE MA: Especially before 13 is the discretionary
+
+15:18:26 --> 15:18:27
+JUE MA: 3
+
+15:18:27 --> 15:18:34
+JUE MA: The same meaning as your, like, non-routine. Yes, yes, because
+
+15:18:35 --> 15:18:39
+JUE MA: I see, I see. So you want to improve this part
+
+15:18:39 --> 15:18:40
+JUE MA: add more
+
+15:18:42 --> 15:18:44
+JUE MA: Yeah, discretionary
+
+15:18:44 --> 15:18:49
+JUE MA: activity into the okay
+
+15:18:49 --> 15:18:52
+JUE MA: Okay, so the main…
+
+15:18:52 --> 15:18:57
+JUE MA: Work mean task would be the model, the
+
+15:18:58 --> 15:19:02
+JUE MA: Activity sequence generation model. Yes
+
+15:19:02 --> 15:19:05
+JUE MA: I see, I see. And for the decrease and
+
+15:19:05 --> 15:19:10
+JUE MA: increase now you made you prepare
+
+15:19:10 --> 15:19:11
+JUE MA: to
+
+15:19:11 --> 15:19:17
+JUE MA: set of microfin parameters, and the ones user
+
+15:19:22 --> 15:19:25
+JUE MA: Yes. Yes, I see. Okay
+
+15:19:31 --> 15:19:32
+JUE MA: Is this
+
+15:19:34 --> 15:19:36
+JUE MA: One chapter of film
+
+15:19:36 --> 15:19:41
+JUE MA: Yes, this is the last chapter of my my simulation
+
+15:19:43 --> 15:19:49
+JUE MA: But actually, I have more idea about my research, but
+
+15:19:49 --> 15:19:54
+JUE MA: So I first embedded my model into the flow and
+
+15:19:54 --> 15:19:57
+JUE MA: simulate what I want to simulate
+
+15:19:57 --> 15:20:02
+JUE MA: And I can talk to you later. Okay, okay. Thank you. Yeah
+
+15:20:05 --> 15:20:07
+JUE MA: Any questions or comments
+
+15:20:08 --> 15:20:24
+JUE MA: Maybe Doosan or Cynthia, because you are familiar with people. To be honest, I just wanted to ask something. The last part that you showed, like the discretionary activity starts at 2 a.m.
+
+15:20:25 --> 15:20:27
+JUE MA: Uncommon we have
+
+15:20:27 --> 15:20:35
+JUE MA: 2 AM. Yeah, yeah, yeah, from your plot. Yes, but it's at the but it's less than 2 hours.
+
+15:20:36 --> 15:20:41
+JUE MA: I categorize less than 2 as one category
+
+15:20:41 --> 15:20:57
+JUE MA: Man, I was just wondering, what are people doing at 2AU? It's reasonable. People only went to convenience store or something, not a long trip to a point to 2 AM
+
+15:20:57 --> 15:21:02
+JUE MA: They just haven't sleep and they want to buy something coming and it's fine.
+
+15:21:02 --> 15:21:10
+JUE MA: Maybe they work late and then are you okay? You do that frequently? Have a drink.
+
+15:21:10 --> 15:21:23
+JUE MA: Interesting. It's fun. I think people do not sleep at too, and they just want to attend. It's interesting. What did you find through data, what they are doing?
+
+15:21:23 --> 15:21:28
+JUE MA: Actually, I checked several people's that it's unusual user
+
+15:21:28 --> 15:21:34
+JUE MA: They… they surrounded in Shibuya, izakayas the whole night.
+
+15:21:34 --> 15:21:39
+JUE MA: I can see there, and I can see their trajectories
+
+15:21:39 --> 15:21:43
+JUE MA: It's always moving during the midnight. Yeah.
+
+15:21:43 --> 15:21:48
+JUE MA: Maybe they just cannot get back home and then walk around.
+
+15:21:48 --> 15:21:58
+JUE MA: It happened with me two months ago, so maybe one
+
+15:21:59 --> 15:22:07
+JUE MA: Well, I can even find my place.
+
+15:22:07 --> 15:22:13
+JUE MA: Okay, so you are trying to add those activity also into the model
+
+15:22:13 --> 15:22:21
+JUE MA: If I could, if I could, because I need to add the simplest one into the paper flow.
+
+15:22:22 --> 15:22:31
+JUE MA: I was thinking like right now there is no any activity at midnight from Su Bukhill
+
+15:22:33 --> 15:22:37
+JUE MA: If you add any, like, random seed
+
+15:22:37 --> 15:22:44
+JUE MA: For example, any random activity into that and the result would be better than now
+
+15:22:44 --> 15:22:55
+JUE MA: And closer to the will remain, right? Anything you add because right now it's 0. Whatever you add
+
+15:22:55 --> 15:23:03
+JUE MA: If you add something, it will be better than right now and closer to the GPS. So what's your strategy of doing this
+
+15:23:04 --> 15:23:08
+JUE MA: strategy here, because I feel if I model
+
+15:23:08 --> 15:23:15
+JUE MA: haven't simulated with my own model in 2004 flow, but I believe that
+
+15:23:15 --> 15:23:19
+JUE MA: Even though I used the simplest one
+
+15:23:19 --> 15:23:25
+JUE MA: And that is trained by the current good quality GPS data.
+
+15:23:25 --> 15:23:32
+JUE MA: the result would be good. So basically, I think my improvement is only
+
+15:23:32 --> 15:23:34
+JUE MA: The data itself
+
+15:23:37 --> 15:23:44
+JUE MA: Which data is that? GPS data, because GPS can capture much more random activity.
+
+15:23:45 --> 15:23:48
+JUE MA: I see. Before in the
+
+15:23:48 --> 15:23:53
+JUE MA: person survey to make do not contain this kind of activity.
+
+15:23:53 --> 15:24:10
+JUE MA: So in PT data, there is no activity at NUMA. PT survey. Well, no, because people is based on the PT survey. So which means PD survey, there is no any activity at midnight. They don't question random people
+
+15:23:53 --> 15:24:10
+JUE MA: My billion question strange people mostly
+
+15:24:16 --> 15:24:30
+JUE MA: Okay, okay. My question is all your data from Tokyo. Yes, yes, my my final simulation would be constrained on 23 world of Tokyo. Okay, okay, okay, yeah, interesting.
+
+15:24:31 --> 15:24:33
+JUE MA: Yeah
+
+15:24:33 --> 15:24:40
+JUE MA: Maybe. Did you ask any did you ask Council why there's 0
+
+15:24:40 --> 15:24:43
+JUE MA: Like there's no any activity.
+
+15:24:46 --> 15:24:56
+JUE MA: I think she knows like if the PTS has those activities because she was checking exactly
+
+15:24:56 --> 15:25:02
+JUE MA: There's discretionary activities we need to do also
+
+15:25:09 --> 15:25:16
+JUE MA: Are working with PE data? The first version of social segregation is
+
+15:25:16 --> 15:25:32
+JUE MA: Use the PT survey to do this. I have one idea about why there is a zero. I remember that PP flows at the starting time is based on the train time. So the train
+
+15:25:32 --> 15:25:49
+JUE MA: Opening tongue is around 6 AM, so maybe that's the reason. I remember that I'm not sure you can check the starting time before is 3, 3 AM or 3 A. Yeah, I remember something related with the training
+
+15:25:50 --> 15:26:02
+JUE MA: 23 opening time. Yeah, maybe ask someone like who in the plaza and
+
+15:26:05 --> 15:26:08
+JUE MA: Okay, thank you. Any other?
+
+15:26:09 --> 15:26:12
+JUE MA: Okay, then let's move on to you
+
+15:26:29 --> 15:26:44
+JUE MA: Actually, in the end of this month, I need to submit my dissertation. So recently I busy in the dissertation writing. So today, actually, I don't have anything to share
+
+15:26:44 --> 15:27:03
+JUE MA: orderly, but maybe I think that's fair I also can share for like something from the last bootcamp. This page shows the incremental performance. It means how the model A improved
+
+15:27:03 --> 15:27:20
+JUE MA: Based compared with the model B. So, for example, the MN basic tow with interaction is how the improvements the interactions performed compared to
+
+15:27:20 --> 15:27:37
+JUE MA: And our basic. So compared to the two levels, the left figure is a level one and choose the retail facility or shopping center. The right figure is a level 2 to choose a specific shopping center. So we will find that
+
+15:27:37 --> 15:27:52
+JUE MA: The Mitto model improved a lot. It is the Mnl based residual Mlp and pure Mlp. Yeah, so that's all the things I
+
+15:27:52 --> 15:28:05
+JUE MA: So this figure finally tells readers how the model I input improves the choice, destination choice accuracy, something
+
+15:28:05 --> 15:28:09
+JUE MA: Separately.
+
+15:28:09 --> 15:28:25
+JUE MA: When do you plan to start the scenario section? The scenarios section is this week. Last week, due to some machine errors
+
+15:28:25 --> 15:28:41
+JUE MA: Quit stopped for a long time, but this way I plan to complete my last chapter as soon as possible. The last chapter is a simulation chapter. Here I will use the 4 shopping centers for for
+
+15:28:41 --> 15:28:56
+JUE MA: For simulation and validation, and finally, I plan to generate the the household data it is the personal data for the pseudo people flow input setting. It means
+
+15:28:56 --> 15:29:06
+JUE MA: Give some different background of the society and simulate what if scenario
+
+15:29:06 --> 15:29:10
+JUE MA: I see
+
+15:29:10 --> 15:29:14
+JUE MA: Okay, I'm checking the OKR
+
+15:29:14 --> 15:29:17
+JUE MA: Could you finish
+
+15:29:17 --> 15:29:21
+JUE MA: Chapter 5, Dismal
+
+15:29:22 --> 15:29:24
+JUE MA: Let me open my OKR
+
+15:29:28 --> 15:29:39
+JUE MA: My OKR is finalize the solar paper flow is done, complete the scenario prediction and application is what I need to do in this week
+
+15:29:41 --> 15:29:59
+JUE MA: I have three parts. The first part is finalize the revised model. I think this is already finished. The second is complete the scenario prediction and application. So this is why I need to do in this week
+
+15:29:59 --> 15:30:05
+JUE MA: Yeah, so could you finish this part at least in August.
+
+15:30:05 --> 15:30:22
+JUE MA: Yeah, I mean, must. Yeah. I plan to complete the content part of the dissertation at around the middle of this month
+
+15:30:22 --> 15:30:30
+JUE MA: The priority should be complete change. I mean
+
+15:30:30 --> 15:30:36
+JUE MA: to the scenario picture prediction and application and get a result at first
+
+15:30:36 --> 15:30:46
+JUE MA: The draft of dissertation should be the second. Okay, okay, okay. I understand. When will you need to submit it?
+
+15:30:46 --> 15:30:59
+JUE MA: No, no, just at the end of the month, not the first defense. So we need to submit a dissertation before
+
+15:30:59 --> 15:31:02
+JUE MA: I think so.
+
+15:31:03 --> 15:31:18
+JUE MA: But you haven't started chapter 5, so if you cannot finish that and get a result, it's impossible to finish your GAPSA, right? But I think scenario is easier for the full former
+
+15:31:18 --> 15:31:23
+JUE MA: Chapters have done all the models
+
+15:31:23 --> 15:31:26
+JUE MA: Well, it's still one full chapter
+
+15:31:26 --> 15:31:28
+JUE MA: So
+
+15:31:32 --> 15:31:34
+JUE MA: Maybe…
+
+15:31:38 --> 15:31:43
+JUE MA: Okay. You have to finish it in
+
+15:31:43 --> 15:31:46
+JUE MA: two weeks.
+
+15:31:47 --> 15:31:54
+JUE MA: Would be safe because with… I'm not so sure the result would be good or not. So
+
+15:31:54 --> 15:31:55
+JUE MA: Yeah.
+
+15:31:55 --> 15:32:02
+JUE MA: I think it's fine finish it in two weeks and have one week to draft. Okay.
+
+15:32:03 --> 15:32:04
+JUE MA: Okay.
+
+15:32:11 --> 15:32:17
+JUE MA: Thank you. And, I'm going to next one. Yeah, good answer
+
+15:32:47 --> 15:32:52
+JUE MA: And so I made a kind of robustness
+
+15:32:52 --> 15:33:02
+JUE MA: Check for the meeting productivity measurement. So the meeting probability is a proxy of the
+
+15:33:02 --> 15:33:19
+JUE MA: Phase 2 phase interaction between the workers into firm self. And I use a GPS trajectory data to compute this meeting probability, but of course there are lots of measurement issue. For example, whether
+
+15:33:19 --> 15:33:28
+JUE MA: MPs affected by some incidental co-presence or like they just simultaneously
+
+15:33:28 --> 15:33:38
+JUE MA: exists in some crowded space. So there are many concern about this NP measurements. So I made 4 alternative robustness check
+
+15:33:38 --> 15:33:40
+JUE MA: MP measurement
+
+15:33:40 --> 15:33:57
+JUE MA: So the first concern is that those encounters occur that some places are really crowded at this time. And the second is that the encounter just occurred in places that is always crowded during observation time
+
+15:33:57 --> 15:34:13
+JUE MA: So given these two concern, I give weight to this two scenario. And the third concern is that encounter observe only once between a pair of worker. So I only measure the repeated
+
+15:34:13 --> 15:34:19
+JUE MA: And the fourth one is that the encounter occurs within the firm self of
+
+15:34:19 --> 15:34:26
+JUE MA: Hi there, so I exclude the results. And for the
+
+15:34:27 --> 15:34:44
+JUE MA: results. I made this graph. And also I compute the Pearson correlation correlation. So overall, our baseline MP measurement is robust to those alternative definition
+
+15:34:44 --> 15:34:53
+JUE MA: And the main NP structure remains stable, as you can see from these four figure
+
+15:34:53 --> 15:35:05
+JUE MA: So, I just want to discuss that whether this kind of robustness check for the NP measure sounds reliable, sounds feasible
+
+15:35:12 --> 15:35:15
+JUE MA: So, you're trying to make the decision which
+
+15:35:15 --> 15:35:30
+JUE MA: measurement. I'm using. I'll use the baseline Mp. But I just want to show that my baseline Mp is not really affected by some random coexistence or some
+
+15:35:53 --> 15:35:58
+JUE MA: This works in the step of extracting the encounter
+
+15:35:58 --> 15:36:02
+JUE MA: Yes
+
+15:36:07 --> 15:36:23
+JUE MA: Like for the regression, main analyst regression analysis, I will still use the baseline MP, but this stuff I just want to show that this MP is not some randomly computed number, not affected by
+
+15:36:23 --> 15:36:30
+JUE MA: For possible concern. I don't know whether it sounds feasible.
+
+15:36:36 --> 15:36:38
+JUE MA: Any idea?
+
+15:36:41 --> 15:36:50
+JUE MA: I just have one question. Why repeat the probability correlation in case of
+
+15:36:50 --> 15:36:53
+JUE MA: Why is Y
+
+15:36:54 --> 15:36:55
+JUE MA: It's almost
+
+15:36:55 --> 15:36:57
+JUE MA: Because
+
+15:36:59 --> 15:37:07
+JUE MA: Or the repeated MP, I exclude the meeting that only happens once. So if you
+
+15:37:07 --> 15:37:22
+JUE MA: So in that case, some firms for some pair, then the NP equals to zero, but for the remaining, the result won't be effective. So for this non-zero pairs, the repeated
+
+15:37:22 --> 15:37:29
+JUE MA: And the correlation between repeating NP and baseline MP is really similar.
+
+15:37:29 --> 15:37:39
+JUE MA: make sense if you kind of, like, filter them, and then, like, it's expected, right, that correlation will be so high.
+
+15:37:39 --> 15:37:43
+JUE MA: Yeah, yeah. It's the reason why it's so close to being one
+
+15:37:53 --> 15:38:03
+JUE MA: Yes. Like significantly. Yeah
+
+15:38:03 --> 15:38:19
+JUE MA: It drops, but it still preserve the original like the ranking of MP, as you can see from the correlation. So it decreased, but it remains the overall structure, I guess
+
+15:38:46 --> 15:38:48
+JUE MA: Any questions
+
+15:38:48 --> 15:38:50
+JUE MA: Since
+
+15:38:51 --> 15:38:54
+JUE MA: What was the base correlation?
+
+15:38:55 --> 15:39:05
+JUE MA: These are all the four metrics, right? Those are the correlation with the baseline MP.
+
+15:39:17 --> 15:39:27
+JUE MA: I just do not understand the context, but why this graph shows I feel they are differently, but you still say the main encounter structural remains stable
+
+15:39:27 --> 15:39:29
+JUE MA: Because
+
+15:39:30 --> 15:39:35
+JUE MA: As you can see from the figure, it still have the
+
+15:39:35 --> 15:39:39
+JUE MA: Same direction. Yeah.
+
+15:39:45 --> 15:39:53
+JUE MA: Is that comparison for these four graph, but the comparison with the vertical axis.
+
+15:39:53 --> 15:39:56
+JUE MA: I know I got it
+
+15:39:56 --> 15:40:05
+JUE MA: What's the baseline? Baseline MP is just the NP that I've been using for the analysis.
+
+15:40:05 --> 15:40:08
+JUE MA: It's,
+
+15:40:12 --> 15:40:23
+JUE MA: First I count the number of meeting within the time cell. For example, in this case, this is one and the
+
+15:40:23 --> 15:40:30
+JUE MA: Not nominated. The nominator should be the possible
+
+15:40:30 --> 15:40:45
+JUE MA: Meetings. For example, this is three multiplied by two. This should be 6. So if at this moment all the workers from these two firm are meeting, then the maxim
+
+15:40:45 --> 15:41:00
+JUE MA: possible meeting should be 6, but actually we only observe one meeting. So MP is one divided by 6. I see. So it's your definition, your own definition. This is adapted graph by
+
+15:41:01 --> 15:41:08
+JUE MA: Existing paper. Okay, also you divide us the baseline also. Okay, I see
+
+15:41:08 --> 15:41:10
+JUE MA: Thank you so
+
+15:41:27 --> 15:41:30
+JUE MA: Okay, thank you.
+
+15:41:30 --> 15:41:33
+JUE MA: And, let's move on to
+
+15:41:33 --> 15:41:36
+JUE MA: Next one, Joseph.
+
+15:41:36 --> 15:41:39
+Xinjie Zhao: Yeah, can you hear me?
+
+15:41:39 --> 15:41:40
+JUE MA: Yes.
+
+15:41:40 --> 15:41:46
+Xinjie Zhao: Okay, okay. Sorry that my internet connection has something wrong maybe. Yeah, I'm not sure
+
+15:41:47 --> 15:41:59
+Xinjie Zhao: Yeah, because I'm in Philippines, so the infrastructure is not so good. I'll show my basic research progress today. So
+
+15:41:59 --> 15:42:16
+Xinjie Zhao: Basically, it's nothing different from the previous version. And my research is also still the same. On one hand, I'm developing the Agentic driven platform to help us to develop better urban planning scenarios. And for another is that
+
+15:42:16 --> 15:42:32
+Xinjie Zhao: I'm going to develop a DDR methodologies to help us to understand about the progress between human and AI interaction. Because I think that Sekimoto sense that he don't understand the technologies. So basically he wants me to connect it more with the social science related perspectives
+
+15:42:32 --> 15:42:48
+Xinjie Zhao: And yeah, and my research, I think that we can make full use of the human interaction system and to see how to convey this kind of new planning scenario ideas
+
+15:42:48 --> 15:42:52
+Xinjie Zhao: And the agent's explanation into understanding
+
+15:42:53 --> 15:42:55
+Xinjie Zhao: Yeah. And
+
+15:42:55 --> 15:43:03
+Xinjie Zhao: So we can evaluate how such kind of progress is done by these such kind of interactions. So this is the basic
+
+15:43:03 --> 15:43:19
+Xinjie Zhao: flow to show this kind of flows. So human initial task representation, and then go to the agents and agents interact with the human understanding and to make the scenario better. So this is kind of like a loop engineering things
+
+15:43:19 --> 15:43:26
+Xinjie Zhao: Yeah, basically, it's also maybe called, like, graph engineering anyway. And in order to
+
+15:43:26 --> 15:43:37
+Xinjie Zhao: diving into such kind of mechanism. So basically, I'm testing different kind of like methodologies to help us understand better how people's opinion is shaped. So this is one of the research I've done
+
+15:43:37 --> 15:43:46
+Xinjie Zhao: So as is shown in this picture, so we have a left so figure A and figure B. So figure B shows the
+
+15:43:46 --> 15:44:01
+Xinjie Zhao: and the generosity of the human evaluation program. So in this research, it's about like how people's understanding and how people's evaluation criterion is reshaped by the agent's answer, because, like,
+
+15:44:01 --> 15:44:19
+Xinjie Zhao: ordinary understandings, like, we use human feedback as one of the evaluation loop for AI agents in such kind of loops. But in this research. So my understanding is that people's understanding is still be shaped by AI's answers. I'm not sure whether get the meaning. So
+
+15:44:19 --> 15:44:39
+Xinjie Zhao: For example, this is a traditional evaluation loop. So this is the human evaluation. This is the agent's output. And anyway, so we have some kind of evaluation criteria inside our mind, right? And we get some kind of a human response. However, so when we actually making such kind of evaluations, when we're interacting with
+
+15:44:39 --> 15:44:56
+Xinjie Zhao: AIs or evaluation criteria has actually been shifted. I mean, for our inner mechanisms, because when we read the AI's output, our understanding is also being shaped at the same time. So we can't suppose that the human evaluation criteria keeps the same as should in figure one. So
+
+15:44:56 --> 15:45:16
+Xinjie Zhao: Anyway, so I propose this kind of like mechanisms or phenomenons, and I try to test whether such kind of like human evaluation criteria is shaped, for example, which actually this kind of things is quite useful. For example, if we want to convey some ideas in real world scenarios like we want to make it clear
+
+15:45:16 --> 15:45:37
+Xinjie Zhao: to help the local citizens to understand different kind of, like, scenario, different kind of plans. So we have to understand how their evaluation criteria is for such kind of plans is constructed, shaped, or reshaped by AI answers. And with such kind of basic phenomenons developed from human AI interactions
+
+15:45:37 --> 15:45:53
+Xinjie Zhao: So we can have a better understanding. Of course, you can actually make this kind of phenomenon more complex. You can develop more complex statistical analysis. But basically, I think for the current research
+
+15:45:53 --> 15:46:08
+Xinjie Zhao: It's enough for us to dig up some kind of, like, shifts. For example, we can see some see different kind of like phenomenons and relationships between the understanding progress inside such kind of phenomena. So that's basically what we have done, you know, in the previous week
+
+15:46:08 --> 15:46:09
+Xinjie Zhao: Yeah
+
+15:46:10 --> 15:46:13
+Xinjie Zhao: And the nice thing that
+
+15:46:18 --> 15:46:34
+Xinjie Zhao: Because you know that I introduced you to my methodologies developing how interactive endors instead of traditional survey data. So I took such a kind of sense
+
+15:46:36 --> 15:46:49
+Xinjie Zhao: The platform developed to use such kind of like AI platforms so we can have a better understanding and create the traditional survey start and we can we can like
+
+15:46:49 --> 15:47:04
+Xinjie Zhao: enlarge the application scenario of such kind of methodologies into different kind of modality understandings in human mind. That's my idea. I think that's
+
+15:47:06 --> 15:47:10
+Xinjie Zhao: developing one or two chapters for my PhD story. That's
+
+15:47:10 --> 15:47:13
+Xinjie Zhao: research progress. If any question, just ask
+
+15:47:14 --> 15:47:17
+JUE MA: Is this one
+
+15:47:15 --> 15:47:20
+Xinjie Zhao: Introduction, because I don't want to dive too much into the statistics analysis details
+
+15:47:20 --> 15:47:21
+Xinjie Zhao: Yep
+
+15:47:21 --> 15:47:24
+JUE MA: Is the draft
+
+15:47:24 --> 15:47:30
+JUE MA: You just show the one
+
+15:47:27 --> 15:47:30
+Xinjie Zhao: Yeah, it's the one with the drops. Yeah, yeah, yeah, yeah.
+
+15:47:30 --> 15:47:34
+JUE MA: What's the research question of this one?
+
+15:47:36 --> 15:47:40
+Xinjie Zhao: Yeah, the research question is how people
+
+15:47:40 --> 15:47:53
+Xinjie Zhao: How the, I mean, for example, if we put them into such kind of urban planning scenarios, how the users or the human feedback the criterion inside human feedback
+
+15:47:53 --> 15:47:55
+Xinjie Zhao: is shaped by AIs
+
+15:47:56 --> 15:47:58
+JUE MA: I see, I see, okay.
+
+15:48:00 --> 15:48:11
+Xinjie Zhao: Yeah, yeah, yeah, yeah, yeah. So how we can develop a statistical model to evaluate the interaction between AI and how people's understanding and evaluation of the AI
+
+15:48:11 --> 15:48:22
+Xinjie Zhao: reshaped by such kind of interactions. Like, yeah. So for example, before discussion with AI, before interacting with AI as you might have some kind of criterions. Yeah
+
+15:48:16 --> 15:48:18
+JUE MA: Okay, okay.
+
+15:48:22 --> 15:48:27
+JUE MA: I understand. And, what's the key finding of this paper?
+
+15:48:24 --> 15:48:25
+Xinjie Zhao: Yeah
+
+15:48:27 --> 15:48:35
+Xinjie Zhao: Of course, I have proved that the indigeneity of evaluation is reshaped, right?
+
+15:48:35 --> 15:48:37
+Xinjie Zhao: And there's
+
+15:48:38 --> 15:48:45
+Xinjie Zhao: Obviously, there is statistical findings to show that because I
+
+15:48:45 --> 15:48:53
+Xinjie Zhao: Divide such kind of response into several stages. You can see that. And you can see the correlations and the
+
+15:48:53 --> 15:49:03
+Xinjie Zhao: statistical findings of such kind of interaction progress. Yeah, because we can use coding technologies to transform people's behaviors into
+
+15:49:03 --> 15:49:05
+Xinjie Zhao: measurements.
+
+15:49:05 --> 15:49:12
+Xinjie Zhao: Reasoning elaboration, express source definition, which can be extracted from interaction with AI
+
+15:49:13 --> 15:49:17
+JUE MA: So, do you have any conclusion of the findings?
+
+15:49:17 --> 15:49:21
+JUE MA: Yeah, conclusion of the findings of this paper
+
+15:49:22 --> 15:49:26
+Xinjie Zhao: The funny is the basis of judgment is changed by AIs
+
+15:49:27 --> 15:49:37
+Xinjie Zhao: We can perform language-guided criterion reorganization in human evaluation process when we interact with AI. So that's a finding. That's a phenomenon we have found
+
+15:49:37 --> 15:49:41
+Xinjie Zhao: I proved that there is some kind of
+
+15:49:43 --> 15:49:45
+Xinjie Zhao: Criterion reorganization
+
+15:49:47 --> 15:49:48
+Xinjie Zhao: Yeah.
+
+15:49:48 --> 15:49:53
+Xinjie Zhao: I proved it. So that's enough for this kind of researchers. Yeah.
+
+15:49:52 --> 15:49:59
+JUE MA: So, you prove that there are spaces
+
+15:49:53 --> 15:49:55
+Xinjie Zhao: There's a new phenomenon. Yeah
+
+15:50:00 --> 15:50:01
+Xinjie Zhao: Yep.
+
+15:50:06 --> 15:50:08
+JUE MA: It's
+
+15:50:08 --> 15:50:10
+JUE MA: quantitative
+
+15:50:10 --> 15:50:12
+JUE MA: So, do you have calls?
+
+15:50:13 --> 15:50:14
+Xinjie Zhao: What?
+
+15:50:14 --> 15:50:17
+JUE MA: Do you have quantitative
+
+15:50:17 --> 15:50:21
+JUE MA: Results to prove that how
+
+15:50:24 --> 15:50:25
+Xinjie Zhao: Yeah.
+
+15:50:27 --> 15:50:30
+JUE MA: Quantitative
+
+15:50:27 --> 15:50:34
+Xinjie Zhao: So it progress is evaluated with statistical analysis. So I think they are all
+
+15:50:30 --> 15:50:31
+JUE MA: Yes.
+
+15:50:36 --> 15:50:41
+Xinjie Zhao: results. But if we want to get a deeper understanding, let me check about the appendix.
+
+15:50:41 --> 15:50:55
+JUE MA: For example, the table you showed just now, which one we can which one can be regarding regard as the evidence of the
+
+15:50:41 --> 15:50:42
+Xinjie Zhao: Yeah
+
+15:50:44 --> 15:50:46
+Xinjie Zhao: Yep.
+
+15:50:55 --> 15:50:59
+JUE MA: Like, the basis of
+
+15:51:00 --> 15:51:01
+JUE MA: Sure.
+
+15:51:00 --> 15:51:11
+Xinjie Zhao: I think these figures all trying to show that because it's not like exactly a simplified phenomenon. So you can't just directly
+
+15:51:11 --> 15:51:19
+Xinjie Zhao: To decompose it into some political relations. So it's more like a cognitive process
+
+15:51:19 --> 15:51:27
+Xinjie Zhao: Yeah. So, because we want to prove that in different stages of the discussion. So people's uptake of such kind of emissions
+
+15:51:27 --> 15:51:44
+Xinjie Zhao: understanding of like how AI gave them these information sources is shifted how they use such kind of materials provided by AI. Why does they accept such kind of things, whether they integrate such kind of materials into their own reasoning progress
+
+15:51:44 --> 15:51:51
+Xinjie Zhao: So that's the basic idea. When you interact with AI, like ChatGPT, they would give you much different
+
+15:51:51 --> 15:51:53
+Xinjie Zhao: Yeah
+
+15:51:53 --> 15:51:56
+Xinjie Zhao: So how would you use such kind of information sources?
+
+15:51:56 --> 15:52:06
+Xinjie Zhao: into your own reasoning progress, or you just directly use AI and copy and paste. So that's a different thing, right? So we want to get some kind of like influence traces
+
+15:52:07 --> 15:52:16
+Xinjie Zhao: So you use AI generated answer and it's quite different from like you directly copy and paste from that.
+
+15:52:16 --> 15:52:25
+Xinjie Zhao: So how you include such kind of generated answers from AI into your own reasoning progress, into your own mind, into your own understanding
+
+15:52:25 --> 15:52:28
+Xinjie Zhao: Yeah. So that's a basic
+
+15:52:28 --> 15:52:40
+Xinjie Zhao: setting of this kind of experiments. So the users they put into a scenario, they have to make choices between between which they prefer
+
+15:52:40 --> 15:52:44
+Xinjie Zhao: And we gave them different information source
+
+15:52:44 --> 15:52:49
+Xinjie Zhao: Yes, we're given different traces and we want them to explain why they do such kind of decision making
+
+15:52:50 --> 15:52:52
+Xinjie Zhao: Process, yes. So
+
+15:52:52 --> 15:53:00
+JUE MA: Is this related to how people trust the answer from AI or how people trust AI, how people
+
+15:52:52 --> 15:52:54
+Xinjie Zhao: Yeah, yeah, yeah.
+
+15:53:00 --> 15:53:08
+Xinjie Zhao: Yeah, yeah, yeah, it's religious. Like, you can see the ratio uptake, criterion evaluation, source code grounding
+
+15:53:08 --> 15:53:26
+Xinjie Zhao: So, for example, but this research itself is simplified because it's not related with such kind of like multimodality or like urban related topics. But still, we can use them in the same scenarios like we can help them to understand like we can test whether
+
+15:53:26 --> 15:53:29
+Xinjie Zhao: So like different kind of designing plans
+
+15:53:29 --> 15:53:32
+Xinjie Zhao: Yeah, in a multimodality setting
+
+15:53:33 --> 15:53:35
+JUE MA: Okay.
+
+15:53:33 --> 15:53:38
+Xinjie Zhao: For example, we can give them two plan details. Yeah
+
+15:53:38 --> 15:53:41
+Xinjie Zhao: And to see whether they like generate their own answers.
+
+15:53:41 --> 15:53:49
+Xinjie Zhao: Yeah, because in the end, we have to evaluate them and use statistical results to prove such phenomena exists.
+
+15:53:50 --> 15:53:58
+JUE MA: So I think this is very interesting
+
+15:53:53 --> 15:53:54
+Xinjie Zhao: Yeah.
+
+15:53:59 --> 15:54:04
+JUE MA: I think you explained this in the first meeting that I was in
+
+15:54:04 --> 15:54:08
+JUE MA: And I kind of understand how it would, but
+
+15:54:07 --> 15:54:08
+Xinjie Zhao: Yeah.
+
+15:54:09 --> 15:54:14
+JUE MA: One question is that to say that to have a claim that you pro
+
+15:54:11 --> 15:54:12
+Xinjie Zhao: Yep.
+
+15:54:14 --> 15:54:16
+JUE MA: that this is the case.
+
+15:54:17 --> 15:54:18
+JUE MA: I think
+
+15:54:18 --> 15:54:25
+JUE MA: Maybe that's a bit overclaimed. Do you mean that this is an empirical fighting
+
+15:54:25 --> 15:54:31
+JUE MA: That this can be the case in a certain scenario or certain sample size
+
+15:54:31 --> 15:54:37
+JUE MA: Because if you say that this is the case for every human being
+
+15:54:37 --> 15:54:42
+JUE MA: Then you would need, like, a much bigger sample size to prove that, right?
+
+15:54:44 --> 15:54:53
+Xinjie Zhao: I'm not sure what do you mean? Like, do you mean that we need to do more specific cases, or we need to generate more
+
+15:54:53 --> 15:54:58
+Xinjie Zhao: participants to make the statistical analysis
+
+15:54:56 --> 15:54:58
+JUE MA: Yeah.
+
+15:54:58 --> 15:55:01
+JUE MA: So, yeah, yeah, so my
+
+15:54:58 --> 15:54:59
+Xinjie Zhao: Significant
+
+15:55:01 --> 15:55:06
+JUE MA: My thought is that this is only true for a specific case
+
+15:55:06 --> 15:55:08
+JUE MA: Because probably you don't have
+
+15:55:08 --> 15:55:13
+JUE MA: that big of a sample size to prove that this is true for any
+
+15:55:15 --> 15:55:22
+JUE MA: any countries, any race of people, any age size. I mean, any age range
+
+15:55:21 --> 15:55:31
+Xinjie Zhao: Yeah, yeah, I think you are correct. I think you are correct. If I'm rich enough to do such kind of experiments and I can publish in nature or science.
+
+15:55:22 --> 15:55:24
+JUE MA: Any changes
+
+15:55:31 --> 15:55:32
+Xinjie Zhao: Yeah, but I don't
+
+15:55:32 --> 15:55:34
+Xinjie Zhao: Yeah.
+
+15:55:33 --> 15:55:37
+JUE MA: Yeah, so can you tell me a little bit more about
+
+15:55:37 --> 15:55:45
+JUE MA: The the participants. So, do you have, like, information of maybe where they came from, or
+
+15:55:46 --> 15:55:48
+JUE MA: Like, is this
+
+15:55:48 --> 15:55:54
+JUE MA: well… well balance, like, in terms of age range of people taking
+
+15:55:54 --> 15:55:58
+JUE MA: database, or any experiments you're doing
+
+15:55:57 --> 15:55:58
+Xinjie Zhao: Yeah, of course.
+
+15:55:58 --> 15:56:08
+Xinjie Zhao: You know, I hired 300 participants. So when I say that it's statistically significant, then it
+
+15:56:08 --> 15:56:13
+Xinjie Zhao: Statistically significant. If we don't hire enough participants
+
+15:56:13 --> 15:56:18
+Xinjie Zhao: the statistical process won't be significant. I mean, that's a basic
+
+15:56:18 --> 15:56:28
+Xinjie Zhao: problem setting, right? So, yeah. So I think this amount is large enough to prove one phenomenon
+
+15:56:28 --> 15:56:43
+Xinjie Zhao: So it's not exactly like we hired 10 people and do the experiment and I just find some kind of like qualitative finding. So that's not the case. I hired 300 participants, but offer came from China because it's cheap
+
+15:56:43 --> 15:56:52
+Xinjie Zhao: I have explained it last year, so it's cheap in China, so we can finish such surveys in, like, like, 10,000 yen. Yeah.
+
+15:56:46 --> 15:56:47
+JUE MA: Yeah.
+
+15:56:52 --> 15:56:59
+Xinjie Zhao: It's quite cheap. If we hire, like, people from different countries, then it would be a large amount of money, yeah.
+
+15:56:52 --> 15:56:54
+JUE MA: Yeah, that's good.
+
+15:57:01 --> 15:57:02
+JUE MA: Yeah.
+
+15:57:02 --> 15:57:09
+JUE MA: We'll now have more questions. So you're saying that around 300 is
+
+15:57:06 --> 15:57:07
+Xinjie Zhao: Yeah
+
+15:57:09 --> 15:57:10
+JUE MA: You know
+
+15:57:11 --> 15:57:13
+JUE MA: to
+
+15:57:11 --> 15:57:17
+Xinjie Zhao: Yeah, yeah, yeah, yeah, yeah. $300 is enough for such kind of statistical analysis problems. Yeah
+
+15:57:13 --> 15:57:14
+JUE MA: the statistical test
+
+15:57:17 --> 15:57:33
+Xinjie Zhao: Yeah, and I have already decomposed such kind of problems from multimodality and complexity of scenario into a simplified situation. So which means it's three times two experimental design
+
+15:57:33 --> 15:57:41
+Xinjie Zhao: So, actually, so which I said that… when I said we can implement such constraints into these kind of, like, more detailed scenarios
+
+15:57:41 --> 15:57:54
+Xinjie Zhao: I mean that I didn't do such kind of, like, more complex problem settings. So if I do such kind of things, it would be a quite different story, because we have to make everything clear inside such kind of materials gave to the participants. But in this study itself, it's not
+
+15:57:55 --> 15:58:11
+Xinjie Zhao: Yeah, so that's quite different, because if you want to prove such kind of phenomenons, then you want… you have to make the experiment more clear, more simplified. But if you want to apply them into such kind of cases, then it would be a case study. So then it won't be a phenomenon-related research
+
+15:58:11 --> 15:58:12
+Xinjie Zhao: Yeah
+
+15:58:12 --> 15:58:16
+Xinjie Zhao: So that's the basic problem setting. Yeah, I know that. Yeah
+
+15:58:16 --> 15:58:18
+Xinjie Zhao: Yeah, yeah
+
+15:58:18 --> 15:58:19
+Xinjie Zhao: Yeah
+
+15:58:19 --> 15:58:20
+JUE MA: Okay.
+
+15:58:21 --> 15:58:23
+Xinjie Zhao: Great, thank you.
+
+15:58:23 --> 15:58:26
+JUE MA: comments question.
+
+15:58:31 --> 15:58:36
+JUE MA: Thank you solely
+
+15:58:34 --> 15:58:36
+Xinjie Zhao: Okay.
+
+15:58:38 --> 15:58:42
+JUE MA: Is everything okay there?
+
+15:58:43 --> 15:58:45
+JUE MA: Work
+
+15:58:43 --> 15:58:45
+Xinjie Zhao: For me?
+
+15:58:45 --> 15:58:46
+JUE MA: Yeah
+
+15:58:46 --> 15:58:52
+Xinjie Zhao: Yeah, everything's fine. I'm coming back to Tokyo at the end of August. Yeah
+
+15:58:52 --> 15:58:54
+JUE MA: Okay, okay.
+
+15:58:55 --> 15:59:03
+JUE MA: Thank you, and I think we finished all the presentation today. Does anyone want to share
+
+15:58:56 --> 15:58:57
+Xinjie Zhao: Thank you.
+
+15:59:03 --> 15:59:08
+JUE MA: Or maybe… oh, you want? Yes. Okay. Yeah, please.
+
+15:59:08 --> 15:59:10
+JUE MA: Thank you.
+
+15:59:34 --> 15:59:36
+JUE MA: Let me see…
+
+15:59:36 --> 15:59:38
+JUE MA: Yes.
+
+15:59:38 --> 15:59:40
+JUE MA: Okay.
+
+15:59:40 --> 15:59:58
+JUE MA: So since last time I finished the so the baseline indices and the scenario sustainable interface. And now I'm diving into writing my paper and the report and also going through the validation steps
+
+15:59:58 --> 16:00:10
+JUE MA: Because I want to show that my method is generalizable. And I'm also trying to do some sensitivity analysis. So I have
+
+16:00:10 --> 16:00:18
+JUE MA: questions about it. So first, regarding the validation I split between the flood resilience index and the heat resilience Index
+
+16:00:18 --> 16:00:34
+JUE MA: So for the flood one, I got the data from Sentinel one backscattering during the typhoon Hajibis that hit Tokyo in 2019. So I got the data from the day of the typhoon
+
+16:00:34 --> 16:00:40
+JUE MA: the late afternoon. But the problem, as you can see here, is that
+
+16:00:40 --> 16:00:46
+JUE MA: The data is quite noisy. So obviously, when I try to do the experiment correlation with my
+
+16:00:46 --> 16:00:52
+JUE MA: My flood resilience index, it gives me very poor results.
+
+16:00:52 --> 16:00:57
+JUE MA: So I don't know how to validate my flood resilience index
+
+16:00:57 --> 16:01:12
+JUE MA: That's my first question. Then for the heat residence index, I got the universal thermal Climate Index from another heat wave than the one I constructed my index with. So I got the one in July 202
+
+16:01:12 --> 16:01:21
+JUE MA: And there I got a nice correlation between my index and this climate index
+
+16:01:21 --> 16:01:24
+JUE MA: showing actually that my
+
+16:01:24 --> 16:01:31
+JUE MA: the heat exposure part of my index is correct. Sorry, I forgot to
+
+16:01:32 --> 16:01:48
+JUE MA: But yes, and so what I wanted to do, and I forgot to change the the map. But I also wanted to I identify the top 2% best and worst heat resident places in
+
+16:01:48 --> 16:01:59
+JUE MA: In my study area, so I was also thinking of going there, to visit and take some pictures and do field observations to validate my index.
+
+16:01:59 --> 16:02:15
+JUE MA: But once again, it's like mostly related to the heat exposure of it. So I don't know if it's sufficient to validate. And lastly, for the heat resilience index, the local climate zone analysis that I would show later
+
+16:02:15 --> 16:02:27
+JUE MA: is maybe also a way to validate it. But well, for the heat resistance index, I think it's mostly okay, but I'm more concerned about the flood resilience one.
+
+16:02:27 --> 16:02:39
+JUE MA: And then finally, I was also thinking to run my method on another city to evaluate the cross-city transferability
+
+16:02:39 --> 16:02:43
+JUE MA: And I don't know if this would be a good way to
+
+16:02:43 --> 16:02:50
+JUE MA: validate also the method. So I will need your experience, please, for this
+
+16:02:51 --> 16:03:04
+JUE MA: Then, regarding the analysis, so as we discussed last time, I looked at the local climate zone, but also the land use zones. So local climate zones are
+
+16:03:04 --> 16:03:22
+JUE MA: A description of the current states of the urban land and the land use zone is the global orientation of the urban development that is made by the Japanese government. So it's more an intention
+
+16:03:22 --> 16:03:32
+JUE MA: and local climate zone is more an observation than what is currently here. But the land use zone have been shown up to like
+
+16:03:32 --> 16:03:38
+JUE MA: It's not actually
+
+16:03:38 --> 16:03:45
+JUE MA: It's not actually significantly canalizing the urban development. And so like
+
+16:03:45 --> 16:03:52
+JUE MA: It cannot be used as a measure of what is Yeah, of what is actually built.
+
+16:03:55 --> 16:03:57
+JUE MA: So then I did like the
+
+16:03:58 --> 16:04:09
+JUE MA: I did the box plots and violin plates for my heat residence index and my flood resilience index I will show you later. But basically what I see is that some
+
+16:04:09 --> 16:04:28
+JUE MA: Some local climate zones stand out from the others. And it's the same thing for the land use zone. But for the land use zone, as we can see on the map below before. So you see here Maddell forest is classified as second mid and high rise residential
+
+16:04:28 --> 16:04:34
+JUE MA: which likely introduces bias into this category
+
+16:04:34 --> 16:04:51
+JUE MA: And then also I wanted to highlight that the commercial area is mainly the area around Shibuya Crossing in the south of Shinjuku. And so this heat resilience, the heat resilience with this category is mainly
+
+16:04:51 --> 16:05:02
+JUE MA: Driven by the high real estate price, which is a proxy for revenue. And also the accessibility to green spaces.
+
+16:05:02 --> 16:05:09
+JUE MA: And then I did the same thing for the flood resilience Index, but the problem I got here is that
+
+16:05:09 --> 16:05:16
+JUE MA: The flood exposure is not even on the study area. So
+
+16:05:16 --> 16:05:25
+JUE MA: I don't know if it really makes sense to make an analysis for this, because I think the scale of my project is not
+
+16:05:25 --> 16:05:34
+JUE MA: consistent and proper to study the the impact of urban topology on flood exposure.
+
+16:05:34 --> 16:05:36
+JUE MA: Yeah, I
+
+16:05:37 --> 16:05:42
+JUE MA: I don't think that we can draw conclusions from this.
+
+16:05:44 --> 16:06:02
+JUE MA: And then also I wanted to compare the differences between the compact and open local climate zones. So the compact open climate zones or the compact high rise, compact mid-rise
+
+16:06:02 --> 16:06:07
+JUE MA: And compact low rise, and same thing for the open climate zones
+
+16:06:07 --> 16:06:21
+JUE MA: So here, the first three rows are the three sub-indexes in the last row of the heat residence index is my main index. So the three first rows are combined into one
+
+16:06:21 --> 16:06:23
+JUE MA: final index.
+
+16:06:23 --> 16:06:37
+JUE MA: So what we see as expected is that the open local climate zones show higher heat exposure resilience. And thus we expect because simply of the
+
+16:06:37 --> 16:06:43
+JUE MA: So the definition of the lipoplanisms by Stuart and folk
+
+16:06:43 --> 16:06:45
+JUE MA: And
+
+16:06:45 --> 16:06:54
+JUE MA: Then, regarding the cooling and support accessibility, we have high values for the compact ones.
+
+16:06:54 --> 16:06:56
+JUE MA: But
+
+16:06:56 --> 16:07:13
+JUE MA: And I think this is due to the choice of my study area, because in my study area, the compact high rise is really close to the Mejijingu forest, so of course it has a high value for green space accessibility
+
+16:07:13 --> 16:07:21
+JUE MA: So I think this is a bias due to my study area, and this is not something I can generalize outside of of it.
+
+16:07:21 --> 16:07:35
+JUE MA: But also there's like a better assistance accessibility or compact local funding zone which seems consistent and not only proper to my city area
+
+16:07:35 --> 16:07:51
+JUE MA: And then finally, the social economic resilience is also higher for the compact types. And this is mainly because of the revenue proxy, as I highlighted before. And also because
+
+16:07:51 --> 16:08:05
+JUE MA: The high rise early compact high rise is mostly business and shopping districts, so there is less people. if less people, less vulnerable people, too. So it
+
+16:08:05 --> 16:08:10
+JUE MA: It needs… it goes to a better socioeconomic resilience
+
+16:08:10 --> 16:08:21
+JUE MA: So at the end of the day, what I observe is that these effects are somehow counterbalanced in that we cannot draw clear conclusions on
+
+16:08:21 --> 16:08:29
+JUE MA: For the question is the heat residence index higher for open types compared to compact types?
+
+16:08:29 --> 16:08:36
+JUE MA: And then, like, last part I wanted to present is more about the sensitivity analysis. So
+
+16:08:36 --> 16:08:46
+JUE MA: I plotted the response curve of… this is for the heat resilience index… of the heat resilience index compared to several city planning measures
+
+16:08:48 --> 16:08:50
+JUE MA: I mean
+
+16:08:54 --> 16:08:58
+JUE MA: We can see like the
+
+16:08:58 --> 16:09:12
+JUE MA: The trend of the curves, but of course we have to put this in into context and that we cannot do any parameter change as we want. It has to be consistent with like
+
+16:09:12 --> 16:09:26
+JUE MA: The planning of a neighborhood, and we cannot change the… easily change the sky view factor from like 0 to 0.5. So this is also like one of my question because
+
+16:09:26 --> 16:09:36
+JUE MA: On the scenario testing interface, I tried to add several public facilities, moving the schools and also changing the city planning variables
+
+16:09:39 --> 16:09:41
+JUE MA: At the end of the day
+
+16:09:41 --> 16:09:47
+JUE MA: It really depends on the places where I do it, and I don't know
+
+16:09:47 --> 16:09:49
+JUE MA: How
+
+16:09:49 --> 16:09:55
+JUE MA: What method could I use to draw meaningful statistics to present in my report?
+
+16:09:55 --> 16:10:00
+JUE MA: So this is my last question. I don't know how to
+
+16:10:00 --> 16:10:03
+JUE MA: I don't know how I can do this
+
+16:10:08 --> 16:10:15
+JUE MA: Okay, so right now there are two problems. One is for the validation, one is for the sensitivity analysis. Yes
+
+16:10:18 --> 16:10:24
+JUE MA: I think that's an analysis is also part of the validation. Okay
+
+16:10:24 --> 16:10:27
+JUE MA: Usually
+
+16:10:32 --> 16:10:37
+JUE MA: Usually, we could do the sensitive analysis or
+
+16:10:37 --> 16:10:42
+JUE MA: Scalability check for
+
+16:10:42 --> 16:10:45
+JUE MA: Compare with,
+
+16:10:45 --> 16:10:47
+JUE MA: The other data
+
+16:10:47 --> 16:10:54
+JUE MA: to validate the method, as as you you said, you tried the typhoon
+
+16:11:05 --> 16:11:13
+JUE MA: Just for this activity analysis, I think I cannot like try every single possibilities. Just doable.
+
+16:11:13 --> 16:11:18
+JUE MA: Okay, so for the sensitive analysis, what's the current
+
+16:11:18 --> 16:11:20
+JUE MA: Varivals
+
+16:11:21 --> 16:11:26
+JUE MA: Oh, HR and NFR.
+
+16:11:30 --> 16:11:33
+JUE MA: Wait a minute. I just really thinking
+
+16:11:39 --> 16:11:44
+JUE MA: So for the heat residence index, that's the variables
+
+16:11:44 --> 16:11:47
+JUE MA: So they're, like, the
+
+16:11:47 --> 16:11:54
+JUE MA: 3… Can you still see it?
+
+16:12:00 --> 16:12:05
+JUE MA: Yeah, no, okay. Oh, okay, okay.
+
+16:12:05 --> 16:12:13
+JUE MA: So that's the three main sub-indexes are here. And then
+
+16:12:13 --> 16:12:26
+JUE MA: I got, like, different indicators that I combined together. Every time I do Tapsis, or for the Flood Residence Index, also entropy weighting method, I saved all the weights
+
+16:12:26 --> 16:12:30
+JUE MA: And for Tapsis, I also saved the ideal and ideal cases
+
+16:12:31 --> 16:12:33
+JUE MA: So
+
+16:12:34 --> 16:12:47
+JUE MA: What is assistance? Access to accessibility of assistance means assistance is everything there is the medical like hospitals, clinics.
+
+16:12:48 --> 16:12:56
+JUE MA: Brief point is relief points is a firefighter stations and police stations.
+
+16:13:01 --> 16:13:04
+JUE MA: In this case, just Wi-Fi gestations
+
+16:13:08 --> 16:13:10
+JUE MA: How about
+
+16:13:13 --> 16:13:16
+JUE MA: Change the number
+
+16:13:20 --> 16:13:22
+JUE MA: Change
+
+16:13:22 --> 16:13:26
+JUE MA: So accessibility is not the number of them
+
+16:13:26 --> 16:13:33
+JUE MA: Is based on the dataset of legacy data set
+
+16:13:33 --> 16:13:36
+JUE MA: I'm thinking about how to change the
+
+16:13:36 --> 16:13:40
+JUE MA: the variables to do the sensitive analysis
+
+16:13:42 --> 16:13:52
+JUE MA: Because if we want to change the facility, we need to change both of the number and the pick up the location so that the accessibility value
+
+16:14:00 --> 16:14:02
+JUE MA: Any ideas
+
+16:14:07 --> 16:14:09
+JUE MA: Interesting question.
+
+16:14:11 --> 16:14:22
+JUE MA: Because maybe I can create a regular grid with the hospitals and just add this grid to the current hospital data set.
+
+16:14:27 --> 16:14:40
+JUE MA: How did you calculate the population vulnerability? I just multiplied the population density with the vulnerability percentage.
+
+16:14:42 --> 16:14:47
+JUE MA: It's just using some scaling like ratio
+
+16:14:47 --> 16:14:55
+JUE MA: So like the overall population ratio that are for the public groups, and then
+
+16:14:55 --> 16:14:58
+JUE MA: You took the population distribution
+
+16:14:58 --> 16:15:08
+JUE MA: and made the assumption that for this month number or population should be
+
+16:15:08 --> 16:15:11
+JUE MA: So how will you compare things
+
+16:15:11 --> 16:15:17
+JUE MA: Yeah, so I got the
+
+16:15:17 --> 16:15:19
+JUE MA: the
+
+16:15:19 --> 16:15:34
+JUE MA: So that I got the class of people from 0 to 6 to 14 to 3 special data. So
+
+16:15:34 --> 16:15:49
+JUE MA: I just… I did the catching… yeah, I got like the percentage of people in each of these categories, and it's… it depends on the position in space, and then I just choose aggregated the categories I needed and multiplied by population density
+
+16:15:49 --> 16:15:52
+JUE MA: That is also… that also depends on
+
+16:15:52 --> 16:15:55
+JUE MA: underpopulation and space
+
+16:15:57 --> 16:16:05
+JUE MA: But for example, for preparation density and vulnerable population, I have the predictions until
+
+16:16:05 --> 16:16:07
+JUE MA: 2018
+
+16:16:08 --> 16:16:13
+JUE MA: So maybe if for this indicator, there's something I could do
+
+16:16:20 --> 16:16:25
+JUE MA: sensitivity is not only it's more like a scenario
+
+16:16:25 --> 16:16:37
+JUE MA: If the population changes in the future, like the residual change, and for example the facilities, the stations change
+
+16:16:37 --> 16:16:40
+JUE MA: It's more like
+
+16:16:40 --> 16:16:45
+JUE MA: You have real simulation rather than sensitive
+
+16:16:45 --> 16:16:48
+JUE MA: Maybe the census would be difficult.
+
+16:16:51 --> 16:16:56
+JUE MA: Sensitive analysis, for example
+
+16:16:56 --> 16:17:08
+JUE MA: If we change the way of the stem like normalization or change the weight of the
+
+16:17:10 --> 16:17:13
+JUE MA: We change the weight of each indicator
+
+16:17:13 --> 16:17:19
+JUE MA: Or change the way of the normalization or change the
+
+16:17:19 --> 16:17:24
+JUE MA: Will the results still be stable?
+
+16:17:29 --> 16:17:31
+JUE MA: But should I
+
+16:17:32 --> 16:17:36
+JUE MA: Change it and compare with real life cases
+
+16:17:36 --> 16:17:46
+JUE MA: So we are doing like pick up one baseline method and he come to prove the baseline method is
+
+16:17:46 --> 16:17:51
+JUE MA: Okay, you should compare the results with some other
+
+16:17:51 --> 16:17:56
+JUE MA: Like optional message
+
+16:17:57 --> 16:18:01
+JUE MA: If the results to stable.
+
+16:18:01 --> 16:18:09
+JUE MA: Yeah, I think currently she developed one
+
+16:18:10 --> 16:18:19
+JUE MA: Yeah, but she wants to validate this so she can validate it with her own development
+
+16:18:19 --> 16:18:26
+JUE MA: So here, the problem is validation.
+
+16:18:27 --> 16:18:32
+JUE MA: Like we show in the first slide
+
+16:18:32 --> 16:18:37
+JUE MA: So, you want to show that your index can
+
+16:18:37 --> 16:18:42
+JUE MA: Related to the real event. That's the
+
+16:18:42 --> 16:18:47
+JUE MA: That would be one part of the validation
+
+16:18:47 --> 16:18:56
+JUE MA: And another one will be the sensitive analysis. We call this sensitive analysis, but I feel it's quite similar as
+
+16:18:56 --> 16:19:00
+JUE MA: I don't throw any ribbon
+
+16:19:01 --> 16:19:03
+JUE MA: Reverse things
+
+16:19:03 --> 16:19:08
+JUE MA: Okay.
+
+16:19:08 --> 16:19:10
+JUE MA: I was thinking
+
+16:19:10 --> 16:19:23
+JUE MA: He stroke really low per area. Yes, evaluate like external knowledge. You've seen the data.
+
+16:19:23 --> 16:19:25
+JUE MA: Yeah.
+
+16:19:27 --> 16:19:38
+JUE MA: I don't know at which level scenario modeling and then compare and figure 3 of my cases the premieres coverages
+
+16:19:38 --> 16:19:54
+JUE MA: because that would be a good way to diagnose the heat the heat stroke data, the like ambulance data, etc. The problem is that
+
+16:19:54 --> 16:20:08
+JUE MA: The resolution is too coarse for me. Like, at the best is at the prefecture resolution. So I cannot draw anything out of it. Yeah, prefecture. And like prefecture scale
+
+16:20:08 --> 16:20:10
+JUE MA: Or it's too large
+
+16:20:11 --> 16:20:17
+JUE MA: Like, I mean, also, I mean, like, the finer I got is perfect raw scale
+
+16:20:17 --> 16:20:33
+JUE MA: But it's too coarse for me. And even if I got the data at the resolution I did, I think it will be too scarce. Like, if I only sorry, but if I only have three heatstroke and said, okay, yeah, I cannot draw a conclusion to my
+
+16:20:33 --> 16:20:35
+JUE MA: kids index, right?
+
+16:20:35 --> 16:20:39
+JUE MA: Sorry, what's the data source
+
+16:20:39 --> 16:20:52
+JUE MA: My data source is NLFTP. What do you mean like for the history I got so there's Tokyo Heatstroke portal I check like maybe five different I I forgot the names.
+
+16:20:53 --> 16:20:54
+JUE MA: Really
+
+16:20:54 --> 16:20:57
+JUE MA: Yeah, yeah.
+
+16:20:58 --> 16:21:01
+JUE MA: So, yeah, I was
+
+16:21:02 --> 16:21:07
+JUE MA: disappointed.
+
+16:21:18 --> 16:21:30
+JUE MA: Yeah, because, like, director was using news, but maybe the news can give like more local data like because it's not officially compiled data. It's
+
+16:21:31 --> 16:21:37
+JUE MA: Naturally the news, which is interesting. So there might be more information about them.
+
+16:21:37 --> 16:21:41
+JUE MA: You need to scrape the juice and see if that is really
+
+16:21:41 --> 16:21:56
+JUE MA: Yeah, it's possible with news, maybe probably social media is having trouble here than most people see granularity of the social media is like smaller scale. For example, complain about something to just
+
+16:21:56 --> 16:21:58
+JUE MA: Shibuya is
+
+16:21:58 --> 16:22:06
+JUE MA: Hopefully, very hot geography. It's not like you generally talk about this hot
+
+16:22:06 --> 16:22:10
+JUE MA: The news might cover just some general trends
+
+16:22:10 --> 16:22:14
+JUE MA: Yes, so landmark
+
+16:22:15 --> 16:22:17
+JUE MA: events
+
+16:22:17 --> 16:22:18
+JUE MA: Yeah.
+
+16:22:28 --> 16:22:36
+JUE MA: And also, for example, currently you have several components for each indicator
+
+16:22:36 --> 16:22:39
+JUE MA: But, for example, check
+
+16:22:41 --> 16:22:51
+JUE MA: Like, if we did it one and calculate again, delete one by one, for example, one deleted this, one deleted this, and check if one
+
+16:22:51 --> 16:22:55
+JUE MA: part would influence the result too much
+
+16:22:55 --> 16:22:58
+JUE MA: It's too much, too bad. He knows the good
+
+16:22:59 --> 16:23:01
+JUE MA: To see it with
+
+16:23:05 --> 16:23:09
+JUE MA: Yes, also kind of weird
+
+16:23:09 --> 16:23:12
+JUE MA: I think there's no
+
+16:23:13 --> 16:23:15
+JUE MA: Like
+
+16:23:16 --> 16:23:25
+JUE MA: Standard result of the method for checking this, but we need to do several checking to prove that
+
+16:23:25 --> 16:23:31
+JUE MA: The goal is just we need to prove that our proposed method
+
+16:23:32 --> 16:23:34
+JUE MA: Stable and
+
+16:23:34 --> 16:23:35
+JUE MA: Really?
+
+16:23:35 --> 16:23:37
+JUE MA: reasonable
+
+16:23:43 --> 16:23:44
+JUE MA: Test
+
+16:23:45 --> 16:23:50
+JUE MA: And for the typhoon one, what's that
+
+16:23:52 --> 16:23:56
+JUE MA: If you check the result with the
+
+16:23:56 --> 16:24:01
+JUE MA: Yes, so it's the
+
+16:24:02 --> 16:24:05
+JUE MA: It's the backscattering
+
+16:24:07 --> 16:24:14
+JUE MA: But it could be also, like, noisy because of the urban environment
+
+16:24:15 --> 16:24:22
+JUE MA: How about the event after in the urban area after the typhoon, for example
+
+16:24:22 --> 16:24:25
+JUE MA: Everyone pickle for which
+
+16:24:27 --> 16:24:31
+JUE MA: Is there any…
+
+16:24:32 --> 16:24:34
+JUE MA: event
+
+16:24:40 --> 16:24:43
+JUE MA: That event, or something happened
+
+16:24:43 --> 16:24:48
+JUE MA: Yeah, so that was, like, the point, because the
+
+16:24:50 --> 16:25:00
+JUE MA: The signal is bad scattered reflected like from the water and then I can filter like
+
+16:25:00 --> 16:25:09
+JUE MA: Water that was there before, and water that like new backscattering that was not here before the typhoon. So this is what I did
+
+16:25:11 --> 16:25:17
+JUE MA: But then, also, the problem I have is that Sentinel-1 is coming only every 8 days.
+
+16:25:17 --> 16:25:18
+JUE MA: So
+
+16:25:18 --> 16:25:23
+JUE MA: And I know the flooding lasted for 24 hours
+
+16:25:23 --> 16:25:27
+JUE MA: So, my concern is that
+
+16:25:27 --> 16:25:33
+JUE MA: The indirect Resilience Index, both of the flood and the heat. It's not the
+
+16:25:33 --> 16:25:37
+JUE MA: Blood risk, yes, that's all
+
+16:25:37 --> 16:25:41
+JUE MA: So, maybe we need to compare with the
+
+16:25:48 --> 16:25:54
+JUE MA: Event after typhoon or event or for example how many people
+
+16:25:56 --> 16:26:01
+JUE MA: Have the record of calling record of calling
+
+16:26:02 --> 16:26:05
+JUE MA: Record of the heat
+
+16:26:05 --> 16:26:06
+JUE MA: What's that
+
+16:26:08 --> 16:26:12
+JUE MA: Of the stroke. Yeah, heat stroke
+
+16:26:12 --> 16:26:19
+JUE MA: The record, I think we can't get the data. After… during summer
+
+16:26:19 --> 16:26:31
+JUE MA: switch may represent. And the problem is that data is only at the perfection level. Also, okay
+
+16:26:39 --> 16:26:45
+JUE MA: So maybe I can look if I can find the fluid damage caused
+
+16:26:46 --> 16:26:49
+JUE MA: Yes, yes.
+
+16:26:49 --> 16:26:52
+JUE MA: What will
+
+16:26:54 --> 16:27:06
+JUE MA: How difficult if we expand this study to the country level because right now we only calculate for Senegal
+
+16:27:06 --> 16:27:16
+JUE MA: Right, yes. What if we expand to the national level? Is that hard, or it will take special
+
+16:27:16 --> 16:27:29
+JUE MA: A lot of time for my country, it only takes lots of time to learn. Yeah, so for the country, I don't know. Okay, so only for all the calculation problem
+
+16:27:29 --> 16:27:37
+JUE MA: Or data collection, or we also have data collection? I can get like most
+
+16:27:38 --> 16:27:47
+JUE MA: For the flood residence index, it's all based on NLFTP, which I think it's available at the national level.
+
+16:27:47 --> 16:27:49
+JUE MA: And
+
+16:27:51 --> 16:27:55
+JUE MA: And the plateau, no, I don't think it is
+
+16:27:55 --> 16:27:59
+JUE MA: Data is also national opening.
+
+16:28:02 --> 16:28:10
+JUE MA: If only calculation program we can solve it, but let me think about it.
+
+16:28:10 --> 16:28:16
+JUE MA: A good idea to do this. I have one once left.
+
+16:28:19 --> 16:28:27
+JUE MA: And also, what do you think about trying to run it for a district in another city?
+
+16:28:34 --> 16:28:37
+JUE MA: For another city, then
+
+16:28:37 --> 16:28:41
+JUE MA: To show that we can
+
+16:28:41 --> 16:28:44
+JUE MA: Transfer the methods to
+
+16:28:44 --> 16:28:46
+JUE MA: A new place
+
+16:28:47 --> 16:28:50
+JUE MA: Good scaling
+
+16:28:50 --> 16:29:01
+JUE MA: But it seems like there's no doubt about that because we only use the open data and we calculate calculation there's
+
+16:29:01 --> 16:29:06
+JUE MA: limitation calculation data. So
+
+16:29:06 --> 16:29:12
+JUE MA: It's obviously… Okay, okay.
+
+16:29:12 --> 16:29:18
+JUE MA: Before the sheet exposure, can we use like the GPT
+
+16:29:22 --> 16:29:30
+JUE MA: Yeah, I think maybe there's like point level data for that
+
+16:29:31 --> 16:29:40
+JUE MA: But for the heat, I think I'm good, because I use, like, the UTCI, which is, like, quite close to this.
+
+16:29:40 --> 16:29:44
+JUE MA: So, I think it would be a similar
+
+16:29:44 --> 16:29:53
+JUE MA: See what you're saying. It's like this one is also based on humidity, wind, land surface temperature, so I think it's, like, quite close
+
+16:30:00 --> 16:30:07
+JUE MA: Cool, thank you. Let me think about it. So currently the Boston is like the
+
+16:30:10 --> 16:30:18
+JUE MA: The validation with other event data, the event data resolution is quite is too large
+
+16:30:18 --> 16:30:25
+JUE MA: And that the sensitive analysis we can listen to that
+
+16:30:25 --> 16:30:28
+JUE MA: Okay, okay, thank you. Thank you.
+
+16:30:34 --> 16:30:37
+JUE MA: Okay, thank you.
+
+16:30:37 --> 16:30:40
+JUE MA: Any other information you want to share?
+
+16:30:41 --> 16:30:42
+JUE MA: No.
+
+16:30:45 --> 16:30:48
+JUE MA: Just stay out.
+
+16:30:48 --> 16:30:53
+JUE MA: I'm carrying my conference paper
+
+16:30:53 --> 16:31:01
+JUE MA: And my response is going to be about this which company
+
+16:31:02 --> 16:31:07
+JUE MA: Sure. Yes
+
+16:31:07 --> 16:31:14
+JUE MA: And my main results were about
+
+16:31:14 --> 16:31:16
+JUE MA: It's nice
+
+16:31:16 --> 16:31:18
+JUE MA: So
+
+16:31:18 --> 16:31:29
+JUE MA: There's two things. I'm writing paper about the news-based event on Link that I shout for the Mizoba area
+
+16:31:29 --> 16:31:40
+JUE MA: Because I think that research is safe to target their particular issues. So I don't use this news
+
+16:31:40 --> 16:31:45
+JUE MA: this conference.
+
+16:31:47 --> 16:31:51
+JUE MA: Is that different from the previous one with
+
+16:31:51 --> 16:31:53
+JUE MA: 6 people
+
+16:31:53 --> 16:32:09
+JUE MA: Yes, it is because there are the SNG is specialized the overall nationwide narrative onboarding like stories is very different trying to understand then how this overall social
+
+16:32:09 --> 16:32:12
+JUE MA: Affecting visitation
+
+16:32:12 --> 16:32:27
+JUE MA: for the token as time the idea is kind of we take this common pro data. And from this data engineering the event database
+
+16:32:27 --> 16:32:42
+JUE MA: So the value here is not only the event detection model, but the thing that we can precisely model engineer the event data
+
+16:32:43 --> 16:32:55
+JUE MA: So how it's going to be used for engineering data from the sources that are not usually considered so valuable
+
+16:32:55 --> 16:32:58
+JUE MA: Okay, the data you're using
+
+16:32:58 --> 16:33:06
+JUE MA: Is it right? Yeah, it's different data for the SMG spatial because the GBLT data
+
+16:33:06 --> 16:33:22
+JUE MA: That I showed is like every 15 minutes they kind of do it interval with data, but the GDOP data is it was just statistics of each news article. They were not sharing the body
+
+16:33:22 --> 16:33:37
+JUE MA: They will just like providing 40 parts from other places but not precise the address still just the city or district and sub-organization names. So for this conference submission
+
+16:33:37 --> 16:33:45
+JUE MA: The pipeline is about very precisely at the other scale, like a modeling big event
+
+16:33:47 --> 16:33:56
+JUE MA: And creating not only human monitoring system, but also email databases and classifying them
+
+16:33:56 --> 16:34:00
+JUE MA: in a way that they can be used for the
+
+16:34:00 --> 16:34:03
+JUE MA: Okay, I see.
+
+16:34:04 --> 16:34:08
+JUE MA: Anyone else will need to repeat it
+
+16:34:12 --> 16:34:28
+JUE MA: Thank you. Let's finish today's bootcamp and we need to check the next meeting because it was originally 19, but it seems like that bootcamp will move to 19
+
+16:34:28 --> 16:34:30
+JUE MA: So let's
+
+16:34:30 --> 16:34:36
+JUE MA: move our next meeting to 26th. I think I've… I have changed the
+
+16:34:36 --> 16:34:42
+JUE MA: calendars. So next meeting will be 26th
+
+16:34:43 --> 16:34:46
+JUE MA: Thank you. Okay.
+
+16:34:43 --> 16:34:46
+JUE MA: Do you next time, bye.

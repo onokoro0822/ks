@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "generated_at_jst": "2026-08-26T09:32:57+09:00",
+  "input_fingerprint": "e8411790905e6210e1c1d9c6adfb9c084d82d7ff79ceadd72e12780af654a8fc",
+  "history_policy": "manual_pre_update_snapshot",
+  "note": "Reference-facility scenario update前の最新版を退避した履歴。",
+  "files": [
+    "inputs/nagoya_three_development_scenarios.json",
+    "inputs/chukyo_pt_2022_age_gender_distribution_reference.json",
+    "nagoya_three_development_scenario_distributions.json",
+    "charts/nagoya_six_scenarios_age_gender_en.png",
+    "charts/nagoya_six_scenarios_age_gender_en.svg",
+    "charts/nagoya_six_scenarios_arrivals_by_use_en.png",
+    "charts/nagoya_six_scenarios_arrivals_by_use_en.svg",
+    "charts/scenario_charts/"
+  ]
+}

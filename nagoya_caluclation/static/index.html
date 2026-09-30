@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="LLMとの対話から施設の発生集中交通量を計算します。">
+    <title>名古屋・発生集中交通量計算</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">NAGOYA FACILITY TRIP CALCULATOR</p>
+          <h1>会話から条件を整理し、<br>人TEを計算します。</h1>
+          <p class="lead">施設名から床面積などの公開情報をWebで調べ、条件を確認して計算できます。計算式は既存のPython関数を使用します。</p>
+        </div>
+        <div class="method" aria-label="処理方法">
+          <span><b>1</b> LLMが聞き取り</span>
+          <span><b>2</b> 必要ならWeb検索</span>
+          <span><b>3</b> 出典と条件を確認</span>
+          <span><b>4</b> Pythonで計算</span>
+        </div>
+      </header>
+
+      <section id="setup" class="setup card" aria-labelledby="setup-title">
+        <div>
+          <p class="section-kicker">START</p>
+          <h2 id="setup-title">新しい計算を始める</h2>
+          <p id="key-help" class="muted">Gemini APIキーは、このアプリのメモリ内だけで使用し保存しません。</p>
+        </div>
+        <div class="setup-actions">
+          <label id="key-field" class="field">
+            <span>Gemini APIキー</span>
+            <input id="api-key" type="password" autocomplete="off" placeholder="APIキーを入力">
+          </label>
+          <button id="start-button" class="primary" type="button">計算を開始</button>
+        </div>
+      </section>
+
+      <section class="scenario-section card" aria-labelledby="scenario-title">
+        <div>
+          <p class="section-kicker">SCENARIO JSON</p>
+          <h2 id="scenario-title">旧・名鉄百貨店本店跡地全体の6案を比較する</h2>
+          <p class="muted">複合3案と、全商業・全オフィス・全ホテルの単一用途3案を一括計算し、年齢×性別分布を表示します。</p>
+        </div>
+        <button id="scenario-button" class="ghost" type="button">6案の分布を表示</button>
+        <p id="scenario-error" class="error hidden" role="alert"></p>
+        <div id="scenario-list" class="scenario-list hidden"></div>
+      </section>
+
+      <section id="workspace" class="workspace hidden" aria-live="polite">
+        <div class="chat card">
+          <div class="card-heading">
+            <div>
+              <p class="section-kicker">DIALOGUE</p>
+              <h2>条件の聞き取り</h2>
+            </div>
+            <button id="new-button" class="ghost" type="button">新しい計算</button>
+          </div>
+          <div id="messages" class="messages" role="log" aria-label="LLMとの会話"></div>
+          <form id="message-form" class="composer">
+            <label class="sr-only" for="message-input">回答</label>
+            <textarea id="message-input" rows="2" maxlength="8000" placeholder="例：名鉄名古屋を対象に、床面積も調べて計算したい" required></textarea>
+            <button id="send-button" class="primary" type="submit">送信</button>
+          </form>
+          <p id="error" class="error hidden" role="alert"></p>
+        </div>
+
+        <aside class="side-stack">
+          <section class="card conditions" aria-labelledby="conditions-title">
+            <p class="section-kicker">INPUT</p>
+            <h2 id="conditions-title">現在の入力条件</h2>
+            <div id="condition-list" class="condition-list">
+              <p class="empty">会話から確認できた条件がここに表示されます。</p>
+            </div>
+          </section>
+
+          <section id="research-panel" class="card research hidden" aria-labelledby="research-title">
+            <p class="section-kicker">WEB RESEARCH</p>
+            <h2 id="research-title">Webで確認した情報</h2>
+            <p id="research-summary" class="research-summary"></p>
+            <ul id="research-sources" class="research-sources"></ul>
+            <p class="research-caution">検索結果は出典と面積の定義を確認してから計算条件へ採用します。</p>
+          </section>
+
+          <section id="results" class="card results hidden" aria-labelledby="results-title">
+            <p class="section-kicker">RESULT</p>
+            <h2 id="results-title">計算結果</h2>
+            <div class="total-block">
+              <span>単純合計</span>
+              <strong id="total-value">—</strong>
+              <small>人TE / 日</small>
+            </div>
+            <div id="adjusted-block" class="adjusted hidden">
+              <span>内々交通5%低減後</span>
+              <b id="adjusted-value">—</b>
+              <small>人TE / 日</small>
+            </div>
+            <div id="result-items" class="result-items"></div>
+            <a id="csv-link" class="download" href="#" download>結果CSVをダウンロード</a>
+          </section>
+
+          <section class="notice">
+            <b>人TEについて</b>
+            <p>発生と集中を合計したトリップエンド数です。ユニーク来訪者数ではありません。</p>
+          </section>
+        </aside>
+
+        <section id="age-panel" class="card age-panel hidden" aria-labelledby="age-title">
+          <div class="age-heading">
+            <div>
+              <p class="section-kicker">AGE PROFILE</p>
+              <h2 id="age-title">年齢・性別の推定来訪量</h2>
+              <p class="age-summary"><strong id="age-total">—</strong> 到着人トリップ / 日（推定）</p>
+            </div>
+            <div id="age-legend" class="age-legend" aria-label="性別の凡例"></div>
+          </div>
+          <div class="age-chart-scroll" tabindex="0" aria-label="年齢・性別別推定来訪量の棒グラフ">
+            <div id="age-chart" class="age-chart"></div>
+          </div>
+          <p id="age-note" class="age-note"></p>
+        </section>
+      </section>
+    </main>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

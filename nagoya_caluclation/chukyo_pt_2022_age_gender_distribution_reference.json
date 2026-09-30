@@ -1,0 +1,174 @@
+{
+  "unit": "percent",
+  "note": "各用途について、抽出対象トリップ全体を100%とした年齢・性別別構成比。",
+  "facilities": {
+    "商業施設": {
+      "10歳未満": {
+        "male_pct": 0.4421,
+        "female_pct": 0.4115,
+        "other_pct": 0.0,
+        "age_total_pct": 0.8536
+      },
+      "10～19歳": {
+        "male_pct": 0.7645,
+        "female_pct": 0.8633,
+        "other_pct": 0.0095,
+        "age_total_pct": 1.6372
+      },
+      "20～29歳": {
+        "male_pct": 3.0545,
+        "female_pct": 4.7528,
+        "other_pct": 0.0392,
+        "age_total_pct": 7.8465
+      },
+      "30～39歳": {
+        "male_pct": 4.0685,
+        "female_pct": 5.8849,
+        "other_pct": 0.0397,
+        "age_total_pct": 9.9931
+      },
+      "40～49歳": {
+        "male_pct": 5.3283,
+        "female_pct": 8.191,
+        "other_pct": 0.0098,
+        "age_total_pct": 13.5291
+      },
+      "50～59歳": {
+        "male_pct": 5.596,
+        "female_pct": 10.0672,
+        "other_pct": 0.0376,
+        "age_total_pct": 15.7008
+      },
+      "60～69歳": {
+        "male_pct": 8.3654,
+        "female_pct": 12.3397,
+        "other_pct": 0.0031,
+        "age_total_pct": 20.7082
+      },
+      "70～79歳": {
+        "male_pct": 9.8818,
+        "female_pct": 12.3114,
+        "other_pct": 0.0025,
+        "age_total_pct": 22.1956
+      },
+      "80歳以上": {
+        "male_pct": 3.6514,
+        "female_pct": 3.8846,
+        "other_pct": 0.0,
+        "age_total_pct": 7.536
+      }
+    },
+    "オフィス": {
+      "10歳未満": {
+        "male_pct": 0.0,
+        "female_pct": 0.0,
+        "other_pct": 0.0,
+        "age_total_pct": 0.0
+      },
+      "10～19歳": {
+        "male_pct": 0.5394,
+        "female_pct": 0.3693,
+        "other_pct": 0.0102,
+        "age_total_pct": 0.9189
+      },
+      "20～29歳": {
+        "male_pct": 8.7745,
+        "female_pct": 7.7479,
+        "other_pct": 0.0324,
+        "age_total_pct": 16.5547
+      },
+      "30～39歳": {
+        "male_pct": 11.691,
+        "female_pct": 6.624,
+        "other_pct": 0.0425,
+        "age_total_pct": 18.3575
+      },
+      "40～49歳": {
+        "male_pct": 15.8447,
+        "female_pct": 9.7933,
+        "other_pct": 0.0213,
+        "age_total_pct": 25.6593
+      },
+      "50～59歳": {
+        "male_pct": 14.3667,
+        "female_pct": 9.351,
+        "other_pct": 0.0208,
+        "age_total_pct": 23.7385
+      },
+      "60～69歳": {
+        "male_pct": 7.4455,
+        "female_pct": 3.9157,
+        "other_pct": 0.0033,
+        "age_total_pct": 11.3645
+      },
+      "70～79歳": {
+        "male_pct": 2.0303,
+        "female_pct": 1.0052,
+        "other_pct": 0.0006,
+        "age_total_pct": 3.0361
+      },
+      "80歳以上": {
+        "male_pct": 0.2435,
+        "female_pct": 0.1269,
+        "other_pct": 0.0,
+        "age_total_pct": 0.3704
+      }
+    },
+    "ホテル": {
+      "10歳未満": {
+        "male_pct": 0.2046,
+        "female_pct": 0.1883,
+        "other_pct": 0.0,
+        "age_total_pct": 0.3929
+      },
+      "10～19歳": {
+        "male_pct": 1.7343,
+        "female_pct": 1.5696,
+        "other_pct": 0.0057,
+        "age_total_pct": 3.3096
+      },
+      "20～29歳": {
+        "male_pct": 3.6795,
+        "female_pct": 4.7668,
+        "other_pct": 0.0337,
+        "age_total_pct": 8.4799
+      },
+      "30～39歳": {
+        "male_pct": 8.7711,
+        "female_pct": 5.3975,
+        "other_pct": 0.0202,
+        "age_total_pct": 14.1888
+      },
+      "40～49歳": {
+        "male_pct": 8.6515,
+        "female_pct": 5.4491,
+        "other_pct": 0.0,
+        "age_total_pct": 14.1006
+      },
+      "50～59歳": {
+        "male_pct": 13.346,
+        "female_pct": 9.0813,
+        "other_pct": 0.0268,
+        "age_total_pct": 22.4541
+      },
+      "60～69歳": {
+        "male_pct": 11.949,
+        "female_pct": 7.0498,
+        "other_pct": 0.0,
+        "age_total_pct": 18.9989
+      },
+      "70～79歳": {
+        "male_pct": 9.6336,
+        "female_pct": 5.1529,
+        "other_pct": 0.006,
+        "age_total_pct": 14.7925
+      },
+      "80歳以上": {
+        "male_pct": 1.9519,
+        "female_pct": 1.3309,
+        "other_pct": 0.0,
+        "age_total_pct": 3.2827
+      }
+    }
+  }
+}

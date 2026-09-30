@@ -1,0 +1,1535 @@
+15:56:45 --> 15:56:54
+JUE MA: そのようには。
+
+15:56:45 --> 15:56:54
+JUE MA: No, not totally. There's 9, 1420, like there are many, but they took like, if it's based on.
+
+15:56:54 --> 15:56:57
+JUE MA: Yeah, based on that research.
+
+15:56:57 --> 15:56:59
+JUE MA: I don't know. Sorry.
+
+15:56:59 --> 15:57:01
+JUE MA: Yeah, if you based on his.
+
+15:57:02 --> 15:57:04
+JUE MA: その中で。
+
+15:57:02 --> 15:57:04
+JUE MA: It comes from government definition.
+
+15:57:04 --> 15:57:07
+JUE MA: Yeah, you can also refer that.
+
+15:57:08 --> 15:57:09
+チョウ ジンメイ: オッケー。
+
+15:57:08 --> 15:57:12
+JUE MA: for the current category. I think it's a little bit.
+
+15:57:12 --> 15:57:13
+JUE MA: weird.
+
+15:57:13 --> 15:57:14
+チョウ ジンメイ: うーん。
+
+15:57:14 --> 15:57:18
+JUE MA: common thing. And since.
+
+15:57:19 --> 15:57:22
+JUE MA: 1, 2, 3, 4, 5…
+
+15:57:22 --> 15:57:28
+JUE MA: 6, 7… right now, you have 7 categories, and in that research, we have 9 categories.
+
+15:57:25 --> 15:57:25
+チョウ ジンメイ: うん。
+
+15:57:28 --> 15:57:28
+チョウ ジンメイ: うん。
+
+15:57:28 --> 15:57:30
+JUE MA: Since we only have…
+
+15:57:30 --> 15:57:33
+JUE MA: These numbers, categories, we don't need to recluster.
+
+15:57:34 --> 15:57:35
+JUE MA: It's not necessary.
+
+15:57:36 --> 15:57:37
+JUE MA: Hmm. Okay.
+
+15:57:37 --> 15:57:43
+チョウ ジンメイ: その中でも。
+
+15:57:37 --> 15:57:38
+JUE MA: That's it.
+
+15:57:44 --> 15:57:50
+JUE MA: Yes, I think so. And I think the re recluster makes the result difficult to explain.
+
+15:57:50 --> 15:57:51
+チョウ ジンメイ: いやす。
+
+15:57:52 --> 15:57:54
+JUE MA: Okay, thank you, Anderson.
+
+15:57:54 --> 15:57:55
+チョウ ジンメイ: Thak.
+
+15:57:56 --> 15:58:06
+SUN CHENCHEN: その中です。
+
+15:58:06 --> 15:58:09
+SUN CHENCHEN: その中でも。
+
+15:58:09 --> 15:58:13
+SUN CHENCHEN: その中でも。
+
+15:58:14 --> 15:58:15
+JUE MA: Oh.
+
+15:58:15 --> 15:58:18
+JUE MA: Yeah, young single father father.
+
+15:58:18 --> 15:58:20
+チョウ ジンメイ: ああ。
+
+15:58:22 --> 15:58:23
+チョウ ジンメイ: うん。
+
+15:58:24 --> 15:58:25
+SUN CHENCHEN: いや。
+
+15:58:24 --> 15:58:26
+JUE MA: Okay.
+
+15:58:28 --> 15:58:29
+チョウ ジンメイ: オッケー。
+
+15:58:29 --> 15:58:30
+SUN CHENCHEN: いえ。
+
+15:58:32 --> 15:58:40
+JUE MA: Yes, interesting. Yeah, I think I can share you my code. I also consider their gender age.
+
+15:58:40 --> 15:58:41
+JUE MA: Uh, family member.
+
+15:58:41 --> 15:58:42
+チョウ ジンメイ: うん。
+
+15:58:41 --> 15:58:45
+JUE MA: to define the family type.
+
+15:58:46 --> 15:58:51
+JUE MA: I sent my type into the comment, you can check.
+
+15:58:52 --> 15:58:54
+チョウ ジンメイ: Ty.
+
+15:58:55 --> 15:58:56
+JUE MA: Okay.
+
+15:58:56 --> 15:58:58
+JUE MA: Thank you. And good progress.
+
+15:58:59 --> 15:59:00
+チョウ ジンメイ: Thank yohys.
+
+15:59:00 --> 15:59:02
+JUE MA: Let's move on to the next.
+
+15:59:03 --> 15:59:07
+JUE MA: Yeah, sorry I wasn't keeping the time. But now I will keep it.
+
+15:59:07 --> 15:59:08
+JUE MA: Okay.
+
+15:59:08 --> 15:59:10
+JUE MA: Okay.
+
+15:59:47 --> 15:59:50
+JUE MA: both a mic.
+
+15:59:50 --> 15:59:52
+JUE MA: Okay, Ira is here, and…
+
+15:59:52 --> 15:59:55
+JUE MA: And other observed is.
+
+15:59:55 --> 16:00:00
+JUE MA: with the workflow that is installed with an Llm. To translate development plans.
+
+16:00:00 --> 16:00:02
+JUE MA: into scenarios that are on.
+
+16:00:02 --> 16:00:05
+JUE MA: Was a prediction of shadow.
+
+16:00:06 --> 16:00:07
+JUE MA: Uh, so don't put us down for…
+
+16:00:08 --> 16:00:11
+JUE MA: So the key result is.
+
+16:00:12 --> 16:00:13
+JUE MA: There's an.
+
+16:00:13 --> 16:00:16
+JUE MA: filter, urban development case as a use case.
+
+16:00:16 --> 16:00:20
+JUE MA: implemented our base workflows that gradually.
+
+16:00:20 --> 16:00:21
+JUE MA: I don't…
+
+16:00:21 --> 16:00:25
+JUE MA: Great concrete that concrete ties this.
+
+16:00:25 --> 16:00:26
+JUE MA: Hello.
+
+16:00:27 --> 16:00:29
+JUE MA: brand new.
+
+16:00:29 --> 16:00:30
+JUE MA: Very good.
+
+16:00:30 --> 16:00:33
+JUE MA: developing a concept of the scenario that can be useful.
+
+16:00:33 --> 16:00:36
+JUE MA: It is doing off-road broadcasting, so…
+
+16:00:36 --> 16:00:39
+JUE MA: Interruption with an alert and.
+
+16:00:41 --> 16:00:42
+JUE MA: Okay.
+
+16:00:42 --> 16:00:45
+JUE MA: Secondly, send the people to today's conference.
+
+16:00:48 --> 16:00:51
+JUE MA: So this is the slide.
+
+16:00:51 --> 16:00:53
+JUE MA: my presentation.
+
+16:00:53 --> 16:00:54
+JUE MA: thread for…
+
+16:00:55 --> 16:00:56
+JUE MA: there of, uh…
+
+16:00:57 --> 16:00:58
+JUE MA: Hanky Hank Zoom.
+
+16:01:00 --> 16:01:08
+JUE MA: This slide introduces a research concept for generating predatory and pro scenarios from natural language planning ideas.
+
+16:01:11 --> 16:01:17
+JUE MA: First, this slide shows how we define the conditions during the fast 3D map.
+
+16:01:18 --> 16:01:23
+JUE MA: The process begins with a prana describing the study area, and.
+
+16:01:23 --> 16:01:24
+JUE MA: And…
+
+16:01:24 --> 16:01:24
+JUE MA: Okay.
+
+16:01:25 --> 16:01:26
+JUE MA: Okay.
+
+16:01:26 --> 16:01:27
+JUE MA: how to use…
+
+16:01:28 --> 16:01:30
+JUE MA: concept in ordinary language.
+
+16:01:31 --> 16:01:34
+JUE MA: It's a dialogue. So it it.
+
+16:01:34 --> 16:01:35
+JUE MA: Good.
+
+16:01:35 --> 16:01:36
+JUE MA: green applies.
+
+16:01:36 --> 16:01:41
+JUE MA: All groups of inputs. It's a study area that we both use and scale.
+
+16:01:42 --> 16:01:44
+JUE MA: within parameters and access conditions.
+
+16:01:44 --> 16:01:47
+JUE MA: in this hypothetical case.
+
+16:01:48 --> 16:01:51
+JUE MA: We are in a low rise with retail, and.
+
+16:01:51 --> 16:01:53
+JUE MA: dining facility using for us.
+
+16:01:53 --> 16:01:54
+JUE MA: one.
+
+16:01:55 --> 16:01:56
+JUE MA: through 4.
+
+16:01:58 --> 16:02:06
+JUE MA: Electric gates, anagram passages, storage entrances, and transfers to compete with JR and the bus centers began.
+
+16:02:06 --> 16:02:12
+JUE MA: Because 36 connection points, the final output is a standard set of inputs.
+
+16:02:12 --> 16:02:14
+JUE MA: for restoration for a variation.
+
+16:02:18 --> 16:02:27
+JUE MA: So the second step is, once the conditions are selected, we can run the history of prosecutions and compare outcomes.
+
+16:02:28 --> 16:02:30
+JUE MA: The center, yeah, the center…
+
+16:02:30 --> 16:02:32
+JUE MA: Yeah, yesterday's, uh…
+
+16:02:33 --> 16:02:38
+JUE MA: before and after comparison, while the right side shows that.
+
+16:02:38 --> 16:02:40
+JUE MA: 3 kinds of scenario tests.
+
+16:02:41 --> 16:02:43
+JUE MA: You can change the price. So.
+
+16:02:43 --> 16:02:45
+JUE MA: Into this.
+
+16:02:45 --> 16:02:47
+JUE MA: Uh, construction…
+
+16:02:48 --> 16:02:49
+JUE MA: or.
+
+16:02:50 --> 16:02:52
+JUE MA: other words, whether and.
+
+16:02:52 --> 16:02:55
+JUE MA: his upside and downside demand assumptions.
+
+16:02:55 --> 16:02:57
+JUE MA: The basic care features…
+
+16:02:58 --> 16:02:59
+JUE MA: On this right, uh…
+
+16:03:00 --> 16:03:03
+JUE MA: placeholders, not measures, results.
+
+16:03:04 --> 16:03:05
+JUE MA: Hector.
+
+16:03:06 --> 16:03:09
+JUE MA: stories will be integrated after the event.
+
+16:03:09 --> 16:03:10
+JUE MA: Opens up.
+
+16:03:10 --> 16:03:11
+JUE MA: or…
+
+16:03:12 --> 16:03:13
+JUE MA: What I've revived.
+
+16:03:13 --> 16:03:16
+JUE MA: But I'm providing there become available.
+
+16:03:17 --> 16:03:19
+JUE MA: At this stage, there are important things.
+
+16:03:19 --> 16:03:21
+JUE MA: Introduction is defining.
+
+16:03:21 --> 16:03:24
+JUE MA: consistent comparison conditions and.
+
+16:03:24 --> 16:03:28
+JUE MA: Evaluation contains a gross multiple scenarios.
+
+16:03:29 --> 16:03:30
+JUE MA: Mmhm.
+
+16:03:31 --> 16:03:33
+JUE MA: So this thread.
+
+16:03:34 --> 16:03:35
+JUE MA: Shows that.
+
+16:03:35 --> 16:03:37
+JUE MA: There is a pedestrian.
+
+16:03:38 --> 16:03:39
+JUE MA: 2 is cut.
+
+16:03:39 --> 16:03:40
+JUE MA: Is that…
+
+16:03:40 --> 16:03:41
+JUE MA: Buddhist.
+
+16:03:41 --> 16:03:42
+JUE MA: 3.
+
+16:03:43 --> 16:03:45
+JUE MA: Edit and paste.
+
+16:03:45 --> 16:03:53
+JUE MA: Running support is useful for organizing concepts, defining requirements, and generating scenarios, but it is usually not.
+
+16:03:54 --> 16:03:58
+JUE MA: and I take directory to History Alpha, one of their inputs.
+
+16:03:58 --> 16:04:00
+JUE MA: Criteria.
+
+16:04:00 --> 16:04:02
+JUE MA: Pro research can estimate change.
+
+16:04:03 --> 16:04:05
+JUE MA: estimates can estimate changes.
+
+16:04:05 --> 16:04:07
+JUE MA: in visitors.
+
+16:04:07 --> 16:04:08
+JUE MA: Transition.
+
+16:04:08 --> 16:04:13
+JUE MA: and the right time, but it does not easily interpret.
+
+16:04:14 --> 16:04:16
+JUE MA: That's our downgrade planning.
+
+16:04:16 --> 16:04:20
+JUE MA: in-depth or real-world scenarios from our concepts.
+
+16:04:21 --> 16:04:23
+JUE MA: This research will achieve this.
+
+16:04:23 --> 16:04:24
+JUE MA: These gaps.
+
+16:04:25 --> 16:04:30
+JUE MA: It's using dialogue to refine and flow detail concepts.
+
+16:04:30 --> 16:04:32
+JUE MA: Composter.
+
+16:04:32 --> 16:04:35
+JUE MA: resolved into parameters that.
+
+16:04:35 --> 16:04:40
+JUE MA: Your model can process and compare multiple specified scenarios derived.
+
+16:04:41 --> 16:04:42
+JUE MA: integrate it like that.
+
+16:04:46 --> 16:04:50
+JUE MA: But this is a roadmap for the rest of the work.
+
+16:04:50 --> 16:04:51
+JUE MA: Go to you.
+
+16:04:51 --> 16:04:52
+JUE MA: The log.
+
+16:04:52 --> 16:04:54
+JUE MA: is from, I mean.
+
+16:04:54 --> 16:04:55
+JUE MA: spaces across the…
+
+16:04:56 --> 16:04:57
+JUE MA: Very good.
+
+16:04:57 --> 16:04:59
+JUE MA: in the Kalkura.
+
+16:04:59 --> 16:05:01
+JUE MA: The priority is to compare one.
+
+16:05:02 --> 16:05:04
+JUE MA: representative scenario and to end.
+
+16:05:05 --> 16:05:06
+JUE MA: We got 5 0.
+
+16:05:06 --> 16:05:08
+JUE MA: round to the end of the end.
+
+16:05:08 --> 16:05:10
+JUE MA: structure, the conditions.
+
+16:05:10 --> 16:05:12
+JUE MA: and that offers an approved prediction.
+
+16:05:13 --> 16:05:17
+JUE MA: in. So, Laura, we will.
+
+16:05:17 --> 16:05:18
+JUE MA: We use that.
+
+16:05:18 --> 16:05:20
+JUE MA: workflow…
+
+16:05:20 --> 16:05:25
+JUE MA: for additional scenario types will identify where the process needs to become more general.
+
+16:05:25 --> 16:05:26
+JUE MA: the…
+
+16:05:26 --> 16:05:26
+JUE MA: was…
+
+16:05:26 --> 16:05:27
+JUE MA: Laura?
+
+16:05:28 --> 16:05:30
+JUE MA: We will cover all the.
+
+16:05:30 --> 16:05:34
+JUE MA: I'm representative, nervous, and very patient.
+
+16:05:34 --> 16:05:36
+JUE MA: saying, how are you? And so.
+
+16:05:37 --> 16:05:38
+JUE MA: Sorry.
+
+16:05:38 --> 16:05:40
+JUE MA: Variety, and…
+
+16:05:40 --> 16:05:42
+JUE MA: Useful, for instance, for the…
+
+16:05:42 --> 16:05:44
+JUE MA: generated upwards.
+
+16:05:45 --> 16:05:47
+JUE MA: This phase approximates us.
+
+16:05:47 --> 16:05:49
+JUE MA: We have some, and uh…
+
+16:05:49 --> 16:05:51
+JUE MA: Complete workflow.
+
+16:05:51 --> 16:05:52
+JUE MA: First, st and.
+
+16:05:53 --> 16:05:58
+JUE MA: We'll then cover it only after the process is still.
+
+16:06:03 --> 16:06:05
+JUE MA: So this is all for.
+
+16:06:05 --> 16:06:07
+JUE MA: Okay, my bread will be so cramped.
+
+16:06:08 --> 16:06:09
+JUE MA: I want to, um…
+
+16:06:09 --> 16:06:10
+JUE MA: is…
+
+16:06:10 --> 16:06:11
+JUE MA: days now.
+
+16:06:12 --> 16:06:13
+JUE MA: And.
+
+16:06:13 --> 16:06:13
+JUE MA: Okay.
+
+16:06:14 --> 16:06:15
+JUE MA: Very interesting.
+
+16:06:16 --> 16:06:17
+JUE MA: So…
+
+16:06:17 --> 16:06:21
+JUE MA: Actually, there are 2 parts. One is so.
+
+16:06:21 --> 16:06:24
+JUE MA: plan specification like you.
+
+16:06:24 --> 16:06:29
+JUE MA: communicate with our language model, and finally decide our plan.
+
+16:06:29 --> 16:06:38
+JUE MA: Yes. Then you will input the plan to suit people, flow, and do the simulation, and get the result, and tell the large language model, and the date.
+
+16:06:38 --> 16:06:39
+JUE MA: 0.
+
+16:06:39 --> 16:06:41
+JUE MA: show the result in 2 weeks.
+
+16:06:41 --> 16:06:41
+JUE MA: Yes.
+
+16:06:42 --> 16:06:45
+JUE MA: So for the 1st plan specific.
+
+16:06:45 --> 16:06:45
+JUE MA: Card.
+
+16:06:45 --> 16:06:49
+JUE MA: You will just implement one.
+
+16:06:49 --> 16:06:56
+JUE MA: existing logic model activity, or you will do something with the model itself.
+
+16:06:58 --> 16:07:02
+JUE MA: I think that I will use the.
+
+16:07:08 --> 16:07:14
+JUE MA: Existing model. Yeah, it's also seems fun.
+
+16:07:15 --> 16:07:16
+JUE MA: Mmm.
+
+16:07:16 --> 16:07:19
+JUE MA: Yeah, the workflow is clear and interesting.
+
+16:07:19 --> 16:07:21
+JUE MA: Any comments or questions.
+
+16:07:23 --> 16:07:25
+JUE MA: I don't know what's going on.
+
+16:07:25 --> 16:07:26
+JUE MA: But.
+
+16:07:26 --> 16:07:27
+JUE MA: Biomass is overdue.
+
+16:07:27 --> 16:07:32
+JUE MA: But are you going to do your methodology more based on.
+
+16:07:32 --> 16:07:34
+JUE MA: the prompt engineering, or.
+
+16:07:35 --> 16:07:36
+JUE MA: Modify them.
+
+16:07:36 --> 16:07:39
+JUE MA: Open source language model.
+
+16:07:40 --> 16:07:41
+JUE MA: Thank you.
+
+16:07:41 --> 16:07:43
+JUE MA: Prompt engineers.
+
+16:07:43 --> 16:07:44
+JUE MA: or…
+
+16:07:44 --> 16:07:46
+JUE MA: You will modify the word.
+
+16:07:47 --> 16:07:48
+JUE MA: model.
+
+16:07:48 --> 16:07:49
+JUE MA: Bye.
+
+16:07:49 --> 16:07:52
+JUE MA: Michael Walden built engineer. Okay.
+
+16:07:52 --> 16:07:53
+JUE MA: No.
+
+16:07:57 --> 16:08:00
+JUE MA: Did you try several more? Which which model are you going to?
+
+16:08:00 --> 16:08:02
+JUE MA: you plan to use.
+
+16:08:02 --> 16:08:03
+JUE MA: Bye.
+
+16:08:04 --> 16:08:05
+JUE MA: during.
+
+16:08:06 --> 16:08:08
+JUE MA: Now for you open up.
+
+16:08:08 --> 16:08:10
+JUE MA: Local area.
+
+16:08:11 --> 16:08:12
+JUE MA: Hold on, hold on.
+
+16:08:13 --> 16:08:14
+JUE MA: Yeah, I can see where I'm at.
+
+16:08:14 --> 16:08:17
+JUE MA: So there is.
+
+16:08:22 --> 16:08:27
+JUE MA: Can you double here? Oh, procurement, okay, okay.
+
+16:08:28 --> 16:08:30
+JUE MA: how to read it.
+
+16:08:30 --> 16:08:31
+JUE MA: Okay.
+
+16:08:31 --> 16:08:35
+JUE MA: Yeah, it's common use. It's really.
+
+16:08:36 --> 16:08:37
+JUE MA: Any other.
+
+16:08:40 --> 16:08:41
+JUE MA: I want to call you.
+
+16:08:43 --> 16:08:46
+JUE MA: Yeah, seems quite good.
+
+16:08:49 --> 16:08:51
+JUE MA: Sure, I do have one question.
+
+16:08:51 --> 16:08:52
+JUE MA: More on the.
+
+16:08:52 --> 16:08:54
+JUE MA: like you're planning to.
+
+16:08:55 --> 16:08:57
+JUE MA: simulate people flow.
+
+16:08:58 --> 16:09:01
+JUE MA: Sorry also inside the building or outside this.
+
+16:09:02 --> 16:09:08
+JUE MA: outside, just outside, because he will only use the so beautiful.
+
+16:09:08 --> 16:09:10
+JUE MA: Okay, thank you, thank you nonetheless, thank you.
+
+16:09:13 --> 16:09:13
+JUE MA: Okay.
+
+16:09:15 --> 16:09:16
+JUE MA: and no question.
+
+16:09:18 --> 16:09:19
+JUE MA: those…
+
+16:09:19 --> 16:09:21
+JUE MA: workflow.
+
+16:09:21 --> 16:09:22
+JUE MA: I think.
+
+16:09:24 --> 16:09:25
+JUE MA: No, sir, if you…
+
+16:09:28 --> 16:09:30
+JUE MA: Hmm, good, let's see.
+
+16:09:33 --> 16:09:42
+JUE MA: Yeah, I think most of the part could be done with the support of AI. The most challenging part might be implementation of the people.
+
+16:09:42 --> 16:09:43
+JUE MA: package.
+
+16:09:43 --> 16:09:45
+JUE MA: into your…
+
+16:09:45 --> 16:09:46
+JUE MA: I took.
+
+16:09:48 --> 16:09:53
+JUE MA: Thank you, and we will have our final.
+
+16:09:54 --> 16:09:55
+JUE MA: Transitional products.
+
+16:10:11 --> 16:10:12
+JUE MA: And.
+
+16:10:13 --> 16:10:15
+JUE MA: Hello, everyone!
+
+16:10:15 --> 16:10:20
+JUE MA: These days I may. My main work is to improve the.
+
+16:10:20 --> 16:10:32
+JUE MA: neural utility model. Last time I shared, I used MLP to simulate consumer behavior. It has improved a lot by this time.
+
+16:10:32 --> 16:10:38
+JUE MA: still think MNL can support the interpretation.
+
+16:10:38 --> 16:10:45
+JUE MA: interpreted for the research. So I use 4 models to compare.
+
+16:10:45 --> 16:10:53
+JUE MA: The outputs, they are basic MNL, MNL with interaction parameters, MNL.
+
+16:10:53 --> 16:11:00
+JUE MA: Oh, sorry. Yeah, MNL-based residual MLP and the fuel MLP. So this.
+
+16:11:00 --> 16:11:07
+JUE MA: This workflow just to show my final decision is to use the.
+
+16:11:07 --> 16:11:13
+JUE MA: MLP at the first level. The second level is to use MN.
+
+16:11:13 --> 16:11:18
+JUE MA: AO-based residual MLP. So, here I would like to share.
+
+16:11:18 --> 16:11:20
+JUE MA: Um, why?
+
+16:11:20 --> 16:11:22
+JUE MA: I decide such. This page shows.
+
+16:11:22 --> 16:11:36
+JUE MA: the 1st layer output. The 1st layer is the choice between shopping center and other retail facilities, and this page may show the model performance between the 4 models.
+
+16:11:36 --> 16:11:38
+JUE MA: Uh, from the…
+
+16:11:38 --> 16:11:50
+JUE MA: from the loss and AUC. Here I the loss means the predictive accuracy, and the AUC means the probability ranking. It means the right.
+
+16:11:50 --> 16:11:58
+JUE MA: uh… right ranking for the consumer choice. So, from the upper left, we will find that the…
+
+16:11:59 --> 16:12:01
+JUE MA: MA… MLP.
+
+16:12:01 --> 16:12:02
+JUE MA: And.
+
+16:12:02 --> 16:12:10
+JUE MA: MNL-based residual MLP model show much higher predictive accuracy. So it means neural.
+
+16:12:10 --> 16:12:16
+JUE MA: neural model show better has a better performance than.
+
+16:12:16 --> 16:12:23
+JUE MA: MNL. The upper right shows the probability ranking. It is consistent with.
+
+16:12:23 --> 16:12:30
+JUE MA: log loss outputs. So the remaining figure here, it shows.
+
+16:12:30 --> 16:12:32
+JUE MA: I can't. It shows the.
+
+16:12:32 --> 16:12:41
+JUE MA: The model performance compared with the validation dataset and the test dataset.
+
+16:12:41 --> 16:12:46
+JUE MA: I redo this part because last time I —.
+
+16:12:47 --> 16:12:59
+JUE MA: And I hear that usually deep learning will divide the training data into three parts, training part, validation part, and test part. So here I compare the validation and test part.
+
+16:12:59 --> 16:13:04
+JUE MA: part, it also shows that the full model, yeah.
+
+16:13:04 --> 16:13:10
+JUE MA: can match with each other. So this page means the MLP achieves the best results.
+
+16:13:10 --> 16:13:12
+JUE MA: Uh, for both…
+
+16:13:12 --> 16:13:16
+JUE MA: Uh, for both log loss and AUC, um…
+
+16:13:17 --> 16:13:18
+JUE MA: at first layer.
+
+16:13:19 --> 16:13:21
+JUE MA: So Mlp. Is the best.
+
+16:13:22 --> 16:13:25
+JUE MA: And for the 1st layer is better.
+
+16:13:27 --> 16:13:28
+JUE MA: the scale.
+
+16:13:29 --> 16:13:30
+JUE MA: What? Like…
+
+16:13:31 --> 16:13:34
+JUE MA: it. Your your graphs make it look like it's much better.
+
+16:13:35 --> 16:13:38
+JUE MA: But, to be honest, it's like marginally better like.
+
+16:13:38 --> 16:13:39
+JUE MA: kind of…
+
+16:13:40 --> 16:13:42
+JUE MA: When you see, like, the AUC.
+
+16:13:42 --> 16:13:51
+JUE MA: It's literally comparing like point 7 to point 74, which is maybe not that much. It's just just like a personal preference in there.
+
+16:13:51 --> 16:13:52
+JUE MA: aesthetics of the.
+
+16:13:52 --> 16:13:54
+JUE MA: kind of so, because of the.
+
+16:13:55 --> 16:13:58
+JUE MA: kind of segment that you chose it. It shows that.
+
+16:13:58 --> 16:13:59
+JUE MA: Actually.
+
+16:13:59 --> 16:14:07
+JUE MA: It looks like a lot, but it's actually not that much, because I just input several parameters like the.
+
+16:14:07 --> 16:14:08
+JUE MA: Right.
+
+16:14:08 --> 16:14:14
+JUE MA: partial, so it won't change a lot for the 1st layer. Second layer. Okay.
+
+16:14:14 --> 16:14:20
+JUE MA: Hey? Tell me, how did you decide? How did you decide? The Mlp. Is the best.
+
+16:14:21 --> 16:14:23
+JUE MA: Uh…
+
+16:14:23 --> 16:14:29
+JUE MA: 2 can output the log loss at Auc. They.
+
+16:14:29 --> 16:14:30
+JUE MA: 4.
+
+16:14:30 --> 16:14:35
+JUE MA: show the accuracy for consumers in the zoo.
+
+16:14:35 --> 16:14:42
+JUE MA: higher, higher. A loss means the lower loss value means higher.
+
+16:14:42 --> 16:14:44
+JUE MA: accuracy.
+
+16:14:44 --> 16:14:47
+JUE MA: in which we sell our Mlp. Still.
+
+16:14:47 --> 16:14:50
+JUE MA: which one the colors do.
+
+16:14:50 --> 16:14:55
+JUE MA: This is MLP. Okay. This is ML-based MLP.
+
+16:14:56 --> 16:14:57
+JUE MA: Okay? And.
+
+16:14:57 --> 16:15:04
+JUE MA: Do you see higher, the better? Higher means the top one is the right one, so…
+
+16:15:04 --> 16:15:08
+JUE MA: It will. Better. Yeah, later. Okay, okay, okay.
+
+16:15:08 --> 16:15:13
+JUE MA: So the at this figure, I I select the.
+
+16:15:13 --> 16:15:20
+JUE MA: Minimum distance, top 3 distance, and FCPI to check their.
+
+16:15:20 --> 16:15:21
+JUE MA: Performance.
+
+16:15:21 --> 16:15:33
+JUE MA: The minimum distance is the travel distance between the alternatives. The mean top three distance means the mean value of top three at.
+
+16:15:33 --> 16:15:43
+JUE MA: alternatives. Fcpi is the index from my last chapter. It means the facility choice performance, and we can find 1st.
+
+16:15:44 --> 16:15:49
+JUE MA: Um, for the distance, they have the similar, uh, regulation.
+
+16:15:49 --> 16:15:54
+JUE MA: with the distance. The longer, the less preference.
+
+16:15:54 --> 16:16:02
+JUE MA: This is the upper left figure shows the upper right means something like that. But difference is we can find.
+
+16:16:02 --> 16:16:07
+JUE MA: MLP and MNL-based MLP can get much.
+
+16:16:07 --> 16:16:19
+JUE MA: non-linear relationship than MNL. So even though they show the similar regulation between the distance and the.
+
+16:16:19 --> 16:16:23
+JUE MA: consumer choice. But Mnl. Can.
+
+16:16:23 --> 16:16:26
+JUE MA: can catch more detailed.
+
+16:16:26 --> 16:16:31
+JUE MA: not just a linear relationship. This is what I want to see. The the the.
+
+16:16:32 --> 16:16:39
+JUE MA: Yeah, the the final the final figure is Fcpi. It means the higher preference.
+
+16:16:39 --> 16:16:44
+JUE MA: So the consumer will go to this facility. It's very easy to understand this.
+
+16:16:45 --> 16:16:47
+JUE MA: So this is a detail.
+
+16:16:47 --> 16:16:53
+JUE MA: detail performance based on the 3 parameters, input 3 parameters.
+
+16:16:55 --> 16:17:01
+JUE MA: So the conclusion is Mlp. Is the best. Yeah, yeah, yeah, even so this is.
+
+16:17:01 --> 16:17:16
+JUE MA: 1st layer. This is the second layer. The the workflow is the same. The difference is the input. Here I give more detail about the shopping center attributes like the travel distance per.
+
+16:17:16 --> 16:17:19
+JUE MA: parking lot capacity, something like this.
+
+16:17:19 --> 16:17:21
+JUE MA: and.
+
+16:17:21 --> 16:17:25
+JUE MA: And yeah, this fever is the same.
+
+16:17:25 --> 16:17:31
+JUE MA: It's the same with, it's consistent with the first layer. Upper left is a log less.
+
+16:17:31 --> 16:17:34
+JUE MA: We we will find that Mnl.
+
+16:17:34 --> 16:17:38
+JUE MA: Uh, got the log loss.
+
+16:17:38 --> 16:17:40
+JUE MA: around 2…
+
+16:17:40 --> 16:17:45
+JUE MA: 2.8. But for the Mlp. They are 2.
+
+16:17:45 --> 16:17:47
+JUE MA: 2 point.
+
+16:17:47 --> 16:17:49
+JUE MA: One, yeah.
+
+16:17:49 --> 16:17:49
+JUE MA: Oh!
+
+16:17:50 --> 16:17:52
+JUE MA: Also, the.
+
+16:17:52 --> 16:17:56
+JUE MA: The top one accuracy show.
+
+16:17:56 --> 16:18:02
+JUE MA: shows that Mn. Mlp. And Mnl. Based Mlp. Got the much higher.
+
+16:18:02 --> 16:18:11
+JUE MA: accuracy. The top one accuracy means the alternative with the highest predicted probability.
+
+16:18:11 --> 16:18:13
+JUE MA: exactly matches with the.
+
+16:18:13 --> 16:18:16
+JUE MA: with actually.
+
+16:18:16 --> 16:18:20
+JUE MA: alternative selected by consumer myself.
+
+16:18:20 --> 16:18:26
+JUE MA: This figure also shows that MLP got a higher performance. The difference is.
+
+16:18:26 --> 16:18:32
+JUE MA: In this time, MML-based residual MLP.
+
+16:18:33 --> 16:18:35
+JUE MA: is much better than.
+
+16:18:35 --> 16:18:43
+JUE MA: pure NLP, so this is different. Well, it seems like the blue and the purple are similar.
+
+16:18:43 --> 16:18:44
+JUE MA: Yeah.
+
+16:18:44 --> 16:18:53
+JUE MA: Because actually here just have two type of model. The one is MNL, the other is MLP.
+
+16:18:53 --> 16:19:00
+JUE MA: The difference is I combined them into four. What's the conclusion of this one? Which one is the best?
+
+16:19:00 --> 16:19:05
+JUE MA: The conclusion of this page is for the second layer.
+
+16:19:06 --> 16:19:14
+JUE MA: an Ml. Based residue. Mlp. Is better. I is the best. But the figure shows Ml.
+
+16:19:14 --> 16:19:16
+JUE MA: Ml. Base, the resident group.
+
+16:19:16 --> 16:19:23
+JUE MA: procedure. Mlp. Is similar with Mlp. What's the difference? I mean?
+
+16:19:23 --> 16:19:29
+JUE MA: You will find that two lines overlap with each other.
+
+16:19:29 --> 16:19:36
+JUE MA: MLP. The difference is it is the one is pure MLP, just neural training.
+
+16:19:37 --> 16:19:39
+JUE MA: neural network training.
+
+16:19:39 --> 16:19:41
+JUE MA: But the blue, the light blue is…
+
+16:19:42 --> 16:19:43
+JUE MA: The third one.
+
+16:19:43 --> 16:19:44
+JUE MA: Amen.
+
+16:19:45 --> 16:19:53
+JUE MA: The light blue and the light purple are similar. What's the difference? Difference is the blue one.
+
+16:19:53 --> 16:19:54
+JUE MA: I…
+
+16:19:54 --> 16:20:00
+JUE MA: add MNL structure into the neural network training process.
+
+16:20:02 --> 16:20:03
+JUE MA: No.
+
+16:20:03 --> 16:20:11
+JUE MA: But the the legend shows the light blue is Ml. Ml. Based residue. The the upper left it.
+
+16:20:11 --> 16:20:14
+JUE MA: The upper left shows the blue is the.
+
+16:20:14 --> 16:20:17
+JUE MA: The white also shows the blue is best.
+
+16:20:18 --> 16:20:19
+JUE MA: The the.
+
+16:20:19 --> 16:20:20
+JUE MA: Mmhm.
+
+16:20:21 --> 16:20:25
+JUE MA: Yeah, yeah. Upper right and blue and purple are same.
+
+16:20:27 --> 16:20:35
+JUE MA: upper upper left means the value. The lowest value is lower. The.
+
+16:20:35 --> 16:20:40
+JUE MA: performance is better. So. But the blue and the purple thing.
+
+16:20:40 --> 16:20:43
+JUE MA: Almost the same. Yeah, exactly.
+
+16:20:43 --> 16:20:47
+JUE MA: Yeah, they almost the same. But.
+
+16:20:47 --> 16:20:52
+JUE MA: A little slightly better than poor MLP, I just wanted to say.
+
+16:20:52 --> 16:20:52
+JUE MA: Yep.
+
+16:20:52 --> 16:20:58
+JUE MA: Just for the future. Could you try to explain us what like somewhat?
+
+16:20:58 --> 16:21:04
+JUE MA: Diagram. How does the training for an Mlp. And Mnl. Based residual Mlp.
+
+16:21:04 --> 16:21:14
+JUE MA: It's different because I don't really. Okay. First, I add the same input parameters to build the NL.
+
+16:21:14 --> 16:21:22
+JUE MA: Right? Yeah, so this is basic. The ML interaction, it means I add some interaction.
+
+16:21:22 --> 16:21:27
+JUE MA: Uh, condensation like that. And after that, I input the MN…
+
+16:21:27 --> 16:21:32
+JUE MA: L interaction structure into the Mlp. For for training.
+
+16:21:32 --> 16:21:36
+JUE MA: So the so it is not just a.
+
+16:21:36 --> 16:21:45
+JUE MA: studying the regulation by the machine itself. It also studies a relationship based on the MNL.
+
+16:21:45 --> 16:21:46
+JUE MA: structure.
+
+16:21:47 --> 16:21:53
+JUE MA: So it's a combination. And the final is just started by this.
+
+16:21:54 --> 16:21:55
+JUE MA: Okay.
+
+16:21:55 --> 16:21:56
+JUE MA: And.
+
+16:21:56 --> 16:21:57
+JUE MA: CLAB, Just one last.
+
+16:21:58 --> 16:21:59
+JUE MA: Ping?
+
+16:21:59 --> 16:22:01
+JUE MA: You say level one and level 2.
+
+16:22:01 --> 16:22:02
+JUE MA: So…
+
+16:22:02 --> 16:22:04
+JUE MA: Do you mean nested?
+
+16:22:04 --> 16:22:05
+JUE MA: Hmm.
+
+16:22:05 --> 16:22:14
+JUE MA: 2, 2, because if you're taking 2 choices like, and you're modeling like with 2 independent multinomial logits, that is somewhat.
+
+16:22:14 --> 16:22:16
+JUE MA: Oh.
+
+16:22:16 --> 16:22:17
+JUE MA: I don't know, Bet.
+
+16:22:17 --> 16:22:20
+JUE MA: Normally, that would be modeled with a nested model. That's my.
+
+16:22:21 --> 16:22:22
+JUE MA: general…
+
+16:22:23 --> 16:22:30
+JUE MA: feeling. But maybe I'm wrong. Just. Actually, it is a lifted logic model. The difference is, I.
+
+16:22:30 --> 16:22:32
+JUE MA: change the training process.
+
+16:22:33 --> 16:22:38
+JUE MA: The nested model is, it is up to user to choose.
+
+16:22:38 --> 16:22:40
+JUE MA: Uh, the first… Yeah, the next.
+
+16:22:40 --> 16:22:41
+JUE MA: Yeah, yeah, the…
+
+16:22:41 --> 16:22:44
+JUE MA: So there's no difference between that.
+
+16:22:45 --> 16:22:50
+JUE MA: So you're doing a nested. Okay, then, just I think.
+
+16:22:50 --> 16:22:51
+JUE MA: Mmm.
+
+16:22:51 --> 16:22:53
+JUE MA: be specific with the.
+
+16:22:53 --> 16:22:54
+JUE MA: naming.
+
+16:22:55 --> 16:23:11
+JUE MA: because you will be asked like, if you say I'm using multinomial legit, then you're using. You're not using nested multinomial legitimate. So when you say like on level 2, then it becomes confusing. Just just. So yes, make sure like.
+
+16:23:11 --> 16:23:13
+JUE MA: in total, you are using NS.
+
+16:23:13 --> 16:23:15
+JUE MA: similar logic. Okay, okay.
+
+16:23:16 --> 16:23:20
+JUE MA: Yeah, just consistent. And you just change the.
+
+16:23:20 --> 16:23:22
+JUE MA: Retail the model for each.
+
+16:23:22 --> 16:23:25
+JUE MA: Yeah, for each. Oh, okay. Layer's choice.
+
+16:23:25 --> 16:23:26
+JUE MA: Okay.
+
+16:23:27 --> 16:23:29
+JUE MA: Okay, I see. Okay.
+
+16:23:29 --> 16:23:34
+JUE MA: So this is the process why I choose such two models for…
+
+16:23:34 --> 16:23:39
+JUE MA: Okay? So finally, you decided the method for each layer choice.
+
+16:23:39 --> 16:23:39
+JUE MA: Yes.
+
+16:23:40 --> 16:23:43
+JUE MA: Well, how about the final proposal?
+
+16:23:43 --> 16:23:44
+JUE MA: Oh.
+
+16:23:44 --> 16:23:46
+JUE MA: Fellow performance.
+
+16:23:46 --> 16:23:50
+JUE MA: Um, you mean on Superflow flow model?
+
+16:23:50 --> 16:23:51
+JUE MA: or.
+
+16:23:53 --> 16:23:54
+JUE MA: Or this.
+
+16:23:54 --> 16:23:55
+JUE MA: Choice.
+
+16:23:55 --> 16:24:01
+JUE MA: with choice. I think this to this page and this page shows how the.
+
+16:24:01 --> 16:24:07
+JUE MA: to model performance consumer simulation.
+
+16:24:07 --> 16:24:14
+JUE MA: Here I select four parameters. They are travel distance, parking lot capacity, and.
+
+16:24:14 --> 16:24:16
+JUE MA: distance to the nearest shopping center.
+
+16:24:16 --> 16:24:22
+JUE MA: And the diversity of stores houses such four parameters.
+
+16:24:22 --> 16:24:31
+JUE MA: work. This is sensitive. Yeah, something like that. So it we will find the relationship between them.
+
+16:24:31 --> 16:24:35
+JUE MA: So the X means add more.
+
+16:24:35 --> 16:24:41
+JUE MA: or minus more, how the probability changes.
+
+16:24:41 --> 16:24:43
+JUE MA: Sure. Hmm.
+
+16:24:43 --> 16:24:48
+JUE MA: I think, since you have already decided the best model.
+
+16:24:48 --> 16:24:49
+JUE MA: No.
+
+16:24:49 --> 16:24:53
+JUE MA: You just need to do the self-awareness for the best model.
+
+16:24:53 --> 16:24:58
+JUE MA: Yeah, yeah, yeah. So today, I just want to compare the comparison.
+
+16:24:58 --> 16:24:59
+JUE MA: Yes.
+
+16:24:59 --> 16:25:00
+JUE MA: Okay.
+
+16:25:01 --> 16:25:02
+JUE MA: Okay, hmm.
+
+16:25:02 --> 16:25:05
+JUE MA: I think all my process. Any question or comment.
+
+16:25:06 --> 16:25:09
+JUE MA: That's all. Question for Dave.
+
+16:25:10 --> 16:25:12
+JUE MA: Zip residue.
+
+16:25:12 --> 16:25:14
+JUE MA: So the MNL and MLB.
+
+16:25:14 --> 16:25:16
+JUE MA: So is it like.
+
+16:25:17 --> 16:25:22
+JUE MA: It goes to MNL, and then the output, and then go directly to NLP.
+
+16:25:22 --> 16:25:24
+JUE MA: And then you get the final output.
+
+16:25:24 --> 16:25:25
+JUE MA: Or is it like.
+
+16:25:26 --> 16:25:28
+JUE MA: Oh.
+
+16:25:28 --> 16:25:31
+JUE MA: You mean how to training them.
+
+16:25:31 --> 16:25:36
+JUE MA: Yeah, yeah, because when you say… when you say residual, I thought that.
+
+16:25:36 --> 16:25:39
+JUE MA: it would be, like, the output from in and out. Hmm.
+
+16:25:39 --> 16:25:45
+JUE MA: and then goes to MLP, you get some output, but also the input is also combined.
+
+16:25:45 --> 16:25:46
+JUE MA: And.
+
+16:25:47 --> 16:25:57
+JUE MA: because I read some paper. They find that only machine learning study. It can explain the output. So.
+
+16:25:57 --> 16:26:02
+JUE MA: I find that some researchers begin to combine them. The reason is.
+
+16:26:02 --> 16:26:09
+JUE MA: NNL can get most of the regulation between them, but some non-linear.
+
+16:26:09 --> 16:26:11
+JUE MA: relationship. It can.
+
+16:26:11 --> 16:26:24
+JUE MA: not to catch it can be catch caught. Yeah. So the Mlp. Can can complete this part. So so the output is directly from the Mlp.
+
+16:26:25 --> 16:26:27
+JUE MA: Yes, yes. Okay, okay.
+
+16:26:28 --> 16:26:38
+JUE MA: In this mode, I try a lot. So the last time I said MLP, if it's reasonable, MLP can.
+
+16:26:38 --> 16:26:39
+JUE MA: can use the.
+
+16:26:39 --> 16:26:43
+JUE MA: freedom era, something like that to change.
+
+16:26:43 --> 16:26:45
+JUE MA: M. N. L.
+
+16:26:45 --> 16:26:53
+JUE MA: slightly, I mean, to add more parameter to change the original ML structure.
+
+16:26:53 --> 16:26:54
+JUE MA: Friday.
+
+16:26:54 --> 16:26:59
+JUE MA: So it needs not just the original structure, it can.
+
+16:26:59 --> 16:27:00
+JUE MA: Ah.
+
+16:27:00 --> 16:27:03
+JUE MA: Yeah, it can change it slightly.
+
+16:27:03 --> 16:27:08
+JUE MA: So if if if if it finds the huge difference between.
+
+16:27:08 --> 16:27:09
+JUE MA: Mm-hmm.
+
+16:27:13 --> 16:27:14
+JUE MA: Okay.
+
+16:27:14 --> 16:27:15
+JUE MA: Cool.
+
+16:27:28 --> 16:27:29
+JUE MA: Thank you.
+
+16:27:29 --> 16:27:35
+JUE MA: I think we finish today's bootcamp, and the next meeting would be the August.
+
+16:27:36 --> 16:27:37
+JUE MA: leaves.
+
+16:27:38 --> 16:27:40
+JUE MA: Thank you for.
+
+16:27:41 --> 16:27:43
+JUE MA: your frantic sick patient.
+
+16:27:46 --> 16:27:47
+JUE MA: And…
+
+16:27:54 --> 16:28:01
+JUE MA: I think the next month's lab bootcamp will be during the summer vacation of Noel.
+
+16:28:01 --> 16:28:04
+JUE MA: And I think the laptop will be finished.
+
+16:28:05 --> 16:28:06
+JUE MA: Well.
+
+16:28:06 --> 16:28:10
+JUE MA: And, uh, it must be calm.
+
+16:28:10 --> 16:28:12
+JUE MA: You make too much sour food.
+
+16:28:12 --> 16:28:14
+JUE MA: And so on.
+
+16:28:14 --> 16:28:16
+JUE MA: So you can just make it earlier.
+
+16:28:16 --> 16:28:19
+JUE MA: Full meeting day.
+
+16:28:19 --> 16:28:20
+JUE MA: Yeah.
+
+16:28:20 --> 16:28:23
+JUE MA: You may move the next one to 29.
+
+16:28:24 --> 16:28:25
+JUE MA: to the same day as the.
+
+16:28:25 --> 16:28:27
+JUE MA: General boot camp, and then have like a.
+
+16:28:28 --> 16:28:29
+JUE MA: to to…
+
+16:28:29 --> 16:28:32
+JUE MA: 7 Pm. Session of.
+
+16:28:32 --> 16:28:34
+JUE MA: Would come later.
+
+16:28:35 --> 16:28:39
+JUE MA: I know, like, start at 2 Pm. Instead of 3, and then.
+
+16:28:40 --> 16:28:43
+JUE MA: Oh, okay, okay, let's decide. Let's.
+
+16:28:43 --> 16:28:46
+JUE MA: decide after the dive would come, decide.
+
+16:28:46 --> 16:28:50
+JUE MA: Okay, but anyway, our next time will be.

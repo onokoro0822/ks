@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800">
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#172033}
+.title{font-size:34px;font-weight:700}.subtitle{font-size:18px;fill:#526078}
+.axis{font-size:17px;fill:#526078}.label{font-size:20px;font-weight:700}
+.value{font-size:19px;font-weight:700}
+</style>
+<rect width="1400" height="800" fill="#ffffff"/>
+<text x="50" y="52" class="title">Estimated daily arrivals by use — 2. Office-centered</text>
+<text x="50" y="88" class="subtitle">Program: commercial 20%, office 60%, hotel 20% of the 54,374 m² comparison area.</text>
+<text x="50" y="125" class="subtitle">Total estimated arrivals: 11,581 trips/day</text>
+<line x1="260.0" y1="210" x2="260.0" y2="640" stroke="#e2e8f0"/>
+<text x="260.0" y="675" text-anchor="middle" class="axis">0</text>
+<line x1="470.0" y1="210" x2="470.0" y2="640" stroke="#e2e8f0"/>
+<text x="470.0" y="675" text-anchor="middle" class="axis">1,280</text>
+<line x1="680.0" y1="210" x2="680.0" y2="640" stroke="#e2e8f0"/>
+<text x="680.0" y="675" text-anchor="middle" class="axis">2,560</text>
+<line x1="890.0" y1="210" x2="890.0" y2="640" stroke="#e2e8f0"/>
+<text x="890.0" y="675" text-anchor="middle" class="axis">3,840</text>
+<line x1="1100.0" y1="210" x2="1100.0" y2="640" stroke="#e2e8f0"/>
+<text x="1100.0" y="675" text-anchor="middle" class="axis">5,120</text>
+<line x1="1310.0" y1="210" x2="1310.0" y2="640" stroke="#e2e8f0"/>
+<text x="1310.0" y="675" text-anchor="middle" class="axis">6,400</text>
+<text x="236" y="288.7" text-anchor="end" class="label">Commercial</text>
+<rect x="260" y="245.7" width="1034.7" height="72" rx="4" fill="#0f766e"/>
+<text x="1308.7" y="288.7" class="value">6,307</text>
+<text x="236" y="432.0" text-anchor="end" class="label">Office</text>
+<rect x="260" y="389.0" width="749.3" height="72" rx="4" fill="#2563eb"/>
+<text x="1023.3" y="432.0" class="value">4,567</text>
+<text x="236" y="575.3" text-anchor="end" class="label">Hotel</text>
+<rect x="260" y="532.3" width="116.0" height="72" rx="4" fill="#d97706"/>
+<text x="390.0" y="575.3" class="value">707</text>
+<text x="785.0" y="720" text-anchor="middle" class="axis">Estimated arrival trips per day</text>
+<text x="700.0" y="768" text-anchor="middle" class="subtitle">Method: facility-specific person-trip-end rates; arrivals ≈ person-trip ends ÷ 2. Results are not unique visitor counts.</text>
+</svg>

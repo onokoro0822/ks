@@ -1,0 +1,206 @@
+{"kind":"deck","id":"pr/higwf3","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"body","type":"body","textPreview":"マスター テキストの書式設定 | 第 2 レベル | 第 3 レベル | 第 4 レベル | 第 5 レベル"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"タイトル スライド","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"タイトルとコンテンツ","type":"obj","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"content placeholder 2","textPreview":"マスター テキストの書式設定 | 第 2 レベル | 第 3 レベル | 第 4 レベル | 第 5 レベル"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"セクション見出し","type":"secHead","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"body","type":"body","textPreview":"マスター テキストの書式設定"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"2 つのコンテンツ","type":"twoObj","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"content placeholder 2","textPreview":"マスター テキストの書式設定 | 第 2 レベル | 第 3 レベル | 第 4 レベル | 第 5 レベル"},{"name":"content placeholder 3","textPreview":"マスター テキストの書式設定 | 第 2 レベル | 第 3 レベル | 第 4 レベル | 第 5 レベル"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"比較","type":"twoTxTwoObj","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"body","type":"body","textPreview":"マスター テキストの書式設定"},{"name":"content placeholder 3","textPreview":"マスター テキストの書式設定 | 第 2 レベル | 第 3 レベル | 第 4 レベル | 第 5 レベル"},{"name":"body","type":"body","textPreview":"マスター テキストの書式設定"},{"name":"content placeholder 5","textPreview":"マスター テキストの書式設定 | 第 2 レベル | 第 3 レベル | 第 4 レベル | 第 5 レベル"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout6.xml","name":"タイトルのみ","type":"titleOnly","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout7.xml","name":"白紙","type":"blank","placeholders":[{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout8.xml","name":"タイトル付きのコンテンツ","type":"objTx","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"content placeholder 2","textPreview":"マスター テキストの書式設定 | 第 2 レベル | 第 3 レベル | 第 4 レベル | 第 5 レベル"},{"name":"body","type":"body","textPreview":"マスター テキストの書式設定"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout9.xml","name":"タイトル付きの図","type":"picTx","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"picture","type":"picture","textPreview":"アイコンをクリックして図を追加"},{"name":"body","type":"body","textPreview":"マスター テキストの書式設定"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout10.xml","name":"タイトルと縦書きテキスト","type":"vertTx","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"body","type":"body","textPreview":"マスター テキストの書式設定 | 第 2 レベル | 第 3 レベル | 第 4 レベル | 第 5 レベル"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout11.xml","name":"縦書きタイトルと\n縦書きテキスト","type":"vertTitleAndTx","placeholders":[{"name":"title","type":"title","textPreview":"マスター タイトルの書式設定"},{"name":"body","type":"body","textPreview":"マスター テキストの書式設定 | 第 2 レベル | 第 3 レベル | 第 4 レベル | 第 5 レベル"},{"name":"dateTime","type":"dateTime","textPreview":"2026/7"},{"name":"footer","type":"footer","textPreview":"関本・中居研究室"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"自然言語から人流シナリオを生成","textShapes":1}
+{"kind":"textbox","id":"sh/547294r6","slide":1,"name":"タイトル 1","placeholder":"title","text":"自然言語から人流シナリオを生成\n複数条件の影響を比較評価\n～旧・名鉄百貨店本店周辺を対象に","textPreview":"自然言語から人流シナリオを生成 | 複数条件の影響を比較評価 | ～旧・名鉄百貨店本店周辺を対象に","textChars":45,"textLines":3,"bbox":[87.18,204.08,935.54,174.82]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":""}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"1","textShapes":39}
+{"kind":"shape","id":"sh/mtwrmxg7","slide":2,"name":"Rounded Rectangle 5","bbox":[415.74,143.69,351.83,268.07]}
+{"kind":"textbox","id":"sh/p0vy54na","slide":2,"name":"Oval 6","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[125.24,438.46,16.58,17.39]}
+{"kind":"textbox","id":"sh/svedkvup","slide":2,"name":"テキスト ボックス 42","text":"駅周辺","textPreview":"駅周辺","textChars":3,"textLines":1,"bbox":[122.12,457.39,68.49,26.66]}
+{"kind":"textbox","id":"sh/0bu94bah","slide":2,"name":"Oval 6","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[85.85,519.88,16.58,17.39]}
+{"kind":"shape","id":"sh/zuhcvqp4","slide":2,"name":"正方形/長方形 245","bbox":[144.46,364.96,38.79,54.3]}
+{"kind":"shape","id":"sh/et8b2loj","slide":2,"name":"正方形/長方形 246","bbox":[126.84,369.81,25.04,126.36]}
+{"kind":"shape","id":"sh/5s3u9kne","slide":2,"name":"正方形/長方形 246","bbox":[164.93,362.81,25.04,126.36]}
+{"kind":"shape","id":"sh/5ovipszq","slide":2,"name":"正方形/長方形 252","bbox":[132,420.83,63,73.09]}
+{"kind":"textbox","id":"sh/uxkzad03","slide":2,"name":"テキスト ボックス 253","text":"対象","textPreview":"対象","textChars":2,"textLines":1,"bbox":[141.8,380.04,52.04,29.08]}
+{"kind":"textbox","id":"sh/mx8b65ov","slide":2,"name":"Oval 6","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[141.8,359.94,16.58,17.39]}
+{"kind":"shape","id":"sh/loj294r6","slide":2,"name":"フリーフォーム 128","bbox":[156.97,414.46,59.64,81.74]}
+{"kind":"shape","id":"sh/mt0f2hwf","slide":2,"name":"フリーフォーム 130","bbox":[166.37,431.22,81.66,76.2]}
+{"kind":"shape","id":"sh/rexw7m9s","slide":2,"name":"フリーフォーム 180","bbox":[78.01,425.43,77.15,28.12]}
+{"kind":"textbox","id":"sh/epsr21sb","slide":2,"name":"Oval 6","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[226.39,490.56,16.58,17.39]}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"name":"タイトル 1","placeholder":"title","text":"最初の3か月（2Q：7-9月）の取組イメージ：名鉄百貨店周辺の条件整理","textPreview":"最初の3か月（2Q：7-9月）の取組イメージ：名鉄百貨店周辺の条件整理","textChars":35,"textLines":1,"bbox":[19.93,0,1260.07,95.4]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"name":"コンテンツ プレースホルダー 2","text":"エージェント（LLM）との対話を通じて、駅・旧本店・周辺施設の条件を人流予測用の入力へ段階的に整理する。","textPreview":"エージェント（LLM）との対話を通じて、駅・旧本店・周辺施設の条件を人流予測用の入力へ段階的に整理する。","textChars":52,"textLines":1,"bbox":[27.25,104.85,1260.07,44.5]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"name":"日付プレースホルダー 3","placeholder":"dateTime","text":"2026/7","textPreview":"2026/7","textChars":6,"textLines":1,"bbox":[88,686.02,288,38.33]}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"name":"フッター プレースホルダー 4","placeholder":"footer","text":"関本・中居研究室","textPreview":"関本・中居研究室","textChars":8,"textLines":1,"bbox":[424,686.02,432,38.33]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"name":"スライド番号プレースホルダー 5","placeholder":"slideNumber","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[904,686.02,288,38.33]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"name":"Oval 6","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[437.99,147.38,34.56,34.56]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"name":"TextBox 7","text":"対象エリアの整理","textPreview":"対象エリアの整理","textChars":8,"textLines":1,"bbox":[475.34,152.1,175.03,35.39]}
+{"kind":"shape","id":"sh/xk7qlczu","slide":2,"name":"Rounded Rectangle 5","bbox":[413.2,411.2,351.83,270.1]}
+{"kind":"textbox","id":"sh/ahwrqhgj","slide":2,"name":"Oval 6","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[422,416.51,38.17,34.56]}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"name":"TextBox 7","text":"用途・規模の整理","textPreview":"用途・規模の整理","textChars":8,"textLines":1,"bbox":[462.44,418.6,194.61,31.99]}
+{"kind":"shape","id":"sh/cnupgny5","slide":2,"name":"Rounded Rectangle 5","bbox":[901.55,143.69,351.2,283.66]}
+{"kind":"textbox","id":"sh/do3q9szq","slide":2,"name":"Oval 6","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[908.25,147.38,34.56,34.56]}
+{"kind":"textbox","id":"sh/t8byxkn2","slide":2,"name":"TextBox 7","text":"現況・施設属性","textPreview":"現況・施設属性","textChars":7,"textLines":1,"bbox":[944.85,149.42,164.25,31.99]}
+{"kind":"shape","id":"sh/s72xofmh","slide":2,"name":"Rounded Rectangle 5","bbox":[902.64,432.62,355.05,248.67]}
+{"kind":"textbox","id":"sh/76twva5c","slide":2,"name":"Oval 6","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[908.17,438.98,34.56,34.56]}
+{"kind":"textbox","id":"sh/65kfmpor","slide":2,"name":"TextBox 7","text":"配置・接続条件","textPreview":"配置・接続条件","textChars":7,"textLines":1,"bbox":[944.85,440.26,225.62,31.99]}
+{"kind":"shape","id":"sh/9o7ulg3y","slide":2,"name":"円/楕円 32","bbox":[706.83,184.54,20.26,18.98]}
+{"kind":"shape","id":"sh/a9gvulkj","slide":2,"name":"フリーフォーム 33","bbox":[696.7,205.9,40.52,18.98]}
+{"kind":"textbox","id":"sh/onydsbmd","slide":2,"name":"テキスト ボックス 31","text":"計画者","textPreview":"計画者","textChars":3,"textLines":1,"bbox":[676.36,226.49,81.64,32.31]}
+{"kind":"shape","id":"sh/4zmxwzmp","slide":2,"name":"グラフィックス 9","bbox":[453.24,184.44,40.52,40.84]}
+{"kind":"textbox","id":"sh/ru5cbqd4","slide":2,"name":"コンテンツ プレースホルダー 2","text":"例：旧・名鉄百貨店本店周辺","textPreview":"例：旧・名鉄百貨店本店周辺","textChars":13,"textLines":1,"bbox":[30.48,194.99,358.3,42.48]}
+{"kind":"textbox","id":"sh/hcvy14ne","slide":2,"name":"Rounded Rectangle 5","text":"旧・名鉄百貨店本店周辺で、\n改札から地上・周辺街区への\n人流を評価したいです。","textPreview":"旧・名鉄百貨店本店周辺で、 | 改札から地上・周辺街区への | 人流を評価したいです。","textChars":39,"textLines":3,"bbox":[487.98,260.01,260.7,75.63]}
+{"kind":"textbox","id":"sh/gbmxszmt","slide":2,"name":"Rounded Rectangle 5","text":"対象は旧本店周辺です。\n改札・バスセンター・近鉄／JR側との\n接続を整理します。","textPreview":"対象は旧本店周辺です。 | 改札・バスセンター・近鉄／JR側との | 接続を整理します。","textChars":40,"textLines":3,"bbox":[431.28,341.1,260.7,60.25]}
+{"kind":"textbox","id":"sh/0vq1o36x","slide":2,"name":"Rounded Rectangle 5","text":"駅周辺の人流を踏まえ、\n候補用途と規模を整理します。","textPreview":"駅周辺の人流を踏まえ、 | 候補用途と規模を整理します。","textChars":26,"textLines":2,"bbox":[427.55,455.47,260.59,41.91]}
+{"kind":"textbox","id":"sh/1wzix87i","slide":2,"name":"Rounded Rectangle 5","text":"駅利用者が立ち寄れる\n商業・交流施設をつくりたいです。","textPreview":"駅利用者が立ち寄れる | 商業・交流施設をつくりたいです。","textChars":27,"textLines":2,"bbox":[488.8,503.84,260.59,41.91]}
+{"kind":"textbox","id":"sh/et8zmto7","slide":2,"name":"Rounded Rectangle 5","text":"物販・飲食・イベント・待合を含む\n複合施設を候補にします。","textPreview":"物販・飲食・イベント・待合を含む | 複合施設を候補にします。","textChars":29,"textLines":2,"bbox":[427.55,552.26,260.59,41.91]}
+{"kind":"textbox","id":"sh/c76hk361","slide":2,"name":"Rounded Rectangle 5","text":"低層中心で検討します。","textPreview":"低層中心で検討します。","textChars":11,"textLines":1,"bbox":[493.76,600.01,259.64,24.18]}
+{"kind":"textbox","id":"sh/d8zit87m","slide":2,"name":"Rounded Rectangle 5","text":"駅前の商業＋交流拠点として設定します。","textPreview":"駅前の商業＋交流拠点として設定します。","textChars":19,"textLines":1,"bbox":[427.55,629.75,260.59,41.91]}
+{"kind":"textbox","id":"sh/xoji5s7q","slide":2,"name":"Rounded Rectangle 5","text":"旧本店は2026年2月28日に営業終了。","textPreview":"旧本店は2026年2月28日に営業終了。","textChars":20,"textLines":1,"bbox":[914.29,266.61,260.59,27.03]}
+{"kind":"textbox","id":"sh/kj6hgny9","slide":2,"name":"Rounded Rectangle 5","text":"中央改札前には物販区画などの暫定利用。","textPreview":"中央改札前には物販区画などの暫定利用。","textChars":19,"textLines":1,"bbox":[914.29,297.81,260.59,41.78]}
+{"kind":"textbox","id":"sh/jix0niho","slide":2,"name":"Rounded Rectangle 5","text":"現況と比較ケースを分けて整理します。","textPreview":"現況と比較ケースを分けて整理します。","textChars":18,"textLines":1,"bbox":[913.9,344.89,260.59,41.78]}
+{"kind":"textbox","id":"sh/ihozedgj","slide":2,"name":"Rounded Rectangle 5","text":"その条件で進めてください。","textPreview":"その条件で進めてください。","textChars":13,"textLines":1,"bbox":[979.47,391.47,260.59,25.04]}
+{"kind":"textbox","id":"sh/kna10zql","slide":2,"name":"Rounded Rectangle 5","text":"改札、地下通路、地上出入口を\n接続点として扱います。","textPreview":"改札、地下通路、地上出入口を | 接続点として扱います。","textChars":26,"textLines":2,"bbox":[913.39,480.91,260.59,41.91]}
+{"kind":"textbox","id":"sh/nu9wvmd0","slide":2,"name":"Rounded Rectangle 5","text":"バスセンター・近鉄・JR側との\n乗換を考慮します。","textPreview":"バスセンター・近鉄・JR側との | 乗換を考慮します。","textChars":25,"textLines":2,"bbox":[979.47,529.27,260.59,41.91]}
+{"kind":"textbox","id":"sh/9grexwv6","slide":2,"name":"Rounded Rectangle 5","text":"通行制限・迂回を\nシナリオ化します。","textPreview":"通行制限・迂回を | シナリオ化します。","textChars":18,"textLines":2,"bbox":[913.39,577.69,260.59,41.91]}
+{"kind":"textbox","id":"sh/zq9wrmd4","slide":2,"name":"Rounded Rectangle 5","text":"人流評価用の入力条件として\n出力します。","textPreview":"人流評価用の入力条件として | 出力します。","textChars":20,"textLines":2,"bbox":[914.99,626.34,260.59,41.91]}
+{"kind":"shape","id":"sh/fypcfqdg","slide":2,"name":"Rounded Rectangle 5","bbox":[447.08,228.06,58.13,25.11]}
+{"kind":"shape","id":"sh/q183ut0r","slide":2,"name":"コネクタ: カギ線 55","bbox":[765.04,285.52,136.52,260.73]}
+{"kind":"textbox","id":"sh/ba9cn6l4","slide":2,"name":"テキスト ボックス 34","text":"LLM","textPreview":"LLM","textChars":3,"textLines":1,"bbox":[447.08,221.86,58.13,35.54]}
+{"kind":"shape","id":"sh/tw7ud0va","slide":2,"name":"Rounded Rectangle 5","bbox":[677.53,228.47,77.63,25.27]}
+{"kind":"shape","id":"sh/9wnqhczy","slide":2,"name":"円/楕円 10","bbox":[1191.23,187,20.26,18.98]}
+{"kind":"shape","id":"sh/mlgvq147","slide":2,"name":"フリーフォーム 29","bbox":[1181.1,208.36,40.52,18.98]}
+{"kind":"textbox","id":"sh/wbidwb29","slide":2,"name":"テキスト ボックス 35","text":"計画者","textPreview":"計画者","textChars":3,"textLines":1,"bbox":[1160.76,228.95,81.64,32.31]}
+{"kind":"shape","id":"sh/xcrupg3u","slide":2,"name":"グラフィックス 9","bbox":[937.65,186.9,40.52,40.84]}
+{"kind":"shape","id":"sh/id0vylkf","slide":2,"name":"Rounded Rectangle 5","bbox":[931.48,230.53,58.13,25.11]}
+{"kind":"textbox","id":"sh/exgvmlcv","slide":2,"name":"テキスト ボックス 44","text":"LLM","textPreview":"LLM","textChars":3,"textLines":1,"bbox":[931.48,224.32,58.13,35.54]}
+{"kind":"shape","id":"sh/zuh0vypc","slide":2,"name":"Rounded Rectangle 5","bbox":[1161.94,230.93,77.63,25.27]}
+{"kind":"table","id":"tb/q5g7e543","slide":2,"name":"表 214","rows":2,"cols":3,"preview":"対象範囲 | 時間帯 | 比較単位","bbox":[85.89,550.73,275.34,62.46]}
+{"kind":"image","id":"im/q18j6hwj","slide":2,"name":"図 7","bbox":[68.21,233.49,311.44,434.32]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"This slide shows how we develop a planning proposal through dialogue with an LLM.\nFirst, we identify the target area, Shibata 1-chome, and confirm its surrounding stations and pedestrian networks. Then, we organize basic planning conditions, such as land use, scale, pedestrian flow, functions, and constraints.\nNext, we compare several planning directions, such as commercial-focused, circulation-focused, and office-focused plans. Through this process, the user and the LLM gradually narrow down the proposal.\nFinally, the selected direction is translated into a concrete development plan, including commercial functions, offices, public open space, and improved pedestrian connections.\n\n出典：名鉄百貨店『名鉄百貨店本店 営業終了後のお知らせ』。名古屋鉄道 2026-05-15ニュースリリース『M's RELIER NAGOYA』。"}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"最初の3か月（2Q：7-9月）の取組イメージ：名鉄百貨店周辺の感度分析","textShapes":26}
+{"kind":"shape","id":"sh/v29cfu18","slide":3,"name":"Rounded Rectangle 5","bbox":[424,526.34,449.22,142.7]}
+{"kind":"textbox","id":"sh/cza94vmx","slide":3,"name":"タイトル 1","placeholder":"title","text":"最初の3か月（2Q：7-9月）の取組イメージ：名鉄百貨店周辺の感度分析","textPreview":"最初の3か月（2Q：7-9月）の取組イメージ：名鉄百貨店周辺の感度分析","textChars":35,"textLines":1,"bbox":[21.03,0,1238.64,95.4]}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"name":"日付プレースホルダー 3","placeholder":"dateTime","text":"2026/7","textPreview":"2026/7","textChars":6,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"name":"フッター プレースホルダー 4","placeholder":"footer","text":"関本・中居研究室","textPreview":"関本・中居研究室","textChars":8,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/obq90bml","slide":3,"name":"スライド番号プレースホルダー 5","placeholder":"slideNumber","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/dkrilsrq","slide":3,"name":"Rounded Rectangle 16","bbox":[450.54,208.52,136.32,26.88]}
+{"kind":"textbox","id":"sh/sji1s7q5","slide":3,"name":"TextBox 17","text":"基準","textPreview":"基準","textChars":2,"textLines":1,"bbox":[484.14,207.88,71.04,30.08]}
+{"kind":"shape","id":"sh/qh0jqx8z","slide":3,"name":"Rounded Rectangle 18","bbox":[706.44,208.92,136.32,26.88]}
+{"kind":"textbox","id":"sh/1oripcrm","slide":3,"name":"TextBox 19","text":"比較","textPreview":"比較","textChars":2,"textLines":1,"bbox":[742.92,207.96,67.2,30.08]}
+{"kind":"shape","id":"sh/el0jux8b","slide":3,"name":"Rounded Rectangle 5","bbox":[903.25,238.33,353.79,130.87]}
+{"kind":"textbox","id":"sh/gryhknqx","slide":3,"name":"TextBox 7","text":"例1：暫定利用の有無","textPreview":"例1：暫定利用の有無","textChars":10,"textLines":1,"bbox":[1012.36,241.17,133.56,51.07]}
+{"kind":"shape","id":"sh/8jexgj61","slide":3,"name":"Rounded Rectangle 5","bbox":[904.49,373.28,353.79,123.21]}
+{"kind":"textbox","id":"sh/tknypo76","slide":3,"name":"TextBox 7","text":"例2：工事・迂回","textPreview":"例2：工事・迂回","textChars":8,"textLines":1,"bbox":[955.98,374.31,245.82,30.03]}
+{"kind":"shape","id":"sh/vm5grypc","slide":3,"name":"Rounded Rectangle 5","bbox":[905.88,501.79,353.79,167.25]}
+{"kind":"textbox","id":"sh/gnexk36x","slide":3,"name":"TextBox 7","text":"例3：需要の上下","textPreview":"例3：需要の上下","textChars":8,"textLines":1,"bbox":[956.26,504.52,245.82,30.03]}
+{"kind":"textbox","id":"sh/apsf6pon","slide":3,"name":"コンテンツ プレースホルダー 2","text":"条件ごとの人流比較","textPreview":"条件ごとの人流比較","textChars":9,"textLines":1,"bbox":[931.02,207.88,296.24,42.48]}
+{"kind":"shape","id":"sh/qd8z6p8v","slide":3,"name":"直線矢印コネクタ 14","bbox":[448.61,359.26,58.32,9.45]}
+{"kind":"shape","id":"sh/beh0zupg","slide":3,"name":"直線矢印コネクタ 18","bbox":[460.1,455.54,58.6,12.12]}
+{"kind":"shape","id":"sh/t8725sry","slide":3,"name":"直線矢印コネクタ 21","bbox":[509.25,359.26,14.57,96.28]}
+{"kind":"shape","id":"sh/s7ylcnqd","slide":3,"name":"直線矢印コネクタ 24","bbox":[531,457.9,58.6,12.12]}
+{"kind":"shape","id":"sh/76pk329s","slide":3,"name":"直線矢印コネクタ 25","bbox":[492.71,290.16,10.05,64.13]}
+{"kind":"shape","id":"sh/65w3ax87","slide":3,"name":"直線矢印コネクタ 28","bbox":[473.42,415.47,6.23,40.07]}
+{"kind":"shape","id":"sh/fapk729o","slide":3,"name":"直線矢印コネクタ 31","bbox":[698.96,360.79,58.32,9.45]}
+{"kind":"shape","id":"sh/u9g3ex83","slide":3,"name":"直線矢印コネクタ 33","bbox":[710.45,457.06,58.6,12.12]}
+{"kind":"shape","id":"sh/xgn2x8rq","slide":3,"name":"直線矢印コネクタ 34","bbox":[759.6,360.79,14.57,96.28]}
+{"kind":"shape","id":"sh/wfe143q5","slide":3,"name":"直線矢印コネクタ 35","bbox":[781.35,459.42,58.6,12.12]}
+{"kind":"shape","id":"sh/ozap4bil","slide":3,"name":"直線矢印コネクタ 36","bbox":[743.06,291.69,10.05,64.13]}
+{"kind":"shape","id":"sh/p036xgz6","slide":3,"name":"直線矢印コネクタ 37","bbox":[723.78,416.99,6.23,40.07]}
+{"kind":"shape","id":"sh/2ds7210v","slide":3,"name":"直線矢印コネクタ 38","bbox":[735.03,368.73,5.68,43.43]}
+{"kind":"textbox","id":"sh/n2l4fq98","slide":3,"name":"Oval 6","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[138.05,434.89,16.66,17.24]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"name":"テキスト ボックス 10","text":"駅周辺","textPreview":"駅周辺","textChars":3,"textLines":1,"bbox":[134.92,453.65,68.81,26.43]}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"name":"Oval 6","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[98.48,515.6,16.66,17.24]}
+{"kind":"shape","id":"sh/83ulovat","slide":3,"name":"正方形/長方形 12","bbox":[157.36,362.03,38.97,53.83]}
+{"kind":"shape","id":"sh/v6l4jq94","slide":3,"name":"正方形/長方形 246","bbox":[139.65,366.83,25.16,125.26]}
+{"kind":"shape","id":"sh/x8nml0ra","slide":3,"name":"正方形/長方形 246","bbox":[177.93,359.9,25.16,125.26]}
+{"kind":"shape","id":"sh/w7ulsvqp","slide":3,"name":"正方形/長方形 252","bbox":[144.84,417.41,63.29,72.46]}
+{"kind":"textbox","id":"sh/ja54na9g","slide":3,"name":"テキスト ボックス 17","text":"対象","textPreview":"対象","textChars":2,"textLines":1,"bbox":[154.68,376.97,52.28,28.83]}
+{"kind":"textbox","id":"sh/e10f2twf","slide":3,"name":"Oval 6","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[154.68,357.05,16.66,17.24]}
+{"kind":"shape","id":"sh/f29gbyx0","slide":3,"name":"フリーフォーム 20","bbox":[169.93,411.1,59.92,81.03]}
+{"kind":"shape","id":"sh/14ryd8fq","slide":3,"name":"フリーフォーム 22","bbox":[179.37,427.71,82.05,75.53]}
+{"kind":"shape","id":"sh/6d0fytg3","slide":3,"name":"フリーフォーム 23","bbox":[90.6,421.97,77.51,27.88]}
+{"kind":"textbox","id":"sh/tgry9ofu","slide":3,"name":"Oval 6","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[239.67,486.53,16.66,17.24]}
+{"kind":"textbox","id":"sh/a9kfadwn","slide":3,"name":"コンテンツ プレースホルダー 2","text":"現況を基準に、暫定利用・工事・イベント・雨天などの条件を変え、混雑と回遊の幅を比較する。","textPreview":"現況を基準に、暫定利用・工事・イベント・雨天などの条件を変え、混雑と回遊の幅を比較する。","textChars":44,"textLines":1,"bbox":[35.21,114.35,1149.03,42.48]}
+{"kind":"textbox","id":"sh/y14jehgj","slide":3,"name":"コンテンツ プレースホルダー 2","text":"例：旧・名鉄百貨店本店周辺","textPreview":"例：旧・名鉄百貨店本店周辺","textChars":13,"textLines":1,"bbox":[22.21,200.4,419.58,42.48]}
+{"kind":"shape","id":"sh/21szqxcb","slide":3,"name":"右矢印 41","bbox":[633.43,375.78,37.36,19.19]}
+{"kind":"textbox","id":"sh/32l0j2dw","slide":3,"name":"Rounded Rectangle 5","text":"人流を比較してください。","textPreview":"人流を比較してください。","textChars":12,"textLines":1,"bbox":[599.71,533.84,260.59,25.04]}
+{"kind":"textbox","id":"sh/cruhwrud","slide":3,"name":"Rounded Rectangle 5","text":"出力：通過人数・滞留時間・混雑区間\n・出入口別分担率\n※実測・提供データで算定","textPreview":"出力：通過人数・滞留時間・混雑区間 | ・出入口別分担率 | ※実測・提供データで算定","textChars":39,"textLines":3,"bbox":[439.68,566.94,303.24,92.41]}
+{"kind":"textbox","id":"sh/ds3ipcvy","slide":3,"name":"Rounded Rectangle 5","text":"中央改札前に物販・イベント区画を\n設けた場合を比較したい。","textPreview":"中央改札前に物販・イベント区画を | 設けた場合を比較したい。","textChars":29,"textLines":2,"bbox":[985.45,271.2,260.7,42.48]}
+{"kind":"textbox","id":"sh/qpczuhc7","slide":3,"name":"Rounded Rectangle 5","text":"改札前の滞留と地上への\n流出量を比較します。","textPreview":"改札前の滞留と地上への | 流出量を比較します。","textChars":22,"textLines":2,"bbox":[916.9,319.22,260.7,44.68]}
+{"kind":"textbox","id":"sh/rql0nmds","slide":3,"name":"Rounded Rectangle 5","text":"地下動線が狭い場合を比較したい。","textPreview":"地下動線が狭い場合を比較したい。","textChars":16,"textLines":1,"bbox":[984.42,405.4,260.7,30.03]}
+{"kind":"textbox","id":"sh/0ve10ru9","slide":3,"name":"Rounded Rectangle 5","text":"平日朝夕と休日、雨天・イベント日の\n上下ケースを見たい。","textPreview":"平日朝夕と休日、雨天・イベント日の | 上下ケースを見たい。","textChars":28,"textLines":2,"bbox":[984.71,534.55,260.7,75.62]}
+{"kind":"textbox","id":"sh/w3it8zit","slide":3,"name":"Rounded Rectangle 5","text":"混雑ピーク、迂回距離、\n出入口への転換を確認します。","textPreview":"混雑ピーク、迂回距離、 | 出入口への転換を確認します。","textChars":26,"textLines":2,"bbox":[914.85,442.13,273.53,45.87]}
+{"kind":"textbox","id":"sh/nypcba1c","slide":3,"name":"Rounded Rectangle 5","text":"基準／上方／下方の3ケースで\n比較します。","textPreview":"基準／上方／下方の3ケースで | 比較します。","textChars":21,"textLines":2,"bbox":[916.24,615.47,273.53,45.87]}
+{"kind":"image","id":"im/up8bitk3","slide":3,"name":"図 124","bbox":[426.8,241.55,195.97,278.29]}
+{"kind":"image","id":"im/toza9o3i","slide":3,"name":"図 125","bbox":[676.09,242.35,196.44,278.29]}
+{"kind":"image","id":"im/8nqtgj2d","slide":3,"name":"図 30","bbox":[677.15,243.08,195.97,278.29]}
+{"kind":"image","id":"im/7mhs7els","slide":3,"name":"図 8","bbox":[80.75,231.71,312.9,430.54]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"\n\n注：人流の数値は実測・提供データを受領後に算定する。現段階では評価指標と比較条件のみを提示。"}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"本研究の立ち位置","textShapes":34}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"name":"タイトル 1","placeholder":"title","text":"本研究の立ち位置","textPreview":"本研究の立ち位置","textChars":8,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"name":"日付プレースホルダー 3","placeholder":"dateTime","text":"2026/7","textPreview":"2026/7","textChars":6,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"name":"フッター プレースホルダー 4","placeholder":"footer","text":"関本・中居研究室","textPreview":"関本・中居研究室","textChars":8,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/doj29oba","slide":4,"name":"スライド番号プレースホルダー 5","placeholder":"slideNumber","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/3ytsrmpw","slide":4,"name":"コンテンツ プレースホルダー 2","text":"LLMによる条件整理はシナリオ生成に有効だが、観測データや人流評価との接続は限定的\n人流予測は動線変更の効果評価に有効だが、運用条件や計画意図を直接扱いにくい\n本研究は、対話から駅周辺の条件を構造化し、擬似・観測人流と接続して比較評価する\n","textPreview":"LLMによる条件整理はシナリオ生成に有効だが、観測データや人流評価との接続は限定的 | 人流予測は動線変更の効果評価に有効だが、運用条件や計画意図を直接扱いにくい | 本研究は、対話から駅周辺の条件を構造化し、擬似・観測人流と接続して比較評価する |","textChars":120,"textLines":4,"bbox":[44.66,109.33,1217.31,118.37]}
+{"kind":"shape","id":"sh/2xkrih8b","slide":4,"name":"Rounded Rectangle 5","bbox":[64.9,242.12,359.09,396.65]}
+{"kind":"shape","id":"sh/gv29g7q5","slide":4,"name":"片側の 2 つの角を丸めた四角形 24","bbox":[64.9,242.12,359.09,61.02]}
+{"kind":"textbox","id":"sh/et0reh8f","slide":4,"name":"テキスト ボックス 26","text":"LLMを活用した条件の具体化","textPreview":"LLMを活用した条件の具体化","textChars":14,"textLines":1,"bbox":[76.23,259.37,335.95,35.54]}
+{"kind":"shape","id":"sh/knex8j21","slide":4,"name":"Rounded Rectangle 5","bbox":[450.72,243.39,359.09,396.65]}
+{"kind":"shape","id":"sh/5ony1oj6","slide":4,"name":"片側の 2 つの角を丸めた四角形 32","bbox":[450.72,243.39,359.09,61.02]}
+{"kind":"textbox","id":"sh/jm5gze1g","slide":4,"name":"テキスト ボックス 30","text":"人流予測研究","textPreview":"人流予測研究","textChars":6,"textLines":1,"bbox":[556.25,260.72,148.64,35.54]}
+{"kind":"shape","id":"sh/xknyx4ja","slide":4,"name":"Rounded Rectangle 5","bbox":[837.13,242.12,359.09,396.65]}
+{"kind":"shape","id":"sh/mtcfypkn","slide":4,"name":"片側の 2 つの角を丸めた四角形 37","bbox":[837.13,242.12,359.09,61.02]}
+{"kind":"textbox","id":"sh/wzex4z2p","slide":4,"name":"テキスト ボックス 35","text":"本研究（双方をシームレスに接続）","textPreview":"本研究（双方をシームレスに接続）","textChars":16,"textLines":1,"bbox":[838.45,259.37,366.64,35.54]}
+{"kind":"textbox","id":"sh/nulw7u18","slide":4,"name":"テキスト ボックス 38","text":"自然言語から営業・工事・イベント条件を整理","textPreview":"自然言語から営業・工事・イベント条件を整理","textChars":21,"textLines":1,"bbox":[97.74,314.86,303.74,61.39]}
+{"kind":"textbox","id":"sh/fm5c3q54","slide":4,"name":"テキスト ボックス 39","text":"対話を通じて比較シナリオを生成","textPreview":"対話を通じて比較シナリオを生成","textChars":15,"textLines":1,"bbox":[97.74,376.26,303.67,61.39]}
+{"kind":"textbox","id":"sh/elwba54j","slide":4,"name":"テキスト ボックス 40","text":"観測・人流モデルへの接続は別途必要","textPreview":"観測・人流モデルへの接続は別途必要","textChars":17,"textLines":1,"bbox":[97.67,436.35,302.38,61.39]}
+{"kind":"textbox","id":"sh/18nu50nu","slide":4,"name":"テキスト ボックス 41","text":"効果検証が定性的になりやすい","textPreview":"効果検証が定性的になりやすい","textChars":14,"textLines":1,"bbox":[97.67,499.04,302.38,61.39]}
+{"kind":"textbox","id":"sh/rilczq5s","slide":4,"name":"テキスト ボックス 43","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[67.46,326.82,43.62,38.78]}
+{"kind":"textbox","id":"sh/qhcb6l47","slide":4,"name":"テキスト ボックス 44","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[67.46,387.1,43.62,38.78]}
+{"kind":"textbox","id":"sh/dknu10ny","slide":4,"name":"テキスト ボックス 45","text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[69.48,448.92,39.58,38.78]}
+{"kind":"textbox","id":"sh/sjut8vmd","slide":4,"name":"テキスト ボックス 46","text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[69.48,509.55,39.58,38.78]}
+{"kind":"textbox","id":"sh/3elcv65w","slide":4,"name":"テキスト ボックス 47","text":"Ex. PlanGPT, Large language model empowered participatory urban planning","textPreview":"Ex. PlanGPT, Large language model empowered participatory urban planning","textChars":72,"textLines":1,"bbox":[76.23,562.2,336.45,54.93]}
+{"kind":"textbox","id":"sh/idcb2lob","slide":4,"name":"テキスト ボックス 48","text":"駅・出入口・通路の変更を評価","textPreview":"駅・出入口・通路の変更を評価","textChars":14,"textLines":1,"bbox":[483.32,314.86,303.74,61.39]}
+{"kind":"textbox","id":"sh/8jq9c72t","slide":4,"name":"テキスト ボックス 49","text":"通過人数・混雑・滞留を推定","textPreview":"通過人数・混雑・滞留を推定","textChars":13,"textLines":1,"bbox":[483.32,376.26,303.67,61.39]}
+{"kind":"textbox","id":"sh/tkjq5c3e","slide":4,"name":"テキスト ボックス 50","text":"運用条件や計画意図を扱いにくい","textPreview":"運用条件や計画意図を扱いにくい","textChars":15,"textLines":1,"bbox":[483.25,436.35,302.38,61.39]}
+{"kind":"textbox","id":"sh/6x8rahk3","slide":4,"name":"テキスト ボックス 51","text":"条件整理の手作業が大きい","textPreview":"条件整理の手作業が大きい","textChars":12,"textLines":1,"bbox":[483.25,499.04,302.38,61.39]}
+{"kind":"textbox","id":"sh/7ih83mlo","slide":4,"name":"テキスト ボックス 52","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[453.03,326.82,43.62,38.78]}
+{"kind":"textbox","id":"sh/gna9gr25","slide":4,"name":"テキスト ボックス 53","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[453.03,387.1,43.62,38.78]}
+{"kind":"textbox","id":"sh/hoja9w3q","slide":4,"name":"テキスト ボックス 54","text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[453.03,447.38,39.58,38.78]}
+{"kind":"textbox","id":"sh/ulsrehkz","slide":4,"name":"テキスト ボックス 55","text":"×","textPreview":"×","textChars":1,"textLines":1,"bbox":[453.03,508.01,39.58,38.78]}
+{"kind":"textbox","id":"sh/vm1s7mlk","slide":4,"name":"テキスト ボックス 56","text":"Ex. CausalPOI, SeMob","textPreview":"Ex. CausalPOI, SeMob","textChars":20,"textLines":1,"bbox":[467.3,562.2,336.45,32.31]}
+{"kind":"textbox","id":"sh/bmpozed4","slide":4,"name":"テキスト ボックス 61","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[839.36,326.82,43.62,38.78]}
+{"kind":"textbox","id":"sh/qlg769wj","slide":4,"name":"テキスト ボックス 62","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[839.36,387.1,43.62,38.78]}
+{"kind":"textbox","id":"sh/gfudkvq5","slide":4,"name":"テキスト ボックス 75","text":"対話から人流シナリオを構造化","textPreview":"対話から人流シナリオを構造化","textChars":14,"textLines":1,"bbox":[879.95,314.86,303.74,61.39]}
+{"kind":"textbox","id":"sh/hg3et07q","slide":4,"name":"テキスト ボックス 76","text":"観測・擬似人流と予測モデルへ接続","textPreview":"観測・擬似人流と予測モデルへ接続","textChars":16,"textLines":1,"bbox":[879.95,376.26,303.67,61.39]}
+{"kind":"textbox","id":"sh/ihcvml8b","slide":4,"name":"テキスト ボックス 77","text":"複数条件を人流面から比較評価","textPreview":"複数条件を人流面から比較評価","textChars":14,"textLines":1,"bbox":[879.88,436.35,302.38,61.39]}
+{"kind":"textbox","id":"sh/3ilwvqpw","slide":4,"name":"テキスト ボックス 78","text":"条件更新から再計算まで一体化","textPreview":"条件更新から再計算まで一体化","textChars":14,"textLines":1,"bbox":[879.88,499.04,302.38,61.39]}
+{"kind":"textbox","id":"sh/axsrmxcn","slide":4,"name":"テキスト ボックス 84","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[840.02,445.55,43.62,38.78]}
+{"kind":"textbox","id":"sh/x03ahcbe","slide":4,"name":"テキスト ボックス 85","text":"○","textPreview":"○","textChars":1,"textLines":1,"bbox":[840.02,505.83,43.62,38.78]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":""}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"年度内（3-4Q：10-3月）の取組イメージ","textShapes":5}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"name":"タイトル 1","placeholder":"title","text":"年度内（3-4Q：10-3月）の取組イメージ","textPreview":"年度内（3-4Q：10-3月）の取組イメージ","textChars":22,"textLines":1,"bbox":[21.03,4,1084.14,91.4]}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"name":"日付プレースホルダー 3","placeholder":"dateTime","text":"2026/7","textPreview":"2026/7","textChars":6,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"name":"フッター プレースホルダー 12","placeholder":"footer","text":"関本・中居研究室","textPreview":"関本・中居研究室","textChars":8,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/58vehgvy","slide":5,"name":"スライド番号プレースホルダー 14","placeholder":"slideNumber","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/032tgr6d","slide":5,"name":"テキスト ボックス 6","text":"年度内は、旧・名鉄百貨店本店周辺の基準ケースを実装し、暫定利用・工事・イベント等の比較へ拡張する。最後に実測・提供データで条件設定と出力の妥当性を確認する。","textPreview":"年度内は、旧・名鉄百貨店本店周辺の基準ケースを実装し、暫定利用・工事・イベント等の比較へ拡張する。最後に実測・提供データで条件設定と出力の妥当性を確認する。","textChars":78,"textLines":1,"bbox":[88,141.3,1084.14,67.86]}
+{"kind":"table","id":"tb/dofqx8ny","slide":5,"name":"表 5","rows":4,"cols":3,"preview":"期間 | 概要 | 詳細","bbox":[89.3,256.05,1104,317.5]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":""}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"名鉄グループ・関係者にとっての本アプリケーション活用メリット","textShapes":5}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"name":"タイトル 1","placeholder":"title","text":"名鉄グループ・関係者にとっての本アプリケーション活用メリット","textPreview":"名鉄グループ・関係者にとっての本アプリケーション活用メリット","textChars":30,"textLines":1,"bbox":[21.03,4,1084.14,91.4]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"name":"日付プレースホルダー 3","placeholder":"dateTime","text":"2026/7","textPreview":"2026/7","textChars":6,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/98rqt4r6","slide":6,"name":"フッター プレースホルダー 4","placeholder":"footer","text":"関本・中居研究室","textPreview":"関本・中居研究室","textChars":8,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/ml07i9sv","slide":6,"name":"スライド番号プレースホルダー 5","placeholder":"slideNumber","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/7m98ru9g","slide":6,"name":"テキスト ボックス 6","text":"本研究では、自然言語で記述された営業・工事・イベント等の条件を、LLMとの対話で人流予測可能なシナリオへ具体化し、複数案を比較評価できるアプリケーションを開発します。\n旧本店周辺の暫定利用や通行規制を比較し、名古屋駅地区の将来検討にも再利用できる判断材料を整えます。","textPreview":"本研究では、自然言語で記述された営業・工事・イベント等の条件を、LLMとの対話で人流予測可能なシナリオへ具体化し、複数案を比較評価できるアプリケーションを開発します。 | 旧本店周辺の暫定利用や通行規制を比較し、名古屋駅地区の将来検討にも再利用できる判断材料を整えます。","textChars":133,"textLines":2,"bbox":[88,128.48,1084.14,153.6]}
+{"kind":"table","id":"tb/pc3mlove","slide":6,"name":"表 7","rows":5,"cols":2,"preview":"観点 | メリット","bbox":[88,269.93,1084.14,381.97]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":""}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"検討に必要なデータとご協力いただきたいこと","textShapes":6}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"name":"タイトル 1","placeholder":"title","text":"検討に必要なデータとご協力いただきたいこと","textPreview":"検討に必要なデータとご協力いただきたいこと","textChars":21,"textLines":1,"bbox":[21.03,4,1084.14,91.4]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"name":"コンテンツ プレースホルダー 2","text":"1. 基礎情報・観測データの共有\n以下の情報を、可能な範囲で共有いただきたいと考えています。\n対象範囲と通行可能区間\n改札・出入口・階段・エレベーター等の位置\n時間帯別の通過人数・滞留・列の長さ\n暫定利用、イベント、工事・通行規制の条件","textPreview":"1. 基礎情報・観測データの共有 | 以下の情報を、可能な範囲で共有いただきたいと考えています。 | 対象範囲と通行可能区間 | 改札・出入口・階段・エレベーター等の位置 | 時間帯別の通過人数・滞留・列の長さ | 暫定利用、イベント、工事・通行規制の条件","textChars":118,"textLines":6,"bbox":[63.56,112.72,1104,253.59]}
+{"kind":"textbox","id":"sh/ydkbm5sv","slide":7,"name":"日付プレースホルダー 3","placeholder":"dateTime","text":"2026/7","textPreview":"2026/7","textChars":6,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/zedcfa9g","slide":7,"name":"フッター プレースホルダー 4","placeholder":"footer","text":"関本・中居研究室","textPreview":"関本・中居研究室","textChars":8,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/kzmdova1","slide":7,"name":"スライド番号プレースホルダー 5","placeholder":"slideNumber","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"name":"コンテンツ プレースホルダー 2","text":"2. シナリオと試算結果へのフィードバック\n設定したシナリオと人流試算について、次の観点から確認いただきたいです。\n時間帯・経路・目的別の仮定は妥当か\n混雑ピークと滞留箇所に違和感がないか\n運用上の制約や誘導方針と整合しているか\n追加で比較すべき条件・代替案があるか\nフィードバックを反映し、条件設定と人流予測を反復的に更新します。","textPreview":"2. シナリオと試算結果へのフィードバック | 設定したシナリオと人流試算について、次の観点から確認いただきたいです。 | 時間帯・経路・目的別の仮定は妥当か | 混雑ピークと滞留箇所に違和感がないか | 運用上の制約や誘導方針と整合しているか | 追加で比較すべき条件・代...","textChars":166,"textLines":7,"bbox":[63.56,383.62,1104,269.8]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":""}
